@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Структура тРНК: клеверный лист и L-образная форма</title>
+  <desc id="d">Слева вторичная структура тРНК в виде клеверного листа: акцепторный стебель с 3'-концом CCA, к которому присоединяется аминокислота, D-петля, петля антикодона с тремя нуклеотидами антикодона, вариабельная петля и T-петля (TΨC). Справа третичная структура: молекула сложена в букву L; на одном конце находится акцепторный конец с аминокислотой, на другом — антикодон, расстояние между ними около 7,5 нм.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .stem { stroke: #b9c4d8; stroke-width: 15; stroke-linecap: round; fill: none; }
+    .rung { stroke: #ffffff; stroke-width: 2.5; stroke-dasharray: 2 5; fill: none; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="ar2" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+
+  <!-- ===== А. клеверный лист ===== -->
+  <text class="h" x="20" y="28">А. Вторичная структура: «клеверный лист»</text>
+  <!-- акцепторный стебель -->
+  <line class="stem" x1="130" y1="96" x2="250" y2="96" style="stroke:#7fa8d9"/><line class="rung" x1="130" y1="96" x2="250" y2="96"/>
+  <text class="b" x="190" y="66" text-anchor="middle" style="fill:#2e6f95">акцепторный стебель (7 пар)</text>
+  
+  <text class="b" x="112" y="90" text-anchor="end" style="fill:#7b3f9e">5′</text>
+  <!-- 3'-конец CCA + аминокислота -->
+  <g>
+    <circle cx="272" cy="96" r="10" fill="#f0b429"/><text class="k" x="272" y="100" text-anchor="middle" style="font-size:11px;font-weight:700">N</text>
+    <circle cx="298" cy="96" r="10" fill="#f0b429"/><text class="k" x="298" y="100" text-anchor="middle" style="font-size:11px;font-weight:700">C</text>
+    <circle cx="324" cy="96" r="10" fill="#f0b429"/><text class="k" x="324" y="100" text-anchor="middle" style="font-size:11px;font-weight:700">C</text>
+    <circle cx="350" cy="96" r="10" fill="#e4572e"/><text class="w" x="350" y="100">A</text>
+    <line x1="250" y1="96" x2="262" y2="96" stroke="#5b6577" stroke-width="3"/><line x1="282" y1="96" x2="288" y2="96" stroke="#5b6577" stroke-width="3"/><line x1="308" y1="96" x2="314" y2="96" stroke="#5b6577" stroke-width="3"/><line x1="334" y1="96" x2="340" y2="96" stroke="#5b6577" stroke-width="3"/>
+    <line x1="360" y1="96" x2="378" y2="84" stroke="#5b6577" stroke-width="3"/>
+    <circle cx="392" cy="76" r="15" fill="#3fa34d"/><text class="w" x="392" y="80" style="font-size:9.5px">аа</text>
+  </g>
+  <text class="b" x="336" y="126" text-anchor="middle" style="fill:#c0392b">3′-конец ССА</text><text class="s" x="336" y="142" text-anchor="middle" style="font-size:11.5px">сюда присоединяется аа</text>
+  
+  <!-- D-arm -->
+  <line class="stem" x1="140" y1="104" x2="86" y2="170" style="stroke:#f0c07a"/><line class="rung" x1="140" y1="104" x2="86" y2="170"/>
+  <circle cx="60" cy="204" r="36" fill="#fff4e0" stroke="#ee8a2b" stroke-width="3"/>
+  <text class="b" x="60" y="200" text-anchor="middle" style="fill:#b4531a">D-петля</text><text class="s" x="60" y="216" text-anchor="middle" style="font-size:11px">дигидроуридин</text>
+  <!-- anticodon arm -->
+  <line class="stem" x1="176" y1="106" x2="176" y2="188" style="stroke:#c5b3e6"/><line class="rung" x1="176" y1="106" x2="176" y2="188"/>
+  <line class="stem" x1="204" y1="106" x2="204" y2="188" style="stroke:#c5b3e6"/>
+  <circle cx="190" cy="236" r="44" fill="#f3eefa" stroke="#7b5ea7" stroke-width="3"/>
+  <text class="b" x="190" y="222" text-anchor="middle" style="fill:#5e3f8a">петля</text><text class="b" x="190" y="238" text-anchor="middle" style="fill:#5e3f8a">антикодона</text>
+  <g>
+    <circle cx="164" cy="276" r="11" fill="#c0397b"/><text class="w" x="164" y="280" style="font-size:10px">3′</text>
+    <circle cx="190" cy="282" r="11" fill="#c0397b"/><circle cx="216" cy="276" r="11" fill="#c0397b"/><text class="w" x="216" y="280" style="font-size:10px">5′</text>
+  </g>
+  <text class="b" x="190" y="318" text-anchor="middle" style="fill:#c0397b">антикодон</text><text class="s" x="190" y="334" text-anchor="middle" style="font-size:11.5px">3 нуклеотида, узнают кодон мРНК</text>
+  <!-- variable loop -->
+  <circle cx="262" cy="196" r="17" fill="#eef0f4" stroke="#8a94a8" stroke-width="2"/>
+  <path class="ln" d="M268 212 L300 262"/><text class="s" x="302" y="266" style="font-size:11.5px">вариабельная петля</text>
+  <!-- T-arm -->
+  <line class="stem" x1="236" y1="104" x2="292" y2="168" style="stroke:#9ed3ac"/><line class="rung" x1="236" y1="104" x2="292" y2="168"/>
+  <circle cx="330" cy="200" r="36" fill="#eaf6ee" stroke="#3fa34d" stroke-width="3"/>
+  <text class="b" x="330" y="196" text-anchor="middle" style="fill:#2f7d3f">T-петля</text><text class="s" x="330" y="212" text-anchor="middle" style="font-size:11px">TΨC</text>
+
+  <line x1="450" y1="20" x2="450" y2="360" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== Б. L-форма ===== -->
+  <text class="h" x="470" y="28">Б. Третичная структура: буква L</text>
+  <!-- вертикальная ножка: акцепторный стебель + T-стебель -->
+  <rect x="546" y="66" width="24" height="70" rx="10" fill="#7fa8d9"/><rect x="546" y="136" width="24" height="70" rx="10" fill="#9ed3ac"/>
+  <text class="s" x="536" y="102" text-anchor="end" style="font-size:11.5px">акцепторный</text><text class="s" x="536" y="116" text-anchor="end" style="font-size:11.5px">стебель</text>
+  <text class="s" x="536" y="172" text-anchor="end" style="font-size:11.5px">T-стебель</text>
+  <!-- горизонтальная ножка: D-стебель + антикодоновый -->
+  <rect x="546" y="206" width="24" height="90" rx="10" fill="#f0c07a"/>
+  <rect x="546" y="272" width="110" height="24" rx="10" fill="#f0c07a"/><rect x="656" y="272" width="120" height="24" rx="10" fill="#c5b3e6"/>
+  <text class="s" x="601" y="322" text-anchor="middle" style="font-size:11.5px">D-стебель</text>
+  <text class="s" x="716" y="322" text-anchor="middle" style="font-size:11.5px">стебель антикодона</text>
+  <!-- углы: петли D и T соприкасаются -->
+  <circle cx="518" cy="240" r="24" fill="#fff4e0" stroke="#ee8a2b" stroke-width="2.5"/><circle cx="596" cy="224" r="22" fill="#eaf6ee" stroke="#3fa34d" stroke-width="2.5"/>
+  <text class="b" x="518" y="244" text-anchor="middle" style="font-size:11px;fill:#b4531a">D</text><text class="b" x="596" y="228" text-anchor="middle" style="font-size:11px;fill:#2f7d3f">T</text>
+  <text class="s" x="466" y="276" style="font-size:11.5px">петли D и T</text><text class="s" x="466" y="290" style="font-size:11.5px">взаимодействуют</text>
+  <!-- концы -->
+  <circle cx="558" cy="52" r="15" fill="#3fa34d"/><text class="w" x="558" y="56" style="font-size:9.5px">аа</text>
+  <text class="b" x="584" y="50" style="fill:#c0392b">3′-ССА</text><text class="s" x="584" y="66" style="font-size:11.5px">акцепторный конец</text>
+  <g><circle cx="792" cy="272" r="10" fill="#c0397b"/><circle cx="792" cy="284" r="10" fill="#c0397b"/><circle cx="792" cy="296" r="10" fill="#c0397b"/></g>
+  <text class="b" x="808" y="270" style="fill:#c0397b">антикодон</text>
+  <!-- расстояние -->
+  <path d="M640 66 L640 262" stroke="#5b6577" stroke-width="1.8" fill="none" stroke-dasharray="4 4"/>
+  <path d="M800 90 L800 250" stroke="#5b6577" stroke-width="2" fill="none" marker-start="url(#ar2)" marker-end="url(#ar)"/>
+  <text class="b" x="788" y="164" text-anchor="end">≈ 7,5 нм</text><text class="s" x="788" y="180" text-anchor="end" style="font-size:11.5px">между аминокислотой</text><text class="s" x="788" y="194" text-anchor="end" style="font-size:11.5px">и антикодоном</text>
+
+  <!-- факты -->
+  <line x1="20" y1="366" x2="880" y2="366" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="394">Что важно знать о тРНК</text>
+  <text class="b" x="20" y="422">Размер.</text><text class="s" x="84" y="422">Около 76 нуклеотидов (от 73 до 95); вторичная структура — «клеверный лист», трёхмерная — L-образная.</text>
+  <text class="b" x="20" y="446">Адаптер.</text><text class="s" x="92" y="446">Один конец узнаёт кодон мРНК (антикодон), другой несёт аминокислоту (3′-ССА): молекула «переводит» код в белок.</text>
+  <text class="b" x="20" y="470">Антикодон</text><text class="s" x="98" y="470">антипараллелен кодону: 5′-GCU-3′ в мРНК читается антикодоном 3′-CGA-5′ (записывается 5′-AGC-3′).</text>
+  <text class="b" x="20" y="494">Модификации.</text><text class="s" x="118" y="494">10–15 % нуклеотидов изменены: псевдоуридин (Ψ), дигидроуридин (D), инозин (I), метилированные основания.</text>
+  <text class="b" x="20" y="518">Узнавание.</text><text class="s" x="98" y="518">Правильную аминокислоту к тРНК присоединяет «своя» аминоацил-тРНК-синтетаза, распознавая изгиб L-формы,</text>
+  <text class="s" x="20" y="536">акцепторный стебель и антикодон (см. схему работы синтетазы).</text>
+  <text class="b" x="20" y="562">Типов тРНК.</text><text class="s" x="106" y="562">В клетках человека около 500 генов тРНК, а типов антикодонов около 45; часть кодонов читается по «качающемуся» правилу.</text>
+</svg>

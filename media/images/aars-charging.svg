@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="t d">
+  <title id="t">Аминоацил-тРНК-синтетаза: как тРНК «заряжается» аминокислотой</title>
+  <desc id="d">Двухстадийная реакция. Шаг 1: аминокислота и АТФ превращаются в аминоацил-аденилат (аа–АМФ) и пирофосфат. Шаг 2: аминоацил-аденилат и тРНК превращаются в аминоацил-тРНК и АМФ. Синтетаза проверяет правильность аминокислоты и при ошибке отщепляет её.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .ar { stroke: #5b6577; stroke-width: 2.5; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Как тРНК получает «свою» аминокислоту</text>
+
+  <!-- ===== шаг 1 ===== -->
+  <text class="b" x="20" y="66" style="fill:#4b4f9e">Шаг 1. Активация аминокислоты</text>
+  <circle cx="60" cy="112" r="20" fill="#3fa34d"/><text class="w" x="60" y="116">аа</text>
+  <text class="b" x="92" y="118">+</text>
+  <rect x="112" y="92" width="110" height="40" rx="10" fill="#fff4e0" stroke="#ee8a2b" stroke-width="2"/><text class="b" x="167" y="117" text-anchor="middle" style="fill:#b4531a">АТФ</text>
+  <path class="ar" d="M232 112 h64" marker-end="url(#ar)"/>
+  <text class="s" x="264" y="96" text-anchor="middle" style="font-size:11px">синтетаза</text>
+  <circle cx="330" cy="112" r="20" fill="#3fa34d"/><text class="w" x="330" y="116">аа</text>
+  <rect x="350" y="98" width="76" height="28" rx="8" fill="#f0b429"/><text class="b" x="388" y="117" text-anchor="middle" style="font-size:12px">АМФ</text>
+  <text class="s" x="380" y="150" text-anchor="middle" style="font-size:12px">аа–АМФ (аминоацил-аденилат)</text>
+  <text class="b" x="452" y="118">+</text>
+  <rect x="470" y="98" width="70" height="28" rx="8" fill="#eef0f4" stroke="#8a94a8" stroke-width="1.5"/><text class="s" x="505" y="117" text-anchor="middle" style="font-size:12px;fill:#1c2330">PPi</text>
+
+  <!-- ===== шаг 2 ===== -->
+  <text class="b" x="20" y="200" style="fill:#4b4f9e">Шаг 2. Перенос аминокислоты на тРНК</text>
+  <circle cx="50" cy="246" r="18" fill="#3fa34d"/><text class="w" x="50" y="250" style="font-size:10px">аа</text>
+  <rect x="70" y="234" width="60" height="24" rx="7" fill="#f0b429"/><text class="b" x="100" y="251" text-anchor="middle" style="font-size:11.5px">АМФ</text>
+  <text class="b" x="146" y="252">+</text>
+  <!-- тРНК (схема) -->
+  <g>
+    <rect x="170" y="222" width="18" height="60" rx="8" fill="#7fa8d9"/><rect x="170" y="270" width="70" height="18" rx="8" fill="#c5b3e6"/>
+    <circle cx="179" cy="212" r="6" fill="#e4572e"/><text class="s" x="200" y="216" style="font-size:11px">3′-CCA</text>
+    <circle cx="232" cy="288" r="4" fill="#c0397b"/><circle cx="222" cy="288" r="4" fill="#c0397b"/><circle cx="212" cy="288" r="4" fill="#c0397b"/>
+  </g>
+  <text class="s" x="204" y="312" text-anchor="middle" style="font-size:12px">тРНК</text>
+  <path class="ar" d="M268 256 h64" marker-end="url(#ar)"/>
+  <text class="s" x="300" y="240" text-anchor="middle" style="font-size:11px">синтетаза</text>
+  <g>
+    <rect x="360" y="222" width="18" height="60" rx="8" fill="#7fa8d9"/><rect x="360" y="270" width="70" height="18" rx="8" fill="#c5b3e6"/>
+    <circle cx="369" cy="206" r="16" fill="#3fa34d"/><text class="w" x="369" y="210" style="font-size:9.5px">аа</text>
+    <circle cx="422" cy="288" r="4" fill="#c0397b"/><circle cx="412" cy="288" r="4" fill="#c0397b"/><circle cx="402" cy="288" r="4" fill="#c0397b"/>
+  </g>
+  <text class="b" x="394" y="312" text-anchor="middle" style="fill:#2f7d3f">аминоацил-тРНК</text>
+  <text class="b" x="470" y="252">+</text>
+  <rect x="490" y="238" width="60" height="28" rx="8" fill="#f0b429"/><text class="b" x="520" y="257" text-anchor="middle" style="font-size:12px">АМФ</text>
+
+  <!-- проверка -->
+  <line x1="20" y1="346" x2="880" y2="346" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="b" x="20" y="372" style="fill:#c0392b">Проверка и редактирование</text>
+  <text class="s" x="20" y="392">У синтетазы есть два центра: активный (выбирает аминокислоту) и редактирующий:</text>
+  <text class="s" x="20" y="408">если присоединена похожая, но неверная аминокислота, её отщепляют (гидролиз).</text>
+  <text class="s" x="20" y="424">Ошибки при «зарядке» тРНК — порядка 1 на 10⁴–10⁵.</text>
+  <text class="b" x="20" y="452" style="fill:#2f7d3f">Ключевой принцип</text>
+  <text class="s" x="20" y="472">Рибосома проверяет только пару кодон–антикодон, но не смотрит, какая аминокислота на тРНК.</text>
+  <text class="s" x="20" y="488">Поэтому точность «перевода» обеспечивает синтетаза: её называют «вторым генетическим кодом».</text>
+
+  <!-- правая колонка -->
+  <rect x="580" y="52" width="300" height="270" rx="14" fill="#f6f8fb" stroke="#d9dee7" stroke-width="1.5"/>
+  <text class="b" x="596" y="76">Что важно знать</text>
+  <text class="s" x="596" y="98">• 20 синтетаз — по одной на каждую</text><text class="s" x="604" y="114">аминокислоту (отдельные наборы для</text><text class="s" x="604" y="130">цитоплазмы и митохондрий).</text>
+  <text class="s" x="596" y="152">• Две группы: класс I (аа к 2′-OH) и</text><text class="s" x="604" y="168">класс II (аа к 3′-OH) аденозина.</text>
+  <text class="s" x="596" y="190">• тРНК узнаётся по акцепторному</text><text class="s" x="604" y="206">стеблю, антикодону и форме L.</text>
+  <text class="s" x="596" y="228">• На «зарядку» тратится энергия АТФ</text><text class="s" x="604" y="244">(две макроэргические связи).</text>
+  <text class="s" x="596" y="266">• Тот же 3′-конец CCA — у всех тРНК.</text>
+  <text class="s" x="596" y="288">• Мутации синтетаз вызывают болезни</text><text class="s" x="604" y="304">нервной системы и другие.</text>
+</svg>

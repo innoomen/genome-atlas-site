@@ -1,0 +1,251 @@
+<svg class="tel-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="tel-t tel-d">
+  <title id="tel-t">Анимация: как теломераза удлиняет теломеру</title>
+  <desc id="tel-d">Одноцепочечный 3'-выступ теломеры спаривается с РНК-матрицей TERC теломеразы. Обратная транскриптаза TERT достраивает шесть нуклеотидов GGTTAG, то есть один повтор. Затем комплекс сдвигается к новому 3'-концу (транслокация), и цикл повторяется. В конце комплементарную C-цепь достраивают праймаза Pol альфа и ДНК-полимераза дельта.</desc>
+  <style>
+    .tel-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .tel-svg .tel-b { font-weight: 700; }
+    .tel-svg .tel-m { fill: #5b6577; }
+    .tel-svg .tel-old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .tel-svg .tel-rung { stroke: #c3cad8; stroke-width: 2; }
+    .tel-svg .tel-cell text { font-size: 11px; font-weight: 700; text-anchor: middle; fill: #fff; }
+    .tel-svg .tel-A rect { fill: #e4572e; } .tel-svg .tel-T rect { fill: #2e86ab; } .tel-svg .tel-G rect { fill: #3fa34d; }
+    .tel-svg .tel-C rect { fill: #f0b429; } .tel-svg .tel-C text { fill: #1c2330; } .tel-svg .tel-U rect { fill: #7b5ea7; }
+    .tel-svg .tel-pair { stroke: #8a94a8; stroke-width: 2; stroke-dasharray: 3 3; }
+    .tel-svg .tel-tert { fill: #d6eef0; stroke: #1a9aa0; stroke-width: 3; }
+    .tel-svg .tel-terc { fill: none; stroke: #c0392b; stroke-width: 4; stroke-linecap: round; }
+    .tel-svg .tel-prim { fill: #7b5ea7; stroke: #fff; stroke-width: 2; }
+    .tel-svg .tel-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .tel-svg .tel-scene { animation: tel-scene 20s linear infinite; }
+    .tel-svg .tel-grp { animation: tel-grp 20s ease-in-out infinite; }
+    .tel-svg .tel-d0 { animation: tel-d0 20s linear infinite; }
+    .tel-svg .tel-prim { animation: tel-prim 20s linear infinite; }
+    @keyframes tel-scene { 0% { opacity: 1; } 96% { opacity: 1; } 99% { opacity: 0; } 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes tel-grp { 0%, 46% { transform: translateX(0); opacity: 1; } 52% { transform: translateX(108px); opacity: 1; } 80% { transform: translateX(108px); opacity: 1; } 84%, 99.9% { transform: translateX(108px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+    @keyframes tel-d0 { 0%, 44% { opacity: 1; } 45.5%, 52% { opacity: 0; } 53.5%, 100% { opacity: 1; } }
+    @keyframes tel-prim { 0%, 84% { opacity: 0; } 86%, 100% { opacity: 1; } }
+    .tel-svg .tel-nl0 { animation: tel-nl0 20s linear infinite; }
+    @keyframes tel-nl0 { 0%, 19.9% { opacity: 0; transform: translateY(-10px); } 20.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd0 { animation: tel-nd0 20s linear infinite; }
+    @keyframes tel-nd0 { 0%, 19.9% { opacity: 0; } 20.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl1 { animation: tel-nl1 20s linear infinite; }
+    @keyframes tel-nl1 { 0%, 23.9% { opacity: 0; transform: translateY(-10px); } 24.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd1 { animation: tel-nd1 20s linear infinite; }
+    @keyframes tel-nd1 { 0%, 23.9% { opacity: 0; } 24.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl2 { animation: tel-nl2 20s linear infinite; }
+    @keyframes tel-nl2 { 0%, 27.9% { opacity: 0; transform: translateY(-10px); } 28.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd2 { animation: tel-nd2 20s linear infinite; }
+    @keyframes tel-nd2 { 0%, 27.9% { opacity: 0; } 28.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl3 { animation: tel-nl3 20s linear infinite; }
+    @keyframes tel-nl3 { 0%, 31.9% { opacity: 0; transform: translateY(-10px); } 32.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd3 { animation: tel-nd3 20s linear infinite; }
+    @keyframes tel-nd3 { 0%, 31.9% { opacity: 0; } 32.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl4 { animation: tel-nl4 20s linear infinite; }
+    @keyframes tel-nl4 { 0%, 35.9% { opacity: 0; transform: translateY(-10px); } 36.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd4 { animation: tel-nd4 20s linear infinite; }
+    @keyframes tel-nd4 { 0%, 35.9% { opacity: 0; } 36.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl5 { animation: tel-nl5 20s linear infinite; }
+    @keyframes tel-nl5 { 0%, 39.9% { opacity: 0; transform: translateY(-10px); } 40.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd5 { animation: tel-nd5 20s linear infinite; }
+    @keyframes tel-nd5 { 0%, 39.9% { opacity: 0; } 40.8%, 44% { opacity: 1; } 45.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl6 { animation: tel-nl6 20s linear infinite; }
+    @keyframes tel-nl6 { 0%, 57.9% { opacity: 0; transform: translateY(-10px); } 58.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd6 { animation: tel-nd6 20s linear infinite; }
+    @keyframes tel-nd6 { 0%, 57.9% { opacity: 0; } 58.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl7 { animation: tel-nl7 20s linear infinite; }
+    @keyframes tel-nl7 { 0%, 61.9% { opacity: 0; transform: translateY(-10px); } 62.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd7 { animation: tel-nd7 20s linear infinite; }
+    @keyframes tel-nd7 { 0%, 61.9% { opacity: 0; } 62.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl8 { animation: tel-nl8 20s linear infinite; }
+    @keyframes tel-nl8 { 0%, 65.9% { opacity: 0; transform: translateY(-10px); } 66.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd8 { animation: tel-nd8 20s linear infinite; }
+    @keyframes tel-nd8 { 0%, 65.9% { opacity: 0; } 66.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl9 { animation: tel-nl9 20s linear infinite; }
+    @keyframes tel-nl9 { 0%, 69.9% { opacity: 0; transform: translateY(-10px); } 70.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd9 { animation: tel-nd9 20s linear infinite; }
+    @keyframes tel-nd9 { 0%, 69.9% { opacity: 0; } 70.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl10 { animation: tel-nl10 20s linear infinite; }
+    @keyframes tel-nl10 { 0%, 73.9% { opacity: 0; transform: translateY(-10px); } 74.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd10 { animation: tel-nd10 20s linear infinite; }
+    @keyframes tel-nd10 { 0%, 73.9% { opacity: 0; } 74.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-nl11 { animation: tel-nl11 20s linear infinite; }
+    @keyframes tel-nl11 { 0%, 77.9% { opacity: 0; transform: translateY(-10px); } 78.8%, 100% { opacity: 1; transform: translateY(0); } }
+    .tel-svg .tel-nd11 { animation: tel-nd11 20s linear infinite; }
+    @keyframes tel-nd11 { 0%, 77.9% { opacity: 0; } 78.8%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-cl0 { animation: tel-cl0 20s linear infinite; }
+    @keyframes tel-cl0 { 0%, 92.9% { opacity: 0; } 93.7%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl1 { animation: tel-cl1 20s linear infinite; }
+    @keyframes tel-cl1 { 0%, 92.5% { opacity: 0; } 93.3%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl2 { animation: tel-cl2 20s linear infinite; }
+    @keyframes tel-cl2 { 0%, 92.1% { opacity: 0; } 92.9%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl3 { animation: tel-cl3 20s linear infinite; }
+    @keyframes tel-cl3 { 0%, 91.8% { opacity: 0; } 92.6%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl4 { animation: tel-cl4 20s linear infinite; }
+    @keyframes tel-cl4 { 0%, 91.4% { opacity: 0; } 92.2%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl5 { animation: tel-cl5 20s linear infinite; }
+    @keyframes tel-cl5 { 0%, 91% { opacity: 0; } 91.8%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl6 { animation: tel-cl6 20s linear infinite; }
+    @keyframes tel-cl6 { 0%, 90.6% { opacity: 0; } 91.4%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl7 { animation: tel-cl7 20s linear infinite; }
+    @keyframes tel-cl7 { 0%, 90.2% { opacity: 0; } 91%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl8 { animation: tel-cl8 20s linear infinite; }
+    @keyframes tel-cl8 { 0%, 89.9% { opacity: 0; } 90.7%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl9 { animation: tel-cl9 20s linear infinite; }
+    @keyframes tel-cl9 { 0%, 89.5% { opacity: 0; } 90.3%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl10 { animation: tel-cl10 20s linear infinite; }
+    @keyframes tel-cl10 { 0%, 89.1% { opacity: 0; } 89.9%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl11 { animation: tel-cl11 20s linear infinite; }
+    @keyframes tel-cl11 { 0%, 88.7% { opacity: 0; } 89.5%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl12 { animation: tel-cl12 20s linear infinite; }
+    @keyframes tel-cl12 { 0%, 88.3% { opacity: 0; } 89.1%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl13 { animation: tel-cl13 20s linear infinite; }
+    @keyframes tel-cl13 { 0%, 87.9% { opacity: 0; } 88.7%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl14 { animation: tel-cl14 20s linear infinite; }
+    @keyframes tel-cl14 { 0%, 87.6% { opacity: 0; } 88.4%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl15 { animation: tel-cl15 20s linear infinite; }
+    @keyframes tel-cl15 { 0%, 87.2% { opacity: 0; } 88%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl16 { animation: tel-cl16 20s linear infinite; }
+    @keyframes tel-cl16 { 0%, 86.8% { opacity: 0; } 87.6%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl17 { animation: tel-cl17 20s linear infinite; }
+    @keyframes tel-cl17 { 0%, 86.4% { opacity: 0; } 87.2%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl18 { animation: tel-cl18 20s linear infinite; }
+    @keyframes tel-cl18 { 0%, 86% { opacity: 0; } 86.8%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl19 { animation: tel-cl19 20s linear infinite; }
+    @keyframes tel-cl19 { 0%, 85.7% { opacity: 0; } 86.5%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl20 { animation: tel-cl20 20s linear infinite; }
+    @keyframes tel-cl20 { 0%, 85.3% { opacity: 0; } 86.1%, 100% { opacity: 1; } }
+    .tel-svg .tel-cl21 { animation: tel-cl21 20s linear infinite; }
+    @keyframes tel-cl21 { 0%, 84.9% { opacity: 0; } 85.7%, 100% { opacity: 1; } }
+    .tel-svg .tel-c1 { animation: tel-c1 20s linear infinite; }
+    @keyframes tel-c1 { 0%, -0.1% { opacity: 1; } 0.5%, 19% { opacity: 1; } 20.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-c2 { animation: tel-c2 20s linear infinite; }
+    @keyframes tel-c2 { 0%, 19.9% { opacity: 0; } 20.5%, 43% { opacity: 1; } 44.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-c3 { animation: tel-c3 20s linear infinite; }
+    @keyframes tel-c3 { 0%, 43.9% { opacity: 0; } 44.5%, 57% { opacity: 1; } 58.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-c4 { animation: tel-c4 20s linear infinite; }
+    @keyframes tel-c4 { 0%, 57.9% { opacity: 0; } 58.5%, 80% { opacity: 1; } 81.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-c5 { animation: tel-c5 20s linear infinite; }
+    @keyframes tel-c5 { 0%, 83.9% { opacity: 0; } 84.5%, 96% { opacity: 1; } 97.5%, 100% { opacity: 0; } }
+    .tel-svg .tel-primlab { animation: tel-primlab 20s linear infinite; }
+    @keyframes tel-primlab { 0%, 84% { opacity: 0; } 86%, 100% { opacity: 1; } }
+
+    @media (prefers-reduced-motion: reduce) { .tel-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="440" fill="#ffffff"/>
+
+  <g class="tel-scene">
+    <!-- теломерная ДНК: дуплекс слева -->
+    <line class="tel-old" x1="20" y1="185" x2="200" y2="185"/><line class="tel-old" x1="20" y1="225" x2="200" y2="225"/>
+    <line class="tel-rung" x1="32" y1="185" x2="32" y2="225"/>
+<line class="tel-rung" x1="48" y1="185" x2="48" y2="225"/>
+<line class="tel-rung" x1="64" y1="185" x2="64" y2="225"/>
+<line class="tel-rung" x1="80" y1="185" x2="80" y2="225"/>
+<line class="tel-rung" x1="96" y1="185" x2="96" y2="225"/>
+<line class="tel-rung" x1="112" y1="185" x2="112" y2="225"/>
+<line class="tel-rung" x1="128" y1="185" x2="128" y2="225"/>
+<line class="tel-rung" x1="144" y1="185" x2="144" y2="225"/>
+<line class="tel-rung" x1="160" y1="185" x2="160" y2="225"/>
+<line class="tel-rung" x1="176" y1="185" x2="176" y2="225"/>
+<line class="tel-rung" x1="192" y1="185" x2="192" y2="225"/>
+
+    <text class="tel-b" x="20" y="150" style="fill:#7b3f9e">5′</text>
+    <text class="tel-m" x="20" y="130">теломерная ДНК (двойная цепь)</text>
+    <text class="tel-b" x="20" y="252" style="fill:#7b3f9e">3′</text>
+    <text class="tel-m" x="270" y="150">3′-выступ (одна цепь)</text>
+
+    <g class="tel-cell tel-T"><rect x="200" y="176" width="17" height="18" rx="3"/><text x="208.5" y="189">T</text></g>
+<g class="tel-cell tel-T"><rect x="218" y="176" width="17" height="18" rx="3"/><text x="226.5" y="189">T</text></g>
+<g class="tel-cell tel-A"><rect x="236" y="176" width="17" height="18" rx="3"/><text x="244.5" y="189">A</text></g>
+<g class="tel-cell tel-G"><rect x="254" y="176" width="17" height="18" rx="3"/><text x="262.5" y="189">G</text></g>
+<g class="tel-cell tel-G"><rect x="272" y="176" width="17" height="18" rx="3"/><text x="280.5" y="189">G</text></g>
+<g class="tel-cell tel-G"><rect x="290" y="176" width="17" height="18" rx="3"/><text x="298.5" y="189">G</text></g>
+<g class="tel-cell tel-T"><rect x="308" y="176" width="17" height="18" rx="3"/><text x="316.5" y="189">T</text></g>
+<g class="tel-cell tel-T"><rect x="326" y="176" width="17" height="18" rx="3"/><text x="334.5" y="189">T</text></g>
+<g class="tel-cell tel-A"><rect x="344" y="176" width="17" height="18" rx="3"/><text x="352.5" y="189">A</text></g>
+<g class="tel-cell tel-G"><rect x="362" y="176" width="17" height="18" rx="3"/><text x="370.5" y="189">G</text></g>
+
+    <g class="tel-cell tel-G tel-nl0"><rect x="380" y="176" width="17" height="18" rx="3"/><text x="388.5" y="189">G</text></g>
+<line class="tel-pair tel-nd0" x1="388.5" y1="194" x2="388.5" y2="214"/>
+<g class="tel-cell tel-G tel-nl1"><rect x="398" y="176" width="17" height="18" rx="3"/><text x="406.5" y="189">G</text></g>
+<line class="tel-pair tel-nd1" x1="406.5" y1="194" x2="406.5" y2="214"/>
+<g class="tel-cell tel-T tel-nl2"><rect x="416" y="176" width="17" height="18" rx="3"/><text x="424.5" y="189">T</text></g>
+<line class="tel-pair tel-nd2" x1="424.5" y1="194" x2="424.5" y2="214"/>
+<g class="tel-cell tel-T tel-nl3"><rect x="434" y="176" width="17" height="18" rx="3"/><text x="442.5" y="189">T</text></g>
+<line class="tel-pair tel-nd3" x1="442.5" y1="194" x2="442.5" y2="214"/>
+<g class="tel-cell tel-A tel-nl4"><rect x="452" y="176" width="17" height="18" rx="3"/><text x="460.5" y="189">A</text></g>
+<line class="tel-pair tel-nd4" x1="460.5" y1="194" x2="460.5" y2="214"/>
+<g class="tel-cell tel-G tel-nl5"><rect x="470" y="176" width="17" height="18" rx="3"/><text x="478.5" y="189">G</text></g>
+<line class="tel-pair tel-nd5" x1="478.5" y1="194" x2="478.5" y2="214"/>
+<g class="tel-cell tel-G tel-nl6"><rect x="488" y="176" width="17" height="18" rx="3"/><text x="496.5" y="189">G</text></g>
+<line class="tel-pair tel-nd6" x1="496.5" y1="194" x2="496.5" y2="214"/>
+<g class="tel-cell tel-G tel-nl7"><rect x="506" y="176" width="17" height="18" rx="3"/><text x="514.5" y="189">G</text></g>
+<line class="tel-pair tel-nd7" x1="514.5" y1="194" x2="514.5" y2="214"/>
+<g class="tel-cell tel-T tel-nl8"><rect x="524" y="176" width="17" height="18" rx="3"/><text x="532.5" y="189">T</text></g>
+<line class="tel-pair tel-nd8" x1="532.5" y1="194" x2="532.5" y2="214"/>
+<g class="tel-cell tel-T tel-nl9"><rect x="542" y="176" width="17" height="18" rx="3"/><text x="550.5" y="189">T</text></g>
+<line class="tel-pair tel-nd9" x1="550.5" y1="194" x2="550.5" y2="214"/>
+<g class="tel-cell tel-A tel-nl10"><rect x="560" y="176" width="17" height="18" rx="3"/><text x="568.5" y="189">A</text></g>
+<line class="tel-pair tel-nd10" x1="568.5" y1="194" x2="568.5" y2="214"/>
+<g class="tel-cell tel-G tel-nl11"><rect x="578" y="176" width="17" height="18" rx="3"/><text x="586.5" y="189">G</text></g>
+<line class="tel-pair tel-nd11" x1="586.5" y1="194" x2="586.5" y2="214"/>
+<g class="tel-cell tel-A tel-cl0"><rect x="200" y="214" width="17" height="18" rx="3"/><text x="208.5" y="227">A</text></g>
+<g class="tel-cell tel-A tel-cl1"><rect x="218" y="214" width="17" height="18" rx="3"/><text x="226.5" y="227">A</text></g>
+<g class="tel-cell tel-T tel-cl2"><rect x="236" y="214" width="17" height="18" rx="3"/><text x="244.5" y="227">T</text></g>
+<g class="tel-cell tel-C tel-cl3"><rect x="254" y="214" width="17" height="18" rx="3"/><text x="262.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl4"><rect x="272" y="214" width="17" height="18" rx="3"/><text x="280.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl5"><rect x="290" y="214" width="17" height="18" rx="3"/><text x="298.5" y="227">C</text></g>
+<g class="tel-cell tel-A tel-cl6"><rect x="308" y="214" width="17" height="18" rx="3"/><text x="316.5" y="227">A</text></g>
+<g class="tel-cell tel-A tel-cl7"><rect x="326" y="214" width="17" height="18" rx="3"/><text x="334.5" y="227">A</text></g>
+<g class="tel-cell tel-T tel-cl8"><rect x="344" y="214" width="17" height="18" rx="3"/><text x="352.5" y="227">T</text></g>
+<g class="tel-cell tel-C tel-cl9"><rect x="362" y="214" width="17" height="18" rx="3"/><text x="370.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl10"><rect x="380" y="214" width="17" height="18" rx="3"/><text x="388.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl11"><rect x="398" y="214" width="17" height="18" rx="3"/><text x="406.5" y="227">C</text></g>
+<g class="tel-cell tel-A tel-cl12"><rect x="416" y="214" width="17" height="18" rx="3"/><text x="424.5" y="227">A</text></g>
+<g class="tel-cell tel-A tel-cl13"><rect x="434" y="214" width="17" height="18" rx="3"/><text x="442.5" y="227">A</text></g>
+<g class="tel-cell tel-T tel-cl14"><rect x="452" y="214" width="17" height="18" rx="3"/><text x="460.5" y="227">T</text></g>
+<g class="tel-cell tel-C tel-cl15"><rect x="470" y="214" width="17" height="18" rx="3"/><text x="478.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl16"><rect x="488" y="214" width="17" height="18" rx="3"/><text x="496.5" y="227">C</text></g>
+<g class="tel-cell tel-C tel-cl17"><rect x="506" y="214" width="17" height="18" rx="3"/><text x="514.5" y="227">C</text></g>
+<g class="tel-cell tel-A tel-cl18"><rect x="524" y="214" width="17" height="18" rx="3"/><text x="532.5" y="227">A</text></g>
+<g class="tel-cell tel-A tel-cl19"><rect x="542" y="214" width="17" height="18" rx="3"/><text x="550.5" y="227">A</text></g>
+<g class="tel-cell tel-T tel-cl20"><rect x="560" y="214" width="17" height="18" rx="3"/><text x="568.5" y="227">T</text></g>
+<g class="tel-cell tel-C tel-cl21"><rect x="578" y="214" width="17" height="18" rx="3"/><text x="586.5" y="227">C</text></g>
+
+
+    <!-- теломераза -->
+    <g class="tel-grp">
+      <ellipse class="tel-tert" cx="392" cy="270" rx="136" ry="48"/>
+      <path class="tel-terc" d="M296 234 C250 262 232 318 292 330 C352 342 392 320 392 300"/>
+      <g class="tel-cell tel-C"><rect x="290" y="214" width="17" height="18" rx="3"/><text x="298.5" y="227">C</text></g>
+<g class="tel-cell tel-A"><rect x="308" y="214" width="17" height="18" rx="3"/><text x="316.5" y="227">A</text></g>
+<g class="tel-cell tel-A"><rect x="326" y="214" width="17" height="18" rx="3"/><text x="334.5" y="227">A</text></g>
+<g class="tel-cell tel-U"><rect x="344" y="214" width="17" height="18" rx="3"/><text x="352.5" y="227">U</text></g>
+<g class="tel-cell tel-C"><rect x="362" y="214" width="17" height="18" rx="3"/><text x="370.5" y="227">C</text></g>
+<g class="tel-cell tel-C"><rect x="380" y="214" width="17" height="18" rx="3"/><text x="388.5" y="227">C</text></g>
+<g class="tel-cell tel-C"><rect x="398" y="214" width="17" height="18" rx="3"/><text x="406.5" y="227">C</text></g>
+<g class="tel-cell tel-A"><rect x="416" y="214" width="17" height="18" rx="3"/><text x="424.5" y="227">A</text></g>
+<g class="tel-cell tel-A"><rect x="434" y="214" width="17" height="18" rx="3"/><text x="442.5" y="227">A</text></g>
+<g class="tel-cell tel-U"><rect x="452" y="214" width="17" height="18" rx="3"/><text x="460.5" y="227">U</text></g>
+<g class="tel-cell tel-C"><rect x="470" y="214" width="17" height="18" rx="3"/><text x="478.5" y="227">C</text></g>
+
+      <text class="tel-b" x="440" y="290" style="fill:#1a9aa0;font-size:14px">TERT</text>
+      <text class="tel-m" x="440" y="306">обратная транскриптаза</text>
+      <text class="tel-b" x="206" y="326" style="fill:#c0392b;font-size:14px">TERC</text>
+      <text class="tel-m" x="206" y="342">РНК-матрица</text>
+      <g class="tel-d0"><line class="tel-pair" x1="316.5" y1="194" x2="316.5" y2="214"/>
+<line class="tel-pair" x1="334.5" y1="194" x2="334.5" y2="214"/>
+<line class="tel-pair" x1="352.5" y1="194" x2="352.5" y2="214"/>
+<line class="tel-pair" x1="370.5" y1="194" x2="370.5" y2="214"/>
+</g>
+    </g>
+
+    <circle class="tel-prim" cx="600" cy="262" r="12"/>
+    <text class="tel-b tel-primlab" x="600" y="292" text-anchor="middle" style="fill:#7b5ea7;opacity:0">Pol α–примаза</text>
+  </g>
+
+  <text class="tel-cap tel-c1" x="360" y="400">1. 3′-конец теломеры спаривается с РНК-матрицей TERC</text>
+  <text class="tel-cap tel-c2" x="360" y="400">2. TERT достраивает повтор GGTTAG по матрице РНК</text>
+  <text class="tel-cap tel-c3" x="360" y="400">3. Транслокация: комплекс сдвигается к новому 3′-концу</text>
+  <text class="tel-cap tel-c4" x="360" y="400">4. Цикл повторяется: следующий повтор</text>
+  <text class="tel-cap tel-c5" x="360" y="400">5. Комплементарную C-цепь достраивают Pol α–примаза и Pol δ</text>
+  <text class="tel-m" x="20" y="428" style="font-size:12px">Схема упрощена: один цикл теломеразы добавляет 6 нуклеотидов; за раз к концу присоединяется много повторов.</text>
+</svg>

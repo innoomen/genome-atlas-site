@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Кэпирование и сплайсинг пре-мРНК</title>
+  <desc id="d">Вверху: 5'-кэп — модифицированный гуанозин m7G, присоединённый к первому нуклеотиду РНК 5'-5'-трифосфатным мостиком. Ниже: сплайсинг. Пре-мРНК состоит из экзона 1, интрона с сигналами (GU на 5'-сайте, точка ветвления A, полипиримидиновый тракт, AG на 3'-сайте) и экзона 2. Сплайсосома (U1, U2, U4/U6·U5) проводит две реакции: 2'-гидроксил аденина точки ветвления атакует 5'-сайт, образуется лассо; затем 3'-гидроксил экзона 1 атакует 3'-сайт, экзоны сшиваются, лассо освобождается.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .rna { stroke: #ee8a2b; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .ex { fill: #2e6f95; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+
+  <!-- ===== А. кэп ===== -->
+  <text class="h" x="20" y="26">А. 5'-кэп: «шапочка» на начале РНК</text>
+  <circle cx="70" cy="86" r="28" fill="#7b5ea7"/><text class="w" x="70" y="84" style="font-size:13px">m⁷G</text><text class="w" x="70" y="99" style="font-size:9px">гуанозин</text>
+  <text class="s" x="70" y="132" text-anchor="middle">метил у N7</text>
+  <g>
+    <line x1="98" y1="86" x2="206" y2="86" stroke="#8a94a8" stroke-width="3"/>
+    <circle cx="124" cy="86" r="11" fill="#ee8a2b"/><text class="w" x="124" y="90" style="font-size:10px">P</text>
+    <circle cx="152" cy="86" r="11" fill="#ee8a2b"/><text class="w" x="152" y="90" style="font-size:10px">P</text>
+    <circle cx="180" cy="86" r="11" fill="#ee8a2b"/><text class="w" x="180" y="90" style="font-size:10px">P</text>
+  </g>
+  <text class="s" x="152" y="122" text-anchor="middle">трифосфат</text><text class="s" x="152" y="136" text-anchor="middle">5'—5'</text>
+  <rect x="206" y="68" width="40" height="36" rx="6" fill="#f0b429"/><text class="b" x="226" y="91" text-anchor="middle">N₁</text>
+  <path class="rna" d="M246 86 C270 60 290 112 314 86 S358 62 382 86"/>
+  <text class="s" x="226" y="122" text-anchor="middle">1-й нуклеотид</text><text class="s" x="330" y="122" text-anchor="middle">остальная РНК →</text>
+  <g>
+    <text class="b" x="430" y="52" style="fill:#7b5ea7">Как и когда</text>
+    <text class="s" x="430" y="72">Кэп добавляется во время транскрипции, когда РНК</text>
+    <text class="s" x="430" y="88">достигает длины ≈ 20–30 нуклеотидов. Ферменты (RNGTT —</text>
+    <text class="s" x="430" y="104">кэпирующий, RNMT — метилтрансфераза) садятся на CTD</text>
+    <text class="s" x="430" y="120">полимеразы (Ser5-P) и ставят кэп.</text>
+    <text class="b" x="430" y="146" style="fill:#7b5ea7">Зачем</text>
+    <text class="s" x="430" y="164">защита от 5'→3'-экзонуклеаз · экспорт из ядра (кэп-связывающий</text>
+    <text class="s" x="430" y="180">комплекс CBC) · помощь сплайсингу · начало трансляции (eIF4E)</text>
+  </g>
+
+  <line x1="20" y1="200" x2="880" y2="200" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ===== Б. сплайсинг ===== -->
+  <text class="h" x="20" y="228">Б. Сплайсинг: вырезание интрона</text>
+  <!-- шаг 0: пре-мРНК с сигналами -->
+  <text class="b" x="20" y="252">0. Пре-мРНК</text>
+  <rect class="ex" x="40" y="276" width="150" height="30" rx="4"/><text class="w" x="115" y="296">экзон 1</text>
+  <line x1="190" y1="291" x2="620" y2="291" stroke="#8a94a8" stroke-width="4"/>
+  <text class="s" x="330" y="330" text-anchor="middle" style="font-size:12px">интрон (обычно длиннее экзонов)</text>
+  <rect class="ex" x="620" y="276" width="150" height="30" rx="4"/><text class="w" x="695" y="296">экзон 2</text>
+  <text class="b" x="192" y="272" style="fill:#c0397b">GU</text><text class="s" x="192" y="344" style="font-size:11.5px">5'-сайт</text>
+  <circle cx="470" cy="291" r="10" fill="#c0397b"/><text class="w" x="470" y="295" style="font-size:11px">A</text><text class="s" x="470" y="344" text-anchor="middle" style="font-size:11.5px">точка ветвления</text>
+  <rect x="510" y="284" width="66" height="14" rx="4" fill="#3fa34d"/><text class="s" x="543" y="270" text-anchor="middle" style="font-size:11.5px">Py-тракт (Y = C/U)</text>
+  <text class="b" x="586" y="272" style="fill:#c0397b">AG</text><text class="s" x="584" y="344" style="font-size:11.5px">3'-сайт</text>
+  <!-- snRNP -->
+  <circle cx="204" cy="248" r="15" fill="#f0b429"/><text class="b" x="204" y="253" text-anchor="middle" style="font-size:11px">U1</text>
+  <circle cx="470" cy="248" r="15" fill="#3fa34d"/><text class="w" x="470" y="253" style="font-size:11px">U2</text>
+  <ellipse cx="560" cy="243" rx="24" ry="12" fill="#ee8a2b"/><text class="w" x="560" y="247" style="font-size:10px">U2AF</text>
+  <path d="M480 236 L498 270" stroke="#8a94a8" stroke-width="0"/>
+  <text class="s" x="20" y="366" style="font-size:12px">U1 узнаёт 5'-сайт, U2 — точку ветвления, U2AF — Py-тракт и 3'-сайт; затем приходит U4/U6·U5.</text>
+  
+
+  <!-- шаг 1 -->
+  <path d="M760 352 v22" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="20" y="396">1. 2'-OH аденина ветвления атакует 5'-сайт → лассо</text>
+  <rect class="ex" x="40" y="414" width="150" height="30" rx="4"/><text class="w" x="115" y="434">экзон 1</text>
+  <text class="s" x="196" y="428" style="font-size:11.5px">свободный</text><text class="s" x="196" y="442" style="font-size:11.5px">3'-OH</text>
+  <path d="M296 452 C270 512 380 528 400 476 C414 440 372 424 340 446" fill="none" stroke="#8a94a8" stroke-width="4"/>
+  <circle cx="340" cy="446" r="9" fill="#c0397b"/><text class="w" x="340" y="450" style="font-size:10px">A</text>
+  <path d="M340 446 L620 428" stroke="#8a94a8" stroke-width="4" fill="none"/>
+  <rect class="ex" x="620" y="414" width="150" height="30" rx="4"/><text class="w" x="695" y="434">экзон 2</text>
+  <text class="s" x="330" y="546" text-anchor="middle" style="font-size:12px">лассо (lariat): 5'-конец интрона соединён с A</text>
+
+  <!-- шаг 2 -->
+  <path d="M400 556 v16" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="20" y="594">2. 3'-OH экзона 1 атакует 3'-сайт → экзоны сшиты, лассо освобождено</text>
+  <rect class="ex" x="40" y="606" width="150" height="26" rx="4"/><rect class="ex" x="190" y="606" width="150" height="26" rx="4" style="fill:#3b8fb5"/>
+  <text class="w" x="115" y="624">экзон 1</text><text class="w" x="265" y="624">экзон 2</text>
+  <text class="b" x="352" y="624" style="fill:#2e6f95">= зрелая мРНК</text>
+  <circle cx="620" cy="618" r="14" fill="none" stroke="#8a94a8" stroke-width="4"/><text class="s" x="644" y="622">лассо разрушается</text>
+  <text class="s" x="820" y="576" text-anchor="end" style="font-size:12px">На стыке остаётся комплекс EJC.</text>
+</svg>

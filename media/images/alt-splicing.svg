@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 706" role="img" aria-labelledby="t d">
+  <title id="t">Альтернативный сплайсинг: пять основных типов</title>
+  <desc id="d">Пять типов. Пропуск экзона: из трёх экзонов получаются мРНК с средним экзоном и без него. Альтернативный 5'-сайт: используется дальний или ближний сайт, экзон получается длиннее или короче. Альтернативный 3'-сайт. Взаимоисключающие экзоны: включается один из двух средних экзонов. Удержание интрона: интрон остаётся в мРНК. Из одного гена получаются разные мРНК и белки.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .k { font-size: 11px; font-weight: 700; fill: #1c2330; text-anchor: middle; }
+    .c { fill: #2e6f95; } .a { fill: #ee8a2b; } .p { fill: #7b5ea7; } .g { fill: #b7c0cf; }
+    .int { stroke: #8a94a8; stroke-width: 3; }
+    .sp { stroke: #8a94a8; stroke-width: 1.6; fill: none; stroke-dasharray: 4 3; }
+  </style>
+  <rect width="900" height="706" fill="#ffffff"/>
+  <text class="h" x="20" y="26">Из одного гена — разные мРНК и разные белки</text>
+  <text class="s" x="20" y="44">Тёмно-синие блоки — экзоны, которые остаются всегда; оранжевые и фиолетовые — «выбираемые» части.</text>
+
+  <!-- 1. пропуск экзона -->
+  <text class="b" x="20" y="92">1. Пропуск экзона</text><text class="s" x="20" y="108">(кассетный экзон)</text><text class="s" x="20" y="124" style="font-size:11px">пример: MCL1</text>
+  <line class="int" x1="210" y1="110" x2="520" y2="110"/>
+  <rect class="c" x="210" y="97" width="50" height="26" rx="3"/><rect class="a" x="330" y="97" width="60" height="26" rx="3"/><rect class="c" x="460" y="97" width="60" height="26" rx="3"/>
+  <path class="sp" d="M260 97 L360 74 L460 97"/><path class="sp" d="M260 123 L360 148 L460 123"/>
+  <text class="s" x="536" y="76" style="font-size:11px">мРНК А</text>
+  <rect class="c" x="590" y="66" width="44" height="18" rx="2"/><rect class="a" x="634" y="66" width="50" height="18" rx="2"/><rect class="c" x="684" y="66" width="48" height="18" rx="2"/>
+  <text class="s" x="536" y="148" style="font-size:11px">мРНК Б</text>
+  <rect class="c" x="590" y="138" width="44" height="18" rx="2"/><rect class="c" x="634" y="138" width="48" height="18" rx="2"/><text class="s" x="692" y="152" style="font-size:11px">без экзона</text>
+
+  <!-- 2. альтернативный 5'-сайт -->
+  <text class="b" x="20" y="222">2. Альтернативный 5'-сайт</text><text class="s" x="20" y="238">(выбор «начала» интрона)</text><text class="s" x="20" y="254" style="font-size:11px">пример: BCL2L1 (Bcl-x)</text>
+  <line class="int" x1="210" y1="240" x2="520" y2="240"/>
+  <rect class="c" x="210" y="227" width="50" height="26" rx="3"/><rect class="a" x="260" y="227" width="60" height="26" rx="3"/><rect class="c" x="460" y="227" width="60" height="26" rx="3"/>
+  <path class="sp" d="M320 227 L390 204 L460 227"/><path class="sp" d="M260 253 L360 278 L460 253"/>
+  <text class="s" x="536" y="206" style="font-size:11px">мРНК А (дальний сайт)</text>
+  <rect class="c" x="590" y="214" width="44" height="18" rx="2"/><rect class="a" x="634" y="214" width="50" height="18" rx="2"/><rect class="c" x="684" y="214" width="48" height="18" rx="2"/>
+  <text class="s" x="536" y="280" style="font-size:11px">мРНК Б</text>
+  <rect class="c" x="590" y="268" width="44" height="18" rx="2"/><rect class="c" x="634" y="268" width="48" height="18" rx="2"/><text class="s" x="692" y="282" style="font-size:11px">ближний сайт: короче</text>
+
+  <!-- 3. альтернативный 3'-сайт -->
+  <text class="b" x="20" y="352">3. Альтернативный 3'-сайт</text><text class="s" x="20" y="368">(выбор «конца» интрона)</text>
+  <line class="int" x1="210" y1="370" x2="520" y2="370"/>
+  <rect class="c" x="210" y="357" width="60" height="26" rx="3"/><rect class="a" x="400" y="357" width="50" height="26" rx="3"/><rect class="c" x="450" y="357" width="70" height="26" rx="3"/>
+  <path class="sp" d="M270 357 L340 334 L400 357"/><path class="sp" d="M270 383 L360 408 L450 383"/>
+  <text class="s" x="536" y="336" style="font-size:11px">мРНК А (ближний сайт)</text>
+  <rect class="c" x="590" y="344" width="44" height="18" rx="2"/><rect class="a" x="634" y="344" width="40" height="18" rx="2"/><rect class="c" x="674" y="344" width="52" height="18" rx="2"/>
+  <text class="s" x="536" y="410" style="font-size:11px">мРНК Б</text>
+  <rect class="c" x="590" y="398" width="44" height="18" rx="2"/><rect class="c" x="634" y="398" width="52" height="18" rx="2"/><text class="s" x="696" y="412" style="font-size:11px">дальний сайт: короче</text>
+
+  <!-- 4. взаимоисключающие -->
+  <text class="b" x="20" y="482">4. Взаимоисключающие экзоны</text><text class="s" x="20" y="498">(нужен только один из двух)</text>
+  <line class="int" x1="210" y1="500" x2="560" y2="500"/>
+  <rect class="c" x="210" y="487" width="50" height="26" rx="3"/><rect class="a" x="310" y="487" width="50" height="26" rx="3"/><rect class="p" x="400" y="487" width="50" height="26" rx="3"/><rect class="c" x="500" y="487" width="60" height="26" rx="3"/>
+  <path class="sp" d="M260 487 L335 464 L500 487"/><path class="sp" d="M260 513 L425 538 L500 513"/>
+  <text class="s" x="576" y="466" style="font-size:11px">мРНК А</text>
+  <rect class="c" x="616" y="474" width="40" height="18" rx="2"/><rect class="a" x="656" y="474" width="40" height="18" rx="2"/><rect class="c" x="696" y="474" width="48" height="18" rx="2"/>
+  <text class="s" x="576" y="540" style="font-size:11px">мРНК Б</text>
+  <rect class="c" x="616" y="528" width="40" height="18" rx="2"/><rect class="p" x="656" y="528" width="40" height="18" rx="2"/><rect class="c" x="696" y="528" width="48" height="18" rx="2"/>
+
+  <!-- 5. удержание интрона -->
+  <text class="b" x="20" y="612">5. Удержание интрона</text><text class="s" x="20" y="628">(интрон не вырезан)</text>
+  <line class="int" x1="210" y1="630" x2="520" y2="630"/>
+  <rect class="c" x="210" y="617" width="60" height="26" rx="3"/><rect class="g" x="270" y="623" width="190" height="14"/><rect class="c" x="460" y="617" width="60" height="26" rx="3"/>
+  <path class="sp" d="M270 617 L365 594 L460 617"/>
+  <text class="s" x="536" y="596" style="font-size:11px">мРНК А</text>
+  <rect class="c" x="616" y="584" width="40" height="18" rx="2"/><rect class="c" x="656" y="584" width="48" height="18" rx="2"/><text class="s" x="714" y="598" style="font-size:11px">интрон вырезан</text>
+  <text class="s" x="536" y="640" style="font-size:11px">мРНК Б</text>
+  <rect class="c" x="616" y="628" width="40" height="18" rx="2"/><rect class="g" x="656" y="632" width="60" height="10"/><rect class="c" x="716" y="628" width="48" height="18" rx="2"/>
+  <text class="s" x="776" y="642" style="font-size:11px">интрон удержан</text>
+
+  <text class="s" x="20" y="674">Выбор определяют регуляторные белки: SR-белки (на «усилителях» ESE) включают экзон, hnRNP (на «сайленсерах» ESS) исключают его.</text><text class="s" x="20" y="692">Мутации в ключевом факторе сплайсинга меняют выбор сразу во многих генах.</text>
+</svg>

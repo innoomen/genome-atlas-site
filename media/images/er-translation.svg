@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Свободные рибосомы и рибосомы на ЭПР: сигнальная последовательность и SRP</title>
+  <desc id="d">Слева: на свободных рибосомах в цитоплазме синтезируются белки цитозоля, ядра, митохондрий и пероксисом. Справа четыре шага синтеза секретируемого или мембранного белка: 1. из рибосомы выходит сигнальная последовательность; 2. её узнаёт SRP и приостанавливает синтез; 3. комплекс стыкуется с SRP-рецептором на мембране эндоплазматического ретикулума, SRP освобождается; 4. рибосома садится на транслокон Sec61, синтез продолжается, цепь проходит в просвет ЭПР, сигнальный пептид отрезается сигнальной пептидазой, белок сворачивается и гликозилируется.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .mr { stroke: #ee8a2b; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+    <g id="rib"><ellipse cx="0" cy="-12" rx="34" ry="20" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2"/><ellipse cx="0" cy="12" rx="28" ry="12" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/></g>
+  </defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+
+  <!-- ЭПР -->
+  <rect x="290" y="330" width="600" height="14" fill="#c3cad8"/><rect x="290" y="392" width="600" height="14" fill="#c3cad8"/>
+  <rect x="290" y="344" width="600" height="48" fill="#eef3fa"/>
+  <text class="s" x="300" y="372" style="font-size:12px">просвет ЭПР (лумен)</text>
+  <text class="s" x="300" y="326" style="font-size:12px">цитозоль</text>
+
+  <!-- ===== слева: свободные рибосомы ===== -->
+  <text class="h" x="20" y="28">Свободные рибосомы</text>
+  <path class="mr" d="M20 150 L250 150"/>
+  <use href="#rib" x="90" y="150"/><use href="#rib" x="170" y="150"/>
+  <path d="M90 168 C80 200 70 214 80 240" fill="none" stroke="#3fa34d" stroke-width="3.5"/><path d="M170 168 C160 200 150 214 160 240" fill="none" stroke="#3fa34d" stroke-width="3.5"/>
+  <text class="s" x="20" y="270" style="font-size:12px">Белок синтезируется полностью в цитозоле.</text>
+  <text class="b" x="20" y="298" style="fill:#2f7d3f">Куда попадает белок</text>
+  <text class="s" x="20" y="318" style="font-size:12px">• остаётся в цитозоле</text>
+  <text class="s" x="20" y="336" style="font-size:12px">• ядро (через поры)</text>
+  <text class="s" x="20" y="354" style="font-size:12px">• митохондрии и пероксисомы</text><text class="s" x="28" y="370" style="font-size:12px">(белок сворачивается после</text><text class="s" x="28" y="386" style="font-size:12px">импорта, по своим сигналам)</text>
+
+  <line x1="272" y1="20" x2="272" y2="470" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== справа: рибосомы на ЭПР ===== -->
+  <text class="h" x="292" y="28">Рибосомы на ЭПР: секретируемые и мембранные белки</text>
+  <g stroke="#e1e6ee" stroke-width="2" stroke-dasharray="5 6"><line x1="440" y1="48" x2="440" y2="420"/><line x1="590" y1="48" x2="590" y2="420"/><line x1="740" y1="48" x2="740" y2="420"/></g>
+  <g>
+    <circle cx="316" cy="68" r="13" fill="#4b4f9e"/><text class="w" x="316" y="72" style="font-size:12px">1</text>
+    <circle cx="466" cy="68" r="13" fill="#4b4f9e"/><text class="w" x="466" y="72" style="font-size:12px">2</text>
+    <circle cx="616" cy="68" r="13" fill="#4b4f9e"/><text class="w" x="616" y="72" style="font-size:12px">3</text>
+    <circle cx="766" cy="68" r="13" fill="#4b4f9e"/><text class="w" x="766" y="72" style="font-size:12px">4</text>
+  </g>
+  <!-- 1 -->
+  <path class="mr" d="M296 176 L430 176"/><use href="#rib" x="366" y="176"/>
+  <path d="M366 196 C356 216 350 230 356 246" fill="none" stroke="#d1432f" stroke-width="4.5"/>
+  <text class="s" x="366" y="270" text-anchor="middle" style="font-size:11px;fill:#d1432f">сигнальная</text><text class="s" x="366" y="284" text-anchor="middle" style="font-size:11px;fill:#d1432f">последовательность</text>
+  <!-- 2 -->
+  <path class="mr" d="M446 176 L580 176"/><use href="#rib" x="516" y="176"/>
+  <path d="M516 196 C506 216 500 230 506 246" fill="none" stroke="#d1432f" stroke-width="4.5"/>
+  <path d="M478 224 C462 240 470 272 500 268 C520 262 528 246 518 232" fill="#7b5ea7" stroke="none"/><text class="w" x="494" y="254" style="font-size:10px">SRP</text>
+  <text class="s" x="516" y="298" text-anchor="middle" style="font-size:11px">синтез приостановлен</text>
+  <!-- 3 -->
+  <path class="mr" d="M596 214 L730 214"/><use href="#rib" x="666" y="214"/>
+  <path d="M666 234 C656 250 650 262 654 278" fill="none" stroke="#d1432f" stroke-width="4.5"/>
+  <rect x="640" y="318" width="52" height="12" rx="4" fill="#3fa34d"/><text class="s" x="666" y="312" text-anchor="middle" style="font-size:11px">SRP-рецептор</text>
+  <path d="M636 276 C630 290 640 306 654 300" fill="#7b5ea7" stroke="none"/>
+  <text class="s" x="700" y="290" style="font-size:11px">SRP</text>
+  <path class="ar" d="M690 288 L716 268" stroke-dasharray="3 3" marker-end="url(#ar)"/>
+  <!-- 4 -->
+  <path class="mr" d="M746 254 L880 254"/><use href="#rib" x="816" y="254"/>
+  <rect x="796" y="318" width="46" height="26" rx="8" fill="#6c7a96"/><text class="w" x="819" y="335" style="font-size:9.5px">Sec61</text>
+  <path d="M816 274 C812 296 812 316 816 330 C818 350 810 372 806 384" fill="none" stroke="#3fa34d" stroke-width="4"/>
+  <circle cx="808" cy="386" r="9" fill="#ee8a2b"/><text class="s" x="768" y="402" style="font-size:10.5px">сигнальная</text><text class="s" x="768" y="414" style="font-size:10.5px">пептидаза</text>
+  <circle cx="852" cy="372" r="8" fill="#c0397b"/><path d="M852 372 l14 -8 M852 372 l14 8" stroke="#c0397b" stroke-width="2.5"/>
+  <text class="s" x="840" y="398" style="font-size:10.5px">N-гликан</text>
+  <circle cx="768" cy="368" r="9" fill="#1a9aa0"/><text class="w" x="768" y="371" style="font-size:8.5px">BiP</text>
+
+  <!-- подписи шагов -->
+  <g>
+    <text class="b" x="366" y="436" text-anchor="middle" style="font-size:12px">Выходит сигнал</text>
+    <text class="b" x="516" y="436" text-anchor="middle" style="font-size:12px">SRP узнаёт сигнал</text>
+    <text class="b" x="666" y="436" text-anchor="middle" style="font-size:12px">Стыковка с ЭПР</text>
+    <text class="b" x="816" y="436" text-anchor="middle" style="font-size:12px">Транслокация</text>
+  </g>
+
+  <line x1="20" y1="462" x2="880" y2="462" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="b" x="20" y="488" style="fill:#c0397b">Какие белки синтезируются на ЭПР</text>
+  <text class="s" x="20" y="508" style="font-size:12.5px">секретируемые (иммуноглобулины, гормоны, факторы свёртывания), белки клеточной мембраны и рецепторы, белки лизосом и аппарата Гольджи.</text>
+  <text class="b" x="20" y="536" style="fill:#2f7d3f">Чем отличаются</text>
+  <text class="s" x="20" y="556" style="font-size:12.5px">Рибосомы у обоих типов одинаковы. Судьбу белка определяет сигнальная последовательность (обычно N-концевая, 15–30 аминокислот, гидрофобная):</text>
+  <text class="s" x="20" y="574" style="font-size:12.5px">если она есть, SRP переводит синтез на мембрану ЭПР; если нет — белок остаётся в цитозоле. На ЭПР белок сразу же сворачивается, получает дисульфидные связи и гликаны.</text>
+</svg>

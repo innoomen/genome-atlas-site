@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" role="img" aria-labelledby="t d">
+  <title id="t">Рибосома: где собирается, из чего состоит и что такое коэффициент седиментации</title>
+  <desc id="d">А: сборка рибосом в ядрышке. Гены рРНК читает РНК-полимераза I, образуется 47S предшественник, из него созревают 18S, 5.8S и 28S рРНК; 5S рРНК синтезирует РНК-полимераза III; рибосомные белки импортируются из цитоплазмы. Предшественники субъединиц через ядерные поры выходят в цитоплазму. Б: состав эукариотической рибосомы 80S (субъединицы 40S и 60S) и прокариотической 70S (30S и 50S). В: единица Сведберга S — скорость оседания в центрифуге; она не складывается арифметически. Г: рибосома в разрезе: большая субъединица с пептидилтрансферазным центром и тоннелем, малая с декодирующим центром, сайты E, P и A для тРНК, мРНК между субъединицами.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="660" fill="#ffffff"/>
+
+  <!-- ===== А. сборка ===== -->
+  <text class="h" x="20" y="26">А. Где собирается рибосома</text>
+  <ellipse cx="200" cy="150" rx="170" ry="100" fill="#f4f7fc" stroke="#8a94a8" stroke-width="3"/>
+  <text class="s" x="200" y="66" text-anchor="middle" style="font-size:11.5px">ядро клетки</text>
+  <circle cx="150" cy="150" r="52" fill="#dbe4f2" stroke="#4b4f9e" stroke-width="3"/>
+  <text class="b" x="150" y="128" text-anchor="middle" style="fill:#4b4f9e">ядрышко</text>
+  <text class="s" x="150" y="146" text-anchor="middle" style="font-size:11px">рДНК → Pol I →</text><text class="s" x="150" y="160" text-anchor="middle" style="font-size:11px">47S пре-рРНК →</text><text class="s" x="150" y="174" text-anchor="middle" style="font-size:11px">18S, 5.8S, 28S</text>
+  <circle cx="264" cy="130" r="13" fill="#7b5ea7"/><text class="w" x="264" y="134" style="font-size:9.5px">40S</text>
+  <circle cx="270" cy="176" r="19" fill="#2e6f95"/><text class="w" x="270" y="180" style="font-size:10px">60S</text>
+  <path d="M212 138 L248 132" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/><path d="M204 164 L248 174" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  
+  <path d="M300 130 L372 130" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/><path d="M296 176 L372 176" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <rect x="368" y="104" width="10" height="96" rx="4" fill="#c3cad8"/><text class="s" x="384" y="116" style="font-size:11px">ядерные</text><text class="s" x="384" y="130" style="font-size:11px">поры</text>
+  <text class="b" x="386" y="228" style="fill:#2e6f95;font-size:12px">цитоплазма</text>
+  <text class="s" x="20" y="260" style="font-size:12px">5S рРНК (Pol III) и белки присоединяются в ядрышке;</text><text class="s" x="20" y="274" style="font-size:12px">предшественники выходят в цитоплазму и «дозревают».</text>
+
+  <line x1="450" y1="20" x2="450" y2="260" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== Б. состав ===== -->
+  <text class="h" x="470" y="26">Б. Из чего состоит рибосома</text>
+  <text class="b" x="470" y="56" style="fill:#2e6f95">Эукариоты (человек): 80S</text>
+  <rect x="470" y="66" width="170" height="70" rx="14" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/>
+  <text class="b" x="484" y="86" style="fill:#5e3f8a">40S малая</text><text class="s" x="484" y="104" style="font-size:12px">18S рРНК</text><text class="s" x="484" y="120" style="font-size:12px">≈ 33 белка</text>
+  <rect x="650" y="66" width="230" height="70" rx="14" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2"/>
+  <text class="b" x="664" y="86" style="fill:#2e6f95">60S большая</text><text class="s" x="664" y="104" style="font-size:12px">28S, 5.8S и 5S рРНК</text><text class="s" x="664" y="120" style="font-size:12px">≈ 47 белков</text>
+  <text class="b" x="470" y="164" style="fill:#7b5ea7">Прокариоты (бактерии): 70S</text>
+  <rect x="470" y="174" width="170" height="60" rx="14" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2" stroke-dasharray="5 4"/>
+  <text class="b" x="484" y="194" style="fill:#5e3f8a">30S малая</text><text class="s" x="484" y="212" style="font-size:12px">16S рРНК, ≈ 21 белок</text>
+  <rect x="650" y="174" width="230" height="60" rx="14" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2" stroke-dasharray="5 4"/>
+  <text class="b" x="664" y="194" style="fill:#2e6f95">50S большая</text><text class="s" x="664" y="212" style="font-size:12px">23S и 5S рРНК, ≈ 33 белка</text>
+  <text class="s" x="470" y="254" style="font-size:12px">Митохондрии имеют свои рибосомы 55S (28S + 39S).</text>
+
+  <line x1="20" y1="278" x2="880" y2="278" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ===== В. S ===== -->
+  <text class="h" x="20" y="306">В. Что такое S (единица Сведберга)</text>
+  <!-- пробирки -->
+  <rect x="34" y="324" width="34" height="140" rx="12" fill="#f4f7fc" stroke="#8a94a8" stroke-width="2.5"/><rect x="86" y="324" width="34" height="140" rx="12" fill="#f4f7fc" stroke="#8a94a8" stroke-width="2.5"/>
+  <circle cx="51" cy="352" r="7" fill="#7b5ea7"/><circle cx="51" cy="366" r="3" fill="#7b5ea7" opacity=".4"/>
+  <circle cx="103" cy="436" r="12" fill="#2e6f95"/><circle cx="103" cy="380" r="5" fill="#2e6f95" opacity=".4"/><circle cx="103" cy="404" r="6" fill="#2e6f95" opacity=".4"/>
+  <path d="M146 340 v110" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="78" y="486" text-anchor="middle" style="font-size:11.5px">лёгкая — медленно</text><text class="s" x="78" y="502" text-anchor="middle" style="font-size:11.5px">тяжёлая — быстро</text>
+  <text class="s" x="170" y="338">S — скорость оседания частицы</text>
+  <text class="s" x="170" y="354">в ультрацентрифуге.</text>
+  <text class="s" x="170" y="378">1 S = 10⁻¹³ секунды.</text>
+  <text class="s" x="170" y="398">Зависит от массы, размера и формы.</text>
+  <text class="b" x="170" y="428" style="fill:#c7501f">Не складывается арифметически:</text>
+  <text class="b" x="170" y="450" style="font-size:14px">40S + 60S = 80S</text>
+  <text class="s" x="170" y="468">(а не 100S): при соединении меняются</text>
+  <text class="s" x="170" y="484">форма и плотность частицы.</text>
+  <text class="s" x="170" y="512">По S называют и рибосомные РНК:</text>
+  <text class="s" x="170" y="528">18S, 28S, 5.8S, 5S.</text>
+
+  <line x1="450" y1="298" x2="450" y2="640" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== Г. в разрезе ===== -->
+  <text class="h" x="470" y="306">Г. Рибосома в разрезе</text>
+  <rect x="490" y="330" width="330" height="120" rx="56" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2.5"/>
+  <text class="b" x="655" y="362" text-anchor="middle" style="fill:#2e6f95">большая субъединица (60S)</text>
+  <rect x="510" y="464" width="290" height="56" rx="28" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2.5"/>
+  <text class="b" x="655" y="500" text-anchor="middle" style="fill:#5e3f8a">малая субъединица (40S)</text>
+  <!-- мРНК -->
+  <path d="M470 458 L850 458" stroke="#ee8a2b" stroke-width="5" fill="none" stroke-linecap="round"/><text class="s" x="854" y="456" style="font-size:11.5px">мРНК</text>
+  <!-- тРНК в сайтах -->
+  <g>
+    <line x1="580" y1="458" x2="580" y2="410" stroke="#3a3f4b" stroke-width="4"/><circle cx="580" cy="404" r="7" fill="#9aa5b8"/>
+    <line x1="640" y1="458" x2="640" y2="400" stroke="#3a3f4b" stroke-width="4"/><circle cx="640" cy="394" r="7" fill="#3fa34d"/><path d="M640 394 C620 384 610 372 600 362" fill="none" stroke="#3fa34d" stroke-width="3"/>
+    <line x1="700" y1="458" x2="700" y2="410" stroke="#3a3f4b" stroke-width="4"/><circle cx="700" cy="404" r="7" fill="#e4572e"/>
+  </g>
+  <text class="b" x="580" y="540" text-anchor="middle">E</text><text class="b" x="640" y="540" text-anchor="middle">P</text><text class="b" x="700" y="540" text-anchor="middle">A</text>
+  <text class="s" x="580" y="556" text-anchor="middle" style="font-size:11px">выход</text><text class="s" x="640" y="556" text-anchor="middle" style="font-size:11px">пептидил</text><text class="s" x="700" y="556" text-anchor="middle" style="font-size:11px">вход</text>
+  <!-- тоннель -->
+  <path d="M640 396 C690 380 740 372 800 344" fill="none" stroke="#1a9aa0" stroke-width="7" stroke-linecap="round" stroke-dasharray="1 9"/>
+  <text class="s" x="742" y="322" style="font-size:11px;fill:#1a9aa0">тоннель выхода полипептида</text>
+  
+  <!-- пояснения -->
+  <text class="b" x="470" y="584" style="fill:#2e6f95;font-size:12px">Большая: пептидилтрансферазный центр (PTC).</text>
+  <text class="s" x="470" y="600" style="font-size:12px">Пептидную связь образует сама рРНК — это рибозим.</text>
+  <text class="b" x="470" y="622" style="fill:#5e3f8a;font-size:12px">Малая: декодирующий центр.</text>
+  <text class="s" x="470" y="638" style="font-size:12px">Проверяет пару кодон–антикодон в сайте A.</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Фолдинг белков и контроль качества: шапероны, ЭПР, ERAD и ответ на неправильно свёрнутые белки</title>
+  <desc id="d">Слева: в цитозоле растущая цепь выходит из рибосомы, шапероны (Hsp70, шаперонины, Hsp90) помогают ей свернуться. Справа: в ЭПР цепь получает гликан, белки PDI образуют дисульфидные связи, кальнексин и кальретикулин проверяют укладку. Правильно свёрнутый белок идёт в аппарат Гольджи; неправильно свёрнутый после нескольких попыток выводится в цитозоль (ERAD), убиквитинируется и разрушается протеасомой. Избыток неправильно свёрнутых белков запускает ответ UPR.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .ar { stroke: #5b6577; stroke-width: 2.3; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+
+  <!-- ===== А. цитозоль ===== -->
+  <text class="h" x="20" y="28">А. Фолдинг в цитозоле</text>
+  <ellipse cx="90" cy="100" rx="42" ry="22" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2"/><ellipse cx="90" cy="130" rx="34" ry="14" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/>
+  <text class="s" x="90" y="70" text-anchor="middle" style="font-size:11.5px">рибосома</text>
+  <path d="M90 142 C82 170 70 178 78 200" fill="none" stroke="#3fa34d" stroke-width="4"/>
+  <circle cx="160" cy="176" r="15" fill="#1a9aa0"/><text class="w" x="160" y="180" style="font-size:9.5px">Hsp70</text>
+  <path class="ar" d="M182 176 h34" marker-end="url(#ar)"/>
+  <text class="s" x="200" y="164" text-anchor="middle" style="font-size:10.5px">АТФ</text>
+  <!-- шаперонин -->
+  <rect x="226" y="146" width="66" height="60" rx="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="2.5"/><text class="b" x="259" y="172" text-anchor="middle" style="font-size:11px;fill:#2f7d3f">Hsp60/</text><text class="b" x="259" y="188" text-anchor="middle" style="font-size:11px;fill:#2f7d3f">TRiC</text>
+  <path class="ar" d="M296 176 h34" marker-end="url(#ar)"/>
+  <circle cx="366" cy="176" r="28" fill="#3fa34d"/><text class="w" x="366" y="180" style="font-size:12px">белок</text>
+  <text class="s" x="366" y="220" text-anchor="middle" style="font-size:11.5px">нативный</text>
+  <!-- Hsp90 -->
+  <circle cx="240" cy="252" r="18" fill="#c0397b"/><text class="w" x="240" y="256" style="font-size:10px">Hsp90</text>
+  <path class="ar" d="M262 246 L340 210" marker-end="url(#ar)"/>
+  <text class="s" x="180" y="290" style="font-size:12px">Hsp90 стабилизирует «клиентов» (киназы,</text><text class="s" x="180" y="306" style="font-size:12px">рецепторы, BCR::ABL1) в рабочем состоянии.</text>
+  <text class="s" x="20" y="238" style="font-size:12px">Hsp70 связывается с гидрофобными</text><text class="s" x="20" y="254" style="font-size:12px">участками цепи и не даёт ей слипнуться.</text>
+  <text class="s" x="20" y="270" style="font-size:12px">Сложные белки достраивает шаперонин.</text>
+
+  <line x1="450" y1="20" x2="450" y2="330" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== Б. ЭПР ===== -->
+  <text class="h" x="470" y="28">Б. В просвете ЭПР</text>
+  <rect x="470" y="60" width="410" height="230" rx="18" fill="#eef3fa" stroke="#8a94a8" stroke-width="2.5"/>
+  <text class="s" x="486" y="80" style="font-size:12px">просвет ЭПР</text>
+  <path d="M500 130 C520 100 540 160 560 130 S590 110 596 132" fill="none" stroke="#3fa34d" stroke-width="4"/>
+  <circle cx="522" cy="112" r="7" fill="#c0397b"/><path d="M522 112 l10 -8 M522 112 l10 8" stroke="#c0397b" stroke-width="2.5"/>
+  <text class="s" x="500" y="168" style="font-size:11px">гликан (N-)</text>
+  <circle cx="560" cy="182" r="14" fill="#f0b429"/><text class="w" x="560" y="186" style="font-size:9px;fill:#1c2330">PDI</text>
+  <text class="s" x="580" y="186" style="font-size:11px">S–S связи</text>
+  <circle cx="648" cy="132" r="15" fill="#1a9aa0"/><text class="w" x="648" y="136" style="font-size:9.5px">BiP</text>
+  <ellipse cx="716" cy="124" rx="34" ry="20" fill="#7b5ea7"/><text class="w" x="716" y="128" style="font-size:9.5px">кальнексин</text>
+  <text class="s" x="716" y="160" text-anchor="middle" style="font-size:11px">проверяет гликопротеин</text>
+  <circle cx="800" cy="240" r="26" fill="#3fa34d"/><text class="w" x="800" y="244" style="font-size:11px">верно</text>
+  <path class="ar" d="M840 240 h0"/><text class="b" x="800" y="278" text-anchor="middle" style="font-size:11.5px;fill:#2f7d3f">→ аппарат Гольджи</text>
+  <circle cx="540" cy="236" r="18" fill="#e4572e"/><text class="w" x="540" y="240" style="font-size:10px">брак</text>
+  <path class="ar" d="M562 236 L588 236" stroke="#c0392b" marker-end="url(#ar2)"/>
+  <text class="s" x="486" y="272" style="font-size:11.5px">брак: повторные попытки, затем</text><text class="s" x="486" y="286" style="font-size:11.5px">вывод в цитозоль (ERAD) ↓</text>
+  <path d="M590 290 v34" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#ar2)"/>
+
+  <line x1="20" y1="330" x2="880" y2="330" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ===== В. контроль качества ===== -->
+  <text class="h" x="20" y="358">В. Что делает клетка с бракованными белками</text>
+  <rect x="20" y="376" width="200" height="96" rx="14" fill="#fdf1ef" stroke="#c0392b" stroke-width="2"/>
+  <text class="b" x="34" y="400" style="fill:#c0392b">ERAD</text><text class="s" x="34" y="420" style="font-size:12px">Белок выводится из ЭПР</text><text class="s" x="34" y="436" style="font-size:12px">в цитозоль, метится</text><text class="s" x="34" y="452" style="font-size:12px">убиквитином (Ub).</text>
+  <path class="ar" d="M224 424 h32" marker-end="url(#ar)"/>
+  <rect x="260" y="376" width="200" height="96" rx="14" fill="#fdf5e6" stroke="#ee8a2b" stroke-width="2"/>
+  <text class="b" x="274" y="400" style="fill:#b4531a">Протеасома</text><text class="s" x="274" y="420" style="font-size:12px">Разрезает меченый белок</text><text class="s" x="274" y="436" style="font-size:12px">на пептиды; аминокислоты</text><text class="s" x="274" y="452" style="font-size:12px">используются повторно.</text>
+  <path d="M480 424 h0" stroke="#000"/>
+  <rect x="500" y="376" width="380" height="96" rx="14" fill="#f3eefa" stroke="#7b5ea7" stroke-width="2"/>
+  <text class="b" x="514" y="400" style="fill:#5e3f8a">UPR — ответ на неправильно свёрнутые белки</text>
+  <text class="s" x="514" y="420" style="font-size:12px">Если брака слишком много, датчики (IRE1, PERK, ATF6)</text><text class="s" x="514" y="436" style="font-size:12px">повышают число шаперонов, притормаживают трансляцию</text><text class="s" x="514" y="452" style="font-size:12px">и при перегрузке запускают апоптоз.</text>
+
+  <text class="b" x="20" y="506" style="fill:#c0397b">Клиническая нагрузка</text>
+  <text class="s" x="20" y="526">• Плазматические клетки миеломы производят огромное количество иммуноглобулинов и живут на грани перегрузки.</text>
+  <text class="s" x="20" y="544">  Ингибиторы протеасомы (бортезомиб, карфилзомиб) добавляют «мусор» и запускают гибель клеток через UPR.</text>
+  <text class="s" x="20" y="566">• Избыток α-цепей при β-талассемии слипается в осадок; эритроидный шаперон AHSP помогает удерживать их в растворе.</text>
+  <text class="s" x="20" y="588">• Неправильная укладка белков — основа амилоидозов (AL, транстиретиновый) и ряда болезней накопления.</text>
+</svg>

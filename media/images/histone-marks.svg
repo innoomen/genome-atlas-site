@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Метки на хвосте гистона H3</title>
+  <desc id="d">N-концевой хвост гистона H3 выступает из глобулярной части. На нём показаны остатки лизина K4, K9, K14, K27, K36 и серина S10 и химические метки: метильные группы (Me3), ацетильные (Ac) и фосфатная (P). H3K4me3, H3K27ac, H3K14ac и H3K36me3 связаны с активными генами, H3K9me3 и H3K27me3 — с подавлением генов, H3S10ph — с митозом. Ацетилирование нейтрализует положительный заряд лизина и ослабляет связь гистона с ДНК.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 17px; font-weight: 700; }
+    .s { font-size: 13px; fill: #5b6577; }
+    .b { font-size: 13.5px; font-weight: 700; }
+    .r { font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .c { font-size: 10.5px; font-weight: 700; text-anchor: middle; fill: #fff; }
+    .ln { stroke: #8a94a8; stroke-width: 2; fill: none; }
+  </style>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Гистоновые метки — на примере N-концевого хвоста гистона H3</text>
+
+  <!-- глобулярная часть -->
+  <rect x="30" y="112" width="140" height="120" rx="26" fill="#dbe9fb" stroke="#3b6fd4" stroke-width="3"/>
+  <text class="b" x="100" y="160" text-anchor="middle">Гистон H3</text>
+  <text class="s" x="100" y="180" text-anchor="middle">глобулярная часть</text>
+  <text class="s" x="100" y="198" text-anchor="middle">(в составе октамера)</text>
+
+  <!-- хвост -->
+  <path d="M170 150 Q210 118 250 150 T330 150 T372 150 T455 150 T600 150 T720 150 T850 150" fill="none" stroke="#3b6fd4" stroke-width="4" stroke-linecap="round"/>
+  <text class="s" x="520" y="210" text-anchor="middle">N-концевой хвост (положения аминокислот — цифрами, K — лизин, S — серин)</text>
+
+  <!-- остатки -->
+  <g>
+    <circle cx="250" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="250" y="154">K4</text>
+    <circle cx="330" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="330" y="154">K9</text>
+    <circle cx="372" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="372" y="154">S10</text>
+    <circle cx="455" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="455" y="154">K14</text>
+    <circle cx="600" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="600" y="154">K27</text>
+    <circle cx="720" cy="150" r="14" fill="#fff" stroke="#3b6fd4" stroke-width="2.5"/><text class="r" x="720" y="154">K36</text>
+  </g>
+
+  <!-- метки над хвостом -->
+  <g stroke="#8a94a8" stroke-width="2">
+    <line x1="250" y1="136" x2="250" y2="104"/><line x1="330" y1="136" x2="330" y2="104"/><line x1="372" y1="136" x2="372" y2="104"/>
+    <line x1="455" y1="136" x2="455" y2="104"/><line x1="600" y1="136" x2="578" y2="104"/><line x1="600" y1="136" x2="622" y2="104"/><line x1="720" y1="136" x2="720" y2="104"/>
+  </g>
+  <g>
+    <circle cx="250" cy="88" r="16" fill="#3fa34d"/><text class="c" x="250" y="92">Me3</text>
+    <circle cx="330" cy="88" r="16" fill="#d1432f"/><text class="c" x="330" y="92">Me3</text>
+    <circle cx="372" cy="56" r="16" fill="#7b5ea7"/><text class="c" x="372" y="60">P</text>
+    <line x1="372" y1="104" x2="372" y2="72" stroke="#8a94a8" stroke-width="2"/>
+    <circle cx="455" cy="88" r="16" fill="#3fa34d"/><text class="c" x="455" y="92">Ac</text>
+    <circle cx="578" cy="88" r="16" fill="#3fa34d"/><text class="c" x="578" y="92">Ac</text>
+    <circle cx="622" cy="88" r="16" fill="#d1432f"/><text class="c" x="622" y="92">Me3</text>
+    <circle cx="720" cy="88" r="16" fill="#3fa34d"/><text class="c" x="720" y="92">Me3</text>
+  </g>
+  <text class="s" x="600" y="70" text-anchor="middle">или</text>
+
+  <!-- расшифровка -->
+  <line x1="20" y1="232" x2="880" y2="232" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="262">Что означают метки</text>
+  <text class="s" x="20" y="282">Зелёные метки связаны с активными генами, красные — с подавлением генов, фиолетовая — с делением клетки.</text>
+  <g>
+    <circle cx="44" cy="318" r="14" fill="#3fa34d"/><text class="c" x="44" y="322">Me3</text>
+    <text class="b" x="70" y="316">H3K4me3</text><text class="s" x="70" y="334">активные промоторы генов</text>
+    <circle cx="44" cy="368" r="14" fill="#3fa34d"/><text class="c" x="44" y="372">Ac</text>
+    <text class="b" x="70" y="366">H3K27ac</text><text class="s" x="70" y="384">активные энхансеры и промоторы</text>
+    <circle cx="44" cy="418" r="14" fill="#3fa34d"/><text class="c" x="44" y="422">Ac</text>
+    <text class="b" x="70" y="416">H3K14ac</text><text class="s" x="70" y="434">разрыхляет хроматин (см. ниже)</text>
+    <circle cx="470" cy="318" r="14" fill="#3fa34d"/><text class="c" x="470" y="322">Me3</text>
+    <text class="b" x="496" y="316">H3K36me3</text><text class="s" x="496" y="334">тела активно читаемых генов</text>
+    <circle cx="470" cy="368" r="14" fill="#d1432f"/><text class="c" x="470" y="372">Me3</text>
+    <text class="b" x="496" y="366">H3K9me3</text><text class="s" x="496" y="384">гетерохроматин, «молчащие» участки</text>
+    <circle cx="470" cy="418" r="14" fill="#d1432f"/><text class="c" x="470" y="422">Me3</text>
+    <text class="b" x="496" y="416">H3K27me3</text><text class="s" x="496" y="434">подавление генов (фермент EZH2)</text>
+    <circle cx="700" cy="318" r="14" fill="#7b5ea7"/><text class="c" x="700" y="322">P</text>
+    <text class="b" x="726" y="316">H3S10ph</text><text class="s" x="726" y="334">митоз: уплотнение</text><text class="s" x="726" y="350">хромосом</text>
+  </g>
+
+  <line x1="20" y1="458" x2="880" y2="458" stroke="#e1e6ee" stroke-width="2"/>
+  <!-- как читать запись -->
+  <text class="h" x="20" y="486">Как читать запись</text>
+  <g>
+    <rect x="20" y="498" width="70" height="34" rx="8" fill="#dbe9fb" stroke="#3b6fd4" stroke-width="2"/><text class="b" x="55" y="520" text-anchor="middle">H3</text>
+    <rect x="96" y="498" width="44" height="34" rx="8" fill="#fff" stroke="#8a94a8" stroke-width="2"/><text class="b" x="118" y="520" text-anchor="middle">K</text>
+    <rect x="146" y="498" width="50" height="34" rx="8" fill="#fff" stroke="#8a94a8" stroke-width="2"/><text class="b" x="171" y="520" text-anchor="middle">27</text>
+    <rect x="202" y="498" width="70" height="34" rx="8" fill="#fbe1dc" stroke="#d1432f" stroke-width="2"/><text class="b" x="237" y="520" text-anchor="middle">me3</text>
+    <text class="s" x="55" y="552" text-anchor="middle">гистон</text><text class="s" x="118" y="552" text-anchor="middle">лизин</text>
+    <text class="s" x="171" y="552" text-anchor="middle">позиция</text><text class="s" x="237" y="552" text-anchor="middle">3 × метил</text>
+  </g>
+  <text class="s" x="20" y="580">H3K27me3: гистон H3, лизин в положении 27, три метильные группы.</text>
+
+  <g>
+    <text class="b" x="330" y="506">«Писцы» ставят метки:</text><text class="s" x="330" y="524">метилтрансферазы (EZH2),</text><text class="s" x="330" y="542">ацетилтрансферазы (HAT)</text>
+    <text class="b" x="330" y="566">«Ластики» убирают их:</text><text class="s" x="330" y="584">деацетилазы (HDAC), деметилазы</text>
+  </g>
+  <g>
+    <text class="b" x="640" y="486">Ацетилирование и заряд</text>
+    <text class="s" x="640" y="506">Ацетильная группа нейтрализует «+»</text>
+    <text class="s" x="640" y="524">лизина, притяжение к «−» ДНК слабеет,</text>
+    <text class="s" x="640" y="542">и хроматин становится рыхлее.</text>
+  </g>
+</svg>

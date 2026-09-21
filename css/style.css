@@ -133,6 +133,8 @@ figcaption { font-size: .88rem; color: var(--muted); margin-top: .5rem; }
 .anim svg { display: block; width: 100%; height: auto; }
 .anim.paused svg * { animation-play-state: paused !important; }
 .anim-bar { margin: .5rem 0; }
+.anim-block { margin: 1.4rem 0; }
+.anim-title { margin: 0 0 .5rem; font-size: 1.05rem; }
 .callout { margin: 1rem 0; padding: .3rem 1rem; border-radius: var(--radius); background: var(--accent-soft); border: 1px solid var(--border); }
 .callout-title { font-weight: 700; margin: .5rem 0 0; }
 .box { margin: 1rem 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }

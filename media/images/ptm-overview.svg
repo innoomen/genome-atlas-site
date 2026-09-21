@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Основные посттрансляционные модификации белков</title>
+  <desc id="d">Девять карточек: фосфорилирование (киназы, фосфатазы), ацетилирование, метилирование, убиквитинирование (метка для протеасомы или сигнальная), гликозилирование, липидирование (GPI-якорь, пренилирование), протеолитическое расщепление (сигнальный пептид, зимогены, проинсулин), гамма-карбоксилирование (витамин K, факторы свёртывания) и гидроксилирование (пролилгидроксилазы, HIF).</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .t { font-size: 13.5px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .k { font-size: 12px; font-weight: 700; }
+    .w { font-size: 12px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .card { fill: #f7f9fc; stroke: #d9dee7; stroke-width: 1.5; }
+  </style>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">«Украшения» и «активаторы»: что происходит с белком после синтеза</text>
+
+  <!-- ряд 1 -->
+  <rect class="card" x="20" y="44" width="280" height="184" rx="12"/>
+  <circle cx="50" cy="76" r="17" fill="#7b5ea7"/><text class="w" x="50" y="81">P</text>
+  <text class="t" x="76" y="82">Фосфорилирование</text>
+  <text class="s" x="34" y="110">Фосфат на Ser, Thr, Tyr. Ставят киназы,</text><text class="s" x="34" y="126">снимают фосфатазы.</text>
+  <text class="k" x="34" y="150" style="fill:#7b5ea7">Эффект:</text><text class="s" x="92" y="150">включает/выключает белок</text>
+  <text class="k" x="34" y="176" style="fill:#c0397b">В гематологии:</text><text class="s" x="34" y="192">BCR::ABL1, JAK2 V617F и FLT3-ITD —</text><text class="s" x="34" y="208">постоянно активные киназы (ИТК).</text>
+
+  <rect class="card" x="310" y="44" width="280" height="184" rx="12"/>
+  <circle cx="340" cy="76" r="17" fill="#3fa34d"/><text class="w" x="340" y="80" style="font-size:10.5px">Ac</text>
+  <text class="t" x="366" y="82">Ацетилирование</text>
+  <text class="s" x="324" y="110">Ацетильная группа на Lys (и на N-конце).</text><text class="s" x="324" y="126">Ставят ацетилтрансферазы (p300/CBP).</text>
+  <text class="k" x="324" y="150" style="fill:#2f7d3f">Эффект:</text><text class="s" x="382" y="150">гасит «+» лизина</text>
+  <text class="k" x="324" y="176" style="fill:#c0397b">В гематологии:</text><text class="s" x="324" y="192">гистоны и p53; ингибиторы HDAC</text><text class="s" x="324" y="208">(вориностат, ромидепсин).</text>
+
+  <rect class="card" x="600" y="44" width="280" height="184" rx="12"/>
+  <circle cx="630" cy="76" r="17" fill="#d1432f"/><text class="w" x="630" y="80" style="font-size:10.5px">Me</text>
+  <text class="t" x="656" y="82">Метилирование</text>
+  <text class="s" x="614" y="110">CH₃ на Lys и Arg (до 3 групп на Lys).</text><text class="s" x="614" y="126">Метилтрансферазы (EZH2, DOT1L).</text>
+  <text class="k" x="614" y="150" style="fill:#d1432f">Эффект:</text><text class="s" x="672" y="150">«код» для белков-читателей</text>
+  <text class="k" x="614" y="176" style="fill:#c0397b">В гематологии:</text><text class="s" x="614" y="192">H3K27me3 и EZH2 — таземетостат;</text><text class="s" x="614" y="208">гистоновый код (тема «Упаковка ДНК»).</text>
+
+  <!-- ряд 2 -->
+  <rect class="card" x="20" y="238" width="280" height="184" rx="12"/>
+  <circle cx="50" cy="270" r="17" fill="#c0397b"/><text class="w" x="50" y="275" style="font-size:10.5px">Ub</text>
+  <text class="t" x="76" y="276">Убиквитинирование</text>
+  <text class="s" x="34" y="304">Малый белок убиквитин (76 аа) на Lys.</text><text class="s" x="34" y="320">Ферменты: E1, E2, E3-лигазы.</text>
+  <text class="k" x="34" y="344" style="fill:#c0397b">Эффект:</text><text class="s" x="92" y="344">цепь K48 → протеасома;</text><text class="s" x="34" y="360">K63 и моно-Ub — сигнал.</text>
+  <text class="k" x="34" y="386" style="fill:#c0397b">В гематологии:</text><text class="s" x="34" y="402">бортезомиб (протеасома); леналидомид</text><text class="s" x="34" y="416" style="font-size:11.5px">(цереблон/E3) → распад IKZF1/3, CK1α.</text>
+
+  <rect class="card" x="310" y="238" width="280" height="184" rx="12"/>
+  <circle cx="340" cy="270" r="17" fill="#ee8a2b"/><text class="w" x="340" y="274" style="font-size:9px">глик</text>
+  <text class="t" x="366" y="276">Гликозилирование</text>
+  <text class="s" x="324" y="304">Сахарные цепи на Asn (N-) или Ser/Thr</text><text class="s" x="324" y="320">(O-). Начинается в ЭПР, продолжается</text><text class="s" x="324" y="336">в аппарате Гольджи.</text>
+  <text class="k" x="324" y="360" style="fill:#b4531a">Эффект:</text><text class="s" x="382" y="360">укладка, стабильность, сортировка</text>
+  <text class="k" x="324" y="386" style="fill:#c0397b">В гематологии:</text><text class="s" x="324" y="402">антигены групп крови, EPO,</text><text class="s" x="324" y="416">иммуноглобулины, факторы свёртывания.</text>
+
+  <rect class="card" x="600" y="238" width="280" height="184" rx="12"/>
+  <circle cx="630" cy="270" r="17" fill="#1a9aa0"/><text class="w" x="630" y="274" style="font-size:9px">липид</text>
+  <text class="t" x="656" y="276">Липидирование</text>
+  <text class="s" x="614" y="304">Жирная кислота, изопреновая группа</text><text class="s" x="614" y="320">или GPI-якорь «пришивают» белок</text><text class="s" x="614" y="336">к мембране.</text>
+  <text class="k" x="614" y="360" style="fill:#1a9aa0">Эффект:</text><text class="s" x="672" y="360">прикрепление к мембране</text>
+  <text class="k" x="614" y="386" style="fill:#c0397b">В гематологии:</text><text class="s" x="614" y="402">ПНГ: без GPI-якоря нет CD55 и CD59 —</text><text class="s" x="614" y="416">комплемент разрушает эритроциты.</text>
+
+  <!-- ряд 3 -->
+  <rect class="card" x="20" y="432" width="280" height="196" rx="12"/>
+  <circle cx="50" cy="464" r="17" fill="#6c7a96"/><text class="w" x="50" y="469" style="font-size:12px">✂</text>
+  <text class="t" x="76" y="470">Протеолитическое расщепление</text>
+  <text class="s" x="34" y="498">Протеазы отрезают часть цепи:</text><text class="s" x="34" y="514">сигнальный пептид, проинсулин → инсулин,</text><text class="s" x="34" y="530">неактивные зимогены → ферменты.</text>
+  <text class="k" x="34" y="554" style="fill:#6c7a96">Эффект:</text><text class="s" x="92" y="554">активация, «взрыв» каскада</text>
+  <text class="k" x="34" y="580" style="fill:#c0397b">В гематологии:</text><text class="s" x="34" y="596">факторы свёртывания и комплемент —</text><text class="s" x="34" y="612">каскады активации протеаз; каспазы.</text>
+
+  <rect class="card" x="310" y="432" width="280" height="196" rx="12"/>
+  <circle cx="340" cy="464" r="17" fill="#e4572e"/><text class="w" x="340" y="468" style="font-size:9.5px">γ-COO</text>
+  <text class="t" x="366" y="470">γ-Карбоксилирование</text>
+  <text class="s" x="324" y="498">Второй карбоксил на Glu. Нужен</text><text class="s" x="324" y="514">витамин K (фермент GGCX).</text>
+  <text class="k" x="324" y="538" style="fill:#e4572e">Эффект:</text><text class="s" x="382" y="538">связывание Ca²⁺ и мембран</text>
+  <text class="k" x="324" y="564" style="fill:#c0397b">В гематологии:</text><text class="s" x="324" y="580">факторы II, VII, IX, X, белки C и S;</text><text class="s" x="324" y="596">варфарин блокирует витамин K.</text>
+
+  <rect class="card" x="600" y="432" width="280" height="196" rx="12"/>
+  <circle cx="630" cy="464" r="17" fill="#2e86ab"/><text class="w" x="630" y="469" style="font-size:11px">OH</text>
+  <text class="t" x="656" y="470">Гидроксилирование</text>
+  <text class="s" x="614" y="498">Гидроксил на Pro и Lys (коллаген),</text><text class="s" x="614" y="514">на HIF-1α (пролилгидроксилазы PHD,</text><text class="s" x="614" y="530">нужны O₂ и железо).</text>
+  <text class="k" x="614" y="554" style="fill:#2e86ab">Эффект:</text><text class="s" x="672" y="554">«датчик кислорода»</text>
+  <text class="k" x="614" y="580" style="fill:#c0397b">В гематологии:</text><text class="s" x="614" y="596">при гипоксии HIF не гидроксилируется,</text><text class="s" x="614" y="612">растёт EPO; ингибиторы PHD (роксадустат).</text>
+</svg>

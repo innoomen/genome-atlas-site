@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 712" role="img" aria-labelledby="t d">
+  <title id="t">Таблица генетического кода: кодоны и аминокислоты</title>
+  <desc id="d">Таблица 64 кодонов. Строки — первое основание кодона, столбцы — второе, внутри клетки — третье основание. Для каждого кодона указаны трёхбуквенное и однобуквенное обозначения аминокислоты. Цвета показывают свойства боковой цепи: гидрофобные, полярные, положительно и отрицательно заряженные, стоп-кодоны. AUG кодирует метионин и служит стартовым кодоном.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .ax { font-size: 20px; font-weight: 700; text-anchor: middle; fill: #4b4f9e; }
+    .cod { font-family: ui-monospace, Consolas, "Courier New", monospace; font-size: 12.5px; font-weight: 700; }
+    .aa { font-size: 12px; }
+  </style>
+  <rect width="900" height="712" fill="#ffffff"/>
+  <text class="h" x="20" y="26">Генетический код (мРНК, 5′→3′)</text>
+  <text class="s" x="20" y="46">Читайте: первое основание (слева) — второе (сверху) — третье (внутри клетки).</text>
+  <text class="ax" x="180" y="86">U</text><text class="ax" x="360" y="86">C</text><text class="ax" x="540" y="86">A</text><text class="ax" x="720" y="86">G</text>
+  <text class="s" x="450" y="72" text-anchor="middle">второе основание</text>
+  <text class="ax" x="48" y="170">U</text><text class="ax" x="48" y="300">C</text><text class="ax" x="48" y="430">A</text><text class="ax" x="48" y="560">G</text>
+  <text class="s" x="22" y="110" style="font-size:12px">первое</text>
+  <rect x="92" y="100" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="98" y="106" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="123">UUU</text><text class="aa" x="158" y="123">Phe</text><text class="aa" x="242" y="123" text-anchor="end" style="font-weight:700">F</text>
+<rect x="98" y="134.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="151.5">UUC</text><text class="aa" x="158" y="151.5">Phe</text><text class="aa" x="242" y="151.5" text-anchor="end" style="font-weight:700">F</text>
+<rect x="98" y="163" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="180">UUA</text><text class="aa" x="158" y="180">Leu</text><text class="aa" x="242" y="180" text-anchor="end" style="font-weight:700">L</text>
+<rect x="98" y="191.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="208.5">UUG</text><text class="aa" x="158" y="208.5">Leu</text><text class="aa" x="242" y="208.5" text-anchor="end" style="font-weight:700">L</text>
+<rect x="272" y="100" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="278" y="106" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="123">UCU</text><text class="aa" x="338" y="123">Ser</text><text class="aa" x="422" y="123" text-anchor="end" style="font-weight:700">S</text>
+<rect x="278" y="134.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="151.5">UCC</text><text class="aa" x="338" y="151.5">Ser</text><text class="aa" x="422" y="151.5" text-anchor="end" style="font-weight:700">S</text>
+<rect x="278" y="163" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="180">UCA</text><text class="aa" x="338" y="180">Ser</text><text class="aa" x="422" y="180" text-anchor="end" style="font-weight:700">S</text>
+<rect x="278" y="191.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="208.5">UCG</text><text class="aa" x="338" y="208.5">Ser</text><text class="aa" x="422" y="208.5" text-anchor="end" style="font-weight:700">S</text>
+<rect x="452" y="100" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="458" y="106" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="123">UAU</text><text class="aa" x="518" y="123">Tyr</text><text class="aa" x="602" y="123" text-anchor="end" style="font-weight:700">Y</text>
+<rect x="458" y="134.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="151.5">UAC</text><text class="aa" x="518" y="151.5">Tyr</text><text class="aa" x="602" y="151.5" text-anchor="end" style="font-weight:700">Y</text>
+<rect x="458" y="163" width="160" height="25" rx="5" fill="#dfe3ea" stroke="#8a94a8" stroke-width="1"/>
+<text class="cod" x="466" y="180">UAA</text><text class="aa" x="518" y="180">Stop</text><text class="aa" x="602" y="180" text-anchor="end" style="font-weight:700">*</text>
+<rect x="458" y="191.5" width="160" height="25" rx="5" fill="#dfe3ea" stroke="#8a94a8" stroke-width="1"/>
+<text class="cod" x="466" y="208.5">UAG</text><text class="aa" x="518" y="208.5">Stop</text><text class="aa" x="602" y="208.5" text-anchor="end" style="font-weight:700">*</text>
+<rect x="632" y="100" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="638" y="106" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="123">UGU</text><text class="aa" x="698" y="123">Cys</text><text class="aa" x="782" y="123" text-anchor="end" style="font-weight:700">C</text>
+<rect x="638" y="134.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="151.5">UGC</text><text class="aa" x="698" y="151.5">Cys</text><text class="aa" x="782" y="151.5" text-anchor="end" style="font-weight:700">C</text>
+<rect x="638" y="163" width="160" height="25" rx="5" fill="#dfe3ea" stroke="#8a94a8" stroke-width="1"/>
+<text class="cod" x="646" y="180">UGA</text><text class="aa" x="698" y="180">Stop</text><text class="aa" x="782" y="180" text-anchor="end" style="font-weight:700">*</text>
+<rect x="638" y="191.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="646" y="208.5">UGG</text><text class="aa" x="698" y="208.5">Trp</text><text class="aa" x="782" y="208.5" text-anchor="end" style="font-weight:700">W</text>
+<rect x="92" y="230" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="98" y="236" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="253">CUU</text><text class="aa" x="158" y="253">Leu</text><text class="aa" x="242" y="253" text-anchor="end" style="font-weight:700">L</text>
+<rect x="98" y="264.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="281.5">CUC</text><text class="aa" x="158" y="281.5">Leu</text><text class="aa" x="242" y="281.5" text-anchor="end" style="font-weight:700">L</text>
+<rect x="98" y="293" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="310">CUA</text><text class="aa" x="158" y="310">Leu</text><text class="aa" x="242" y="310" text-anchor="end" style="font-weight:700">L</text>
+<rect x="98" y="321.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="338.5">CUG</text><text class="aa" x="158" y="338.5">Leu</text><text class="aa" x="242" y="338.5" text-anchor="end" style="font-weight:700">L</text>
+<rect x="272" y="230" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="278" y="236" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="253">CCU</text><text class="aa" x="338" y="253">Pro</text><text class="aa" x="422" y="253" text-anchor="end" style="font-weight:700">P</text>
+<rect x="278" y="264.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="281.5">CCC</text><text class="aa" x="338" y="281.5">Pro</text><text class="aa" x="422" y="281.5" text-anchor="end" style="font-weight:700">P</text>
+<rect x="278" y="293" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="310">CCA</text><text class="aa" x="338" y="310">Pro</text><text class="aa" x="422" y="310" text-anchor="end" style="font-weight:700">P</text>
+<rect x="278" y="321.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="338.5">CCG</text><text class="aa" x="338" y="338.5">Pro</text><text class="aa" x="422" y="338.5" text-anchor="end" style="font-weight:700">P</text>
+<rect x="452" y="230" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="458" y="236" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="466" y="253">CAU</text><text class="aa" x="518" y="253">His</text><text class="aa" x="602" y="253" text-anchor="end" style="font-weight:700">H</text>
+<rect x="458" y="264.5" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="466" y="281.5">CAC</text><text class="aa" x="518" y="281.5">His</text><text class="aa" x="602" y="281.5" text-anchor="end" style="font-weight:700">H</text>
+<rect x="458" y="293" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="310">CAA</text><text class="aa" x="518" y="310">Gln</text><text class="aa" x="602" y="310" text-anchor="end" style="font-weight:700">Q</text>
+<rect x="458" y="321.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="338.5">CAG</text><text class="aa" x="518" y="338.5">Gln</text><text class="aa" x="602" y="338.5" text-anchor="end" style="font-weight:700">Q</text>
+<rect x="632" y="230" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="638" y="236" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="253">CGU</text><text class="aa" x="698" y="253">Arg</text><text class="aa" x="782" y="253" text-anchor="end" style="font-weight:700">R</text>
+<rect x="638" y="264.5" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="281.5">CGC</text><text class="aa" x="698" y="281.5">Arg</text><text class="aa" x="782" y="281.5" text-anchor="end" style="font-weight:700">R</text>
+<rect x="638" y="293" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="310">CGA</text><text class="aa" x="698" y="310">Arg</text><text class="aa" x="782" y="310" text-anchor="end" style="font-weight:700">R</text>
+<rect x="638" y="321.5" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="338.5">CGG</text><text class="aa" x="698" y="338.5">Arg</text><text class="aa" x="782" y="338.5" text-anchor="end" style="font-weight:700">R</text>
+<rect x="92" y="360" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="98" y="366" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="383">AUU</text><text class="aa" x="158" y="383">Ile</text><text class="aa" x="242" y="383" text-anchor="end" style="font-weight:700">I</text>
+<rect x="98" y="394.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="411.5">AUC</text><text class="aa" x="158" y="411.5">Ile</text><text class="aa" x="242" y="411.5" text-anchor="end" style="font-weight:700">I</text>
+<rect x="98" y="423" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="440">AUA</text><text class="aa" x="158" y="440">Ile</text><text class="aa" x="242" y="440" text-anchor="end" style="font-weight:700">I</text>
+<rect x="98" y="451.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="468.5" style="text-decoration:underline">AUG</text><text class="aa" x="158" y="468.5">Met</text><text class="aa" x="242" y="468.5" text-anchor="end" style="font-weight:700">M</text>
+<rect x="272" y="360" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="278" y="366" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="383">ACU</text><text class="aa" x="338" y="383">Thr</text><text class="aa" x="422" y="383" text-anchor="end" style="font-weight:700">T</text>
+<rect x="278" y="394.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="411.5">ACC</text><text class="aa" x="338" y="411.5">Thr</text><text class="aa" x="422" y="411.5" text-anchor="end" style="font-weight:700">T</text>
+<rect x="278" y="423" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="440">ACA</text><text class="aa" x="338" y="440">Thr</text><text class="aa" x="422" y="440" text-anchor="end" style="font-weight:700">T</text>
+<rect x="278" y="451.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="286" y="468.5">ACG</text><text class="aa" x="338" y="468.5">Thr</text><text class="aa" x="422" y="468.5" text-anchor="end" style="font-weight:700">T</text>
+<rect x="452" y="360" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="458" y="366" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="383">AAU</text><text class="aa" x="518" y="383">Asn</text><text class="aa" x="602" y="383" text-anchor="end" style="font-weight:700">N</text>
+<rect x="458" y="394.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="466" y="411.5">AAC</text><text class="aa" x="518" y="411.5">Asn</text><text class="aa" x="602" y="411.5" text-anchor="end" style="font-weight:700">N</text>
+<rect x="458" y="423" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="466" y="440">AAA</text><text class="aa" x="518" y="440">Lys</text><text class="aa" x="602" y="440" text-anchor="end" style="font-weight:700">K</text>
+<rect x="458" y="451.5" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="466" y="468.5">AAG</text><text class="aa" x="518" y="468.5">Lys</text><text class="aa" x="602" y="468.5" text-anchor="end" style="font-weight:700">K</text>
+<rect x="632" y="360" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="638" y="366" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="383">AGU</text><text class="aa" x="698" y="383">Ser</text><text class="aa" x="782" y="383" text-anchor="end" style="font-weight:700">S</text>
+<rect x="638" y="394.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="411.5">AGC</text><text class="aa" x="698" y="411.5">Ser</text><text class="aa" x="782" y="411.5" text-anchor="end" style="font-weight:700">S</text>
+<rect x="638" y="423" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="440">AGA</text><text class="aa" x="698" y="440">Arg</text><text class="aa" x="782" y="440" text-anchor="end" style="font-weight:700">R</text>
+<rect x="638" y="451.5" width="160" height="25" rx="5" fill="#dbe9fb" stroke="#6b97d1" stroke-width="1"/>
+<text class="cod" x="646" y="468.5">AGG</text><text class="aa" x="698" y="468.5">Arg</text><text class="aa" x="782" y="468.5" text-anchor="end" style="font-weight:700">R</text>
+<rect x="92" y="490" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="98" y="496" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="513">GUU</text><text class="aa" x="158" y="513">Val</text><text class="aa" x="242" y="513" text-anchor="end" style="font-weight:700">V</text>
+<rect x="98" y="524.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="541.5">GUC</text><text class="aa" x="158" y="541.5">Val</text><text class="aa" x="242" y="541.5" text-anchor="end" style="font-weight:700">V</text>
+<rect x="98" y="553" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="570">GUA</text><text class="aa" x="158" y="570">Val</text><text class="aa" x="242" y="570" text-anchor="end" style="font-weight:700">V</text>
+<rect x="98" y="581.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="106" y="598.5">GUG</text><text class="aa" x="158" y="598.5">Val</text><text class="aa" x="242" y="598.5" text-anchor="end" style="font-weight:700">V</text>
+<rect x="272" y="490" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="278" y="496" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="513">GCU</text><text class="aa" x="338" y="513">Ala</text><text class="aa" x="422" y="513" text-anchor="end" style="font-weight:700">A</text>
+<rect x="278" y="524.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="541.5">GCC</text><text class="aa" x="338" y="541.5">Ala</text><text class="aa" x="422" y="541.5" text-anchor="end" style="font-weight:700">A</text>
+<rect x="278" y="553" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="570">GCA</text><text class="aa" x="338" y="570">Ala</text><text class="aa" x="422" y="570" text-anchor="end" style="font-weight:700">A</text>
+<rect x="278" y="581.5" width="160" height="25" rx="5" fill="#fff1c7" stroke="#d9b64a" stroke-width="1"/>
+<text class="cod" x="286" y="598.5">GCG</text><text class="aa" x="338" y="598.5">Ala</text><text class="aa" x="422" y="598.5" text-anchor="end" style="font-weight:700">A</text>
+<rect x="452" y="490" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="458" y="496" width="160" height="25" rx="5" fill="#fbe1dc" stroke="#d1806f" stroke-width="1"/>
+<text class="cod" x="466" y="513">GAU</text><text class="aa" x="518" y="513">Asp</text><text class="aa" x="602" y="513" text-anchor="end" style="font-weight:700">D</text>
+<rect x="458" y="524.5" width="160" height="25" rx="5" fill="#fbe1dc" stroke="#d1806f" stroke-width="1"/>
+<text class="cod" x="466" y="541.5">GAC</text><text class="aa" x="518" y="541.5">Asp</text><text class="aa" x="602" y="541.5" text-anchor="end" style="font-weight:700">D</text>
+<rect x="458" y="553" width="160" height="25" rx="5" fill="#fbe1dc" stroke="#d1806f" stroke-width="1"/>
+<text class="cod" x="466" y="570">GAA</text><text class="aa" x="518" y="570">Glu</text><text class="aa" x="602" y="570" text-anchor="end" style="font-weight:700">E</text>
+<rect x="458" y="581.5" width="160" height="25" rx="5" fill="#fbe1dc" stroke="#d1806f" stroke-width="1"/>
+<text class="cod" x="466" y="598.5">GAG</text><text class="aa" x="518" y="598.5">Glu</text><text class="aa" x="602" y="598.5" text-anchor="end" style="font-weight:700">E</text>
+<rect x="632" y="490" width="172" height="122" rx="10" fill="#fafbfd" stroke="#d9dee7" stroke-width="1.5"/>
+<rect x="638" y="496" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="513">GGU</text><text class="aa" x="698" y="513">Gly</text><text class="aa" x="782" y="513" text-anchor="end" style="font-weight:700">G</text>
+<rect x="638" y="524.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="541.5">GGC</text><text class="aa" x="698" y="541.5">Gly</text><text class="aa" x="782" y="541.5" text-anchor="end" style="font-weight:700">G</text>
+<rect x="638" y="553" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="570">GGA</text><text class="aa" x="698" y="570">Gly</text><text class="aa" x="782" y="570" text-anchor="end" style="font-weight:700">G</text>
+<rect x="638" y="581.5" width="160" height="25" rx="5" fill="#dcf1e0" stroke="#7bb98a" stroke-width="1"/>
+<text class="cod" x="646" y="598.5">GGG</text><text class="aa" x="698" y="598.5">Gly</text><text class="aa" x="782" y="598.5" text-anchor="end" style="font-weight:700">G</text>
+
+
+  <!-- легенда -->
+  <g transform="translate(20 646)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#fff1c7" stroke="#d9b64a"/><text class="s" x="22" y="13">гидрофобные</text>
+    <rect x="130" y="0" width="16" height="16" rx="3" fill="#dcf1e0" stroke="#7bb98a"/><text class="s" x="152" y="13">полярные незаряженные</text>
+    <rect x="320" y="0" width="16" height="16" rx="3" fill="#dbe9fb" stroke="#6b97d1"/><text class="s" x="342" y="13">заряд «+» (K, R, H)</text>
+    <rect x="490" y="0" width="16" height="16" rx="3" fill="#fbe1dc" stroke="#d1806f"/><text class="s" x="512" y="13">заряд «−» (D, E)</text>
+    <rect x="640" y="0" width="16" height="16" rx="3" fill="#dfe3ea" stroke="#8a94a8"/><text class="s" x="662" y="13">стоп-кодон</text>
+    <text class="s" x="0" y="38" style="font-size:12px">AUG — старт и метионин (Met, M). Однобуквенный код нужен для записи вариантов белка:</text><text class="s" x="0" y="54" style="font-size:12px">например, JAK2 V617F — валин (V) в положении 617 заменён на фенилаланин (F).</text>
+  </g>
+</svg>

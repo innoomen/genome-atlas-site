@@ -114,7 +114,8 @@
     const related = t.related.map(r => D.topicById[r]).filter(Boolean).map(x => ({ url: '#/topic/' + x.id, title: x.title }));
 
     const empty = txt => '<p class="muted">' + txt + '</p>';
-    const anim = t.animation && D.animations[t.animation];
+    const noAnim = t.animation.length === 1 && t.animation[0] === 'none';
+    const anims = t.animation.filter(n => D.animations[n]);
 
     main.innerHTML =
       crumbs([['#/', 'Главная'], ['#/block/' + b.id, blockLabel(b)], [null, t.title]]) +
@@ -136,12 +137,17 @@
       '<section class="sec" aria-labelledby="h-fig"><h2 id="h-fig">Иллюстрации</h2>' +
       (s.figures ? '<div class="figures">' + M.render(s.figures) + '</div>' : empty('Иллюстрации к теме пока не добавлены.')) + '</section>' +
 
-      '<section class="sec" aria-labelledby="h-anim"><h2 id="h-anim">Анимация</h2>' +
-      (anim ? '<div class="anim" id="anim">' + anim + '</div><div class="anim-bar"><button type="button" class="btn btn-small" id="anim-toggle">⏸ Остановить</button></div>' +
-        (s.animation ? '<div class="prose small">' + M.render(s.animation) + '</div>' : '') : empty('Анимация для этой темы в разработке.')) + '</section>' +
+      // animation: none в шапке подтемы — раздела «Анимация» на странице нет совсем
+      (noAnim ? '' : '<section class="sec" aria-labelledby="h-anim"><h2 id="h-anim">' + (anims.length > 1 ? 'Анимации' : 'Анимация') + '</h2>' +
+      (anims.length ? (anims.length > 1 && s.animation ? '<div class="prose small">' + M.render(s.animation) + '</div>' : '') +
+        anims.map(n => '<div class="anim-block">' + (D.animationTitles[n] ? '<h3 class="anim-title">' + esc(D.animationTitles[n]) + '</h3>' : '') +
+          '<div class="anim">' + D.animations[n] + '</div><div class="anim-bar"><button type="button" class="btn btn-small anim-toggle">⏸ Остановить</button></div>' +
+          (s['animation_' + n] || (anims.length === 1 ? s.animation : '') ? '<div class="prose small">' + M.render(s['animation_' + n] || s.animation) + '</div>' : '') + '</div>').join('')
+        : empty('Анимация для этой темы в разработке.')) + '</section>') +
 
-      '<section class="sec" aria-labelledby="h-vid"><h2 id="h-vid">Видео</h2>' +
-      (s.videos ? '<div class="prose">' + M.render(s.videos) + '</div>' : empty('Подборка видео пока не добавлена.')) + '</section>' +
+      // videos: none в шапке подтемы — раздела «Видео» на странице нет совсем
+      (t.videos === 'none' ? '' : '<section class="sec" aria-labelledby="h-vid"><h2 id="h-vid">Видео</h2>' +
+      (s.videos ? '<div class="prose">' + M.render(s.videos) + '</div>' : empty('Подборка видео пока не добавлена.')) + '</section>') +
 
       '<section class="sec" aria-labelledby="h-src"><h2 id="h-src">Статьи и источники</h2>' +
       (s.sources ? '<div class="prose">' + M.render(s.sources) + '</div>' : empty('Источники пока не добавлены.')) + '</section>' +
@@ -196,13 +202,13 @@
     $('#clin-toggle').addEventListener('change', e => setClinical(e.target.checked));
 
     /* анимация: пауза (доступность), по умолчанию стоит при prefers-reduced-motion */
-    const animEl = $('#anim');
-    if (animEl) {
-      const btn = $('#anim-toggle');
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    $$('.anim-block', topicEl).forEach(block => {
+      const animEl = $('.anim', block), btn = $('.anim-toggle', block);
       const setPaused = p => { animEl.classList.toggle('paused', p); btn.textContent = p ? '▶ Запустить' : '⏸ Остановить'; btn.setAttribute('aria-pressed', p); };
-      setPaused(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      setPaused(reduce);
       btn.addEventListener('click', () => setPaused(!animEl.classList.contains('paused')));
-    }
+    });
 
     WS.quiz.mount($('#quiz-box'), t, Object.assign({}, L(), { quizStart: L().quizStart }));
   }

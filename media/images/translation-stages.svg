@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="t d">
+  <title id="t">Три стадии трансляции: инициация, элонгация, терминация</title>
+  <desc id="d">Инициация: кэп и поли(А)-хвост мРНК соединены белками eIF4E, eIF4G и PABP; малая субъединица с метиониновой тРНК сканирует мРНК от 5'-конца до AUG, затем присоединяется большая субъединица. Элонгация: аминоацил-тРНК входит в сайт A вместе с eEF1A и GTP, рибосома образует пептидную связь, затем транслокация при участии eEF2 и GTP сдвигает рибосому на один кодон. Терминация: стоп-кодон в сайте A узнаёт eRF1 вместе с eRF3, полипептид освобождается, ABCE1 разделяет субъединицы.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 17px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .mr { stroke: #ee8a2b; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .tr { stroke: #3a3f4b; stroke-width: 3.5; fill: none; }
+    .ar { stroke: #5b6577; stroke-width: 2.3; fill: none; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+    <g id="rib">
+      <rect x="-56" y="-36" width="112" height="34" rx="16" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2"/>
+      <rect x="-48" y="2" width="96" height="20" rx="10" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="900" height="700" fill="#ffffff"/>
+
+  <!-- ================= 1. Инициация ================= -->
+  <text class="h" x="20" y="28">1. Инициация</text>
+  <!-- мРНК с кэпом и хвостом -->
+  <path class="mr" d="M40 150 L520 150"/>
+  <circle cx="40" cy="150" r="9" fill="#1d7a46"/><text class="s" x="40" y="176" text-anchor="middle" style="font-size:11px">кэп</text>
+  <text class="b" x="526" y="155" style="fill:#3fa34d;font-size:12px">AAAA</text>
+  <path d="M40 141 C40 60 540 60 540 141" fill="none" stroke="#8a94a8" stroke-width="2" stroke-dasharray="5 4"/>
+  <text class="s" x="290" y="76" text-anchor="middle" style="font-size:11.5px">eIF4E–eIF4G–PABP замыкают мРНК в кольцо</text>
+  <!-- 43S: малая субъединица + Met-тРНКi -->
+  <ellipse cx="130" cy="140" rx="38" ry="14" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/><text class="s" x="130" y="118" text-anchor="middle" style="font-size:11px">40S + eIF + Met-тРНК</text>
+  <circle cx="130" cy="164" r="9" fill="#f0b429"/><text class="b" x="130" y="168" text-anchor="middle" style="font-size:10px">M</text>
+  <path class="ar" d="M176 142 L236 142" marker-end="url(#ar)"/><text class="s" x="206" y="132" text-anchor="middle" style="font-size:11px">сканирование</text>
+  <!-- AUG -->
+  <rect x="290" y="132" width="44" height="26" rx="4" fill="#fff4e0" stroke="#c0397b" stroke-width="2"/><text class="b" x="312" y="150" text-anchor="middle" style="fill:#c0397b;font-size:12px">AUG</text>
+  <text class="s" x="312" y="182" text-anchor="middle" style="font-size:11px">контекст Козак</text>
+  <!-- 80S на AUG -->
+  <use href="#rib" x="440" y="150"/>
+  <line class="tr" x1="440" y1="152" x2="440" y2="128"/><circle cx="440" cy="124" r="8" fill="#f0b429"/><text class="b" x="440" y="128" text-anchor="middle" style="font-size:9px">M</text>
+  <path class="ar" d="M340 146 h34" stroke-dasharray="3 3" marker-end="url(#ar)"/>
+  <text class="s" x="440" y="196" text-anchor="middle" style="font-size:11px">80S собран, Met-тРНК в сайте P</text>
+  <!-- текст -->
+  <text class="b" x="570" y="98" style="fill:#4b4f9e">Что происходит</text>
+  <text class="s" x="570" y="118">• Белки eIF4E/eIF4G узнают кэп, PABP —</text><text class="s" x="578" y="134">хвост: мРНК замыкается в кольцо.</text>
+  <text class="s" x="570" y="156">• Малая субъединица с Met-тРНК (и</text><text class="s" x="578" y="172">факторами eIF) сканирует 5′→3′.</text>
+  <text class="s" x="570" y="194">• Найден AUG в хорошем контексте</text><text class="s" x="578" y="210">(Козак: ACCAUGG) → присоединяется 60S.</text>
+  <text class="s" x="570" y="232">• Трансляция начинается с метионина.</text>
+
+  <line x1="20" y1="246" x2="880" y2="246" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ================= 2. Элонгация ================= -->
+  <text class="h" x="20" y="274">2. Элонгация (цикл из трёх шагов)</text>
+  <!-- шаг 1 -->
+  <path class="mr" d="M20 380 L180 380"/>
+  <use href="#rib" x="100" y="380"/>
+  <line class="tr" x1="70" y1="382" x2="70" y2="362"/><circle cx="70" cy="356" r="7" fill="#9aa5b8"/>
+  <line class="tr" x1="100" y1="382" x2="100" y2="352"/><circle cx="100" cy="346" r="7" fill="#3fa34d"/>
+  <line class="tr" x1="132" y1="392" x2="132" y2="410" stroke="#e4572e"/><circle cx="132" cy="416" r="8" fill="#e4572e"/>
+  <text class="s" x="132" y="436" text-anchor="middle" style="font-size:10.5px">aa-тРНК + eEF1A·GTP</text>
+  <path class="ar" d="M132 400 L132 392" marker-end="url(#ar)"/>
+  <text class="b" x="100" y="466" text-anchor="middle">1. Вход aa-тРНК</text><text class="s" x="100" y="482" text-anchor="middle" style="font-size:11.5px">в сайт A</text>
+  <path class="ar" d="M190 380 h34" marker-end="url(#ar)"/>
+  <!-- шаг 2 -->
+  <path class="mr" d="M240 380 L400 380"/>
+  <use href="#rib" x="320" y="380"/>
+  <line class="tr" x1="290" y1="382" x2="290" y2="362"/><circle cx="290" cy="356" r="7" fill="#9aa5b8"/>
+  <line class="tr" x1="320" y1="382" x2="320" y2="352"/><circle cx="320" cy="346" r="6" fill="#9aa5b8"/>
+  <line class="tr" x1="352" y1="382" x2="352" y2="352"/><circle cx="352" cy="346" r="7" fill="#e4572e"/>
+  <path d="M320 346 C332 330 344 330 352 340" fill="none" stroke="#3fa34d" stroke-width="3.5"/>
+  <text class="b" x="320" y="466" text-anchor="middle">2. Пептидная связь</text><text class="s" x="320" y="482" text-anchor="middle" style="font-size:11.5px">рРНК переносит цепь на aa</text>
+  <path class="ar" d="M410 380 h34" marker-end="url(#ar)"/>
+  <!-- шаг 3 -->
+  <path class="mr" d="M460 380 L620 380"/>
+  <use href="#rib" x="560" y="380"/>
+  <line class="tr" x1="530" y1="382" x2="530" y2="362"/><circle cx="530" cy="356" r="6" fill="#9aa5b8" opacity=".5"/>
+  <line class="tr" x1="560" y1="382" x2="560" y2="352"/><circle cx="560" cy="346" r="7" fill="#e4572e"/>
+  <path d="M560 346 C540 330 520 330 500 336" fill="none" stroke="#3fa34d" stroke-width="3.5"/>
+  <path class="ar" d="M600 330 h34" marker-end="url(#ar)"/><text class="s" x="618" y="320" text-anchor="middle" style="font-size:10.5px">eEF2·GTP</text>
+  <text class="b" x="560" y="466" text-anchor="middle">3. Транслокация</text><text class="s" x="560" y="482" text-anchor="middle" style="font-size:11.5px">сдвиг на 1 кодон (3 нт)</text>
+  <text class="b" x="660" y="304" style="fill:#4b4f9e">Что происходит</text>
+  <text class="s" x="660" y="324" style="font-size:12px">• В сайт A входит тРНК, кодон</text><text class="s" x="668" y="340" style="font-size:12px">которой подходит (eEF1A·GTP).</text>
+  <text class="s" x="660" y="362" style="font-size:12px">• Пептидилтрансферазный центр</text><text class="s" x="668" y="378" style="font-size:12px">переносит цепь на новую аа-тРНК.</text>
+  <text class="s" x="660" y="400" style="font-size:12px">• eEF2·GTP сдвигает рибосому:</text><text class="s" x="668" y="416" style="font-size:12px">тРНК из P уходит через сайт E.</text>
+  <text class="s" x="660" y="438" style="font-size:12px">• Цикл повторяется на каждом</text><text class="s" x="668" y="454" style="font-size:12px">кодоне (≈ 5–6 аминокислот в с).</text>
+
+  <line x1="20" y1="500" x2="880" y2="500" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ================= 3. Терминация ================= -->
+  <text class="h" x="20" y="528">3. Терминация</text>
+  <path class="mr" d="M20 610 L200 610"/>
+  <use href="#rib" x="110" y="610"/>
+  <rect x="122" y="600" width="40" height="18" rx="3" fill="#dfe3ea" stroke="#8a94a8"/><text class="b" x="142" y="614" text-anchor="middle" style="font-size:10.5px">UAA</text>
+  <line class="tr" x1="90" y1="612" x2="90" y2="584"/><circle cx="90" cy="578" r="7" fill="#9aa5b8"/>
+  <path d="M90 578 C70 560 50 566 30 552" fill="none" stroke="#3fa34d" stroke-width="3.5"/>
+  <rect x="136" y="574" width="52" height="34" rx="10" fill="#ee8a2b"/><text class="w" x="162" y="590">eRF1</text><text class="w" x="162" y="602" style="font-size:9px">+ eRF3·GTP</text>
+  <text class="b" x="110" y="656" text-anchor="middle">Стоп-кодон в сайте A</text>
+  <path class="ar" d="M210 610 h44" marker-end="url(#ar)"/>
+  <!-- освобождение цепи -->
+  <path d="M300 574 C320 548 350 548 372 560 S408 578 424 560" fill="none" stroke="#3fa34d" stroke-width="4"/>
+  <text class="s" x="362" y="540" text-anchor="middle" style="font-size:11px">полипептид освобождён</text>
+  <use href="#rib" x="320" y="620" style="opacity:.45"/>
+  <text class="b" x="340" y="656" text-anchor="middle">eRF1 узнаёт стоп-кодон,</text><text class="s" x="340" y="672" text-anchor="middle" style="font-size:11.5px">цепь отщепляется от тРНК</text>
+  <path class="ar" d="M420 620 h34" marker-end="url(#ar)"/>
+  <!-- ресайклинг -->
+  <ellipse cx="500" cy="590" rx="36" ry="12" fill="#dbe9f5" stroke="#2e6f95" stroke-width="2"/><ellipse cx="500" cy="626" rx="30" ry="10" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/>
+  <text class="s" x="500" y="656" text-anchor="middle" style="font-size:11px">ABCE1 разделяет</text><text class="s" x="500" y="670" text-anchor="middle" style="font-size:11px">60S и 40S</text>
+  <text class="b" x="580" y="556" style="fill:#4b4f9e">Что происходит</text>
+  <text class="s" x="580" y="576" style="font-size:12px">• Стоп-кодон (UAA, UAG, UGA) в сайте</text><text class="s" x="588" y="592" style="font-size:12px">A: тРНК для него нет.</text>
+  <text class="s" x="580" y="614" style="font-size:12px">• Фактор eRF1 (по форме похож на тРНК)</text><text class="s" x="588" y="630" style="font-size:12px">узнаёт стоп-кодон; eRF3·GTP помогает.</text>
+  <text class="s" x="580" y="652" style="font-size:12px">• Пептидилтрансфераза гидролизует связь</text><text class="s" x="588" y="668" style="font-size:12px">цепи с тРНК; ABCE1 разбирает рибосому.</text>
+</svg>

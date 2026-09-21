@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" role="img" aria-labelledby="t d">
+  <title id="t">Строение нуклеосомы и гистонового октамера</title>
+  <desc id="d">Три схемы. А: нуклеосома сверху — ДНК длиной 147 пар оснований делает 1,65 витка вокруг гистонового октамера, линкерная ДНК отходит в обе стороны, у входа и выхода ДНК находится линкерный гистон H1. Б: октамер сбоку — в середине тетрамер (H3–H4)2, сверху и снизу по димеру H2A–H2B, ДНК обвивает их, хвосты гистонов выступают между витками. В: состав октамера — гистоны H3 и H4 образуют димеры и тетрамер, H2A и H2B образуют два димера, всего восемь белков. Внизу: положительно заряженные гистоны притягиваются к отрицательно заряженной ДНК.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .s { font-size: 13px; fill: #5b6577; }
+    .b { font-size: 13px; font-weight: 700; }
+    .w { font-size: 13px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .k { font-size: 13px; font-weight: 700; fill: #1c2330; text-anchor: middle; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <rect width="900" height="590" fill="#ffffff"/>
+
+  <!-- ================= А. вид сверху ================= -->
+  <text class="h" x="160" y="28" text-anchor="middle">А. Нуклеосома сверху</text>
+  <!-- задний (неполный) виток -->
+  <circle cx="166" cy="256" r="96" fill="none" stroke="#a9b2e0" stroke-width="14" stroke-dasharray="392 211" transform="rotate(-20 166 256)"/>
+  <!-- октамер -->
+  <circle cx="160" cy="250" r="76" fill="#e6ecf6" stroke="#8a94a8" stroke-width="2.5"/>
+  <text class="b" x="160" y="244" text-anchor="middle">гистоновый</text>
+  <text class="b" x="160" y="262" text-anchor="middle">октамер</text>
+  <text class="s" x="160" y="282" text-anchor="middle">8 белков</text>
+  <!-- передний виток -->
+  <circle cx="160" cy="250" r="96" fill="none" stroke="#4b4f9e" stroke-width="14" stroke-dasharray="560 43" transform="rotate(-77 160 250)"/>
+  <!-- линкерная ДНК и H1 -->
+  <line x1="138.4" y1="157" x2="108" y2="76" stroke="#4b4f9e" stroke-width="14" stroke-linecap="round"/>
+  <line x1="181.6" y1="157" x2="212" y2="76" stroke="#4b4f9e" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="160" cy="148" rx="18" ry="13" fill="#7b5ea7"/><text class="w" x="160" y="153">H1</text>
+  <text class="s" x="98" y="62" text-anchor="end">линкерная ДНК</text>
+  <text class="s" x="222" y="62">линкерная ДНК</text>
+  <path class="ln" d="M176 142 L228 124"/><text class="s" x="232" y="120">линкерный</text><text class="s" x="232" y="136">гистон H1</text>
+  <!-- размер и длина -->
+  <path class="ln" d="M57 372 v8 h206 v-8"/><text class="b" x="160" y="398" text-anchor="middle">≈ 11 нм</text>
+  <text class="s" x="160" y="440" text-anchor="middle">ДНК 147 п. н. ≈ 1,65 витка</text>
+  <text class="s" x="160" y="458" text-anchor="middle">(тёмный виток — передний, светлый — задний)</text>
+
+  <line x1="325" y1="20" x2="325" y2="470" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ================= Б. вид сбоку ================= --><g transform="translate(-12 0)">
+  <text class="h" x="475" y="28" text-anchor="middle">Б. Октамер сбоку</text>
+  <!-- задние половины витков ДНК -->
+  <path d="M363 190 A112 24 0 0 1 587 190" fill="none" stroke="#a9b2e0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M363 250 A112 24 0 0 1 587 250" fill="none" stroke="#a9b2e0" stroke-width="12" stroke-linecap="round"/>
+  <!-- верхний димер H2A-H2B -->
+  <rect x="420" y="160" width="55" height="44" rx="10" fill="#f0b429" stroke="#fff" stroke-width="2"/><text class="k" x="447.5" y="187">H2A</text>
+  <rect x="475" y="160" width="55" height="44" rx="10" fill="#e4572e" stroke="#fff" stroke-width="2"/><text class="w" x="502.5" y="187">H2B</text>
+  <!-- тетрамер (H3-H4)2 -->
+  <rect x="387" y="208" width="44" height="48" rx="10" fill="#3fa34d" stroke="#fff" stroke-width="2"/><text class="w" x="409" y="237">H4</text>
+  <rect x="431" y="208" width="44" height="48" rx="10" fill="#3b6fd4" stroke="#fff" stroke-width="2"/><text class="w" x="453" y="237">H3</text>
+  <rect x="475" y="208" width="44" height="48" rx="10" fill="#3b6fd4" stroke="#fff" stroke-width="2"/><text class="w" x="497" y="237">H3</text>
+  <rect x="519" y="208" width="44" height="48" rx="10" fill="#3fa34d" stroke="#fff" stroke-width="2"/><text class="w" x="541" y="237">H4</text>
+  <!-- нижний димер -->
+  <rect x="420" y="260" width="55" height="44" rx="10" fill="#e4572e" stroke="#fff" stroke-width="2"/><text class="w" x="447.5" y="294">H2B</text>
+  <rect x="475" y="260" width="55" height="44" rx="10" fill="#f0b429" stroke="#fff" stroke-width="2"/><text class="k" x="502.5" y="294">H2A</text>
+  <!-- передние половины витков ДНК -->
+  <path d="M363 190 A112 24 0 0 0 587 190" fill="none" stroke="#4b4f9e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M363 250 A112 24 0 0 0 587 250" fill="none" stroke="#4b4f9e" stroke-width="12" stroke-linecap="round"/>
+  <!-- линкеры -->
+  <line x1="363" y1="190" x2="338" y2="134" stroke="#4b4f9e" stroke-width="12" stroke-linecap="round"/>
+  <line x1="587" y1="250" x2="612" y2="306" stroke="#4b4f9e" stroke-width="12" stroke-linecap="round"/>
+  <text class="s" x="346" y="124">линкерная ДНК</text>
+  <text class="s" x="608" y="328" text-anchor="end">линкерная ДНК</text>
+  <!-- хвосты гистонов -->
+  <path d="M431 236 c-12 -9 -20 9 -33 0 s-20 9 -34 0 s-20 9 -30 0" fill="none" stroke="#3b6fd4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M519 236 c12 -9 20 9 33 0 s20 9 34 0 s20 9 30 0" fill="none" stroke="#3fa34d" stroke-width="3" stroke-linecap="round"/>
+  <text class="s" x="475" y="362" text-anchor="middle">«хвосты» гистонов выступают</text>
+  <text class="s" x="475" y="380" text-anchor="middle">между витками ДНК</text>
+  <!-- подписи слоёв -->
+  <path class="ln" d="M532 182 h60"/><text class="b" x="598" y="187">H2A–H2B</text><text class="s" x="598" y="203">димер</text>
+  <path class="ln" d="M565 232 h27"/><text class="b" x="598" y="252">(H3–H4)₂</text><text class="s" x="598" y="268">тетрамер</text>
+  <path class="ln" d="M532 282 h60"/><text class="b" x="598" y="287">H2A–H2B</text><text class="s" x="598" y="303">димер</text>
+  <!-- высота -->
+  <path class="ln" d="M338 160 h-8 v144 h8"/><text class="b" x="322" y="236" text-anchor="end">≈ 6 нм</text>
+
+  </g><line x1="662" y1="20" x2="662" y2="470" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/><g transform="translate(6 0)">
+
+  <!-- ================= В. состав ================= -->
+  <text class="h" x="775" y="28" text-anchor="middle">В. Состав октамера</text>
+  <g>
+    <circle cx="690" cy="70" r="17" fill="#3b6fd4"/><text class="w" x="690" y="75">H3</text>
+    <circle cx="734" cy="70" r="17" fill="#3fa34d"/><text class="w" x="734" y="75">H4</text>
+    <circle cx="812" cy="70" r="17" fill="#f0b429"/><text class="k" x="812" y="75">H2A</text>
+    <circle cx="856" cy="70" r="17" fill="#e4572e"/><text class="w" x="856" y="75">H2B</text>
+  </g>
+  <path class="ln" d="M712 92 v20"/><path class="ln" d="M834 92 v20"/>
+  <g>
+    <circle cx="700" cy="136" r="16" fill="#3b6fd4"/><circle cx="724" cy="136" r="16" fill="#3fa34d"/>
+    <circle cx="824" cy="136" r="16" fill="#f0b429"/><circle cx="848" cy="136" r="16" fill="#e4572e"/>
+  </g>
+  <text class="s" x="712" y="170" text-anchor="middle">димер H3–H4</text>
+  <text class="s" x="836" y="170" text-anchor="middle">димер H2A–H2B</text>
+  <path class="ln" d="M712 178 v20"/>
+  <text class="b" x="726" y="192">× 2</text>
+  <g>
+    <circle cx="676" cy="222" r="13" fill="#3fa34d"/><circle cx="702" cy="222" r="13" fill="#3b6fd4"/><circle cx="728" cy="222" r="13" fill="#3b6fd4"/><circle cx="754" cy="222" r="13" fill="#3fa34d"/>
+    <circle cx="808" cy="222" r="11" fill="#f0b429"/><circle cx="826" cy="222" r="11" fill="#e4572e"/>
+    <circle cx="854" cy="222" r="11" fill="#e4572e"/><circle cx="872" cy="222" r="11" fill="#f0b429"/>
+  </g>
+  <text class="s" x="715" y="252" text-anchor="middle">тетрамер (H3–H4)₂</text>
+  <text class="s" x="840" y="252" text-anchor="middle">2 × H2A–H2B</text>
+  <path class="ln" d="M715 262 v18"/><path class="ln" d="M840 262 v18"/>
+  <!-- октамер (мини-схема) -->
+  <g>
+    <rect x="740" y="284" width="30" height="16" rx="4" fill="#f0b429"/><rect x="770" y="284" width="30" height="16" rx="4" fill="#e4572e"/>
+    <rect x="710" y="302" width="30" height="20" rx="4" fill="#3fa34d"/><rect x="740" y="302" width="30" height="20" rx="4" fill="#3b6fd4"/><rect x="770" y="302" width="30" height="20" rx="4" fill="#3b6fd4"/><rect x="800" y="302" width="30" height="20" rx="4" fill="#3fa34d"/>
+    <rect x="740" y="324" width="30" height="16" rx="4" fill="#e4572e"/><rect x="770" y="324" width="30" height="16" rx="4" fill="#f0b429"/>
+  </g>
+  <text class="b" x="775" y="362" text-anchor="middle">= октамер: 8 белков</text>
+  <text class="s" x="775" y="380" text-anchor="middle">по два H2A, H2B, H3 и H4</text>
+
+  </g><!-- ================= электростатика ================= -->
+  <line x1="20" y1="474" x2="880" y2="474" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="500">Почему ДНК «садится» на гистоны</text>
+  <rect x="330" y="484" width="430" height="24" rx="12" fill="#dbe9fb" stroke="#1f4e8c" stroke-width="2"/>
+  <g class="b" style="fill:#1f4e8c" text-anchor="middle">
+    <text x="362" y="502" style="fill:#1f4e8c">+</text><text x="398" y="502" style="fill:#1f4e8c">+</text><text x="434" y="502" style="fill:#1f4e8c">+</text><text x="470" y="502" style="fill:#1f4e8c">+</text><text x="506" y="502" style="fill:#1f4e8c">+</text><text x="542" y="502" style="fill:#1f4e8c">+</text><text x="578" y="502" style="fill:#1f4e8c">+</text><text x="614" y="502" style="fill:#1f4e8c">+</text><text x="650" y="502" style="fill:#1f4e8c">+</text><text x="686" y="502" style="fill:#1f4e8c">+</text><text x="722" y="502" style="fill:#1f4e8c">+</text>
+  </g>
+  <g stroke="#5b6577" stroke-width="2" fill="none"><path d="M380 512 v16"/><path d="M470 512 v16"/><path d="M560 512 v16"/><path d="M650 512 v16"/><path d="M740 512 v16"/></g>
+  <g fill="#5b6577"><polygon points="380,512 375,519 385,519"/><polygon points="470,512 465,519 475,519"/><polygon points="560,512 555,519 565,519"/><polygon points="650,512 645,519 655,519"/><polygon points="740,512 735,519 745,519"/></g>
+  <rect x="330" y="532" width="430" height="24" rx="12" fill="#fde3df" stroke="#c0392b" stroke-width="2"/>
+  <g class="b" text-anchor="middle">
+    <text x="362" y="551" style="fill:#c0392b">−</text><text x="398" y="551" style="fill:#c0392b">−</text><text x="434" y="551" style="fill:#c0392b">−</text><text x="470" y="551" style="fill:#c0392b">−</text><text x="506" y="551" style="fill:#c0392b">−</text><text x="542" y="551" style="fill:#c0392b">−</text><text x="578" y="551" style="fill:#c0392b">−</text><text x="614" y="551" style="fill:#c0392b">−</text><text x="650" y="551" style="fill:#c0392b">−</text><text x="686" y="551" style="fill:#c0392b">−</text><text x="722" y="551" style="fill:#c0392b">−</text>
+  </g>
+  <text class="b" x="20" y="526" style="fill:#1f4e8c">Гистоны (Lys, Arg): заряд «+»</text>
+  <text class="b" x="20" y="552" style="fill:#c0392b">Остов ДНК (фосфаты): заряд «−»</text>
+  <text class="s" x="772" y="522">притяжение</text>
+  
+  
+</svg>

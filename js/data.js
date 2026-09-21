@@ -15,6 +15,7 @@
   const proteins = [];
   const quizzes = {};
   const animations = {};
+  const animationTitles = {};
 
   Object.keys(files).sort().forEach(path => {
     const text = files[path];
@@ -33,7 +34,7 @@
         id: meta.id || m[2], blockId: m[1], path,
         title: meta.title || m[2], title_en: meta.title_en || '',
         order: num(meta.order, 99), summary: meta.summary || '', updated: meta.updated || '',
-        animation: meta.animation || '', related: arr(meta.related), exclude: arr(meta.exclude),
+        animation: arr(meta.animation), videos: meta.videos || '', related: arr(meta.related), exclude: arr(meta.exclude),
         sections: s, questions: []
       });
     } else if ((m = path.match(/^glossary\/([^/]+)\.md$/))) {
@@ -58,6 +59,9 @@
       quizzes[m[1]] = WS.quiz ? WS.quiz.parse(text, m[1]) : [];
     } else if ((m = path.match(/^media\/animations\/([^/]+)\.svg$/))) {
       animations[m[1]] = text;
+      const tm = text.match(/<title[^>]*>([^<]*)<\/title>/);
+      const title = tm ? tm[1].replace(/^Анимация:\s*/i, '') : '';
+      animationTitles[m[1]] = title.charAt(0).toUpperCase() + title.slice(1);
     }
   });
 
@@ -80,7 +84,7 @@
   proteins.forEach(p => { proteinById[p.id] = p; });
 
   WS.data = {
-    built: bundle.built, blocks, topics, terms, proteins, quizzes, animations,
+    built: bundle.built, blocks, topics, terms, proteins, quizzes, animations, animationTitles,
     blockById, topicById, termById, proteinById,
     hasContent: topics.length > 0
   };

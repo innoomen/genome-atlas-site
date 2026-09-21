@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="t d">
+  <title id="t">Теломера: строение и проблема недорепликации концов</title>
+  <desc id="d">Слева строение теломеры: двухцепочечная ДНК из повторов TTAGGG заканчивается одноцепочечным 3'-выступом; белки шелтерина (TRF1, TRF2, POT1–TPP1) покрывают теломеру, а конец ДНК прячется в t-петле. Справа проблема недорепликации: после удаления последнего РНК-праймера на отстающей цепи остаётся недостроенный участок, поэтому при каждом делении теломера немного укорачивается; критически короткие теломеры запускают старение клетки или апоптоз.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 17px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .l { font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .new { stroke: #ee8a2b; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .pr { stroke: #b4531a; stroke-width: 5; stroke-linecap: round; }
+    .rung { stroke: #c3cad8; stroke-width: 2; }
+    .ldr { stroke: #8a94a8; stroke-width: 1.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="540" fill="#ffffff"/>
+  <line x1="450" y1="14" x2="450" y2="526" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== А. строение теломеры ===== -->
+  <text class="h" x="20" y="28">А. Строение теломеры</text>
+  <rect x="20" y="130" width="70" height="74" rx="14" fill="#dbe4f2" stroke="#8a94a8" stroke-width="2"/>
+  <text class="s" x="55" y="162" text-anchor="middle">тело</text><text class="s" x="55" y="178" text-anchor="middle">хромосомы</text>
+  <line class="old" x1="90" y1="152" x2="410" y2="152"/>
+  <line class="old" x1="90" y1="182" x2="300" y2="182"/>
+  <g class="rung"><line x1="106" y1="152" x2="106" y2="182"/><line x1="124" y1="152" x2="124" y2="182"/><line x1="142" y1="152" x2="142" y2="182"/><line x1="160" y1="152" x2="160" y2="182"/><line x1="178" y1="152" x2="178" y2="182"/><line x1="196" y1="152" x2="196" y2="182"/><line x1="214" y1="152" x2="214" y2="182"/><line x1="232" y1="152" x2="232" y2="182"/><line x1="250" y1="152" x2="250" y2="182"/><line x1="268" y1="152" x2="268" y2="182"/><line x1="286" y1="152" x2="286" y2="182"/></g>
+  <text class="b" x="98" y="142" style="fill:#7b3f9e">5′</text><text class="b" x="402" y="142" style="fill:#7b3f9e">3′</text>
+  <text class="b" x="98" y="204" style="fill:#7b3f9e">3′</text><text class="b" x="290" y="204" style="fill:#7b3f9e">5′</text>
+  <text class="s" x="98" y="128">G-цепь: …TTAGGG TTAGGG TTAGGG…</text>
+  <text class="s" x="98" y="222">C-цепь: …AATCCC AATCCC…</text>
+  <path class="ldr" d="M108 234 h190"/><path class="ldr" d="M108 230 v8"/><path class="ldr" d="M298 230 v8"/>
+  <text class="b" x="203" y="254" text-anchor="middle">повторы TTAGGG</text>
+  <text class="s" x="203" y="270" text-anchor="middle">у человека ≈ 5–15 тыс. п. н.</text>
+  <path class="ldr" d="M304 234 h104"/><path class="ldr" d="M304 230 v8"/><path class="ldr" d="M408 230 v8"/>
+  <text class="b" x="356" y="254" text-anchor="middle">3′-выступ</text>
+  <text class="s" x="356" y="270" text-anchor="middle">≈ 50–300 нуклеотидов</text>
+  <!-- шелтерин -->
+  <circle cx="150" cy="167" r="10" fill="#3fa34d"/><circle cx="214" cy="167" r="10" fill="#3fa34d"/><circle cx="270" cy="167" r="10" fill="#3fa34d"/>
+  <circle cx="356" cy="152" r="11" fill="#7b5ea7"/>
+  <path class="ldr" d="M150 157 L150 106"/><path class="ldr" d="M356 141 L356 106"/>
+  <text class="b" x="150" y="100" text-anchor="middle" style="fill:#3fa34d">TRF1, TRF2</text>
+  <text class="b" x="356" y="100" text-anchor="middle" style="fill:#7b5ea7">POT1–TPP1</text>
+  <text class="s" x="252" y="64" text-anchor="middle">Комплекс белков шелтерин покрывает теломеру:</text>
+  <text class="s" x="252" y="80" text-anchor="middle">он отличает конец хромосомы от «разрыва ДНК».</text>
+
+  <!-- t-петля -->
+  <text class="b" x="20" y="316">t-петля: конец ДНК «спрятан»</text>
+  <path d="M120 420 C120 350 210 340 250 372 C290 404 240 462 180 452 C150 448 140 430 140 420" fill="none" stroke="#2f3f7a" stroke-width="5" stroke-linecap="round"/>
+  <line class="old" x1="20" y1="420" x2="120" y2="420"/><line class="new" x1="20" y1="438" x2="126" y2="438"/>
+  <circle cx="146" cy="428" r="9" fill="#ee8a2b"/>
+  <path class="ldr" d="M156 424 L214 402"/><text class="s" x="220" y="398">3′-выступ вставлен в дуплекс</text>
+  <text class="s" x="20" y="490">Так конец ДНК не воспринимается как двухцепочечный</text>
+  <text class="s" x="20" y="506">разрыв, и система репарации не «чинит» его.</text>
+
+  <!-- ===== Б. проблема недорепликации ===== -->
+  <text class="h" x="470" y="28">Б. Проблема недорепликации</text>
+  <text class="b" x="470" y="62">1. Родительская молекула и последний фрагмент</text>
+  <line class="old" x1="474" y1="98" x2="860" y2="98"/>
+  <line class="new" x1="474" y1="84" x2="740" y2="84"/><line class="pr" x1="740" y1="84" x2="758" y2="84"/>
+  <text class="s" x="474" y="122">матричная цепь отстающей цепи (3′-конец справа)</text>
+  <text class="s" x="762" y="78" style="fill:#b4531a">праймер</text>
+  <text class="b" x="470" y="160">2. Последний РНК-праймер удалён</text>
+  <line class="old" x1="474" y1="196" x2="860" y2="196"/>
+  <line class="new" x1="474" y1="182" x2="740" y2="182"/>
+  <line x1="740" y1="182" x2="758" y2="182" stroke="#c0392b" stroke-width="3" stroke-dasharray="4 4"/>
+  <text class="s" x="762" y="176" style="fill:#c0392b">не достроено</text>
+  <text class="s" x="474" y="220">ДНК-полимераза добавляет нуклеотиды только к 3′-OH:</text>
+  <text class="s" x="474" y="236">на месте удалённого праймера затравки нет.</text>
+  <text class="b" x="470" y="278">3. Итог: дочерняя цепь короче на ≈ 50–100 п. н.</text>
+  <rect x="474" y="292" width="360" height="16" rx="8" fill="#ee8a2b"/><text class="s" x="842" y="304">исходная теломера</text>
+  <rect x="474" y="318" width="290" height="16" rx="8" fill="#ee8a2b"/><text class="s" x="772" y="330">после нескольких делений</text>
+  <rect x="474" y="344" width="86" height="16" rx="8" fill="#c0392b"/><text class="s" x="568" y="356">критически короткая</text>
+  <path d="M474 378 h0" stroke="#000"/>
+  <text class="b" x="470" y="396" style="fill:#c0392b">Что дальше?</text>
+  <text class="s" x="470" y="416">• p53-зависимая остановка деления (старение клетки)</text>
+  <text class="s" x="470" y="434">• апоптоз</text>
+  <text class="s" x="470" y="452">• при потере контрольных точек — слияния концов хромосом</text>
+  <text class="s" x="470" y="468">   и нестабильность генома</text>
+  <text class="b" x="470" y="504" style="fill:#1d7a46">Достраивает теломеры фермент теломераза</text>
+  <text class="s" x="470" y="522">(см. анимацию «Как работает теломераза»)</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+  <title id="t">Транскрипционные факторы: кто кого призывает</title>
+  <desc id="d">Схема активации гена. Сигнал активирует транскрипционный фактор, фактор садится на энхансер, призывает коактиваторы p300/CBP и SWI/SNF (хроматин открывается), затем комплекс Mediator; ДНК изгибается в петлю, Mediator помогает собрать комплекс инициации с РНК-полимеразой II на промоторе. Внизу для сравнения репрессор призывает корепрессоры и деацетилазы, и хроматин закрывается.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .n { font-size: 13px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .dna { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .ln { stroke: #8a94a8; stroke-width: 2; fill: none; stroke-dasharray: 5 4; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="h" x="20" y="26">Активация гена: цепочка «призывов»</text>
+
+  <!-- ДНК -->
+  <line class="dna" x1="20" y1="330" x2="880" y2="330"/>
+  <!-- энхансер -->
+  <rect x="110" y="323" width="34" height="14" rx="3" fill="#f0b429"/><rect x="160" y="323" width="34" height="14" rx="3" fill="#f0b429"/>
+  <text class="s" x="152" y="358" text-anchor="middle">энхансер (сайты ТФ)</text>
+  <!-- нуклеосомы -->
+  <circle cx="52" cy="330" r="19" fill="#e6ecf6" stroke="#8a94a8" stroke-width="3"/><circle cx="252" cy="330" r="19" fill="#e6ecf6" stroke="#8a94a8" stroke-width="3"/>
+  <circle cx="52" cy="304" r="8" fill="#3fa34d"/><text class="w" x="52" y="307" style="font-size:8px">Ac</text>
+  <circle cx="252" cy="304" r="8" fill="#3fa34d"/><text class="w" x="252" y="307" style="font-size:8px">Ac</text>
+  <!-- промотор -->
+  <rect x="640" y="323" width="40" height="14" rx="3" fill="#f0b429"/>
+  <text class="s" x="660" y="358" text-anchor="middle">промотор (ТАТА)</text>
+  <path d="M700 330 v-22 h26" fill="none" stroke="#2f3f7a" stroke-width="3" marker-end="url(#ar)"/><text class="s" x="734" y="296">старт (+1)</text>
+  <path d="M700 330 h150" stroke="#ee8a2b" stroke-width="0"/>
+
+  <!-- ТФ -->
+  <g>
+    <line x1="127" y1="323" x2="127" y2="288" stroke="#2f3f7a" stroke-width="4"/><ellipse cx="127" cy="274" rx="22" ry="17" fill="#d1432f"/><text class="w" x="127" y="278">ТФ</text>
+    <line x1="177" y1="323" x2="177" y2="288" stroke="#2f3f7a" stroke-width="4"/><ellipse cx="177" cy="274" rx="22" ry="17" fill="#3b6fd4"/><text class="w" x="177" y="278">ТФ</text>
+  </g>
+  <!-- коактиваторы -->
+  <circle cx="98" cy="222" r="24" fill="#ee8a2b"/><text class="w" x="98" y="219" style="font-size:10.5px">p300</text><text class="w" x="98" y="232" style="font-size:10.5px">/CBP</text>
+  <path d="M98 246 L118 258" stroke="#5b6577" stroke-width="2" fill="none"/>
+  <polygon points="204,208 220,214 220,232 204,238 188,232 188,214" fill="#1a9aa0"/><text class="w" x="204" y="227" style="font-size:9.5px">SWI/SNF</text>
+  <path d="M190 236 L182 256" stroke="#5b6577" stroke-width="2" fill="none"/>
+  <path d="M74 236 C62 262 54 282 52 292" class="ln"/><text class="s" x="14" y="264" style="font-size:11px">ацетилирует</text><text class="s" x="14" y="277" style="font-size:11px">гистоны</text>
+  <path d="M222 240 C240 262 248 280 252 292" class="ln"/><text class="s" x="252" y="268" style="font-size:11px">сдвигает</text><text class="s" x="252" y="281" style="font-size:11px">нуклеосомы</text>
+
+  <!-- Mediator -->
+  <rect x="330" y="150" width="150" height="44" rx="14" fill="#7b5ea7"/><text class="w" x="405" y="177" style="font-size:14px">Mediator</text>
+  <path d="M138 258 C170 200 300 180 336 178" class="ln"/><path d="M188 258 C230 210 300 190 336 184" class="ln"/>
+  <path d="M480 178 C560 190 640 230 660 262" class="ln"/>
+  <!-- PIC и Pol II -->
+  <ellipse cx="662" cy="284" rx="50" ry="30" fill="#6c7a96"/><text class="w" x="662" y="282" style="font-size:12.5px">Pol II</text><text class="w" x="662" y="296" style="font-size:10px">+ общие факторы</text>
+  <path d="M712 296 C760 300 800 306 850 306" fill="none" stroke="#ee8a2b" stroke-width="4" stroke-linecap="round"/><text class="s" x="850" y="322" text-anchor="end">РНК</text>
+
+  <!-- номера -->
+  <g>
+    <circle cx="40" cy="140" r="13" fill="#4b4f9e"/><text class="n" x="40" y="145">1</text>
+    <circle cx="90" cy="288" r="13" fill="#4b4f9e"/><text class="n" x="90" y="293">2</text>
+    <circle cx="152" cy="200" r="13" fill="#4b4f9e"/><text class="n" x="152" y="205">3</text>
+    <circle cx="405" cy="128" r="13" fill="#4b4f9e"/><text class="n" x="405" y="133">4</text>
+    <circle cx="662" cy="238" r="13" fill="#4b4f9e"/><text class="n" x="662" y="243">5</text>
+  </g>
+  <!-- сигнал -->
+  <path d="M60 140 h40" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="108" y="138" style="fill:#c0397b">сигнал</text><text class="s" x="108" y="154">гормон, цитокин, путь</text>
+  <path d="M170 152 L142 254" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- пояснения -->
+  <line x1="20" y1="382" x2="880" y2="382" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="b" x="20" y="404">1. Сигнал активирует транскрипционный фактор (ТФ).</text>
+  <text class="b" x="20" y="424">2. ТФ узнаёт свой мотив на энхансере и садится на ДНК.</text>
+  <text class="b" x="20" y="444">3. ТФ призывает коактиваторы: p300/CBP ацетилирует гистоны, SWI/SNF</text>
+  <text class="s" x="34" y="460">сдвигает нуклеосомы — хроматин открывается.</text>
+  <text class="b" x="20" y="480">4. ТФ и коактиваторы призывают Mediator; ДНК изгибается в петлю.</text>
+  <text class="b" x="20" y="500">5. Mediator помогает собрать комплекс инициации и посадить Pol II.</text>
+  <rect x="560" y="396" width="320" height="140" rx="12" fill="#fdf1ef" stroke="#c0392b" stroke-width="2"/>
+  <text class="b" x="576" y="420" style="fill:#c0392b">Для сравнения: репрессор</text>
+  <text class="s" x="576" y="440">Репрессор садится на ДНК и призывает</text>
+  <text class="s" x="576" y="456">корепрессоры (NCoR/SMRT) и деацетилазы</text>
+  <text class="s" x="576" y="472">гистонов (HDAC). Ацетильные метки снимаются,</text>
+  <text class="s" x="576" y="488">нуклеосомы упаковываются плотнее, и ген</text>
+  <text class="s" x="576" y="504">«выключается».</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+  <title id="t">Сборка комплекса инициации транскрипции РНК-полимеразы II</title>
+  <desc id="d">Шесть шагов слева направо. 1: TFIID (TBP с TAF-белками) садится на ТАТА-бокс промотора. 2: присоединяются TFIIA и TFIIB. 3: приходит РНК-полимераза II вместе с TFIIF. 4: присоединяются TFIIE и TFIIH, комплекс инициации собран. 5: TFIIH раскрывает ДНК, киназа CDK7 фосфорилирует хвост полимеразы по серину 5. 6: полимераза уходит с промотора, после паузы киназа CDK9 (P-TEFb) фосфорилирует серин 2, начинается элонгация; у растущей РНК есть 5'-кэп.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 12.5px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .n { font-size: 14px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .dna { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .rna { stroke: #ee8a2b; stroke-width: 4; fill: none; stroke-linecap: round; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="h" x="20" y="26">Кто за кем приходит на промотор</text>
+
+  <!-- разделители -->
+  <g stroke="#e1e6ee" stroke-width="2" stroke-dasharray="5 6"><line x1="160" y1="46" x2="160" y2="330"/><line x1="305" y1="46" x2="305" y2="330"/><line x1="450" y1="46" x2="450" y2="330"/><line x1="595" y1="46" x2="595" y2="330"/><line x1="740" y1="46" x2="740" y2="330"/></g>
+
+  <!-- номера шагов -->
+  <g>
+    <circle cx="90" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="90" y="67">1</text>
+    <circle cx="232" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="232" y="67">2</text>
+    <circle cx="377" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="377" y="67">3</text>
+    <circle cx="522" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="522" y="67">4</text>
+    <circle cx="667" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="667" y="67">5</text>
+    <circle cx="812" cy="62" r="13" fill="#4b4f9e"/><text class="n" x="812" y="67">6</text>
+  </g>
+
+  <!-- ДНК и ТАТА-боксы (шаги 1-4) -->
+  <g>
+    <line class="dna" x1="14" y1="240" x2="150" y2="240"/><rect x="70" y="233" width="40" height="14" rx="3" fill="#f0b429"/><text class="s" x="90" y="262" text-anchor="middle" style="font-size:11px">ТАТА-бокс</text>
+    <line class="dna" x1="168" y1="240" x2="296" y2="240"/><rect x="212" y="233" width="40" height="14" rx="3" fill="#f0b429"/>
+    <line class="dna" x1="313" y1="240" x2="441" y2="240"/><rect x="357" y="233" width="40" height="14" rx="3" fill="#f0b429"/>
+    <line class="dna" x1="458" y1="240" x2="586" y2="240"/><rect x="502" y="233" width="40" height="14" rx="3" fill="#f0b429"/>
+  </g>
+
+  <!-- 1: TFIID -->
+  <ellipse cx="90" cy="206" rx="42" ry="24" fill="#7b5ea7"/><text class="w" x="90" y="204">TFIID</text><text class="w" x="90" y="218" style="font-size:9.5px">TBP + TAF</text>
+  <!-- 2: TFIID + TFIIA + TFIIB -->
+  <ellipse cx="232" cy="206" rx="42" ry="24" fill="#7b5ea7"/><text class="w" x="232" y="204">TFIID</text><text class="w" x="232" y="218" style="font-size:9.5px">TBP + TAF</text>
+  <circle cx="190" cy="222" r="13" fill="#3fa34d"/><text class="w" x="190" y="226" style="font-size:9.5px">IIA</text>
+  <circle cx="276" cy="222" r="13" fill="#ee8a2b"/><text class="w" x="276" y="226" style="font-size:9.5px">IIB</text>
+  <!-- 3: + Pol II + TFIIF -->
+  <ellipse cx="377" cy="206" rx="42" ry="24" fill="#7b5ea7"/><text class="w" x="377" y="210" style="font-size:10.5px">TFIID</text>
+  <circle cx="335" cy="222" r="11" fill="#3fa34d"/><circle cx="419" cy="222" r="11" fill="#ee8a2b"/>
+  <ellipse cx="377" cy="148" rx="48" ry="34" fill="#6c7a96"/><text class="w" x="377" y="146">Pol II</text><text class="w" x="377" y="160" style="font-size:9.5px">РНК-полимераза II</text>
+  <circle cx="432" cy="160" r="13" fill="#2e86ab"/><text class="w" x="432" y="164" style="font-size:9.5px">IIF</text>
+  <!-- 4: PIC -->
+  <ellipse cx="522" cy="206" rx="42" ry="24" fill="#7b5ea7"/><text class="w" x="522" y="210" style="font-size:10.5px">TFIID</text>
+  <circle cx="480" cy="222" r="11" fill="#3fa34d"/><circle cx="564" cy="222" r="11" fill="#ee8a2b"/>
+  <ellipse cx="522" cy="148" rx="48" ry="34" fill="#6c7a96"/><text class="w" x="522" y="152">Pol II</text>
+  <circle cx="577" cy="160" r="13" fill="#2e86ab"/><text class="w" x="577" y="164" style="font-size:9.5px">IIF</text>
+  <circle cx="470" cy="128" r="14" fill="#1a9aa0"/><text class="w" x="470" y="132" style="font-size:9.5px">IIE</text>
+  <ellipse cx="586" cy="112" rx="24" ry="17" fill="#c0397b"/><text class="w" x="586" y="116" style="font-size:10px">IIH</text>
+  <!-- 5: открытый комплекс -->
+  <path class="dna" d="M600 240 h30 c8 0 10 -14 26 -14 s18 14 26 14 h30"/>
+  <path class="dna" d="M630 240 c8 0 10 14 26 14 s18 -14 26 -14" stroke="#8b93c9"/>
+  <ellipse cx="667" cy="176" rx="46" ry="32" fill="#6c7a96"/><text class="w" x="667" y="180">Pol II</text>
+  <ellipse cx="722" cy="150" rx="22" ry="16" fill="#c0397b"/><text class="w" x="722" y="154" style="font-size:10px">IIH</text>
+  <path d="M648 146 c-8 -18 6 -30 14 -40 c8 -10 -2 -20 6 -28" fill="none" stroke="#6c7a96" stroke-width="3"/>
+  <circle cx="650" cy="132" r="7" fill="#7b5ea7"/><text class="w" x="650" y="135" style="font-size:8px">P</text>
+  <circle cx="662" cy="112" r="7" fill="#7b5ea7"/><text class="w" x="662" y="115" style="font-size:8px">P</text>
+  <circle cx="666" cy="92" r="7" fill="#7b5ea7"/><text class="w" x="666" y="95" style="font-size:8px">P</text>
+  <text class="b" x="630" y="86" text-anchor="end" style="fill:#7b5ea7">Ser5-P</text>
+  <!-- 6: элонгация -->
+  <line class="dna" x1="748" y1="240" x2="890" y2="240"/>
+  <ellipse cx="840" cy="206" rx="44" ry="30" fill="#6c7a96"/><text class="w" x="840" y="210">Pol II</text>
+  <path class="rna" d="M800 214 C778 214 776 190 760 190 C752 190 750 200 750 206"/>
+  <circle cx="750" cy="207" r="7" fill="#1d7a46"/><text x="750" y="192" text-anchor="middle" class="s" style="font-size:10.5px">кэп</text>
+  <ellipse cx="874" cy="164" rx="20" ry="14" fill="#3fa34d"/><text class="w" x="874" y="168" style="font-size:9.5px">P-TEFb</text>
+  <path d="M846 178 c2 -8 8 -12 16 -12" fill="none" stroke="#6c7a96" stroke-width="3"/>
+  <circle cx="852" cy="152" r="7" fill="#7b5ea7"/><text class="w" x="852" y="155" style="font-size:8px">P</text>
+  <text class="b" x="818" y="150" text-anchor="end" style="fill:#7b5ea7">Ser2-P</text>
+  <path d="M800 240 h0" stroke="#000"/>
+
+  <!-- подписи шагов -->
+  <g>
+    <text class="b" x="86" y="290" text-anchor="middle">TFIID узнаёт</text><text class="s" x="86" y="306" text-anchor="middle">ТАТА-бокс (TBP)</text>
+    <text class="b" x="232" y="290" text-anchor="middle">TFIIA и TFIIB</text><text class="s" x="232" y="306" text-anchor="middle">стабилизируют</text>
+    <text class="b" x="377" y="290" text-anchor="middle">Pol II + TFIIF</text><text class="s" x="377" y="306" text-anchor="middle">садятся на промотор</text>
+    <text class="b" x="522" y="290" text-anchor="middle">TFIIE и TFIIH</text><text class="s" x="522" y="306" text-anchor="middle">комплекс собран (PIC)</text>
+    <text class="b" x="667" y="290" text-anchor="middle">Открытый комплекс</text><text class="s" x="667" y="306" text-anchor="middle">TFIIH раскрывает ДНК</text><text class="s" x="667" y="322" text-anchor="middle">CDK7 → Ser5-P</text>
+    <text class="b" x="812" y="290" text-anchor="middle">Побег и элонгация</text><text class="s" x="812" y="306" text-anchor="middle">пауза → P-TEFb (CDK9)</text><text class="s" x="812" y="322" text-anchor="middle">→ Ser2-P</text>
+  </g>
+
+  <!-- CTD-код -->
+  <line x1="20" y1="344" x2="880" y2="344" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="372">«Хвост» (CTD) РНК-полимеразы II — площадка для ферментов</text>
+  <text class="s" x="20" y="392">Хвост состоит из повторов YSPTSPS. Фосфатные метки на серинах меняются по ходу транскрипции и приглашают разные белки.</text>
+  <rect x="20" y="410" width="410" height="120" rx="12" fill="#f3eefa" stroke="#7b5ea7" stroke-width="2"/>
+  <circle cx="44" cy="436" r="11" fill="#7b5ea7"/><text class="w" x="44" y="440" style="font-size:9px">P</text>
+  <text class="b" x="64" y="440" style="fill:#7b5ea7">Ser5-P (начало)</text>
+  <text class="s" x="36" y="464">приглашает кэпирующие ферменты: к 5'-концу</text>
+  <text class="s" x="36" y="480">растущей РНК добавляется кэп;</text>
+  <text class="s" x="36" y="496">также привлекаются факторы сплайсинга и</text>
+  <text class="s" x="36" y="512">метилтрансферазы гистонов (H3K4me3).</text>
+  <rect x="450" y="410" width="430" height="120" rx="12" fill="#eaf6ee" stroke="#3fa34d" stroke-width="2"/>
+  <circle cx="474" cy="436" r="11" fill="#7b5ea7"/><text class="w" x="474" y="440" style="font-size:9px">P</text>
+  <text class="b" x="494" y="440" style="fill:#2f7d3f">Ser2-P (середина и конец гена)</text>
+  <text class="s" x="466" y="464">приглашает белки сплайсинга и метилтрансферазы</text>
+  <text class="s" x="466" y="480">гистонов (H3K36me3); в конце гена — факторы</text>
+  <text class="s" x="466" y="496">3'-процессинга и терминации: разрезание РНК</text>
+  <text class="s" x="466" y="512">и добавление поли(А)-хвоста.</text>
+</svg>

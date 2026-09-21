@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" role="img" aria-labelledby="t d">
+  <title id="t">Три стадии репликации: инициация, элонгация, терминация</title>
+  <desc id="d">Схема. Инициация: белки ORC, CDC6 и CDT1 загружают кольца MCM2–7 на точку начала репликации в фазе G1; в S-фазе к ним присоединяются CDC45 и GINS, образуется геликаза CMG, ДНК расплетается, одноцепочечную ДНК покрывает RPA, праймаза ставит РНК-праймер. Элонгация: геликаза расплетает ДНК, топоизомераза снимает суперскручивание впереди вилки, полимераза эпсилон строит лидирующую цепь, полимераза дельта — фрагменты Окадзаки, которые созревают и сшиваются лигазой. Терминация: вилки встречаются, геликаза CMG удаляется, последние промежутки достраиваются и сшиваются, топоизомераза II разъединяет переплетённые дочерние молекулы.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 17px; font-weight: 700; text-anchor: middle; }
+    .sub { font-size: 12.5px; fill: #5b6577; text-anchor: middle; }
+    .b { font-size: 12.5px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .new { stroke: #ee8a2b; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .pr { stroke: #b4531a; stroke-width: 5; stroke-linecap: round; }
+    .rung { stroke: #c3cad8; stroke-width: 2; }
+    .hel { fill: #2e86ab; stroke: #fff; stroke-width: 2; }
+    .rpa { fill: #3fa34d; stroke: #fff; stroke-width: 1.5; }
+    .pol { fill: #6c7a96; stroke: #fff; stroke-width: 2; }
+    .pola { fill: #7b5ea7; stroke: #fff; stroke-width: 2; }
+    .topo { fill: none; stroke: #c0397b; stroke-width: 5; }
+    .lig { fill: #1d7a46; stroke: #fff; stroke-width: 1.5; }
+    .ring { fill: none; stroke: #2e86ab; stroke-width: 7; }
+    .ldr { stroke: #8a94a8; stroke-width: 1.4; fill: none; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  </defs>
+  <rect width="900" height="550" fill="#ffffff"/>
+  <line x1="300" y1="14" x2="300" y2="526" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="600" y1="14" x2="600" y2="526" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ===== 1. ИНИЦИАЦИЯ ===== -->
+  <text class="h" x="150" y="28">1. Инициация</text>
+  <text class="sub" x="150" y="46">где и когда начинается копирование</text>
+  <text class="b" x="18" y="76">G1: лицензирование точки начала</text>
+  <line class="old" x1="28" y1="128" x2="282" y2="128"/><line class="old" x1="28" y1="146" x2="282" y2="146"/>
+  <g class="rung"><line x1="40" y1="128" x2="40" y2="146"/><line x1="56" y1="128" x2="56" y2="146"/><line x1="72" y1="128" x2="72" y2="146"/><line x1="88" y1="128" x2="88" y2="146"/><line x1="104" y1="128" x2="104" y2="146"/><line x1="120" y1="128" x2="120" y2="146"/><line x1="136" y1="128" x2="136" y2="146"/><line x1="152" y1="128" x2="152" y2="146"/><line x1="168" y1="128" x2="168" y2="146"/><line x1="184" y1="128" x2="184" y2="146"/><line x1="200" y1="128" x2="200" y2="146"/><line x1="216" y1="128" x2="216" y2="146"/><line x1="232" y1="128" x2="232" y2="146"/><line x1="248" y1="128" x2="248" y2="146"/><line x1="264" y1="128" x2="264" y2="146"/></g>
+  <rect x="56" y="112" width="46" height="50" rx="10" fill="#f0b429"/><text class="b" x="79" y="142" text-anchor="middle">ORC</text>
+  <circle class="ring" cx="170" cy="137" r="17"/><circle class="ring" cx="202" cy="137" r="17"/>
+  <text class="s" x="18" y="94">ORC узнаёт точку начала; CDC6 и CDT1</text>
+  <text class="s" x="18" y="108">загружают кольца MCM2–7 на ДНК</text>
+  <text class="b" x="186" y="180" text-anchor="middle" style="fill:#2e86ab">MCM2–7</text>
+  <text class="s" x="186" y="196" text-anchor="middle">двойной гексамер (пока неактивен)</text>
+
+  <path d="M150 214 v22" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="18" y="262">S-фаза: запуск (активация)</text>
+  <!-- пузырь -->
+  <line class="old" x1="28" y1="352" x2="74" y2="352"/><line class="old" x1="28" y1="370" x2="74" y2="370"/>
+  <line class="old" x1="74" y1="352" x2="100" y2="318"/><line class="old" x1="100" y1="318" x2="200" y2="318"/><line class="old" x1="200" y1="318" x2="226" y2="352"/>
+  <line class="old" x1="74" y1="370" x2="100" y2="404"/><line class="old" x1="100" y1="404" x2="200" y2="404"/><line class="old" x1="200" y1="404" x2="226" y2="370"/>
+  <line class="old" x1="226" y1="352" x2="282" y2="352"/><line class="old" x1="226" y1="370" x2="282" y2="370"/>
+  <line class="pr" x1="140" y1="392" x2="152" y2="392"/><line class="pr" x1="120" y1="330" x2="132" y2="330"/>
+  <circle class="hel" cx="80" cy="361" r="14"/><circle class="hel" cx="220" cy="361" r="14"/>
+  <path d="M64 361 h-30" stroke="#2e86ab" stroke-width="2.5" fill="none" marker-end="url(#ar)"/><path d="M236 361 h30" stroke="#2e86ab" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <circle class="rpa" cx="98" cy="340" r="5"/><circle class="rpa" cx="110" cy="326" r="5"/><circle class="rpa" cx="98" cy="384" r="5"/><circle class="rpa" cx="112" cy="398" r="5"/>
+  <circle class="rpa" cx="202" cy="326" r="5"/><circle class="rpa" cx="188" cy="398" r="5"/>
+  <circle class="pola" cx="158" cy="392" r="7"/><circle class="pola" cx="138" cy="330" r="7"/>
+  <text class="s" x="150" y="440" text-anchor="middle">CDK и DDK, CDC45 и GINS превращают MCM в</text>
+  <text class="s" x="150" y="455" text-anchor="middle">геликазу CMG: две геликазы расходятся в разные</text>
+  <text class="s" x="150" y="470" text-anchor="middle">стороны (две вилки). RPA покрывает оцДНК,</text>
+  <text class="s" x="150" y="485" text-anchor="middle">праймаза–Pol α ставит РНК-праймеры.</text>
+  <text class="b" x="150" y="515" text-anchor="middle" style="fill:#c7501f">Каждая точка запускается 1 раз за цикл</text>
+
+  <!-- ===== 2. ЭЛОНГАЦИЯ ===== -->
+  <text class="h" x="450" y="28">2. Элонгация</text>
+  <text class="sub" x="450" y="46">вилка движется, цепи строятся</text>
+  <!-- родительская ДНК справа -->
+  <line class="old" x1="500" y1="286" x2="584" y2="286"/><line class="old" x1="500" y1="310" x2="584" y2="310"/>
+  <g class="rung"><line x1="512" y1="286" x2="512" y2="310"/><line x1="528" y1="286" x2="528" y2="310"/><line x1="544" y1="286" x2="544" y2="310"/><line x1="560" y1="286" x2="560" y2="310"/><line x1="576" y1="286" x2="576" y2="310"/></g>
+  <circle class="topo" cx="548" cy="298" r="17"/>
+  <path class="ldr" d="M548 279 v-10"/><text class="b" x="548" y="264" text-anchor="middle" style="fill:#c0397b">топоизомераза</text>
+  <text class="s" x="548" y="250" text-anchor="middle">снимает суперскручивание</text>
+  <!-- верхнее плечо: лидирующая -->
+  <g transform="translate(500 286) rotate(27)">
+    <line class="old" x1="0" y1="0" x2="-175" y2="0"/>
+    <line class="new" x1="-24" y1="12" x2="-175" y2="12"/>
+    <circle class="pol" cx="-26" cy="13" r="10"/>
+    <circle cx="-44" cy="12" r="11" fill="none" stroke="#1a9aa0" stroke-width="4"/>
+  </g>
+  <!-- нижнее плечо: отстающая -->
+  <g transform="translate(500 310) rotate(-27)">
+    <line class="old" x1="0" y1="0" x2="-175" y2="0"/>
+    <circle class="rpa" cx="-10" cy="-2" r="6"/><circle class="rpa" cx="-24" cy="-3" r="6"/>
+    <line class="pr" x1="-36" y1="-12" x2="-46" y2="-12"/><line class="new" x1="-46" y1="-12" x2="-70" y2="-12"/>
+    <circle class="pola" cx="-36" cy="-14" r="7"/>
+    <circle class="pol" cx="-70" cy="-13" r="9"/>
+    <line class="new" x1="-84" y1="-12" x2="-124" y2="-12"/><circle class="lig" cx="-79" cy="-12" r="4.5"/>
+    <line class="new" x1="-134" y1="-12" x2="-174" y2="-12"/><circle class="lig" cx="-129" cy="-12" r="4.5"/>
+  </g>
+  <circle class="hel" cx="500" cy="298" r="16"/>
+  <!-- подписи -->
+  <text class="b" x="500" y="338" text-anchor="middle" style="fill:#2e86ab">геликаза CMG</text>
+  <path class="ldr" d="M370 232 L392 252"/><text class="b" x="366" y="226" text-anchor="end">Pol ε: лидирующая цепь</text>
+  <text class="s" x="366" y="242" text-anchor="end">PCNA держит полимеразу</text>
+  <text class="b" x="330" y="396">Pol δ: фрагменты Окадзаки</text>
+  <path class="ldr" d="M372 392 L398 372"/>
+  <text class="s" x="330" y="412">созревание: FEN1 и RNase H2 удаляют</text>
+  <text class="s" x="330" y="426">РНК-праймер, LIG1 сшивает фрагменты</text>
+  <text class="b" x="330" y="452" style="fill:#7b5ea7">праймаза–Pol α</text><text class="s" x="418" y="452">— новый РНК-праймер</text>
+  <text class="b" x="330" y="474" style="fill:#3fa34d">RPA</text><text class="s" x="360" y="474">— покрывает оцДНК на отстающей цепи</text>
+  <text class="s" x="330" y="500">Скорость вилки у человека ≈ 1–2 тыс. п. н. в минуту.</text>
+
+  <!-- ===== 3. ТЕРМИНАЦИЯ ===== -->
+  <text class="h" x="750" y="28">3. Терминация</text>
+  <text class="sub" x="750" y="46">вилки встречаются, ДНК разделяется</text>
+  <!-- а: встреча вилок -->
+  <line class="old" x1="616" y1="90" x2="760" y2="90"/><line class="old" x1="616" y1="108" x2="760" y2="108"/>
+  <line class="new" x1="616" y1="83" x2="760" y2="83"/><line class="new" x1="616" y1="115" x2="760" y2="115"/>
+  <circle class="hel" cx="668" cy="99" r="13"/><circle class="hel" cx="708" cy="99" r="13"/>
+  <path d="M684 99 h-4" stroke="#5b6577" stroke-width="0" fill="none"/>
+  <text class="b" x="616" y="142" style="font-size:12.5px">а. Вилки встречаются</text>
+  <text class="s" x="616" y="157">Вилки от соседних точек начала</text>
+  <text class="s" x="616" y="171">идут навстречу друг другу.</text>
+  <!-- б: удаление CMG -->
+  <line class="old" x1="616" y1="240" x2="760" y2="240"/><line class="old" x1="616" y1="258" x2="760" y2="258"/>
+  <line class="new" x1="616" y1="233" x2="760" y2="233"/><line class="new" x1="616" y1="265" x2="760" y2="265"/>
+  <circle class="hel" cx="700" cy="212" r="13"/>
+  <circle cx="716" cy="202" r="8" fill="#7b5ea7"/><text x="716" y="205" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#fff">Ub</text>
+  <path d="M688 203 l-16 -14" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="616" y="292" style="font-size:12.5px">б. CMG удаляется</text>
+  <text class="s" x="616" y="307">Геликаза метится убиквитином (Ub)</text>
+  <text class="s" x="616" y="321">и извлекается белком p97.</text>
+  <!-- в: достройка и сшивание -->
+  <line class="old" x1="616" y1="360" x2="760" y2="360"/><line class="old" x1="616" y1="378" x2="760" y2="378"/>
+  <line class="new" x1="616" y1="353" x2="760" y2="353"/><line class="new" x1="616" y1="385" x2="760" y2="385"/>
+  <circle class="lig" cx="688" cy="353" r="6"/><circle class="lig" cx="688" cy="385" r="6"/>
+  <text class="b" x="616" y="412" style="font-size:12.5px">в. Достройка и сшивание</text>
+  <text class="s" x="616" y="427">Pol δ достраивает последние</text>
+  <text class="s" x="616" y="441">промежутки, LIG1 их сшивает.</text>
+  <!-- г: декатенация -->
+  <ellipse cx="640" cy="478" rx="20" ry="13" fill="none" stroke="#2f3f7a" stroke-width="4"/><ellipse cx="664" cy="478" rx="20" ry="13" fill="none" stroke="#ee8a2b" stroke-width="4"/>
+  <circle class="topo" cx="652" cy="478" r="8" style="stroke-width:3"/>
+  <path d="M694 478 h14" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <ellipse cx="728" cy="478" rx="14" ry="10" fill="none" stroke="#2f3f7a" stroke-width="4"/><ellipse cx="762" cy="478" rx="14" ry="10" fill="none" stroke="#ee8a2b" stroke-width="4"/>
+  <text class="b" x="616" y="508" style="font-size:12.5px">г. Разъединение</text>
+  <text class="s" x="616" y="523">Топоизомераза II разъединяет</text>
+  <text class="s" x="616" y="537">переплетённые молекулы.</text>
+</svg>
