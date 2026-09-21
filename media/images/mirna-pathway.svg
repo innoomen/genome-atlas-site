@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Путь микроРНК: от гена до подавления мРНК</title>
+  <desc id="d">В ядре РНК-полимераза II синтезирует длинную первичную pri-miRNA со шпилькой. Комплекс DROSHA–DGCR8 (микропроцессор) вырезает шпильку — pre-miRNA (около 70 нуклеотидов). Экспортин-5 с Ran-GTP переносит её в цитоплазму. Фермент DICER (с TRBP) отрезает петлю и получает дуплекс длиной около 22 нуклеотидов. Одна цепь загружается в белок AGO2 (комплекс RISC), вторая (пассажирская) удаляется. Направляющая цепь узнаёт мРНК по «затравочной» области (нуклеотиды 2–8). При неполной комплементарности мРНК разрушается или трансляция подавляется; при полной — мРНК разрезает AGO2 (так работают siRNA-препараты).</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rna { stroke: #ee8a2b; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .rna2 { stroke: #2e6f95; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">МикроРНК: как крошечная РНК выключает целые гены</text>
+
+  <!-- ядро -->
+  <rect x="20" y="44" width="330" height="310" rx="40" fill="#f3efff" stroke="#b6a4e0" stroke-width="2"/>
+  <text class="b" x="36" y="68" style="fill:#5e3f8a">Ядро</text>
+  <rect x="350" y="44" width="530" height="310" rx="0" fill="#fff8ee" stroke="#e5c89a" stroke-width="2"/>
+  <text class="b" x="366" y="68" style="fill:#b4531a">Цитоплазма</text>
+
+  <!-- 1 pri -->
+  <text class="b" x="36" y="100">1. pri-miRNA</text>
+  <path class="rna" d="M40 152 H80 C90 152 96 140 96 128 C96 116 106 104 118 104 C130 104 140 116 140 128 C140 140 146 152 156 152 H200"/>
+  <text class="s" x="40" y="176" style="font-size:11px">кэп · шпилька · поли(А)</text>
+  <text class="s" x="40" y="192" style="font-size:11px">синтез Pol II (~1000 нт)</text>
+  <path class="ar" d="M118 200 V232" marker-end="url(#ar)"/>
+  <!-- 2 Drosha -->
+  <ellipse cx="118" cy="252" rx="66" ry="18" fill="#7b5ea7"/><text class="w" x="118" y="256" style="font-size:11px">DROSHA · DGCR8</text>
+  <text class="s" x="118" y="288" text-anchor="middle" style="font-size:11.5px">вырезают шпильку</text>
+  <path class="ar" d="M200 258 H236" marker-end="url(#ar)"/>
+  <!-- pre -->
+  <text class="b" x="220" y="100">2. pre-miRNA</text>
+  <path class="rna" d="M250 128 C250 116 258 106 270 106 C282 106 290 116 290 128 V190 M250 128 V190" />
+  <path d="M254 140 h32 M254 156 h32 M254 172 h32" stroke="#b7c0cf" stroke-width="2" fill="none"/>
+  <text class="s" x="220" y="212" style="font-size:11px">~70 нт, 3'-выступ</text>
+  <ellipse cx="270" cy="252" rx="38" ry="14" fill="#c0397b"/><text class="w" x="270" y="256" style="font-size:10px">Экспортин-5</text>
+  <text class="s" x="270" y="282" text-anchor="middle" style="font-size:11px">+ Ran-GTP</text>
+  <path class="ar" d="M312 252 H384" marker-end="url(#ar)"/>
+  <text class="s" x="345" y="240" text-anchor="middle" style="font-size:10.5px">через пору</text>
+
+  <!-- цитоплазма -->
+  <text class="b" x="366" y="100">3. DICER</text>
+  <path class="rna" d="M400 128 C400 116 408 106 420 106 C432 106 440 116 440 128 V190 M400 128 V190"/>
+  <ellipse cx="420" cy="252" rx="46" ry="18" fill="#3b6fd4"/><text class="w" x="420" y="256" style="font-size:11px">DICER · TRBP</text>
+  <path class="ar" d="M420 200 V230" marker-end="url(#ar)"/>
+  <text class="s" x="366" y="288" style="font-size:11.5px">отрезает петлю</text>
+  <path class="ar" d="M470 252 H518" marker-end="url(#ar)"/>
+  <text class="b" x="500" y="100">4. Дуплекс ~22 нт</text>
+  <line class="rna" x1="510" y1="140" x2="600" y2="140"/><line class="rna2" x1="514" y1="156" x2="604" y2="156"/>
+  <text class="s" x="510" y="128" style="font-size:11px;fill:#b4531a">направляющая</text><text class="s" x="514" y="176" style="font-size:11px;fill:#2e6f95">пассажирская</text>
+  <ellipse cx="560" cy="252" rx="36" ry="18" fill="#3fa34d"/><text class="w" x="560" y="256" style="font-size:11px">AGO2</text>
+  <text class="s" x="560" y="288" text-anchor="middle" style="font-size:11px">RISC: одна цепь остаётся</text>
+  <path class="ar" d="M560 190 V232" marker-end="url(#ar)"/>
+
+  <!-- 5. мишень -->
+  <text class="b" x="670" y="100">5. Поиск мишени</text>
+  <line x1="680" y1="176" x2="870" y2="176" stroke="#2e6f95" stroke-width="3.5"/>
+  <text class="s" x="680" y="198" style="font-size:11px">мРНК: 3'-UTR</text>
+  <line x1="710" y1="150" x2="780" y2="150" stroke="#ee8a2b" stroke-width="3.5"/>
+  <g stroke="#3fa34d" stroke-width="2"><path d="M714 150 V176 M722 150 V176 M730 150 V176 M738 150 V176 M746 150 V176 M754 150 V176 M762 150 V176"/></g>
+  <text class="s" x="710" y="140" style="font-size:11px;fill:#b4531a">seed (нт 2–8)</text>
+  <ellipse cx="740" cy="122" rx="30" ry="12" fill="#3fa34d"/><text class="w" x="740" y="126" style="font-size:10px">AGO2</text>
+
+  <line x1="20" y1="374" x2="880" y2="374" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="400">Итог зависит от степени комплементарности</text>
+  <rect x="20" y="414" width="420" height="160" rx="12" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+  <text class="b" x="36" y="438" style="fill:#5e3f8a">Неполная (у животных: обычно только seed)</text>
+  <text class="s" x="36" y="462">• мРНК теряет поли(А)-хвост (CCR4–NOT), затем кэп,</text><text class="s" x="36" y="478">  и разрушается;</text><text class="s" x="36" y="498">• трансляция подавляется;</text><text class="s" x="36" y="518">• одна микроРНК регулирует сотни мРНК,</text><text class="s" x="36" y="534">  одна мРНК — множество микроРНК.</text><text class="s" x="36" y="556" style="font-size:11.5px">Пример: miR-15/16 подавляют <tspan font-style="italic">BCL2</tspan> (потеря при del(13q14) → ХЛЛ).</text>
+  <rect x="460" y="414" width="420" height="160" rx="12" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+  <text class="b" x="476" y="438" style="fill:#2f7d3f">Полная (siRNA)</text>
+  <text class="s" x="476" y="462">• AGO2 разрезает мРНК точно напротив 10–11-го нуклеотида;</text><text class="s" x="476" y="482">• так работают лекарства на основе малых интерферирующих</text><text class="s" x="476" y="498">  РНК: например, патисиран (амилоидоз ATTR), гивосиран</text><text class="s" x="476" y="514">  (острая печёночная порфирия), фитусиран (гемофилия);</text><text class="s" x="476" y="530">  ингибируют печёночные белки-мишени.</text><text class="s" x="476" y="556" style="font-size:11.5px">Онкомиры при лимфомах: miR-155, кластер miR-17~92 (усиливают рост).</text>
+</svg>

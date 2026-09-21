@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Регуляция на уровне РНК: судьба мРНК, метка m6A и длинные некодирующие РНК</title>
+  <desc id="d">А. Жизнь мРНК: у зрелой мРНК с кэпом и поли(А)-хвостом хвост укорачивается (CCR4–NOT), затем удаляется кэп (DCP2) и мРНК разрушается 5'→3' ферментом XRN1 или 3'→5' экзосомой (DIS3). AU-богатые элементы (ARE) в 3'-UTR привлекают TTP и ускоряют распад, HuR стабилизирует. NMD разрушает мРНК с преждевременным стоп-кодоном. Б. Метка m6A: METTL3–METTL14 пишут, FTO и ALKBH5 стирают, белки YTHDF читают и направляют мРНК на распад или трансляцию. В. lncRNA: направляющая (XIST зовёт PRC2), каркас, «губка» для микроРНК (ceRNA), сигнал.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .rna { stroke: #2e6f95; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+
+  <!-- А -->
+  <text class="h" x="20" y="28">А. Жизнь и смерть мРНК</text>
+  <line class="rna" x1="80" y1="70" x2="560" y2="70"/>
+  <circle cx="70" cy="70" r="9" fill="#e0a43a"/><text class="s" x="70" y="52" text-anchor="middle" style="font-size:11px">кэп</text>
+  <text class="s" x="320" y="54" text-anchor="middle" style="font-size:11px">кодирующая часть</text>
+  <rect x="440" y="62" width="60" height="16" rx="4" fill="#c0392b" opacity=".85"/><text class="w" x="470" y="74" style="font-size:9.5px">ARE</text>
+  <path d="M566 70 h50" stroke="#2e6f95" stroke-width="4" stroke-dasharray="3 3" fill="none"/><text class="s" x="590" y="54" text-anchor="middle" style="font-size:11px">поли(А)</text>
+  <ellipse cx="470" cy="104" rx="26" ry="11" fill="#c0392b"/><text class="w" x="470" y="108" style="font-size:9.5px">TTP</text>
+  <text class="s" x="504" y="108" style="font-size:11px">ускоряет распад</text>
+  <ellipse cx="380" cy="104" rx="26" ry="11" fill="#3fa34d"/><text class="w" x="380" y="108" style="font-size:9.5px">HuR</text>
+  <text class="s" x="340" y="122" style="font-size:11px;text-anchor:end">стабилизирует</text>
+
+  <rect class="box" x="20" y="136" width="200" height="94" rx="10"/><text class="b" x="34" y="158">1. Деаденилирование</text><text class="s" x="34" y="176">CCR4–NOT, PAN2–PAN3:</text><text class="s" x="34" y="192">хвост укорачивается —</text><text class="s" x="34" y="208">необратимый первый шаг</text>
+  <path class="ar" d="M220 183 H240" marker-end="url(#ar)"/>
+  <rect class="box" x="242" y="136" width="200" height="94" rx="10"/><text class="b" x="256" y="158">2. Удаление кэпа</text><text class="s" x="256" y="176">DCP2 (с DCP1, EDC4):</text><text class="s" x="256" y="192">5'-конец открыт</text><text class="s" x="256" y="208">для нуклеаз</text>
+  <path class="ar" d="M442 183 H462" marker-end="url(#ar)"/>
+  <rect class="box" x="464" y="136" width="200" height="94" rx="10"/><text class="b" x="478" y="158">3а. XRN1: 5'→3'</text><text class="s" x="478" y="176">основной путь распада</text><text class="s" x="478" y="192">у человека</text>
+  <rect class="box" x="676" y="136" width="204" height="94" rx="10"/><text class="b" x="690" y="158">3б. Экзосома: 3'→5'</text><text class="s" x="690" y="176">DIS3 и др.; мутации DIS3</text><text class="s" x="690" y="192">— в миеломной болезни</text>
+  <text class="s" x="20" y="248" style="font-size:12px">NMD (см. тему «Сплайсинг»): мРНК с преждевременным стоп-кодоном разрушается.</text><text class="s" x="20" y="264" style="font-size:12px">P-тельца — «склады» мРНК: там трансляция подавлена, а мРНК ждёт распада или возвращения к работе.</text>
+
+  <line x1="20" y1="272" x2="880" y2="272" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- Б m6A -->
+  <text class="h" x="20" y="298">Б. Метка m6A и эпитранскриптом</text>
+  <line class="rna" x1="40" y1="352" x2="420" y2="352"/>
+  <g><circle cx="120" cy="352" r="10" fill="#d1432f"/><text class="w" x="120" y="356" style="font-size:9px">m⁶A</text><circle cx="260" cy="352" r="10" fill="#d1432f"/><text class="w" x="260" y="356" style="font-size:9px">m⁶A</text><circle cx="360" cy="352" r="10" fill="#d1432f"/><text class="w" x="360" y="356" style="font-size:9px">m⁶A</text></g>
+  <text class="s" x="40" y="336" style="font-size:11px">аденозин + CH₃ на атоме N6 (в мотиве DRACH, у стоп-кодона и в 3'-UTR)</text>
+  <rect x="40" y="376" width="170" height="26" rx="10" fill="#3fa34d"/><text class="w" x="125" y="393">Писатели: METTL3 · METTL14</text>
+  <rect x="220" y="376" width="140" height="26" rx="10" fill="#c0392b"/><text class="w" x="290" y="393">Стиратели: FTO · ALKBH5</text>
+  <rect x="370" y="376" width="120" height="26" rx="10" fill="#3b6fd4"/><text class="w" x="430" y="393">Читатели: YTHDF</text>
+  <text class="s" x="40" y="424" style="font-size:12px">Читатели ускоряют распад или усиливают трансляцию.</text>
+  <text class="s" x="40" y="440" style="font-size:12px">METTL3 нужен лейкозным клеткам при ОМЛ —</text><text class="s" x="40" y="456" style="font-size:12px">мишень для ингибиторов (исследования).</text>
+  <rect class="box" x="540" y="304" width="340" height="150" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="554" y="326">Почему это важно</text>
+  <text class="s" x="554" y="346">• Метка обратима — как фосфат в сигналинге.</text><text class="s" x="554" y="364">• Влияет на стабильность, сплайсинг, трансляцию.</text><text class="s" x="554" y="382">• При ОМЛ повышены METTL3/14 и FTO —</text><text class="s" x="566" y="398">лейкозные клетки не «дозревают».</text><text class="s" x="554" y="418">• РНК-вакцины используют модифицированные</text><text class="s" x="566" y="434">нуклеозиды (m1Ψ) — родственная идея.</text>
+
+  <line x1="20" y1="470" x2="880" y2="470" stroke="#e1e6ee" stroke-width="2"/>
+  <!-- В lncRNA -->
+  <text class="h" x="20" y="496">В. Длинные некодирующие РНК (lncRNA) — > 200 нт, белок не кодируют</text>
+  <rect class="box" x="20" y="510" width="205" height="112" rx="10"/><text class="b" x="34" y="532">Направляющая</text><text class="s" x="34" y="550">ведёт белковый комплекс</text><text class="s" x="34" y="566">к месту на геноме.</text><text class="s" x="34" y="586"><tspan font-weight="700" fill="#5e3f8a">XIST</tspan> покрывает Х-хромосому</text><text class="s" x="34" y="602">и зовёт PRC2 → инактивация X.</text>
+  <rect class="box" x="235" y="510" width="205" height="112" rx="10"/><text class="b" x="249" y="532">Каркас</text><text class="s" x="249" y="550">собирает несколько белков</text><text class="s" x="249" y="566">в один комплекс.</text><text class="s" x="249" y="586"><tspan font-weight="700" fill="#5e3f8a">NEAT1</tspan> строит параспеклы</text><text class="s" x="249" y="602">в ядре.</text>
+  <rect class="box" x="450" y="510" width="205" height="112" rx="10"/><text class="b" x="464" y="532">«Губка» (ceRNA)</text><text class="s" x="464" y="550">связывает микроРНК и не даёт</text><text class="s" x="464" y="566">им подавлять мРНК-мишени.</text><text class="s" x="464" y="586">Гипотеза; вклад в клетках</text><text class="s" x="464" y="602">часто оспаривают.</text>
+  <rect class="box" x="665" y="510" width="215" height="112" rx="10"/><text class="b" x="679" y="532">Сигнал / энхансерная РНК</text><text class="s" x="679" y="550">транскрипция самой lncRNA</text><text class="s" x="679" y="566">иногда важнее продукта.</text><text class="s" x="679" y="586">В гематологии: <tspan font-style="italic">HOTAIRM1</tspan>,</text><text class="s" x="679" y="602">lncRNA в ХЛЛ, ОМЛ, Т-ОЛЛ.</text>
+</svg>

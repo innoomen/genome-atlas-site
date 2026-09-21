@@ -1,0 +1,58 @@
+<svg class="me-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="me-t me-d">
+  <title id="me-t">Анимация: как метилирование ДНК передаётся при делении клетки</title>
+  <desc id="me-d">Родительская двойная спираль несёт метильные метки на обеих цепях. После репликации образуются две дочерние спирали; в каждой одна цепь старая (с метками), другая новая (без меток) — гемиметилированная ДНК. UHRF1 узнаёт такие участки, DNMT1 достраивает метки на новой цепи, и обе дочерние молекулы снова полностью метилированы.</desc>
+  <style>
+    .me-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .me-svg .me-b { font-weight: 700; }
+    .me-svg .me-m { fill: #5b6577; }
+    .me-svg .me-old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .me-svg .me-new { stroke: #ee8a2b; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .me-svg .me-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .me-svg .me-daughters { animation: me-d 16s linear infinite; }
+    .me-svg .me-uhrf { animation: me-u 16s linear infinite; }
+    .me-svg .me-dnmt { animation: me-n 16s linear infinite; }
+    .me-svg .me-newme { animation: me-nm 16s linear infinite; }
+    .me-svg .me-scene { animation: me-s 16s linear infinite; }
+    .me-svg .me-c1 { animation: me-c1 16s linear infinite; } .me-svg .me-c2 { animation: me-c2 16s linear infinite; }
+    .me-svg .me-c3 { animation: me-c3 16s linear infinite; } .me-svg .me-c4 { animation: me-c4 16s linear infinite; }
+    @keyframes me-s { 0% { opacity: 1; } 93% { opacity: 1; } 98% { opacity: 0; } 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes me-d { 0%, 16% { opacity: 0; transform: translateY(-14px); } 24%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes me-u { 0%, 38% { opacity: 0; transform: translateX(-30px); } 46%, 58% { opacity: 1; transform: translateX(0); } 62%, 100% { opacity: 0; } }
+    @keyframes me-n { 0%, 58% { opacity: 0; transform: translateX(-30px); } 64%, 76% { opacity: 1; transform: translateX(0); } 80%, 100% { opacity: 0; } }
+    @keyframes me-nm { 0%, 68% { opacity: 0; } 76%, 100% { opacity: 1; } }
+    @keyframes me-c1 { 0%, 1% { opacity: 0; } 3%, 14% { opacity: 1; } 18%, 100% { opacity: 0; } }
+    @keyframes me-c2 { 0%, 19% { opacity: 0; } 22%, 36% { opacity: 1; } 40%, 100% { opacity: 0; } }
+    @keyframes me-c3 { 0%, 41% { opacity: 0; } 44%, 66% { opacity: 1; } 70%, 100% { opacity: 0; } }
+    @keyframes me-c4 { 0%, 71% { opacity: 0; } 74%, 92% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .me-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text class="me-m" x="20" y="28" style="font-size:13px">Синяя цепь — старая, оранжевая — новая. Красные кружки — метильные группы (CH₃).</text>
+  <g class="me-scene">
+    <!-- родитель -->
+    <text class="me-b" x="20" y="72" style="font-size:12px">Родительская ДНК</text>
+    <line class="me-old" x1="200" y1="66" x2="700" y2="66"/><line class="me-old" x1="200" y1="96" x2="700" y2="96"/>
+    <g fill="#d1432f"><circle cx="250" cy="52" r="6"/><circle cx="350" cy="52" r="6"/><circle cx="450" cy="52" r="6"/><circle cx="550" cy="52" r="6"/><circle cx="650" cy="52" r="6"/>
+    <circle cx="250" cy="110" r="6"/><circle cx="350" cy="110" r="6"/><circle cx="450" cy="110" r="6"/><circle cx="550" cy="110" r="6"/><circle cx="650" cy="110" r="6"/></g>
+    <path d="M360 130 V158" stroke="#5b6577" stroke-width="2.4" fill="none"/><text class="me-m" x="372" y="150" style="font-size:12px">репликация</text>
+    <!-- дочерние -->
+    <g class="me-daughters">
+      <text class="me-b" x="20" y="200" style="font-size:12px">Дочерняя ДНК 1</text>
+      <line class="me-old" x1="200" y1="194" x2="700" y2="194"/><line class="me-new" x1="200" y1="224" x2="700" y2="224"/>
+      <g fill="#d1432f"><circle cx="250" cy="180" r="6"/><circle cx="350" cy="180" r="6"/><circle cx="450" cy="180" r="6"/><circle cx="550" cy="180" r="6"/><circle cx="650" cy="180" r="6"/></g>
+      <text class="me-b" x="20" y="290" style="font-size:12px">Дочерняя ДНК 2</text>
+      <line class="me-new" x1="200" y1="284" x2="700" y2="284"/><line class="me-old" x1="200" y1="314" x2="700" y2="314"/>
+      <g fill="#d1432f"><circle cx="250" cy="328" r="6"/><circle cx="350" cy="328" r="6"/><circle cx="450" cy="328" r="6"/><circle cx="550" cy="328" r="6"/><circle cx="650" cy="328" r="6"/></g>
+    </g>
+    <!-- новые метки -->
+    <g class="me-newme" fill="#d1432f"><circle cx="250" cy="238" r="6"/><circle cx="350" cy="238" r="6"/><circle cx="450" cy="238" r="6"/><circle cx="550" cy="238" r="6"/><circle cx="650" cy="238" r="6"/>
+    <circle cx="250" cy="270" r="6"/><circle cx="350" cy="270" r="6"/><circle cx="450" cy="270" r="6"/><circle cx="550" cy="270" r="6"/><circle cx="650" cy="270" r="6"/></g>
+    <!-- белки -->
+    <g class="me-uhrf"><ellipse cx="300" cy="256" rx="38" ry="15" fill="#3b6fd4"/><text class="me-b" x="300" y="260" text-anchor="middle" style="fill:#fff;font-size:11.5px">UHRF1</text></g>
+    <g class="me-dnmt"><ellipse cx="400" cy="256" rx="40" ry="15" fill="#c0397b"/><text class="me-b" x="400" y="260" text-anchor="middle" style="fill:#fff;font-size:11.5px">DNMT1</text></g>
+  </g>
+  <text class="me-cap me-c1" x="360" y="390">1. Родительская ДНК метилирована по обеим цепям</text>
+  <text class="me-cap me-c2" x="360" y="390">2. После репликации новая цепь не метилирована (гемиметилированная ДНК)</text>
+  <text class="me-cap me-c3" x="360" y="390">3. UHRF1 узнаёт гемиметилированные CpG и зовёт DNMT1</text>
+  <text class="me-cap me-c4" x="360" y="390">4. DNMT1 ставит метки на новую цепь: рисунок унаследован</text>
+</svg>

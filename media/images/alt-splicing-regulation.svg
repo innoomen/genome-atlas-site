@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+  <title id="t">Как клетка выбирает изоформу: SR-белки, hnRNP и другие влияния</title>
+  <desc id="d">Вверху два сценария для «слабого» экзона. При связывании SR-белка с экзонным энхансером сплайсинга (ESE) к 3'-сайту привлекаются U2AF и U2, экзон включается. При связывании hnRNP с экзонным сайленсером (ESS) узнавание блокируется, экзон пропускается. Внизу перечислены факторы, смещающие выбор: тканеспецифичные белки, скорость РНК-полимеразы II, метки хроматина, сигналы клетки, NMD как «фильтр».</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ex { fill: #2e6f95; }
+    .in { stroke: #2f3f7a; stroke-width: 2.5; fill: none; }
+    .arc { stroke: #3fa34d; stroke-width: 2.6; fill: none; }
+  </style>
+  <defs><marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Как клетка решает: экзон — в мРНК или мимо</text>
+
+  <!-- включение -->
+  <rect class="box" x="20" y="44" width="430" height="230" rx="12"/>
+  <text class="b" x="36" y="68" style="fill:#2f7d3f">Экзон включается</text>
+  <rect class="ex" x="40" y="160" width="60" height="22"/><line class="in" x1="100" y1="171" x2="170" y2="171"/><rect class="ex" x="170" y="160" width="90" height="22"/><line class="in" x1="260" y1="171" x2="340" y2="171"/><rect class="ex" x="340" y="160" width="60" height="22"/>
+  <rect x="200" y="152" width="30" height="8" fill="#e0a43a"/><text class="s" x="215" y="146" text-anchor="middle" style="font-size:10.5px">ESE</text>
+  <ellipse cx="215" cy="122" rx="30" ry="14" fill="#3fa34d"/><text class="w" x="215" y="126">SR-белок</text>
+  <path d="M215 136 V152" stroke="#3fa34d" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <rect x="140" y="98" width="34" height="14" rx="6" fill="#c0397b"/><text class="w" x="157" y="108" style="font-size:8.5px">U2AF</text>
+  <text class="s" x="157" y="90" text-anchor="middle" style="font-size:10.5px">призывает U2AF/U2</text>
+  <path class="arc" d="M100 160 Q135 132 170 160"/><path class="arc" d="M260 160 Q300 132 340 160"/>
+  <text class="s" x="36" y="212">SR-белок связывается с энхансером и помогает узнать</text>
+  <text class="s" x="36" y="228">слабый 3'-сайт: экзон остаётся в мРНК.</text>
+  <text class="s" x="36" y="252" style="font-size:11px">изоформа 1: экзон 1 – 2 – 3</text>
+
+  <!-- пропуск -->
+  <rect class="box" x="470" y="44" width="410" height="230" rx="12"/>
+  <text class="b" x="486" y="68" style="fill:#c0392b">Экзон пропускается</text>
+  <rect class="ex" x="490" y="160" width="60" height="22"/><line class="in" x1="550" y1="171" x2="620" y2="171"/><rect class="ex" x="620" y="160" width="90" height="22" opacity=".4"/><line class="in" x1="710" y1="171" x2="780" y2="171"/><rect class="ex" x="780" y="160" width="60" height="22"/>
+  <rect x="650" y="152" width="30" height="8" fill="#8a94a8"/><text class="s" x="665" y="146" text-anchor="middle" style="font-size:10.5px">ESS</text>
+  <ellipse cx="665" cy="122" rx="32" ry="14" fill="#7b5ea7"/><text class="w" x="665" y="126">hnRNP A1</text>
+  <path d="M665 136 V150" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <path class="arc" d="M550 160 C620 100 750 100 780 160"/>
+  <text class="s" x="486" y="212">hnRNP связывается с сайленсером и закрывает сайт:</text>
+  <text class="s" x="486" y="228">сплайсосома «перепрыгивает» через экзон.</text>
+  <text class="s" x="486" y="252" style="font-size:11px">изоформа 2: экзон 1 – 3</text>
+
+  <text class="h" x="20" y="308">Что смещает выбор</text>
+  <g>
+    <rect class="box" x="20" y="322" width="205" height="106" rx="10"/><text class="b" x="34" y="344">Клеточный тип</text>
+    <text class="s" x="34" y="364">Тканеспецифичные факторы</text><text class="s" x="34" y="380">(например, RBFOX, MBNL,</text><text class="s" x="34" y="396">PTBP1/PTBP2) — в разных</text><text class="s" x="34" y="412">клетках свои изоформы.</text>
+    <rect class="box" x="235" y="322" width="205" height="106" rx="10"/><text class="b" x="249" y="344">Скорость Pol II</text>
+    <text class="s" x="249" y="364">Медленная полимераза даёт</text><text class="s" x="249" y="380">время узнать слабый сайт;</text><text class="s" x="249" y="396">быстрая — экзон чаще</text><text class="s" x="249" y="412">пропускается.</text>
+    <rect class="box" x="450" y="322" width="205" height="106" rx="10"/><text class="b" x="464" y="344">Хроматин</text>
+    <text class="s" x="464" y="364">Метки на экзонах (H3K36me3),</text><text class="s" x="464" y="380">метилирование ДНК и CTCF</text><text class="s" x="464" y="396">влияют на скорость Pol II</text><text class="s" x="464" y="412">и на выбор сайта.</text>
+    <rect class="box" x="665" y="322" width="215" height="106" rx="10"/><text class="b" x="679" y="344">Сигналы клетки</text>
+    <text class="s" x="679" y="364">Активация, стресс, гипоксия,</text><text class="s" x="679" y="380">киназы меняют активность</text><text class="s" x="679" y="396">SR-белков и hnRNP — и</text><text class="s" x="679" y="412">набор изоформ.</text>
+  </g>
+  <rect class="box" x="20" y="442" width="860" height="70" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="36" y="466">Фильтр качества: NMD</text>
+  <text class="s" x="36" y="486">Если изоформа приводит к сдвигу рамки и преждевременному стоп-кодону, такую мРНК разрушает NMD. Это ещё один способ «выключать»</text>
+  <text class="s" x="36" y="502">белок: клетка намеренно направляет часть транскриптов по «непродуктивному» пути (так регулируется, в частности, ряд SR-белков).</text>
+  <text class="s" x="20" y="540" style="font-size:12px">Мутация может изменить и «дорожный знак» (ESE/ESS), и «читателя» (фактор сплайсинга) — оба варианта встречаются при болезнях.</text>
+</svg>

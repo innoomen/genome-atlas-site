@@ -1,0 +1,76 @@
+<svg class="sp-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="sp-t sp-d">
+  <title id="sp-t">Анимация: сплайсинг — вырезание интрона в виде лассо</title>
+  <desc id="sp-d">На пре-мРНК узнаются сигналы: U1 садится на 5'-сайт, U2 — на точку ветвления. Затем 2'-гидроксил аденозина атакует 5'-сайт: образуются лассо и свободный первый экзон. Далее первый экзон сшивается со вторым, а лассо высвобождается и разрушается.</desc>
+  <style>
+    .sp-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .sp-svg .sp-b { font-weight: 700; }
+    .sp-svg .sp-m { fill: #5b6577; }
+    .sp-svg .sp-line { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .sp-svg .sp-ex { fill: #2e6f95; }
+    .sp-svg .sp-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .sp-svg .sp-A { animation: sp-A 16s linear infinite; }
+    .sp-svg .sp-B { animation: sp-B 16s linear infinite; }
+    .sp-svg .sp-C { animation: sp-C 16s linear infinite; }
+    .sp-svg .sp-D { animation: sp-D 16s linear infinite; }
+    .sp-svg .sp-u1 { animation: sp-u1 16s linear infinite; }
+    .sp-svg .sp-u2 { animation: sp-u2 16s linear infinite; }
+    .sp-svg .sp-tri { animation: sp-tri 16s linear infinite; }
+    .sp-svg .sp-c1 { animation: sp-c1 16s linear infinite; } .sp-svg .sp-c2 { animation: sp-c2 16s linear infinite; }
+    .sp-svg .sp-c3 { animation: sp-c3 16s linear infinite; } .sp-svg .sp-c4 { animation: sp-c4 16s linear infinite; }
+    @keyframes sp-A { 0% { opacity: 1; } 34% { opacity: 1; } 38% { opacity: 0; } 96% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes sp-B { 0%, 34% { opacity: 0; } 38% { opacity: 1; } 56% { opacity: 1; } 60% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes sp-C { 0%, 56% { opacity: 0; } 60% { opacity: 1; } 76% { opacity: 1; } 80% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes sp-D { 0%, 76% { opacity: 0; transform: translateY(0); } 80% { opacity: 1; transform: translateY(0); } 96% { opacity: 0; transform: translateY(50px); } 100% { opacity: 0; transform: translateY(50px); } }
+    @keyframes sp-u1 { 0%, 2% { opacity: 0; transform: translateY(-16px); } 8%, 34% { opacity: 1; transform: translateY(0); } 38%, 100% { opacity: 0; } }
+    @keyframes sp-u2 { 0%, 10% { opacity: 0; transform: translateY(-16px); } 16%, 34% { opacity: 1; transform: translateY(0); } 38%, 100% { opacity: 0; } }
+    @keyframes sp-tri { 0%, 20% { opacity: 0; transform: translateY(-16px); } 26%, 34% { opacity: 1; transform: translateY(0); } 38%, 100% { opacity: 0; } }
+    @keyframes sp-c1 { 0%, 1% { opacity: 0; } 4%, 32% { opacity: 1; } 36%, 100% { opacity: 0; } }
+    @keyframes sp-c2 { 0%, 37% { opacity: 0; } 40%, 54% { opacity: 1; } 58%, 100% { opacity: 0; } }
+    @keyframes sp-c3 { 0%, 59% { opacity: 0; } 62%, 74% { opacity: 1; } 78%, 100% { opacity: 0; } }
+    @keyframes sp-c4 { 0%, 79% { opacity: 0; } 82%, 94% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .sp-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text class="sp-m" x="20" y="30" style="font-size:13px">Интрон вырезается в виде «лассо», экзоны склеиваются без разрыва рамки чтения.</text>
+
+  <!-- A: пре-мРНК -->
+  <g class="sp-A">
+    <line class="sp-line" x1="60" y1="250" x2="660" y2="250"/>
+    <rect class="sp-ex" x="60" y="236" width="140" height="28" rx="3"/><text class="sp-b" x="130" y="255" text-anchor="middle" style="fill:#fff">экзон 1</text>
+    <rect class="sp-ex" x="520" y="236" width="140" height="28" rx="3"/><text class="sp-b" x="590" y="255" text-anchor="middle" style="fill:#fff">экзон 2</text>
+    <text class="sp-b" x="210" y="286" style="fill:#c0392b">5'-сайт (GU)</text><text class="sp-b" x="410" y="286" style="fill:#c0392b">A</text><text class="sp-m" x="380" y="304" style="font-size:11px">точка ветвления</text><text class="sp-b" x="490" y="286" style="fill:#c0392b">AG</text>
+    <text class="sp-m" x="360" y="230" text-anchor="middle" style="font-size:12px">интрон</text>
+  </g>
+  <g class="sp-u1"><circle cx="220" cy="214" r="22" fill="#d1432f"/><text class="sp-b" x="220" y="219" text-anchor="middle" style="fill:#fff">U1</text></g>
+  <g class="sp-u2"><circle cx="418" cy="214" r="22" fill="#c0397b"/><text class="sp-b" x="418" y="219" text-anchor="middle" style="fill:#fff">U2</text></g>
+  <g class="sp-tri"><rect x="256" y="190" width="120" height="30" rx="14" fill="#e0a43a"/><text class="sp-b" x="316" y="210" text-anchor="middle" style="font-size:12px">U4/U6·U5</text></g>
+
+  <!-- B: шаг 1 -->
+  <g class="sp-B">
+    <rect class="sp-ex" x="60" y="236" width="140" height="28" rx="3"/><text class="sp-b" x="130" y="255" text-anchor="middle" style="fill:#fff">экзон 1</text><text class="sp-b" x="205" y="252" style="fill:#c0392b;font-size:12px">3'-OH</text>
+    <path class="sp-line" d="M420 250 C300 250 300 160 390 160 C480 160 480 250 420 250"/>
+    <line class="sp-line" x1="420" y1="250" x2="520" y2="250"/>
+    <rect class="sp-ex" x="520" y="236" width="140" height="28" rx="3"/><text class="sp-b" x="590" y="255" text-anchor="middle" style="fill:#fff">экзон 2</text>
+    <text class="sp-b" x="392" y="142" text-anchor="middle" style="fill:#5e3f8a">лассо</text>
+  </g>
+  <!-- C: шаг 2 -->
+  <g class="sp-C">
+    <rect class="sp-ex" x="60" y="236" width="140" height="28" rx="3"/><rect class="sp-ex" x="200" y="236" width="140" height="28" rx="3"/>
+    <line x1="200" y1="236" x2="200" y2="264" stroke="#fff" stroke-width="2"/>
+    <text class="sp-b" x="200" y="285" text-anchor="middle" style="fill:#2f7d3f">сшивка</text>
+    <path class="sp-line" d="M480 250 C360 250 360 170 440 170 C520 170 520 250 480 250" style="opacity:.75"/>
+  </g>
+  <!-- D: результат -->
+  <g class="sp-D">
+    <rect class="sp-ex" x="60" y="236" width="140" height="28" rx="3"/><rect class="sp-ex" x="200" y="236" width="140" height="28" rx="3"/>
+    <line x1="200" y1="236" x2="200" y2="264" stroke="#fff" stroke-width="2"/>
+    <text class="sp-b" x="200" y="285" text-anchor="middle" style="fill:#2f7d3f">зрелая мРНК</text>
+    <path class="sp-line" d="M520 250 C400 250 400 200 480 200 C560 200 560 250 520 250" style="stroke-dasharray:6 5; opacity:.8"/>
+    <text class="sp-m" x="520" y="192" text-anchor="middle" style="font-size:11.5px">лассо распадается</text>
+  </g>
+
+  <text class="sp-cap sp-c1" x="360" y="390">1. U1 узнаёт 5'-сайт, U2 — точку ветвления, приходит три-snRNP</text>
+  <text class="sp-cap sp-c2" x="360" y="390">2. Шаг 1: 2'-OH аденозина атакует 5'-сайт — образуется лассо</text>
+  <text class="sp-cap sp-c3" x="360" y="390">3. Шаг 2: 3'-OH экзона 1 атакует 3'-сайт — экзоны сшиваются</text>
+  <text class="sp-cap sp-c4" x="360" y="390">4. Зрелая мРНК готова, лассо разрушается</text>
+</svg>

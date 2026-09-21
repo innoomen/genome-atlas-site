@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 630" role="img" aria-labelledby="t d">
+  <title id="t">Как мутации нарушают сплайсинг</title>
+  <desc id="d">Четыре варианта. А: мутация канонического сайта сплайсинга приводит к пропуску экзона. Б: мутация создаёт новый (криптический) сайт, и в мРНК остаётся часть интрона; так работает мутация HBB IVS1-110 при бета-талассемии. В: глубокая интронная мутация создаёт псевдоэкзон. Г: мутация SF3B1 заставляет выбирать криптический 3'-сайт выше канонического, и в экзон добавляется короткий кусок интрона.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ex { fill: #2e6f95; }
+    .new { fill: #ee8a2b; }
+    .in { stroke: #2f3f7a; stroke-width: 2.5; fill: none; }
+    .arc { stroke: #3fa34d; stroke-width: 2.4; fill: none; }
+    .arcx { stroke: #c0392b; stroke-width: 2.4; fill: none; stroke-dasharray: 5 4; }
+    .mut { fill: #c0392b; font-size: 15px; font-weight: 700; }
+  </style>
+  <rect width="900" height="630" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Мутации, которые меняют сплайсинг (10–15 % патогенных вариантов)</text>
+
+  <!-- А -->
+  <rect class="box" x="20" y="44" width="430" height="260" rx="12"/>
+  <text class="b" x="36" y="68">А. Мутация канонического сайта → пропуск экзона</text>
+  <text class="s" x="36" y="86">норма</text>
+  <rect class="ex" x="40" y="130" width="60" height="22"/><line class="in" x1="100" y1="141" x2="190" y2="141"/><rect class="ex" x="190" y="130" width="60" height="22"/><line class="in" x1="250" y1="141" x2="340" y2="141"/><rect class="ex" x="340" y="130" width="60" height="22"/>
+  <path class="arc" d="M100 130 Q145 96 190 130"/><path class="arc" d="M250 130 Q295 96 340 130"/>
+  <text class="s" x="36" y="186">мутация</text>
+  <rect class="ex" x="40" y="220" width="60" height="22"/><line class="in" x1="100" y1="231" x2="190" y2="231"/><rect class="ex" x="190" y="220" width="60" height="22" opacity=".35"/><line class="in" x1="250" y1="231" x2="340" y2="231"/><rect class="ex" x="340" y="220" width="60" height="22"/>
+  <text class="mut" x="178" y="242">✕</text>
+  <path class="arc" d="M100 220 C160 170 280 170 340 220"/>
+  <text class="s" x="36" y="284">Экзон 2 «выпадает» из мРНК; рамка чтения может сдвинуться.</text>
+
+  <!-- Б -->
+  <rect class="box" x="470" y="44" width="410" height="260" rx="12"/>
+  <text class="b" x="486" y="68">Б. Новый (криптический) сайт → часть интрона в мРНК</text>
+  <text class="s" x="486" y="86">норма</text>
+  <rect class="ex" x="490" y="130" width="60" height="22"/><line class="in" x1="550" y1="141" x2="640" y2="141"/><rect class="ex" x="640" y="130" width="60" height="22"/><line class="in" x1="700" y1="141" x2="780" y2="141"/><rect class="ex" x="780" y="130" width="60" height="22"/>
+  <path class="arc" d="M550 130 Q595 96 640 130"/><path class="arc" d="M700 130 Q740 96 780 130"/>
+  <text class="s" x="486" y="186">мутация</text>
+  <rect class="ex" x="490" y="220" width="60" height="22"/><line class="in" x1="550" y1="231" x2="640" y2="231"/><rect class="new" x="610" y="220" width="30" height="22"/><rect class="ex" x="640" y="220" width="60" height="22"/><line class="in" x1="700" y1="231" x2="780" y2="231"/><rect class="ex" x="780" y="220" width="60" height="22"/>
+  <text class="mut" x="606" y="212">★</text>
+  <path class="arc" d="M550 220 Q580 196 610 220"/><path class="arc" d="M700 220 Q740 186 780 220"/>
+  <text class="s" x="486" y="272">В мРНК добавлены нуклеотиды интрона (оранжевый) → сдвиг рамки.</text>
+  <text class="s" x="486" y="288">Пример: <tspan font-style="italic">HBB</tspan> IVS1-110 G>A при β-талассемии.</text>
+
+  <!-- В -->
+  <rect class="box" x="20" y="320" width="430" height="260" rx="12"/>
+  <text class="b" x="36" y="344">В. Глубокая интронная мутация → псевдоэкзон</text>
+  <text class="s" x="36" y="362">норма</text>
+  <rect class="ex" x="40" y="406" width="60" height="22"/><line class="in" x1="100" y1="417" x2="340" y2="417"/><rect class="ex" x="340" y="406" width="60" height="22"/>
+  <path class="arc" d="M100 406 Q220 356 340 406"/>
+  <text class="s" x="36" y="462">мутация</text>
+  <rect class="ex" x="40" y="496" width="60" height="22"/><line class="in" x1="100" y1="507" x2="340" y2="507"/><rect class="new" x="190" y="498" width="34" height="18"/><rect class="ex" x="340" y="496" width="60" height="22"/>
+  <text class="mut" x="200" y="490">★</text>
+  <path class="arc" d="M100 496 Q145 462 190 498"/><path class="arc" d="M224 498 Q285 462 340 496"/>
+  <text class="s" x="36" y="548">Внутри интрона возникает «подобие экзона» и попадает в мРНК.</text>
+  <text class="s" x="36" y="564">Часто вызывает преждевременный стоп-кодон и NMD.</text>
+
+  <!-- Г -->
+  <rect class="box" x="470" y="320" width="410" height="260" rx="12"/>
+  <text class="b" x="486" y="344">Г. Мутация фактора сплайсинга (SF3B1)</text>
+  <text class="s" x="486" y="362">норма</text>
+  <rect class="ex" x="490" y="406" width="60" height="22"/><line class="in" x1="550" y1="417" x2="650" y2="417"/><rect class="ex" x="650" y="406" width="60" height="22"/><line class="in" x1="710" y1="417" x2="780" y2="417"/><rect class="ex" x="780" y="406" width="60" height="22"/>
+  <path class="arc" d="M550 406 Q600 372 650 406"/>
+  <text class="s" x="486" y="462">мутантный SF3B1</text>
+  <rect class="ex" x="490" y="496" width="60" height="22"/><line class="in" x1="550" y1="507" x2="650" y2="507"/><rect class="new" x="622" y="496" width="28" height="22"/><rect class="ex" x="650" y="496" width="60" height="22"/><line class="in" x1="710" y1="507" x2="780" y2="507"/><rect class="ex" x="780" y="496" width="60" height="22"/>
+  <path class="arc" d="M550 496 Q586 474 622 496"/>
+  <text class="mut" x="800" y="470" style="font-size:12px">SF3B1 K700E</text>
+  <text class="s" x="486" y="548">Выбор криптического 3'-сайта на ~10–30 нуклеотидов выше</text>
+  <text class="s" x="486" y="564">канонического: в экзон «подтягивается» кусок интрона.</text>
+  <text class="s" x="20" y="602" style="font-size:12px">Зелёные дуги — соединения, которые делает сплайсосома. Оранжевый — участок, которого в норме в мРНК нет.</text>
+  <text class="s" x="20" y="618" style="font-size:12px">Терапия: антисмысловые олигонуклеотиды маскируют «плохой» сайт и возвращают нормальный выбор.</text>
+</svg>

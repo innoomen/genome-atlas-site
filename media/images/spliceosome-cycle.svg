@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" role="img" aria-labelledby="t d">
+  <title id="t">Цикл сборки и работы сплайсосомы</title>
+  <desc id="d">Восемь стадий. Комплекс E: U1 узнаёт 5'-сайт, SF1 — точку ветвления, U2AF — 3'-сайт. Комплекс A: U2 замещает SF1. Комплекс B: присоединяется три-snRNP U4/U6·U5. Комплекс Bact: уходят U1 и U4, приходит комплекс NTC, сплайсосома активируется. Шаг 1: 2'-гидроксил аденозина точки ветвления атакует 5'-сайт, образуются лассо и свободный 5'-экзон. Шаг 2: 3'-гидроксил первого экзона атакует 3'-сайт, экзоны сшиваются. Комплекс P: зрелая мРНК с EJC выходит. Комплекс ILS: разборка, лассо разрезается и распадается, snRNP используются повторно. Внизу — две реакции переэтерификации.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+    .ex { fill: #2e6f95; }
+    .in { stroke: #2f3f7a; stroke-width: 3; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="660" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Сплайсосома: сборка на каждом интроне заново</text>
+
+  <!-- ряд 1 -->
+  <g>
+    <rect class="box" x="20" y="48" width="190" height="130" rx="12"/>
+    <text class="b" x="115" y="70" text-anchor="middle">1. Комплекс E</text>
+    <rect class="ex" x="34" y="108" width="34" height="14"/><line class="in" x1="68" y1="115" x2="150" y2="115"/><rect class="ex" x="150" y="108" width="34" height="14"/>
+    <circle cx="78" cy="98" r="10" fill="#d1432f"/><text class="w" x="78" y="102" style="font-size:9px">U1</text>
+    <circle cx="118" cy="134" r="10" fill="#7b5ea7"/><text class="w" x="118" y="137" style="font-size:8.5px">SF1</text>
+    <rect x="132" y="94" width="34" height="14" rx="6" fill="#3fa34d"/><text class="w" x="149" y="105" style="font-size:8.5px">U2AF</text>
+    <text class="s" x="115" y="156" text-anchor="middle">узнавание сигналов</text>
+    <text class="s" x="115" y="170" text-anchor="middle">GU · A · AG</text>
+  </g>
+  <path class="ar" d="M210 113 H238" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="240" y="48" width="190" height="130" rx="12"/>
+    <text class="b" x="335" y="70" text-anchor="middle">2. Комплекс A</text>
+    <rect class="ex" x="254" y="108" width="34" height="14"/><line class="in" x1="288" y1="115" x2="370" y2="115"/><rect class="ex" x="370" y="108" width="34" height="14"/>
+    <circle cx="298" cy="98" r="10" fill="#d1432f"/><text class="w" x="298" y="102" style="font-size:9px">U1</text>
+    <circle cx="338" cy="98" r="10" fill="#c0397b"/><text class="w" x="338" y="102" style="font-size:9px">U2</text>
+    <rect x="352" y="94" width="34" height="14" rx="6" fill="#3fa34d"/><text class="w" x="369" y="105" style="font-size:8.5px">U2AF</text>
+    <text class="s" x="335" y="156" text-anchor="middle">U2 вытесняет SF1;</text>
+    <text class="s" x="335" y="170" text-anchor="middle">A выпячивается (АТР)</text>
+  </g>
+  <path class="ar" d="M430 113 H458" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="460" y="48" width="190" height="130" rx="12"/>
+    <text class="b" x="555" y="70" text-anchor="middle">3. Комплекс B</text>
+    <rect class="ex" x="474" y="112" width="34" height="14"/><line class="in" x1="508" y1="119" x2="590" y2="119" /><rect class="ex" x="590" y="112" width="34" height="14"/>
+    <circle cx="518" cy="100" r="9" fill="#d1432f"/><text class="w" x="518" y="103" style="font-size:8.5px">U1</text>
+    <circle cx="558" cy="100" r="9" fill="#c0397b"/><text class="w" x="558" y="103" style="font-size:8.5px">U2</text>
+    <rect x="522" y="82" width="70" height="12" rx="6" fill="#e0a43a"/><text class="w" x="557" y="92" style="font-size:8.5px;fill:#1c2330">U4/U6·U5</text>
+    <text class="s" x="555" y="156" text-anchor="middle">присоединяется</text>
+    <text class="s" x="555" y="170" text-anchor="middle">три-snRNP</text>
+  </g>
+  <path class="ar" d="M650 113 H678" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="680" y="48" width="200" height="130" rx="12"/>
+    <text class="b" x="780" y="70" text-anchor="middle">4. Комплекс B<tspan baseline-shift="sub" font-size="10">act</tspan></text>
+    <rect class="ex" x="694" y="112" width="34" height="14"/><line class="in" x1="728" y1="119" x2="810" y2="119"/><rect class="ex" x="810" y="112" width="34" height="14"/>
+    <circle cx="758" cy="98" r="9" fill="#c0397b"/><text class="w" x="758" y="101" style="font-size:8.5px">U2</text>
+    <rect x="726" y="80" width="50" height="12" rx="6" fill="#e0a43a"/><text class="w" x="751" y="90" style="font-size:8.5px;fill:#1c2330">U5/U6</text>
+    <rect x="782" y="94" width="42" height="12" rx="6" fill="#2f7d3f"/><text class="w" x="803" y="104" style="font-size:8.5px">NTC</text>
+    <text class="s" x="780" y="156" text-anchor="middle">уходят U1 и U4, приходит</text>
+    <text class="s" x="780" y="170" text-anchor="middle">NTC — активация</text>
+  </g>
+
+  <path d="M780 178 V200 H115 V218" class="ar" marker-end="url(#ar)"/>
+
+  <!-- ряд 2 -->
+  <g>
+    <rect class="box" x="20" y="220" width="190" height="130" rx="12"/>
+    <text class="b" x="115" y="242" text-anchor="middle">5. Шаг 1 (ветвление)</text>
+    <rect class="ex" x="34" y="290" width="34" height="14"/><text class="s" x="34" y="282" style="font-size:10px">OH</text>
+    <path d="M72 296 C72 322 172 322 172 296 C172 276 128 276 128 296" fill="none" stroke="#2f3f7a" stroke-width="3"/>
+    <line class="in" x1="172" y1="296" x2="180" y2="296"/><rect class="ex" x="180" y="290" width="26" height="14"/>
+    <text class="s" x="115" y="332" text-anchor="middle">лассо + свободный экзон 1</text>
+    <text class="s" x="115" y="345" text-anchor="middle" style="font-size:10.5px">A(2'-OH) атакует 5'-сайт</text>
+  </g>
+  <path class="ar" d="M210 285 H238" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="240" y="220" width="190" height="130" rx="12"/>
+    <text class="b" x="335" y="242" text-anchor="middle">6. Шаг 2 (сшивание)</text>
+    <rect class="ex" x="264" y="270" width="34" height="14"/><rect class="ex" x="298" y="270" width="34" height="14"/>
+    <path d="M300 300 C300 326 372 326 372 300 C372 288 340 288 340 300" fill="none" stroke="#2f3f7a" stroke-width="3"/>
+    <text class="s" x="335" y="332" text-anchor="middle">экзоны сшиты;</text>
+    <text class="s" x="335" y="345" text-anchor="middle" style="font-size:10.5px">лассо ещё в комплексе</text>
+  </g>
+  <path class="ar" d="M430 285 H458" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="460" y="220" width="190" height="130" rx="12"/>
+    <text class="b" x="555" y="242" text-anchor="middle">7. Комплекс P</text>
+    <rect class="ex" x="490" y="264" width="34" height="14"/><rect class="ex" x="524" y="264" width="34" height="14"/>
+    <rect x="516" y="250" width="14" height="10" rx="4" fill="#3b6fd4"/><text class="s" x="500" y="248" style="font-size:9.5px;fill:#3b6fd4">EJC</text>
+    <path d="M572 274 H620" stroke="#2f3f7a" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+    <text class="s" x="555" y="310" text-anchor="middle">зрелая мРНК с EJC</text>
+    <text class="s" x="555" y="324" text-anchor="middle">уходит в цитоплазму</text>
+    <text class="s" x="555" y="338" text-anchor="middle" style="font-size:10.5px">к экспорту через NXF1</text>
+  </g>
+  <path class="ar" d="M650 285 H678" marker-end="url(#ar)"/>
+  <g>
+    <rect class="box" x="680" y="220" width="200" height="130" rx="12"/>
+    <text class="b" x="780" y="242" text-anchor="middle">8. Комплекс ILS: разборка</text>
+    <path d="M730 288 C730 314 800 314 800 288 C800 270 762 270 762 288" fill="none" stroke="#2f3f7a" stroke-width="3" stroke-dasharray="5 4"/>
+    <text class="s" x="780" y="332" text-anchor="middle">лассо разрезает DBR1</text>
+    <text class="s" x="780" y="346" text-anchor="middle">snRNP используются вновь</text>
+  </g>
+
+  <line x1="20" y1="374" x2="880" y2="374" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="398">Две химические реакции (переэтерификации)</text>
+
+  <!-- реакции -->
+  <text class="b" x="20" y="476" style="fill:#b4531a">Пре-мРНК</text>
+  <rect class="ex" x="170" y="464" width="70" height="18"/><text class="w" x="205" y="477" style="font-size:10px">экзон 1</text>
+  <line class="in" x1="240" y1="473" x2="640" y2="473"/><rect class="ex" x="640" y="464" width="70" height="18"/><text class="w" x="675" y="477" style="font-size:10px">экзон 2</text>
+  <text class="b" x="248" y="502" style="font-size:12px;fill:#c0392b">GU</text>
+  <text class="b" x="462" y="502" style="font-size:12px;fill:#c0392b">A</text><text class="s" x="476" y="502" style="font-size:10.5px">— точка ветвления</text>
+  <text class="b" x="612" y="502" style="font-size:12px;fill:#c0392b">AG</text>
+  <path d="M470 462 C430 428 300 428 256 460" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="s" x="364" y="424" style="fill:#c0392b;font-size:11px" text-anchor="middle">① 2'-OH атакует 5'-сайт</text>
+
+  <text class="b" x="20" y="578" style="fill:#b4531a">После шага 1</text>
+  <rect class="ex" x="170" y="566" width="70" height="18"/><text class="w" x="205" y="579" style="font-size:10px">экзон 1</text><text class="s" x="244" y="581" style="fill:#c0392b;font-size:11px">3'-OH</text>
+  <path d="M340 575 C340 604 470 604 470 575 C470 556 410 556 410 575" fill="none" stroke="#2f3f7a" stroke-width="3"/>
+  <line class="in" x1="470" y1="575" x2="640" y2="575"/><rect class="ex" x="640" y="566" width="70" height="18"/><text class="w" x="675" y="579" style="font-size:10px">экзон 2</text>
+  <path d="M232 562 C300 526 630 526 646 562" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="s" x="440" y="536" style="fill:#c0392b;font-size:11px" text-anchor="middle">② 3'-OH атакует 3'-сайт</text>
+  <text class="s" x="20" y="634" style="font-size:12px">Итог: экзоны сшиты, интрон вышел в виде лассо. Реакции идут без чистой затраты энергии; АТФ нужен для перестроек РНК-РНК-контактов и белков-хеликаз.</text>
+  <text class="s" x="20" y="652" style="font-size:12px">Каждая стадия — «точка контроля»: здесь работают регуляторы (SR-белки, hnRNP) и сюда попадают мутации SF3B1, SRSF2, U2AF1.</text>
+</svg>

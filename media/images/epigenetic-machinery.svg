@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Эпигенетическая «машинерия»: писатели, стиратели, читатели и препараты</title>
+  <desc id="d">Таблица. Метилирование ДНК: писатели DNMT1, DNMT3A, DNMT3B; стиратели TET1–3 (окисление); читатели MBD-белки, UHRF1; препараты — азацитидин и децитабин. Ацетилирование гистонов: писатели p300/CBP и другие HAT; стиратели HDAC; читатели белки с бромодоменами (BRD4); препараты — ингибиторы HDAC (вориностат, ромидепсин) и BET (исследования). Метилирование гистонов: писатели EZH2 (H3K27me3), KMT2A (H3K4me3), DOT1L (H3K79me); стиратели KDM, включая LSD1 и UTX(KDM6A); читатели хромодомены, PHD; препараты — таземетостат, менин-ингибиторы (ревумениб). Ремоделеры хроматина SWI/SNF.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .th { font-size: 12.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .cell { fill: #f5f7fb; stroke: #d4dae6; stroke-width: 1.3; }
+    .row { font-size: 13px; font-weight: 700; }
+  </style>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Три роли эпигенетических белков — и где на них действуют лекарства</text>
+
+  <!-- заголовки -->
+  <rect x="20" y="44" width="150" height="34" rx="8" fill="#6c7a96"/><text class="th" x="95" y="66">Слой</text>
+  <rect x="176" y="44" width="180" height="34" rx="8" fill="#3fa34d"/><text class="th" x="266" y="66">Писатели (ставят метку)</text>
+  <rect x="362" y="44" width="180" height="34" rx="8" fill="#d1432f"/><text class="th" x="452" y="66">Стиратели (снимают)</text>
+  <rect x="548" y="44" width="170" height="34" rx="8" fill="#3b6fd4"/><text class="th" x="633" y="66">Читатели (узнают)</text>
+  <rect x="724" y="44" width="156" height="34" rx="8" fill="#c0397b"/><text class="th" x="802" y="66">Препараты</text>
+
+  <!-- строка 1 -->
+  <rect class="cell" x="20" y="86" width="150" height="100" rx="8"/><text class="row" x="30" y="108">Метилирование</text><text class="row" x="30" y="124">ДНК</text><text class="s" x="30" y="146">5mC в CpG</text>
+  <rect class="cell" x="176" y="86" width="180" height="100" rx="8"/><text class="b" x="186" y="108" style="fill:#2f7d3f">DNMT1</text><text class="s" x="186" y="122">поддержание</text><text class="b" x="186" y="144" style="fill:#2f7d3f">DNMT3A, DNMT3B</text><text class="s" x="186" y="158">новые метки</text>
+  <rect class="cell" x="362" y="86" width="180" height="100" rx="8"/><text class="b" x="372" y="108" style="fill:#c0392b">TET1, TET2, TET3</text><text class="s" x="372" y="124">окисляют 5mC → 5hmC…</text><text class="s" x="372" y="140">далее TDG / BER</text>
+  <rect class="cell" x="548" y="86" width="170" height="100" rx="8"/><text class="b" x="558" y="108" style="fill:#3b6fd4">MBD, MeCP2</text><text class="s" x="558" y="124">читают 5mC</text><text class="b" x="558" y="146" style="fill:#3b6fd4">UHRF1</text><text class="s" x="558" y="160">узнаёт гемиметил.</text>
+  <rect class="cell" x="724" y="86" width="156" height="100" rx="8"/><text class="b" x="734" y="108" style="fill:#c0397b">азацитидин</text><text class="b" x="734" y="124" style="fill:#c0397b">децитабин</text><text class="s" x="734" y="144">гипометилирующие</text><text class="s" x="734" y="158">агенты (МДС, ОМЛ)</text>
+
+  <!-- строка 2 -->
+  <rect class="cell" x="20" y="194" width="150" height="100" rx="8"/><text class="row" x="30" y="216">Ацетилирование</text><text class="row" x="30" y="232">гистонов</text><text class="s" x="30" y="254">H3K27ac, H3K9ac</text>
+  <rect class="cell" x="176" y="194" width="180" height="100" rx="8"/><text class="b" x="186" y="216" style="fill:#2f7d3f">p300/CBP (KAT3)</text><text class="s" x="186" y="232">и другие HAT</text><text class="s" x="186" y="252">нейтрализуют + заряд</text><text class="s" x="186" y="266">лизина, хроматин рыхлеет</text>
+  <rect class="cell" x="362" y="194" width="180" height="100" rx="8"/><text class="b" x="372" y="216" style="fill:#c0392b">HDAC (класс I–IV)</text><text class="s" x="372" y="232">снимают ацетил —</text><text class="s" x="372" y="248">хроматин уплотняется</text>
+  <rect class="cell" x="548" y="194" width="170" height="100" rx="8"/><text class="b" x="558" y="216" style="fill:#3b6fd4">BRD4 и другие</text><text class="s" x="558" y="232">белки с бромодоменом</text><text class="s" x="558" y="252">привлекают Mediator,</text><text class="s" x="558" y="266">P-TEFb на энхансеры</text>
+  <rect class="cell" x="724" y="194" width="156" height="100" rx="8"/><text class="b" x="734" y="216" style="fill:#c0397b">вориностат,</text><text class="b" x="734" y="232" style="fill:#c0397b">ромидепсин</text><text class="s" x="734" y="252">ингибиторы HDAC</text><text class="s" x="734" y="266">(Т-клеточные лимфомы)</text>
+
+  <!-- строка 3 -->
+  <rect class="cell" x="20" y="302" width="150" height="120" rx="8"/><text class="row" x="30" y="324">Метилирование</text><text class="row" x="30" y="340">гистонов</text><text class="s" x="30" y="362">H3K4me3 — «включено»</text><text class="s" x="30" y="378">H3K27me3 — «выключено»</text><text class="s" x="30" y="394">H3K79me — элонгация</text>
+  <rect class="cell" x="176" y="302" width="180" height="120" rx="8"/><text class="b" x="186" y="324" style="fill:#2f7d3f">KMT2A (MLL)</text><text class="s" x="186" y="338">H3K4me3</text><text class="b" x="186" y="358" style="fill:#2f7d3f">EZH2 (PRC2)</text><text class="s" x="186" y="372">H3K27me3</text><text class="b" x="186" y="392" style="fill:#2f7d3f">DOT1L</text><text class="s" x="186" y="406">H3K79me</text>
+  <rect class="cell" x="362" y="302" width="180" height="120" rx="8"/><text class="b" x="372" y="324" style="fill:#c0392b">KDM (LSD1, KDM6A/UTX,</text><text class="b" x="372" y="340" style="fill:#c0392b">JMJD)</text><text class="s" x="372" y="360">снимают метилы; ферменты</text><text class="s" x="372" y="376">JMJD зависят от α-KG и</text><text class="s" x="372" y="392">подавляются 2-HG</text>
+  <rect class="cell" x="548" y="302" width="170" height="120" rx="8"/><text class="b" x="558" y="324" style="fill:#3b6fd4">хромодомены,</text><text class="b" x="558" y="340" style="fill:#3b6fd4">PHD-домены</text><text class="s" x="558" y="360">HP1 — читает H3K9me3,</text><text class="s" x="558" y="376">PRC1 — H3K27me3;</text><text class="s" x="558" y="392">PHD — читает H3K4me3</text>
+  <rect class="cell" x="724" y="302" width="156" height="120" rx="8"/><text class="b" x="734" y="324" style="fill:#c0397b">таземетостат</text><text class="s" x="734" y="338">EZH2 (фолл. лимфома)</text><text class="b" x="734" y="358" style="fill:#c0397b">ревумениб</text><text class="s" x="734" y="372">менин–KMT2A</text><text class="s" x="734" y="386">(ОМЛ с KMT2A-перестр.</text><text class="s" x="734" y="400">и NPM1-мутацией)</text>
+
+  <!-- ремоделеры -->
+  <rect class="cell" x="20" y="430" width="860" height="66" rx="8" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="450">Ремоделеры хроматина (SWI/SNF, или BAF)</text>
+  <text class="s" x="34" y="468">Комплексы с АТФазами (SMARCA4, ARID1A и др.) двигают и «разворачивают» нуклеосомы — открывают энхансеры и промоторы;</text>
+  <text class="s" x="34" y="484">мутации есть при многих опухолях. Они не ставят метки, но работают вместе с «писателями» и «читателями».</text>
+
+  <rect class="cell" x="20" y="508" width="860" height="100" rx="8" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="528" style="fill:#2f7d3f">Гематологический контекст</text>
+  <text class="s" x="34" y="546">Мутации DNMT3A, TET2, ASXL1 — самые частые при клональном гемопоэзе (CHIP) и МДС; перестройки KMT2A — при остром</text>
+  <text class="s" x="34" y="562">лейкозе у детей; EZH2 — при лимфомах. Один и тот же белок может быть «писателем» и мишенью лекарства: выбор терапии</text>
+  <text class="s" x="34" y="578">зависит от того, потеряна функция или усилена (например, EZH2 при лимфоме и при МДС).</text>
+  <text class="s" x="34" y="596" style="font-size:10.5px">Список препаратов и показаний ориентировочный; актуальный статус проверяйте по инструкциям и рекомендациям.</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Регуляторные элементы генома: промотор, энхансер, сайленсер, инсулятор и петли ДНК</title>
+  <desc id="d">Вверху линейная карта участка ДНК: энхансер с метками H3K27ac и H3K4me1, границы CTCF, ген с промотором и меткой H3K4me3, сайленсер с меткой H3K27me3, второй ген и суперэнхансер. Внизу пространственная схема: границы CTCF и кольцо когезина образуют петлю (домен TAD), внутри которой энхансер контактирует с промотором; граница петли не пускает энхансер к гену за пределами домена.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .dna { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+
+  <!-- ===== А. карта ===== -->
+  <text class="h" x="20" y="28">А. Элементы, управляющие геном</text>
+  <line class="dna" x1="20" y1="150" x2="880" y2="150"/>
+  <!-- энхансер -->
+  <rect x="70" y="140" width="44" height="20" rx="4" fill="#f0b429"/>
+  <text class="b" x="92" y="110" text-anchor="middle" style="fill:#b4531a">энхансер</text>
+  <circle cx="82" cy="126" r="8" fill="#3fa34d"/><text class="w" x="82" y="129" style="font-size:7px">Ac</text>
+  <text class="s" x="92" y="184" text-anchor="middle" style="font-size:11px">H3K27ac, H3K4me1</text><text class="s" x="92" y="198" text-anchor="middle" style="font-size:11px">за десятки тыс. п. н.</text>
+  <!-- CTCF -->
+  <polygon points="196,132 214,142 196,152" transform="translate(0 4)" fill="#1f4e8c"/><text class="b" x="204" y="112" text-anchor="middle" style="fill:#1f4e8c;font-size:12px">CTCF</text>
+  <text class="s" x="204" y="184" text-anchor="middle" style="font-size:11px">граница петли</text>
+  <!-- промотор + ген A -->
+  <rect x="300" y="140" width="40" height="20" rx="4" fill="#ee8a2b"/><rect x="340" y="136" width="36" height="28" fill="#2e6f95"/><rect x="400" y="136" width="36" height="28" fill="#2e6f95"/><rect x="460" y="136" width="36" height="28" fill="#2e6f95"/>
+  <path d="M320 140 v-16 h22" fill="none" stroke="#2f3f7a" stroke-width="3" marker-end="url(#ar)"/>
+  <text class="b" x="380" y="108" text-anchor="middle" style="fill:#2e6f95">ген A</text>
+  <text class="s" x="320" y="184" text-anchor="middle" style="font-size:11px">промотор</text><text class="s" x="320" y="198" text-anchor="middle" style="font-size:11px">H3K4me3</text>
+  <!-- CTCF 2 -->
+  <polygon points="548,132 530,142 548,152" transform="translate(0 4)" fill="#1f4e8c"/><text class="b" x="540" y="112" text-anchor="middle" style="fill:#1f4e8c;font-size:12px">CTCF</text>
+  <!-- сайленсер -->
+  <rect x="600" y="140" width="40" height="20" rx="4" fill="#8a94a8"/><text class="b" x="620" y="110" text-anchor="middle" style="fill:#5b6577">сайленсер</text>
+  <text class="s" x="620" y="184" text-anchor="middle" style="font-size:11px">H3K27me3</text>
+  <!-- ген B -->
+  <rect x="690" y="140" width="34" height="20" rx="4" fill="#ee8a2b"/><rect x="724" y="136" width="30" height="28" fill="#2e6f95"/><rect x="770" y="136" width="30" height="28" fill="#2e6f95"/>
+  <text class="b" x="740" y="108" text-anchor="middle" style="fill:#2e6f95">ген B</text>
+  <!-- суперэнхансер -->
+  <rect x="815" y="138" width="16" height="24" rx="3" fill="#f0b429"/><rect x="834" y="138" width="16" height="24" rx="3" fill="#f0b429"/><rect x="853" y="138" width="16" height="24" rx="3" fill="#f0b429"/>
+  <text class="b" x="842" y="122" text-anchor="middle" style="fill:#b4531a;font-size:11.5px">суперэнхансер</text>
+  <text class="s" x="842" y="184" text-anchor="middle" style="font-size:11px">кластер: много</text><text class="s" x="842" y="198" text-anchor="middle" style="font-size:11px">Mediator, BRD4</text>
+
+  <line x1="20" y1="226" x2="880" y2="226" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- ===== Б. петли ===== -->
+  <text class="h" x="20" y="256">Б. Трёхмерная организация: петля и домен TAD</text>
+  <line class="dna" x1="20" y1="420" x2="200" y2="420"/><line class="dna" x1="560" y1="420" x2="880" y2="420"/>
+  <path d="M200 420 C200 300 560 300 560 420" fill="none" stroke="#2f3f7a" stroke-width="5"/>
+  <polygon points="188,410 206,420 188,430" fill="#1f4e8c"/><polygon points="572,410 554,420 572,430" fill="#1f4e8c"/>
+  <text class="b" x="170" y="452" text-anchor="middle" style="fill:#1f4e8c;font-size:12px">CTCF</text><text class="b" x="590" y="452" text-anchor="middle" style="fill:#1f4e8c;font-size:12px">CTCF</text>
+  <ellipse cx="380" cy="404" rx="40" ry="16" fill="none" stroke="#c0397b" stroke-width="5"/>
+  <text class="b" x="380" y="440" text-anchor="middle" style="fill:#c0397b;font-size:12px">когезин (кольцо)</text>
+  <!-- энхансер и промотор внутри петли -->
+  <rect x="242" y="338" width="34" height="16" rx="4" fill="#f0b429" transform="rotate(-24 259 346)"/><text class="s" x="232" y="326" style="font-size:11px;fill:#b4531a">энхансер</text>
+  <rect x="470" y="338" width="34" height="16" rx="4" fill="#ee8a2b" transform="rotate(24 487 346)"/><text class="s" x="486" y="326" style="font-size:11px;fill:#b4531a">промотор A</text>
+  <ellipse cx="376" cy="322" rx="34" ry="14" fill="#7b5ea7"/><text class="w" x="376" y="326" style="font-size:10.5px">Mediator</text>
+  <path d="M262 340 C300 320 330 318 348 322" fill="none" stroke="#8a94a8" stroke-width="2" stroke-dasharray="4 3"/><path d="M482 340 C450 322 420 318 404 322" fill="none" stroke="#8a94a8" stroke-width="2" stroke-dasharray="4 3"/>
+  <text class="b" x="380" y="368" text-anchor="middle" style="fill:#2f7d3f;font-size:12px">домен TAD: контакты «внутри»</text>
+  <!-- ген B вне -->
+  <rect x="650" y="410" width="34" height="20" rx="4" fill="#ee8a2b"/><rect x="684" y="406" width="30" height="28" fill="#2e6f95"/>
+  <text class="s" x="725" y="454" text-anchor="middle" style="font-size:11px">ген B (вне домена)</text>
+  <path d="M262 336 C300 236 640 236 668 400" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#inh)"/>
+  <text class="s" x="770" y="330" text-anchor="middle" style="font-size:11px;fill:#c0392b">граница не пускает энхансер</text><text class="s" x="770" y="344" text-anchor="middle" style="font-size:11px;fill:#c0392b">к гену B</text>
+
+  <text class="b" x="20" y="490">Что происходит в клетке</text>
+  <text class="s" x="20" y="510" style="font-size:12px">Когезин «выдавливает» петлю ДНК, пока не упрётся в два белка CTCF, повёрнутых друг к другу. Внутри петли энхансер и промотор сближаются.</text>
+  <text class="s" x="20" y="528" style="font-size:12px">Если граница разрушена (мутация, транслокация) или энхансер перенесён в чужой домен, ген может включиться «не там» — «захват энхансера».</text>
+  <text class="s" x="20" y="546" style="font-size:12px">Примеры: t(8;14) — энхансер гена IGH включает MYC (лимфома Беркитта); inv(3)/t(3;3) — энхансер GATA2 включает MECOM (EVI1) при лейкозах.</text>
+  <text class="s" x="20" y="576" style="font-size:12px">В клетках разных типов «включены» разные наборы энхансеров — поэтому из одной ДНК получаются нейтрофил, эритроцит и лимфоцит.</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Транскрипционные факторы кроветворения</title>
+  <desc id="d">Схема дифференцировки. Гемопоэтическая стволовая клетка (GATA2, RUNX1, TAL1, ERG, MECOM) даёт общий миелоидный и общий лимфоидный предшественники. Миелоидная ветвь делится на мегакариоцитарно-эритроидную (GATA1, KLF1, FLI1) и гранулоцитарно-моноцитарную (PU.1, CEBPA, IRF8). Лимфоидная — на B-клетки (EBF1, PAX5) и T-клетки (NOTCH1, GATA3, TCF7). GATA1 и PU.1 подавляют друг друга, поэтому выбор судьбы зависит от их соотношения.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .tf { font-size: 11.5px; font-weight: 700; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Кто решает судьбу клетки крови</text>
+  <text class="s" x="20" y="46">В каждом узле — ключевые транскрипционные факторы. Красным — заболевания при их нарушении.</text>
+
+  <!-- ГСК -->
+  <rect x="330" y="62" width="240" height="66" rx="14" fill="#fff4e0" stroke="#ee8a2b" stroke-width="2.5"/>
+  <text class="b" x="450" y="84" text-anchor="middle">Гемопоэтическая стволовая клетка</text>
+  <text class="tf" x="450" y="104" text-anchor="middle" style="fill:#b4531a">GATA2 · RUNX1 · TAL1 · ERG · MECOM</text>
+  <text class="s" x="450" y="120" text-anchor="middle" style="fill:#c0392b;font-size:11px">GATA2-дефицит, FPD/AML (RUNX1)</text>
+  <path class="ar" d="M400 128 L290 168" marker-end="url(#ar)"/><path class="ar" d="M500 128 L680 168" marker-end="url(#ar)"/>
+
+  <!-- CMP и CLP -->
+  <rect x="150" y="170" width="260" height="56" rx="14" fill="#efe8f8" stroke="#7b5ea7" stroke-width="2"/>
+  <text class="b" x="280" y="192" text-anchor="middle">Общий миелоидный предшественник</text><text class="tf" x="280" y="212" text-anchor="middle" style="fill:#5e3f8a">PU.1 (низкий) · GATA1 (низкий) · CEBPA</text>
+  <rect x="550" y="170" width="260" height="56" rx="14" fill="#e7f1fb" stroke="#2e6f95" stroke-width="2"/>
+  <text class="b" x="680" y="192" text-anchor="middle">Общий лимфоидный предшественник</text><text class="tf" x="680" y="212" text-anchor="middle" style="fill:#2e6f95">IKZF1 · E2A · IL7R</text>
+  <path class="ar" d="M220 226 L130 286" marker-end="url(#ar)"/><path class="ar" d="M340 226 L440 286" marker-end="url(#ar)"/>
+  <path class="ar" d="M620 226 L580 286" marker-end="url(#ar)"/><path class="ar" d="M740 226 L790 286" marker-end="url(#ar)"/>
+
+  <!-- MEP / GMP / B / T -->
+  <rect x="30" y="288" width="200" height="66" rx="14" fill="#fdf1ef" stroke="#c0392b" stroke-width="2"/>
+  <text class="b" x="130" y="310" text-anchor="middle">Мегакариоцитарно-</text><text class="b" x="130" y="326" text-anchor="middle">эритроидный</text><text class="tf" x="130" y="344" text-anchor="middle" style="fill:#c0392b">GATA1 · FOG1 · KLF1 · TAL1</text>
+  <rect x="330" y="288" width="220" height="66" rx="14" fill="#eaf6ee" stroke="#3fa34d" stroke-width="2"/>
+  <text class="b" x="440" y="310" text-anchor="middle">Гранулоцитарно-</text><text class="b" x="440" y="326" text-anchor="middle">моноцитарный</text><text class="tf" x="440" y="344" text-anchor="middle" style="fill:#2f7d3f">PU.1 (высокий) · CEBPA · GFI1</text>
+  <rect x="560" y="288" width="140" height="66" rx="14" fill="#e7f1fb" stroke="#2e6f95" stroke-width="2"/>
+  <text class="b" x="630" y="312" text-anchor="middle">B-линия</text><text class="tf" x="630" y="332" text-anchor="middle" style="fill:#2e6f95">EBF1 · PAX5</text><text class="s" x="630" y="346" text-anchor="middle" style="fill:#c0392b;font-size:10.5px">PAX5, IKZF1 — B-ОЛЛ</text>
+  <rect x="720" y="288" width="150" height="66" rx="14" fill="#e7f1fb" stroke="#2e6f95" stroke-width="2"/>
+  <text class="b" x="795" y="312" text-anchor="middle">T-линия</text><text class="tf" x="795" y="332" text-anchor="middle" style="fill:#2e6f95">NOTCH1 · GATA3 · TCF7</text><text class="s" x="795" y="346" text-anchor="middle" style="fill:#c0392b;font-size:10.5px">NOTCH1 — T-ОЛЛ</text>
+  <!-- конечные клетки -->
+  <path class="ar" d="M90 354 L70 400" marker-end="url(#ar)"/><path class="ar" d="M170 354 L200 400" marker-end="url(#ar)"/>
+  <path class="ar" d="M400 354 L360 400" marker-end="url(#ar)"/><path class="ar" d="M480 354 L520 400" marker-end="url(#ar)"/>
+  <g font-size="12">
+    <rect x="20" y="402" width="100" height="42" rx="10" fill="#f8d7d0"/><text class="b" x="70" y="428" text-anchor="middle" style="font-size:12px">Эритроцит</text>
+    <rect x="150" y="402" width="100" height="42" rx="10" fill="#f8d7d0"/><text class="b" x="200" y="428" text-anchor="middle" style="font-size:12px">Тромбоцит</text>
+    <rect x="300" y="402" width="120" height="42" rx="10" fill="#d8efde"/><text class="b" x="360" y="428" text-anchor="middle" style="font-size:12px">Нейтрофил</text>
+    <rect x="460" y="402" width="120" height="42" rx="10" fill="#d8efde"/><text class="b" x="520" y="428" text-anchor="middle" style="font-size:12px">Моноцит</text>
+  </g>
+
+  <!-- антагонизм -->
+  <path d="M230 322 L326 322" stroke="#c0392b" stroke-width="3" fill="none" marker-start="url(#inh)" marker-end="url(#inh)"/>
+  <text class="b" x="278" y="312" text-anchor="middle" style="fill:#c0392b;font-size:11.5px">GATA1 ⊣ PU.1</text>
+  <text class="s" x="278" y="376" text-anchor="middle" style="fill:#c0392b;font-size:10.5px">взаимно подавляют друг друга</text>
+
+  <line x1="20" y1="468" x2="880" y2="468" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="b" x="20" y="494">Принципы</text>
+  <text class="s" x="20" y="514">• Судьбу задаёт не один фактор, а их сочетание и уровень: высокий PU.1 — моноцит, низкий PU.1 с GATA1 — эритроидная линия.</text>
+  <text class="s" x="20" y="532">• Гены, кодирующие такие факторы, чувствительны к дозе: потеря одной копии (RUNX1, GATA2) достаточна для болезни.</text>
+  <text class="s" x="20" y="550">• Лейкозы часто возникают из-за слияния или мутации этих факторов: они «застревают» на одном из этапов созревания.</text>
+  <text class="s" x="20" y="568">• CEBPA управляет миелопоэзом: ОМЛ с мутациями bZIP-домена CEBPA относят к благоприятной группе риска (ELN 2022).</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 630" role="img" aria-labelledby="t d">
+  <title id="t">Метилирование ДНК: реакция, CpG-островки и поддержание метки</title>
+  <desc id="d">А. DNMT переносит метильную группу от S-аденозилметионина (SAM) на углерод-5 цитозина в CpG; SAM превращается в S-аденозилгомоцистеин (SAH). Б. Неметилированный CpG-остров на промоторе — ген активен; метилированный — связываются белки MBD, HDAC, хроматин уплотняется, ген молчит. В. После репликации новая цепь не метилирована (гемиметилированная ДНК): UHRF1 узнаёт такие участки, а DNMT1 достраивает метку; DNMT3A и DNMT3B создают метки заново (de novo).</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .dna { stroke: #2f3f7a; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .me { fill: #d1432f; }
+    .ring { fill: #eaf0fb; stroke: #2f3f7a; stroke-width: 2; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="630" fill="#ffffff"/>
+
+  <!-- А. реакция -->
+  <text class="h" x="20" y="28">А. Что такое метилирование ДНК</text>
+  <polygon points="90,110 122,92 154,110 154,148 122,166 90,148" class="ring"/>
+  <text class="s" x="122" y="134" text-anchor="middle" style="font-size:11px">цитозин</text>
+  <text class="b" x="86" y="106" text-anchor="end" style="font-size:11px">C5</text>
+  <circle cx="142" cy="90" r="0" fill="none"/>
+  <path d="M108 100 L96 78" stroke="#2f3f7a" stroke-width="2"/>
+  <circle cx="92" cy="72" r="13" class="me"/><text class="w" x="92" y="76" style="font-size:10px">CH₃</text>
+  <text class="s" x="122" y="192" text-anchor="middle" style="font-size:11px">5-метилцитозин (5mC)</text>
+  <text class="b" x="220" y="80" style="fill:#c0397b">DNMT</text>
+  <rect x="200" y="116" width="130" height="42" rx="10" fill="#fff8e8" stroke="#e0a43a" stroke-width="1.6"/><text class="b" x="265" y="134" text-anchor="middle" style="font-size:12px">SAM → SAH</text><text class="s" x="265" y="150" text-anchor="middle" style="font-size:10.5px">донор метила</text>
+  <path d="M170 128 H196" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="350" y="106">Метилируются в основном цитозины</text><text class="s" x="350" y="124">в динуклеотиде CpG (~70–80 % CpG в</text><text class="s" x="350" y="142">геноме метилировано). Метка не меняет</text><text class="s" x="350" y="160">последовательность, но влияет на</text><text class="s" x="350" y="178">доступность гена.</text>
+  <rect class="box" x="640" y="46" width="240" height="150" rx="10"/><text class="b" x="654" y="68">Для метилирования нужны</text><text class="s" x="654" y="90">• SAM (из метионина)</text><text class="s" x="654" y="108">• фолат и витамин B<tspan baseline-shift="sub" font-size="9">12</tspan> — путь</text><text class="s" x="666" y="124">образования метионина</text><text class="s" x="654" y="144">• DNMT1 — поддержание;</text><text class="s" x="654" y="162">DNMT3A/3B — новые метки</text><text class="s" x="654" y="180">(de novo)</text>
+
+  <line x1="20" y1="214" x2="880" y2="214" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- Б. CpG-остров -->
+  <text class="h" x="20" y="242">Б. CpG-остров на промоторе: включено или выключено</text>
+  <!-- открыто -->
+  <text class="b" x="36" y="270" style="fill:#2f7d3f">Не метилирован → ген работает</text>
+  <line class="dna" x1="40" y1="330" x2="420" y2="330"/>
+  <g fill="#fff" stroke="#2f3f7a" stroke-width="2"><circle cx="90" cy="330" r="9"/><circle cx="130" cy="330" r="9"/><circle cx="170" cy="330" r="9"/><circle cx="210" cy="330" r="9"/></g>
+  <text class="s" x="150" y="304" text-anchor="middle" style="font-size:11px">CpG-остров (промотор)</text>
+  <rect x="260" y="322" width="40" height="16" rx="4" fill="#ee8a2b"/><rect x="300" y="318" width="60" height="24" fill="#2e6f95"/>
+  <ellipse cx="282" cy="292" rx="34" ry="14" fill="#6c7a96"/><text class="w" x="282" y="296" style="font-size:10px">Pol II + ТФ</text>
+  <path d="M282 306 V320" stroke="#3fa34d" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <path d="M362 306 h50" stroke="#3fa34d" stroke-width="3" fill="none" marker-end="url(#ar)"/><text class="s" x="366" y="298" style="font-size:11px;fill:#2f7d3f">РНК</text>
+  <text class="s" x="36" y="368" style="font-size:11.5px">Хроматин открыт, ТФ и Pol II садятся на промотор.</text>
+  <!-- закрыто -->
+  <text class="b" x="470" y="270" style="fill:#c0392b">Метилирован → ген молчит</text>
+  <line class="dna" x1="474" y1="330" x2="880" y2="330"/>
+  <g stroke="#2f3f7a" stroke-width="2"><circle cx="520" cy="330" r="9" class="me"/><circle cx="560" cy="330" r="9" class="me"/><circle cx="600" cy="330" r="9" class="me"/><circle cx="640" cy="330" r="9" class="me"/></g>
+  <text class="s" x="580" y="304" text-anchor="middle" style="font-size:11px">те же CpG, но с CH₃</text>
+  <ellipse cx="540" cy="374" rx="26" ry="12" fill="#c0397b"/><text class="w" x="540" y="378" style="font-size:10px">MBD</text>
+  <ellipse cx="610" cy="374" rx="30" ry="12" fill="#7b5ea7"/><text class="w" x="610" y="378" style="font-size:10px">HDAC</text>
+  <rect x="690" y="322" width="40" height="16" rx="4" fill="#b7c0cf"/><rect x="730" y="318" width="60" height="24" fill="#b7c0cf"/>
+  <path d="M700 300 l24 12 M724 300 l-24 12" stroke="#c0392b" stroke-width="3"/>
+  <text class="s" x="470" y="404" style="font-size:11.5px">MBD-белки «читают» метку и привлекают HDAC → нуклеосомы</text><text class="s" x="470" y="420" style="font-size:11.5px">уплотняются, ТФ не могут сесть на промотор.</text>
+
+  <line x1="20" y1="440" x2="880" y2="440" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- В. поддержание -->
+  <text class="h" x="20" y="466">В. Как метка переживает репликацию</text>
+  <line class="dna" x1="40" y1="510" x2="300" y2="510"/><line class="dna" x1="40" y1="530" x2="300" y2="530" style="stroke:#ee8a2b;stroke-dasharray:4 5"/>
+  <g class="me"><circle cx="80" cy="500" r="5"/><circle cx="140" cy="500" r="5"/><circle cx="200" cy="500" r="5"/><circle cx="260" cy="500" r="5"/></g>
+  <text class="s" x="170" y="558" text-anchor="middle" style="font-size:11.5px">гемиметилированная ДНК: у новой цепи метки нет</text>
+  <ellipse cx="420" cy="510" rx="42" ry="16" fill="#3b6fd4"/><text class="w" x="420" y="514" style="font-size:11px">UHRF1</text><text class="s" x="420" y="486" text-anchor="middle" style="font-size:11px">узнаёт</text>
+  <path d="M310 520 H370" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <ellipse cx="540" cy="510" rx="42" ry="16" fill="#c0397b"/><text class="w" x="540" y="514" style="font-size:11px">DNMT1</text><text class="s" x="540" y="486" text-anchor="middle" style="font-size:11px">достраивает</text>
+  <path d="M466 510 H494" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <line class="dna" x1="620" y1="510" x2="880" y2="510"/><line class="dna" x1="620" y1="530" x2="880" y2="530" style="stroke:#ee8a2b"/>
+  <g class="me"><circle cx="660" cy="500" r="5"/><circle cx="720" cy="500" r="5"/><circle cx="780" cy="500" r="5"/><circle cx="840" cy="500" r="5"/><circle cx="660" cy="540" r="5"/><circle cx="720" cy="540" r="5"/><circle cx="780" cy="540" r="5"/><circle cx="840" cy="540" r="5"/></g>
+  <path d="M566 520 H610" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="750" y="558" text-anchor="middle" style="font-size:11.5px">метки на обеих цепях: рисунок унаследован</text>
+  <text class="s" x="20" y="596" style="font-size:12px">Так клетка «помнит», кем она была: например, гены стволовости остаются выключенными в потомках.</text>
+  <text class="s" x="20" y="614" style="font-size:12px">Ошибки поддержания и потеря DNMT3A/TET2 меняют этот рисунок.</text>
+</svg>

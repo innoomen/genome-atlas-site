@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Переключение фетального и взрослого гемоглобина и генная терапия через энхансер BCL11A</title>
+  <desc id="d">Три состояния бета-глобинового локуса. В плоде область контроля локуса (LCR) контактирует с генами гамма-глобина HBG1 и HBG2, образуется фетальный гемоглобин HbF. У взрослого белки BCL11A и ZBTB7A подавляют гены гамма-глобина, LCR контактирует с геном HBB, образуется HbA. После редактирования эритроидного энхансера BCL11A количество BCL11A снижается, гены гамма-глобина включаются снова, образуется HbF; это основа терапии серповидноклеточной анемии и бета-талассемии.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .dna { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+  </style>
+  <defs><marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Бета-глобиновый локус: как включается фетальный или взрослый ген</text>
+
+  <!-- общий шаблон: три ряда -->
+  <g id="row">
+  </g>
+
+  <!-- ряд 1: плод -->
+  <text class="b" x="20" y="66" style="fill:#2f7d3f">1. Плод</text>
+  <line class="dna" x1="200" y1="130" x2="860" y2="130"/>
+  <rect x="210" y="118" width="70" height="24" rx="5" fill="#f0b429"/><text class="w" x="245" y="134" style="fill:#1c2330;font-size:10.5px">LCR</text>
+  <rect x="360" y="118" width="34" height="24" rx="4" fill="#6c7a96"/><text class="w" x="377" y="134" style="font-size:9.5px">HBE</text>
+  <rect x="440" y="118" width="40" height="24" rx="4" fill="#3fa34d"/><text class="w" x="460" y="134" style="font-size:9.5px">HBG2</text>
+  <rect x="520" y="118" width="40" height="24" rx="4" fill="#3fa34d"/><text class="w" x="540" y="134" style="font-size:9.5px">HBG1</text>
+  <rect x="640" y="118" width="34" height="24" rx="4" fill="#6c7a96"/><text class="w" x="657" y="134" style="font-size:9.5px">HBD</text>
+  <rect x="760" y="118" width="40" height="24" rx="4" fill="#3b6fd4"/><text class="w" x="780" y="134" style="font-size:9.5px">HBB</text>
+  <path d="M245 116 C245 62 500 62 500 116" fill="none" stroke="#3fa34d" stroke-width="3.5" stroke-dasharray="6 4"/>
+  <text class="s" x="372" y="62" text-anchor="middle" style="fill:#2f7d3f;font-size:11.5px">LCR контактирует с генами γ-глобина</text>
+  <text class="b" x="200" y="176" style="fill:#2f7d3f">HbF = α₂γ₂</text><text class="s" x="290" y="176">высокое сродство к кислороду (для плода)</text>
+
+  <!-- ряд 2: взрослый -->
+  <text class="b" x="20" y="226" style="fill:#3b6fd4">2. Взрослый</text>
+  <line class="dna" x1="200" y1="290" x2="860" y2="290"/>
+  <rect x="210" y="278" width="70" height="24" rx="5" fill="#f0b429"/><text class="w" x="245" y="294" style="fill:#1c2330;font-size:10.5px">LCR</text>
+  <rect x="440" y="278" width="40" height="24" rx="4" fill="#b7c0cf"/><text class="w" x="460" y="294" style="font-size:9.5px;fill:#5b6577">HBG2</text>
+  <rect x="520" y="278" width="40" height="24" rx="4" fill="#b7c0cf"/><text class="w" x="540" y="294" style="font-size:9.5px;fill:#5b6577">HBG1</text>
+  <rect x="640" y="278" width="34" height="24" rx="4" fill="#6c7a96"/><text class="w" x="657" y="294" style="font-size:9.5px">HBD</text>
+  <rect x="760" y="278" width="40" height="24" rx="4" fill="#3b6fd4"/><text class="w" x="780" y="294" style="font-size:9.5px">HBB</text>
+  <path d="M245 276 C245 222 780 222 780 276" fill="none" stroke="#3b6fd4" stroke-width="3.5" stroke-dasharray="6 4"/>
+  <text class="s" x="512" y="222" text-anchor="middle" style="fill:#3b6fd4;font-size:11.5px">LCR контактирует с геном β-глобина</text>
+  <ellipse cx="490" cy="256" rx="34" ry="13" fill="#c0392b"/><text class="w" x="490" y="260" style="font-size:9.5px">BCL11A</text>
+  <ellipse cx="560" cy="256" rx="30" ry="13" fill="#c0397b"/><text class="w" x="560" y="260" style="font-size:9.5px">ZBTB7A</text>
+  <path d="M490 269 V276" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/><path d="M560 269 V276" stroke="#c0397b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="b" x="200" y="336" style="fill:#3b6fd4">HbA = α₂β₂</text><text class="s" x="292" y="336">BCL11A и ZBTB7A «выключают» гены γ-глобина</text>
+
+  <!-- ряд 3: редактирование -->
+  <text class="b" x="20" y="386" style="fill:#c0397b">3. После</text><text class="b" x="20" y="402" style="fill:#c0397b">редактирования</text>
+  <line class="dna" x1="200" y1="450" x2="860" y2="450"/>
+  <rect x="210" y="438" width="70" height="24" rx="5" fill="#f0b429"/><text class="w" x="245" y="454" style="fill:#1c2330;font-size:10.5px">LCR</text>
+  <rect x="440" y="438" width="40" height="24" rx="4" fill="#3fa34d"/><text class="w" x="460" y="454" style="font-size:9.5px">HBG2</text>
+  <rect x="520" y="438" width="40" height="24" rx="4" fill="#3fa34d"/><text class="w" x="540" y="454" style="font-size:9.5px">HBG1</text>
+  <rect x="640" y="438" width="34" height="24" rx="4" fill="#6c7a96"/><text class="w" x="657" y="454" style="font-size:9.5px">HBD</text>
+  <rect x="760" y="438" width="40" height="24" rx="4" fill="#3b6fd4"/><text class="w" x="780" y="454" style="font-size:9.5px">HBB</text>
+  <path d="M245 436 C245 382 500 382 500 436" fill="none" stroke="#3fa34d" stroke-width="3.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="522" width="120" height="26" rx="8" fill="#fdf1ef" stroke="#c0392b" stroke-width="2"/><text class="b" x="390" y="540" text-anchor="middle" style="fill:#c0392b;font-size:11.5px">энхансер BCL11A</text>
+  <text class="s" x="464" y="540" style="font-size:12px">↯ редактирован (CRISPR) → BCL11A↓ → γ-глобин ↑ → HbF↑</text>
+  <text class="b" x="200" y="496" style="fill:#c0397b">HbF ↑</text><text class="s" x="262" y="496">HbF не полимеризуется, как HbS: терапия серповидноклеточной анемии и β-талассемии</text>
+  <text class="s" x="20" y="580" style="font-size:12px">Похожий эффект даёт наследственное сохранение фетального гемоглобина (HPFH): мутации в промоторах генов γ-глобина мешают BCL11A связаться.</text>
+</svg>
