@@ -1,0 +1,62 @@
+<svg class="js-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="js-t js-d">
+  <title id="js-t">Анимация: сигнал JAK–STAT от цитокина к генам</title>
+  <desc id="js-d">Цитокин связывается с двумя молекулами рецептора и сближает их. Связанные киназы JAK2 взаимно фосфорилируют друг друга и хвосты рецепторов. Белки STAT садятся на фосфотирозины, фосфорилируются, образуют димер и входят в ядро, где включают гены. Затем SOCS выключает путь.</desc>
+  <style>
+    .js-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .js-svg .js-b { font-weight: 700; }
+    .js-svg .js-m { fill: #5b6577; }
+    .js-svg .js-w { fill: #fff; font-weight: 700; text-anchor: middle; font-size: 11px; }
+    .js-svg .js-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .js-svg .js-cyt { animation: js-cyt 16s ease-in-out infinite; }
+    .js-svg .js-rr { animation: js-rr 16s ease-in-out infinite; }
+    .js-svg .js-rl { animation: js-rl 16s ease-in-out infinite; }
+    .js-svg .js-p { animation: js-p 16s linear infinite; }
+    .js-svg .js-stat { animation: js-stat 16s ease-in-out infinite; }
+    .js-svg .js-dim { animation: js-dim 16s ease-in-out infinite; }
+    .js-svg .js-gene { animation: js-gene 16s linear infinite; }
+    .js-svg .js-socs { animation: js-socs 16s linear infinite; }
+    .js-svg .js-scene { animation: js-scene 16s linear infinite; }
+    .js-svg .js-c1 { animation: js-c1 16s linear infinite; } .js-svg .js-c2 { animation: js-c2 16s linear infinite; }
+    .js-svg .js-c3 { animation: js-c3 16s linear infinite; } .js-svg .js-c4 { animation: js-c4 16s linear infinite; }
+    @keyframes js-scene { 0% { opacity: 1; } 93% { opacity: 1; } 98% { opacity: 0; } 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes js-cyt { 0%, 4% { opacity: 0; transform: translateY(-40px); } 14%, 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes js-rr { 0%, 12% { transform: translateX(0); } 20%, 100% { transform: translateX(-24px); } }
+    @keyframes js-rl { 0%, 12% { transform: translateX(0); } 20%, 100% { transform: translateX(24px); } }
+    @keyframes js-p { 0%, 22% { opacity: 0; } 26%, 100% { opacity: 1; } }
+    @keyframes js-stat { 0%, 30% { transform: translate(0,0); } 40%, 100% { transform: translate(0,0); } }
+    @keyframes js-dim { 0%, 42% { opacity: 0; transform: translateY(0); } 46% { opacity: 1; transform: translateY(0); } 60%, 100% { opacity: 1; transform: translateY(130px); } }
+    @keyframes js-gene { 0%, 66% { opacity: 0; } 70%, 100% { opacity: 1; } }
+    @keyframes js-socs { 0%, 82% { opacity: 0; } 88%, 100% { opacity: 1; } }
+    @keyframes js-c1 { 0%, 1% { opacity: 0; } 3%, 18% { opacity: 1; } 22%, 100% { opacity: 0; } }
+    @keyframes js-c2 { 0%, 23% { opacity: 0; } 26%, 40% { opacity: 1; } 44%, 100% { opacity: 0; } }
+    @keyframes js-c3 { 0%, 45% { opacity: 0; } 48%, 76% { opacity: 1; } 80%, 100% { opacity: 0; } }
+    @keyframes js-c4 { 0%, 81% { opacity: 0; } 84%, 92% { opacity: 1; } 96%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .js-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="460" fill="#ffffff"/>
+  <g class="js-scene">
+    <rect x="20" y="130" width="680" height="24" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/>
+    <text class="js-m" x="34" y="147" style="font-size:11px">мембрана</text>
+    <rect x="20" y="300" width="680" height="140" rx="40" fill="#f3efff" stroke="#b6a4e0" stroke-width="2"/>
+    <text class="js-b" x="46" y="322" style="fill:#5e3f8a;font-size:12px">Ядро</text>
+    <line x1="80" y1="410" x2="660" y2="410" stroke="#2f3f7a" stroke-width="5" stroke-linecap="round"/>
+    <rect x="300" y="402" width="34" height="16" rx="4" fill="#f0b429"/><rect x="380" y="402" width="34" height="16" rx="4" fill="#ee8a2b"/><rect x="414" y="398" width="60" height="24" fill="#2e6f95"/>
+    <!-- цитокин -->
+    <g class="js-cyt"><circle cx="360" cy="70" r="20" fill="#ee8a2b"/><text class="js-w" x="360" y="74" style="font-size:10px">цитокин</text></g>
+    <!-- рецепторы -->
+    <g class="js-rr"><rect x="346" y="86" width="12" height="90" rx="5" fill="#8a6d3b"/><ellipse cx="352" cy="190" rx="26" ry="13" fill="#3b6fd4"/><text class="js-w" x="352" y="194" style="font-size:9.5px">JAK2</text>
+      <g class="js-p"><circle cx="352" cy="172" r="8" fill="#c0392b"/><text class="js-w" x="352" y="175" style="font-size:9px">P</text></g></g>
+    <g class="js-rl"><rect x="362" y="86" width="12" height="90" rx="5" fill="#8a6d3b"/><ellipse cx="368" cy="190" rx="26" ry="13" fill="#3b6fd4"/><text class="js-w" x="368" y="194" style="font-size:9.5px">JAK2</text>
+      <g class="js-p"><circle cx="368" cy="172" r="8" fill="#c0392b"/><text class="js-w" x="368" y="175" style="font-size:9px">P</text></g></g>
+    <!-- STAT на рецепторе -->
+    <g class="js-p"><rect x="240" y="216" width="56" height="20" rx="10" fill="#3fa34d"/><text class="js-w" x="268" y="230" style="font-size:10px">STAT</text><rect x="424" y="216" width="56" height="20" rx="10" fill="#3fa34d" style="display:none"/></g>
+    <!-- димер идёт в ядро -->
+    <g class="js-dim"><rect x="326" y="230" width="56" height="20" rx="10" fill="#2f7d3f"/><rect x="386" y="230" width="56" height="20" rx="10" fill="#2f7d3f"/><text class="js-w" x="354" y="244" style="font-size:9.5px">STAT-P</text><text class="js-w" x="414" y="244" style="font-size:9.5px">STAT-P</text></g>
+    <g class="js-gene"><path d="M474 400 h60" stroke="#3fa34d" stroke-width="3" fill="none"/><circle cx="540" cy="400" r="5" fill="#ee8a2b"/><text class="js-m" x="500" y="388" style="font-size:11px">мРНК</text></g>
+    <g class="js-socs"><ellipse cx="200" cy="190" rx="34" ry="14" fill="#7b5ea7"/><text class="js-w" x="200" y="194" style="font-size:10px">SOCS</text><text class="js-m" x="200" y="216" text-anchor="middle" style="font-size:10.5px">выключает JAK</text></g>
+  </g>
+  <text class="js-cap js-c1" x="360" y="30">1. Цитокин сближает две молекулы рецептора</text>
+  <text class="js-cap js-c2" x="360" y="30">2. JAK2 взаимно фосфорилируют друг друга и рецептор</text>
+  <text class="js-cap js-c3" x="360" y="30">3. STAT фосфорилируются, образуют димер и идут в ядро</text>
+  <text class="js-cap js-c4" x="360" y="30">4. Гены включены; SOCS выключает путь</text>
+</svg>

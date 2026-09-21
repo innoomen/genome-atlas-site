@@ -1,0 +1,58 @@
+<svg class="rs-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="rs-t rs-d">
+  <title id="rs-t">Анимация: RAS как молекулярный переключатель</title>
+  <desc id="rs-d">RAS в неактивной GDP-форме получает от SOS замену GDP на GTP и включается; к нему присоединяется RAF и запускает каскад. Затем белок NF1 (GAP) ускоряет гидролиз GTP, и RAS выключается. В мутантном RAS (например, G12D) гидролиз невозможен: GAP не справляется, и белок остаётся включённым.</desc>
+  <style>
+    .rs-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .rs-svg .rs-w { fill: #fff; font-weight: 700; text-anchor: middle; font-size: 11px; }
+    .rs-svg .rs-m { fill: #5b6577; }
+    .rs-svg .rs-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .rs-svg .rs-off { animation: rs-off 18s linear infinite; }
+    .rs-svg .rs-on { animation: rs-on 18s linear infinite; }
+    .rs-svg .rs-mut { animation: rs-mut 18s linear infinite; }
+    .rs-svg .rs-sos { animation: rs-sos 18s ease-in-out infinite; }
+    .rs-svg .rs-raf { animation: rs-raf 18s linear infinite; }
+    .rs-svg .rs-gap { animation: rs-gap 18s ease-in-out infinite; }
+    .rs-svg .rs-gap2 { animation: rs-gap2 18s ease-in-out infinite; }
+    .rs-svg .rs-x { animation: rs-x 18s linear infinite; }
+    .rs-svg .rs-scene { animation: rs-scene 18s linear infinite; }
+    .rs-svg .rs-c1 { animation: rs-c1 18s linear infinite; } .rs-svg .rs-c2 { animation: rs-c2 18s linear infinite; }
+    .rs-svg .rs-c3 { animation: rs-c3 18s linear infinite; } .rs-svg .rs-c4 { animation: rs-c4 18s linear infinite; } .rs-svg .rs-c5 { animation: rs-c5 18s linear infinite; }
+    @keyframes rs-scene { 0% { opacity: 1; } 94% { opacity: 1; } 98% { opacity: 0; } 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes rs-off { 0%, 38% { opacity: 1; } 41%, 71% { opacity: 0; } 74%, 76% { opacity: 1; } 79%, 100% { opacity: 0; } }
+    @keyframes rs-on { 0%, 38% { opacity: 0; } 41%, 71% { opacity: 1; } 74%, 100% { opacity: 0; } }
+    @keyframes rs-mut { 0%, 76% { opacity: 0; } 79%, 100% { opacity: 1; } }
+    @keyframes rs-sos { 0%, 20% { opacity: 0; transform: translateX(-70px); } 27%, 38% { opacity: 1; transform: translateX(0); } 43%, 100% { opacity: 0; transform: translateX(-70px); } }
+    @keyframes rs-raf { 0%, 44% { opacity: 0; } 48%, 68% { opacity: 1; } 72%, 100% { opacity: 0; } }
+    @keyframes rs-gap { 0%, 56% { opacity: 0; transform: translateX(70px); } 62%, 71% { opacity: 1; transform: translateX(0); } 76%, 100% { opacity: 0; transform: translateX(70px); } }
+    @keyframes rs-gap2 { 0%, 78% { opacity: 0; transform: translateX(70px); } 84%, 96% { opacity: 1; transform: translateX(0); } 100% { opacity: 1; transform: translateX(0); } }
+    @keyframes rs-x { 0%, 86% { opacity: 0; } 89%, 100% { opacity: 1; } }
+    @keyframes rs-c1 { 0%, 1% { opacity: 0; } 3%, 22% { opacity: 1; } 26%, 100% { opacity: 0; } }
+    @keyframes rs-c2 { 0%, 26% { opacity: 0; } 29%, 42% { opacity: 1; } 46%, 100% { opacity: 0; } }
+    @keyframes rs-c3 { 0%, 46% { opacity: 0; } 49%, 58% { opacity: 1; } 61%, 100% { opacity: 0; } }
+    @keyframes rs-c4 { 0%, 60% { opacity: 0; } 63%, 74% { opacity: 1; } 77%, 100% { opacity: 0; } }
+    @keyframes rs-c5 { 0%, 78% { opacity: 0; } 81%, 94% { opacity: 1; } 98%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .rs-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <g class="rs-scene">
+    <rect x="20" y="90" width="680" height="26" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/><text class="rs-m" x="34" y="108" style="font-size:11px">внутренняя сторона мембраны</text>
+    <path d="M360 116 V150" stroke="#b98a3e" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- RAS -->
+    <g class="rs-off"><ellipse cx="360" cy="196" rx="62" ry="44" fill="#8a94a8"/><text class="rs-w" x="360" y="190" style="font-size:14px">RAS</text><rect x="334" y="200" width="52" height="18" rx="8" fill="#5b6577"/><text class="rs-w" x="360" y="213" style="font-size:10px">GDP</text></g>
+    <g class="rs-on"><ellipse cx="360" cy="196" rx="62" ry="44" fill="#3fa34d"/><text class="rs-w" x="360" y="190" style="font-size:14px">RAS</text><rect x="334" y="200" width="52" height="18" rx="8" fill="#2f7d3f"/><text class="rs-w" x="360" y="213" style="font-size:10px">GTP</text></g>
+    <g class="rs-mut"><ellipse cx="360" cy="196" rx="62" ry="44" fill="#c0392b"/><text class="rs-w" x="360" y="190" style="font-size:14px">RAS G12D</text><rect x="334" y="200" width="52" height="18" rx="8" fill="#8f2a20"/><text class="rs-w" x="360" y="213" style="font-size:10px">GTP</text></g>
+    <!-- SOS -->
+    <g class="rs-sos"><ellipse cx="216" cy="196" rx="60" ry="26" fill="#7b5ea7"/><text class="rs-w" x="216" y="194">SOS (GEF)</text><text class="rs-w" x="216" y="208" style="font-size:9.5px">меняет GDP на GTP</text></g>
+    <!-- RAF -->
+    <g class="rs-raf"><ellipse cx="360" cy="290" rx="58" ry="22" fill="#e0a43a"/><text class="rs-w" x="360" y="294" style="fill:#1c2330">RAF</text><path d="M360 246 V266" stroke="#2f7d3f" stroke-width="3" fill="none"/><text class="rs-m" x="430" y="292">→ MEK → ERK → рост клетки</text></g>
+    <!-- GAP -->
+    <g class="rs-gap"><ellipse cx="508" cy="196" rx="60" ry="26" fill="#c0397b"/><text class="rs-w" x="508" y="194">NF1 (GAP)</text><text class="rs-w" x="508" y="208" style="font-size:9.5px">ускоряет GTP→GDP</text></g>
+    <g class="rs-gap2"><ellipse cx="508" cy="196" rx="60" ry="26" fill="#c0397b"/><text class="rs-w" x="508" y="194">NF1 (GAP)</text></g>
+    <g class="rs-x"><path d="M440 178 l24 36 M464 178 l-24 36" stroke="#c0392b" stroke-width="4"/><text class="rs-m" x="360" y="290" text-anchor="middle" style="fill:#c0392b;font-size:12.5px">GTP не гидролизуется: RAS остаётся включённым</text></g>
+  </g>
+  <text class="rs-cap rs-c1" x="360" y="40">1. В покое RAS связан с GDP — выключен</text>
+  <text class="rs-cap rs-c2" x="360" y="40">2. Сигнал: SOS заменяет GDP на GTP</text>
+  <text class="rs-cap rs-c3" x="360" y="40">3. RAS–GTP включён: RAF запускает каскад</text>
+  <text class="rs-cap rs-c4" x="360" y="40">4. NF1 (GAP) ускоряет гидролиз GTP — RAS выключается</text>
+  <text class="rs-cap rs-c5" x="360" y="40">5. Мутация (G12, G13, Q61): GAP бессилен — RAS всегда «ВКЛ»</text>
+</svg>

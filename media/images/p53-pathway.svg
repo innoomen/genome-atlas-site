@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Путь p53: стресс, MDM2 и клеточный ответ</title>
+  <desc id="d">В норме белок p53 нестабилен: E3-лигаза MDM2 присоединяет к нему убиквитин, и он разрушается в протеасоме. При повреждении ДНК киназы ATM/ATR и CHK1/CHK2 фосфорилируют p53 и MDM2, p53 стабилизируется, накапливается и включает гены-мишени. Онкогенный стресс (MYC, RAS) активирует ARF, который подавляет MDM2. p53 включает CDKN1A (p21) — остановка клеточного цикла, гены репарации (GADD45, XPC), проапоптотические гены (BAX, PUMA, NOXA) и старение. p53 также включает ген MDM2, замыкая петлю отрицательной обратной связи.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rx { font-size: 10.5px; fill: #2f7d3f; font-weight: 700; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">p53 — «страж генома»: чем сильнее повреждение, тем жёстче ответ</text>
+
+  <!-- сигналы -->
+  <rect class="box" x="20" y="48" width="230" height="86" rx="10"/><text class="b" x="34" y="70" style="font-size:12.5px">Повреждение ДНК</text><text class="s" x="34" y="88" style="font-size:11px">облучение, химиотерапия,</text><text class="s" x="34" y="104" style="font-size:11px">ошибки репликации, укорочение</text><text class="s" x="34" y="120" style="font-size:11px">теломер</text>
+  <path d="M135 134 V158" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="135" cy="176" rx="90" ry="16" fill="#e0a43a"/><text class="w" x="135" y="180" style="fill:#1c2330;font-size:10.5px">ATM/ATR → CHK2/CHK1</text>
+  <path d="M225 176 H330" class="ar" marker-end="url(#ar)"/><text class="s" x="278" y="168" text-anchor="middle" style="font-size:10.5px;fill:#c0392b">P</text>
+  <rect class="box" x="20" y="228" width="230" height="70" rx="10"/><text class="b" x="34" y="250" style="font-size:12.5px">Онкогенный стресс</text><text class="s" x="34" y="268" style="font-size:11px">избыток MYC, RAS →</text><text class="s" x="34" y="284" style="font-size:11px">белок ARF</text>
+  <ellipse cx="180" cy="336" rx="40" ry="14" fill="#7b5ea7"/><text class="w" x="180" y="340" style="font-size:10.5px">ARF</text>
+  <path d="M136 298 L164 322" class="ar" marker-end="url(#ar)" style="stroke-width:1.8"/>
+
+  <!-- центр -->
+  <circle cx="450" cy="190" r="50" fill="#3fa34d"/><text class="w" x="450" y="186" style="font-size:16px">p53</text><text class="w" x="450" y="204" style="font-size:9.5px">стабилен, активен</text>
+  <circle cx="404" cy="150" r="10" fill="#c0392b"/><text class="w" x="404" y="153" style="font-size:9px">P</text>
+  <ellipse cx="560" cy="80" rx="52" ry="18" fill="#c0392b"/><text class="w" x="560" y="84" style="font-size:12px">MDM2</text>
+  <path d="M530 96 L478 148" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="s" x="536" y="128" style="font-size:10.5px;fill:#c0392b">Ub</text>
+  <ellipse cx="750" cy="80" rx="68" ry="16" fill="#8a94a8"/><text class="w" x="750" y="84" style="font-size:10.5px">протеасома</text>
+  <path d="M614 80 H680" class="ar" marker-end="url(#ar)" style="stroke-dasharray:5 4"/><text class="s" x="646" y="72" text-anchor="middle" style="font-size:10px">p53 разрушается</text>
+  <path d="M180 322 C260 250 330 110 508 80" fill="none" stroke="#7b5ea7" stroke-width="2.2" marker-end="url(#inh)" style="stroke-dasharray:5 4"/>
+  <text class="s" x="252" y="230" style="font-size:10.5px;fill:#7b5ea7">ARF подавляет MDM2</text>
+  <path d="M492 156 C520 132 540 116 560 100" fill="none" stroke="#3fa34d" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="s" x="580" y="122" style="font-size:10.5px;fill:#2f7d3f">p53 включает ген MDM2:</text><text class="s" x="580" y="136" style="font-size:10.5px;fill:#2f7d3f">петля обратной связи</text>
+  <text class="s" x="330" y="60" style="font-size:11px">В покое p53 живёт всего минуты —</text><text class="s" x="330" y="74" style="font-size:11px">MDM2 постоянно его разрушает.</text>
+  <text class="s" x="610" y="226" style="font-size:11px">Мутации в <tspan font-style="italic">TP53</tspan> ломают именно</text><text class="s" x="610" y="242" style="font-size:11px">этот «страж»: клетка делится с</text><text class="s" x="610" y="258" style="font-size:11px">повреждённой ДНК.</text>
+
+  <!-- ответы -->
+  <path d="M424 236 L120 380" class="ar" marker-end="url(#ar)"/><path d="M440 240 L330 380" class="ar" marker-end="url(#ar)"/><path d="M462 240 L570 380" class="ar" marker-end="url(#ar)"/><path d="M482 234 L790 380" class="ar" marker-end="url(#ar)"/>
+  <rect class="box" x="20" y="384" width="200" height="118" rx="10" style="fill:#e7f1fb;stroke:#3b6fd4"/><text class="b" x="34" y="406" style="fill:#3b6fd4;font-size:12.5px">Пауза</text><text class="s" x="34" y="426" style="font-size:11px"><tspan font-style="italic">CDKN1A</tspan> (p21) → остановка</text><text class="s" x="34" y="442" style="font-size:11px">клеточного цикла в G1 и G2:</text><text class="s" x="34" y="458" style="font-size:11px">время на ремонт ДНК</text>
+  <rect class="box" x="230" y="384" width="200" height="118" rx="10" style="fill:#eaf6ee;stroke:#3fa34d"/><text class="b" x="244" y="406" style="fill:#2f7d3f;font-size:12.5px">Ремонт</text><text class="s" x="244" y="426" style="font-size:11px"><tspan font-style="italic">GADD45</tspan>, <tspan font-style="italic">XPC</tspan>, <tspan font-style="italic">DDB2</tspan>:</text><text class="s" x="244" y="442" style="font-size:11px">гены репарации ДНК</text>
+  <rect class="box" x="440" y="384" width="200" height="118" rx="10" style="fill:#fdf1ef;stroke:#e0a89f"/><text class="b" x="454" y="406" style="fill:#c0392b;font-size:12.5px">Гибель</text><text class="s" x="454" y="426" style="font-size:11px"><tspan font-style="italic">BAX</tspan>, <tspan font-style="italic">PUMA</tspan>, <tspan font-style="italic">NOXA</tspan> → апоптоз</text><text class="s" x="454" y="442" style="font-size:11px">(см. тему «BCL2 и апоптоз»);</text><text class="s" x="454" y="458" style="font-size:11px">повреждений слишком много</text>
+  <rect class="box" x="650" y="384" width="230" height="118" rx="10" style="fill:#f3efff;stroke:#b6a4e0"/><text class="b" x="664" y="406" style="fill:#5e3f8a;font-size:12.5px">Старение (senescence)</text><text class="s" x="664" y="426" style="font-size:11px">необратимый выход из цикла;</text><text class="s" x="664" y="442" style="font-size:11px">клетка живёт, но не делится.</text><text class="s" x="664" y="458" style="font-size:11px">Есть и другие мишени: обмен</text><text class="s" x="664" y="474" style="font-size:11px">веществ, ферроптоз.</text>
+
+  <rect class="box" x="20" y="520" width="860" height="86" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="542" style="fill:#2f7d3f">Терапевтическое использование</text>
+  <text class="s" x="34" y="562">• <tspan font-weight="700">Ингибиторы MDM2</tspan> (например, идасанутлин, миладеметан) освобождают p53 при TP53 дикого типа; изучаются в исследованиях.</text>
+  <text class="s" x="34" y="580">• При мутантном <tspan font-style="italic">TP53</tspan> ингибиторы MDM2 бесполезны; попытка «вернуть форму» мутантному белку (эпренетапопт)</text>
+  <text class="s" x="46" y="596">в рандомизированном исследовании при МДС не достигла основной цели.</text>
+  <text class="s" x="34" y="600" style="display:none"></text>
+</svg>

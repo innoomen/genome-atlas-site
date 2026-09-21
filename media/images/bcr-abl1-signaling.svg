@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">BCR::ABL1: сигнальные каскады и ингибиторы тирозинкиназы</title>
+  <desc id="d">В центре слитая киназа BCR::ABL1, постоянно фосфорилирующая субстраты. Сайт Y177 связывает GRB2 и через SOS запускает RAS–MAPK; пути STAT5 и PI3K–AKT–mTOR также включаются; адаптер CRKL — маркер активности. Итог — быстрое деление, устойчивость к апоптозу (BCL-XL, MCL1), изменение адгезии. Справа — места действия препаратов: иматиниб, нилотиниб, дазатиниб, бозутиниб и понатиниб занимают АТФ-карман; асциминиб связывается в миристоильном кармане. Внизу — мутации устойчивости, включая T315I.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">BCR::ABL1: постоянно включённая киназа и что с ней делают</text>
+
+  <!-- центр -->
+  <ellipse cx="260" cy="104" rx="120" ry="34" fill="#c0392b"/><text class="w" x="260" y="100" style="font-size:13px">BCR::ABL1</text><text class="w" x="260" y="118" style="font-size:10px">киназа всегда включена</text>
+  <circle cx="160" cy="80" r="10" fill="#e0a43a"/><text class="w" x="160" y="83" style="font-size:8px;fill:#1c2330">Y177</text>
+  <text class="s" x="146" y="66" text-anchor="end" style="font-size:10.5px">ATP → ADP + P</text>
+
+  <!-- ветви -->
+  <path class="ar" d="M190 132 L100 200" marker-end="url(#ar)"/><path class="ar" d="M260 140 V200" marker-end="url(#ar)"/><path class="ar" d="M330 132 L420 200" marker-end="url(#ar)"/>
+  <rect x="26" y="204" width="152" height="92" rx="10" fill="#f9e9cf" stroke="#e0a43a" stroke-width="1.8"/>
+  <text class="b" x="102" y="226" text-anchor="middle" style="font-size:12px">GRB2 → SOS → RAS</text><text class="s" x="102" y="246" text-anchor="middle" style="font-size:11px">→ RAF → MEK → ERK</text><text class="s" x="102" y="270" text-anchor="middle" style="font-size:11px">деление, рост</text>
+  <rect x="184" y="204" width="152" height="92" rx="10" fill="#e7f1fb" stroke="#3b6fd4" stroke-width="1.8"/>
+  <text class="b" x="260" y="226" text-anchor="middle" style="font-size:12px">STAT5</text><text class="s" x="260" y="246" text-anchor="middle" style="font-size:11px">димер идёт в ядро;</text><text class="s" x="260" y="262" text-anchor="middle" style="font-size:11px">↑ BCL-XL, MCL1</text><text class="s" x="260" y="282" text-anchor="middle" style="font-size:11px">выживание</text>
+  <rect x="342" y="204" width="152" height="92" rx="10" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.8"/>
+  <text class="b" x="418" y="226" text-anchor="middle" style="font-size:12px">PI3K → AKT → mTOR</text><text class="s" x="418" y="246" text-anchor="middle" style="font-size:11px">↓ BAD, ↓ FOXO;</text><text class="s" x="418" y="262" text-anchor="middle" style="font-size:11px">синтез белка, рост</text><text class="s" x="418" y="282" text-anchor="middle" style="font-size:11px">выживание</text>
+  <rect x="26" y="306" width="468" height="70" rx="10" fill="#f3efff" stroke="#b6a4e0" stroke-width="1.6"/>
+  <text class="s" x="40" y="326" style="font-size:12px"><tspan font-weight="700">CRKL</tspan> — адаптерный белок; его фосфорилирование служит маркером</text>
+  <text class="s" x="40" y="342" style="font-size:12px">активности BCR::ABL1 в клетке.</text>
+  <text class="s" x="40" y="362" style="font-size:12px">Итог: ускоренное деление, устойчивость к апоптозу, нарушение адгезии к нише.</text>
+  <!-- ТКИ -->
+  <rect class="box" x="520" y="46" width="360" height="314" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="536" y="70" style="fill:#2f7d3f">Куда действуют ТКИ</text>
+  <ellipse cx="640" cy="130" rx="86" ry="44" fill="#3b6fd4"/><text class="w" x="640" y="120" style="font-size:12px">киназный домен</text>
+  <ellipse cx="612" cy="146" rx="32" ry="16" fill="#e0a43a"/><text class="w" x="612" y="150" style="fill:#1c2330;font-size:10px">АТФ-карман</text>
+  <circle cx="694" cy="142" r="15" fill="#7b5ea7"/><text class="w" x="694" y="145" style="font-size:8px">myr</text>
+  <text class="s" x="730" y="128" style="font-size:11px">миристоильный</text><text class="s" x="730" y="142" style="font-size:11px">карман</text>
+  <text class="b" x="536" y="204" style="font-size:12px">В АТФ-кармане:</text><text class="s" x="536" y="222">иматиниб (1-е поколение), нилотиниб, дазатиниб,</text><text class="s" x="536" y="238">бозутиниб (2-е), понатиниб (3-е; активен и при T315I).</text>
+  <text class="b" x="536" y="264" style="font-size:12px">В миристоильном кармане (STAMP):</text><text class="s" x="536" y="282">асциминиб — «возвращает тормоз», действует</text><text class="s" x="536" y="298">аллостерически; активен и при T315I.</text>
+  <text class="s" x="536" y="326" style="font-size:11px">Все ТКИ подавляют киназу, но не «убивают» лейкозную</text><text class="s" x="536" y="342" style="font-size:11px">стволовую клетку — поэтому лечение обычно длительное.</text>
+
+  <rect class="box" x="20" y="392" width="860" height="150" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/>
+  <text class="b" x="34" y="416" style="fill:#c0392b">Устойчивость к ТКИ</text>
+  <text class="s" x="34" y="436" style="font-size:12px"><tspan font-weight="700">T315I</tspan> — «привратник» кармана: мешает иматинибу, нилотинибу, дазатинибу и бозутинибу;</text>
+  <text class="s" x="34" y="452" style="font-size:12px">сохраняют активность понатиниб, асциминиб и трансплантация.</text>
+  <text class="s" x="34" y="472" style="font-size:12px"><tspan font-weight="700">Мутации P-петли</tspan> (G250E, Y253H, E255K/V), F317L, V299L дают избирательную устойчивость к препаратам —</text>
+  <text class="s" x="34" y="488" style="font-size:12px">следующую линию выбирают по мутации.</text>
+  <text class="s" x="34" y="508" style="font-size:12px"><tspan font-weight="700">Без мутаций:</tspan> плохая приверженность, недостаточная доза, взаимодействия лекарств — их исключают сначала.</text>
+  <text class="s" x="34" y="528" style="font-size:12px">При потере ответа делают секвенирование киназного домена <tspan font-style="italic">ABL1</tspan> (Сэнгер или NGS).</text>
+
+  <text class="s" x="20" y="566" style="font-size:12px">Ответ измеряют количественной ОТ-ПЦР: транскрипт BCR::ABL1 по международной шкале (IS); большой молекулярный ответ — ≤ 0,1 %.</text>
+  <text class="s" x="20" y="584" style="font-size:12px">Глубокий ответ (MR<tspan baseline-shift="super" font-size="9">4</tspan>, MR<tspan baseline-shift="super" font-size="9">4,5</tspan>) позволяет обсуждать прекращение терапии — ремиссию без лечения (TFR) — в специализированных центрах.</text>
+  <text class="s" x="20" y="608" style="font-size:11px">Схема упрощена; показания, дозы и критерии — по актуальным рекомендациям (ELN, NCCN).</text>
+</svg>

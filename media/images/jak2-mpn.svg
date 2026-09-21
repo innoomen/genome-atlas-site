@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 610" role="img" aria-labelledby="t d">
+  <title id="t">JAK2 V617F и драйверные мутации миелопролиферативных новообразований</title>
+  <desc id="d">Вверху доменная схема JAK2: домены FERM и SH2 (связь с рецептором), псевдокиназный домен JH2 с мутацией V617F, киназный домен JH1 и мутации экзона 12. В норме JH2 удерживает JH1 в выключенном состоянии. Мутация V617F снимает торможение: киназа активна без цитокина. Ниже: три драйвера МПН — JAK2, CALR, MPL — и три заболевания: истинная полицитемия, эссенциальная тромбоцитемия, первичный миелофиброз. Внизу — принципы терапии: руксолитиниб и другие ингибиторы JAK.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="610" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Мутации-«драйверы» МПН: JAK2, CALR, MPL</text>
+
+  <text class="b" x="20" y="58">Домены белка JAK2</text>
+  <rect x="20" y="70" width="150" height="34" rx="6" fill="#8a94a8"/><text class="w" x="95" y="92">FERM</text>
+  <rect x="172" y="70" width="90" height="34" rx="6" fill="#8a94a8"/><text class="w" x="217" y="92">SH2</text>
+  <rect x="264" y="70" width="270" height="34" rx="6" fill="#e0a43a"/><text class="w" x="399" y="92" style="fill:#1c2330">JH2 — псевдокиназа</text>
+  <rect x="536" y="70" width="270" height="34" rx="6" fill="#3b6fd4"/><text class="w" x="671" y="92">JH1 — киназа</text>
+  <path d="M430 114 V104" stroke="#c0392b" stroke-width="2.5" fill="none"/><circle cx="430" cy="122" r="10" fill="#c0392b"/>
+  <text class="s" x="446" y="126" style="font-size:11px;fill:#c0392b">V617F (экзон 14): ≈95 % ПВ, ≈55 % ЭТ и ПМФ</text>
+  <path d="M215 114 V104" stroke="#b4531a" stroke-width="2.5" fill="none"/><circle cx="215" cy="122" r="10" fill="#b4531a"/>
+  <text class="s" x="120" y="150" style="font-size:11px;fill:#b4531a">мутации экзона 12 — редкая ПВ без V617F</text>
+
+  <rect class="box" x="20" y="166" width="420" height="120" rx="10"/>
+  <text class="b" x="34" y="188">Норма</text>
+  <rect x="50" y="204" width="130" height="28" rx="6" fill="#e0a43a"/><text class="w" x="115" y="222" style="fill:#1c2330">JH2</text>
+  <rect x="50" y="234" width="130" height="24" rx="6" fill="#3b6fd4" opacity=".45"/><text class="w" x="115" y="250" style="font-size:10px">JH1 (выкл.)</text>
+  <path d="M200 232 V250" stroke="#c0392b" stroke-width="3" fill="none"/><path d="M190 232 H210" stroke="#c0392b" stroke-width="3"/>
+  <text class="s" x="224" y="226" style="font-size:11.5px">JH2 «прижимает» JH1:</text><text class="s" x="224" y="244" style="font-size:11.5px">без цитокина киназа молчит</text>
+  <rect class="box" x="460" y="166" width="420" height="120" rx="10" style="fill:#fdf1ef;stroke:#e0a89f"/>
+  <text class="b" x="474" y="188" style="fill:#c0392b">JAK2 V617F</text>
+  <rect x="490" y="204" width="130" height="28" rx="6" fill="#e0a43a" transform="translate(0 0)"/><text class="w" x="555" y="222" style="fill:#1c2330">JH2 (V617F)</text>
+  <rect x="490" y="234" width="130" height="24" rx="6" fill="#3b6fd4"/><text class="w" x="555" y="250" style="font-size:10px">JH1 (вкл.)</text>
+  <text class="s" x="640" y="226" style="font-size:11.5px">торможение снято: киназа</text><text class="s" x="640" y="244" style="font-size:11.5px">активна без цитокина</text>
+
+  <text class="b" x="20" y="318">Три драйвера — три болезни</text>
+  <rect class="box" x="20" y="330" width="270" height="100" rx="10"/><text class="b" x="34" y="352" style="fill:#3b6fd4">JAK2 (V617F, экзон 12)</text><text class="s" x="34" y="372">киназа включена постоянно;</text><text class="s" x="34" y="388">ПВ, ЭТ, первичный миелофиброз</text><text class="s" x="34" y="408" style="font-size:11px">V617F: ≈95 % ПВ, ≈55 % ЭТ/ПМФ</text>
+  <rect class="box" x="315" y="330" width="270" height="100" rx="10"/><text class="b" x="329" y="352" style="fill:#2f7d3f">CALR (экзон 9)</text><text class="s" x="329" y="372">белок-шаперон; мутантный CALR</text><text class="s" x="329" y="388">«садится» на MPL и включает его;</text><text class="s" x="329" y="408">ЭТ и ПМФ (не ПВ)</text>
+  <rect class="box" x="610" y="330" width="270" height="100" rx="10"/><text class="b" x="624" y="352" style="fill:#c0397b">MPL (W515, S505)</text><text class="s" x="624" y="372">рецептор тромбопоэтина</text><text class="s" x="624" y="388">активен без лиганда;</text><text class="s" x="624" y="408">ЭТ и ПМФ (несколько процентов)</text>
+  <text class="s" x="20" y="454" style="font-size:12px">Во всех случаях итог один — постоянно включённый путь JAK2–STAT5: избыточные эритроциты (ПВ), тромбоциты (ЭТ) или фиброз костного мозга (ПМФ).</text>
+
+  <rect class="box" x="20" y="472" width="860" height="122" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="494" style="fill:#2f7d3f">Терапия</text>
+  <text class="s" x="34" y="514">Ингибиторы JAK (руксолитиниб, федратиниб, пакритиниб, момелотиниб) уменьшают селезёнку и симптомы;</text>
+  <text class="s" x="34" y="530">они не «убивают» клон мутантных клеток полностью.</text>
+  <text class="s" x="34" y="550">При ПВ и ЭТ — управление гематокритом и тромбозами (флеботомии, аспирин, гидроксимочевина, интерферон);</text>
+  <text class="s" x="34" y="566">при первичном миелофиброзе высокого риска — трансплантация.</text>
+  <text class="s" x="34" y="584" style="font-size:11px">Схема упрощена: процентные доли ориентировочные, показания — по актуальным рекомендациям.</text>
+</svg>

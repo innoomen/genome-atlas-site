@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 670" role="img" aria-labelledby="t d">
+  <title id="t">Пути активации NF-κB: классический и неклассический</title>
+  <desc id="d">Слева классический путь: сигнал от TNF, IL-1, Toll-подобных рецепторов, В- или Т-клеточного рецептора через адаптеры (TRAF6, MYD88, комплекс CBM) активирует комплекс IKK (IKKα, IKKβ, NEMO). IKK фосфорилирует IκBα, тот убиквитинируется и разрушается в протеасоме, а освободившийся димер p50/RelA входит в ядро и включает гены выживания и воспаления. Справа неклассический путь: BAFF-R, CD40 или LTβR приводят к накоплению киназы NIK, которая активирует IKKα; белок p100 превращается в p52, димер p52/RelB входит в ядро.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rx { font-size: 10.5px; fill: #2f7d3f; font-weight: 700; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="670" fill="#ffffff"/>
+  <text class="h" x="20" y="28">NF-κB: «пожарная сигнализация» клетки, включаемая в лимфомах</text>
+  <line x1="450" y1="44" x2="450" y2="470" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- классический -->
+  <text class="b" x="24" y="58" style="fill:#3b6fd4;font-size:14px">Классический путь</text>
+  <text class="s" x="24" y="76">TNF, IL-1, TLR, В-/Т-клеточный рецептор</text>
+  <rect x="20" y="92" width="410" height="20" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/><rect x="216" y="84" width="12" height="36" rx="5" fill="#8a6d3b"/>
+  <ellipse cx="222" cy="146" rx="76" ry="15" fill="#7b5ea7"/><text class="w" x="222" y="150" style="font-size:10px">TRAF6 · MYD88 · CBM</text>
+  <path d="M222 124 V130" stroke="#5b6577" stroke-width="2" fill="none"/>
+  <path d="M222 162 V182" class="ar" marker-end="url(#ar)"/>
+  <rect x="122" y="184" width="200" height="46" rx="12" fill="#f9e9cf" stroke="#e0a43a" stroke-width="2"/>
+  <text class="b" x="222" y="200" text-anchor="middle" style="font-size:12px">комплекс IKK</text>
+  <text class="s" x="222" y="218" text-anchor="middle" style="font-size:11px">IKKα · IKKβ · NEMO</text>
+  <text class="rx" x="336" y="204">ингибиторы IKK</text><text class="rx" x="336" y="218" style="font-size:9.5px">(исследования)</text>
+  <path d="M222 230 V252" class="ar" marker-end="url(#ar)"/><text class="s" x="234" y="246" style="font-size:10px;fill:#c0392b">P</text>
+  <ellipse cx="180" cy="274" rx="30" ry="14" fill="#c0392b"/><text class="w" x="180" y="278" style="font-size:10px">IκBα</text>
+  <ellipse cx="238" cy="274" rx="24" ry="14" fill="#3fa34d"/><text class="w" x="238" y="278" style="font-size:10px">p50</text>
+  <ellipse cx="290" cy="274" rx="28" ry="14" fill="#3b6fd4"/><text class="w" x="290" y="278" style="font-size:10px">RelA</text>
+  <text class="s" x="240" y="302" text-anchor="middle" style="font-size:11px">IκBα удерживает NF-κB в цитоплазме</text>
+  <path d="M180 290 V322" class="ar" marker-end="url(#ar)"/><text class="s" x="192" y="312" style="font-size:10px">Ub</text>
+  <rect x="120" y="326" width="120" height="30" rx="14" fill="#8a94a8"/><text class="w" x="180" y="345">протеасома</text>
+  <text class="rx" x="252" y="338">бортезомиб</text><text class="rx" x="252" y="352" style="font-size:9.5px">(блок распада IκB)</text>
+  <path d="M264 292 C300 320 330 350 330 412" class="ar" marker-end="url(#ar)"/>
+  <text class="s" x="342" y="372" style="font-size:10.5px">свободный</text><text class="s" x="342" y="386" style="font-size:10.5px">p50/RelA</text>
+
+  <!-- неклассический -->
+  <text class="b" x="474" y="58" style="fill:#c0397b;font-size:14px">Неклассический путь</text>
+  <text class="s" x="474" y="76">BAFF-R, CD40, LTβR (созревание В-клеток)</text>
+  <rect x="470" y="92" width="410" height="20" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/><rect x="666" y="84" width="12" height="36" rx="5" fill="#8a6d3b"/>
+  <ellipse cx="672" cy="146" rx="94" ry="15" fill="#7b5ea7"/><text class="w" x="672" y="150" style="font-size:10px">TRAF2 · TRAF3 · cIAP</text>
+  <text class="s" x="770" y="150" style="font-size:10.5px;fill:#c0392b">разрушаются</text>
+  <path d="M672 162 V182" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="672" cy="200" rx="46" ry="16" fill="#e0a43a"/><text class="w" x="672" y="204" style="fill:#1c2330;font-size:11px">NIK</text>
+  <text class="s" x="730" y="196" style="font-size:10.5px">накапливается: в покое TRAF3–</text><text class="s" x="730" y="210" style="font-size:10.5px">cIAP его разрушают</text>
+  <path d="M672 216 V240" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="672" cy="258" rx="46" ry="16" fill="#e0a43a"/><text class="w" x="672" y="262" style="fill:#1c2330;font-size:11px">IKKα ×2</text>
+  <path d="M672 274 V298" class="ar" marker-end="url(#ar)"/><text class="s" x="684" y="292" style="font-size:10px;fill:#c0392b">P</text>
+  <ellipse cx="640" cy="316" rx="30" ry="14" fill="#c0392b"/><text class="w" x="640" y="320" style="font-size:10px">p100</text>
+  <ellipse cx="702" cy="316" rx="28" ry="14" fill="#3b6fd4"/><text class="w" x="702" y="320" style="font-size:10px">RelB</text>
+  <path d="M640 332 V352" class="ar" marker-end="url(#ar)"/><text class="s" x="652" y="348" style="font-size:10px">процессинг</text>
+  <ellipse cx="640" cy="368" rx="30" ry="14" fill="#3fa34d"/><text class="w" x="640" y="372" style="font-size:10px">p52</text>
+  <path d="M672 380 C700 396 730 404 760 412" class="ar" marker-end="url(#ar)"/>
+
+  <!-- ядро -->
+  <rect x="20" y="418" width="860" height="140" rx="40" fill="#f3efff" stroke="#b6a4e0" stroke-width="2"/>
+  <text class="b" x="44" y="442" style="fill:#5e3f8a">Ядро</text>
+  <line x1="60" y1="524" x2="840" y2="524" stroke="#2f3f7a" stroke-width="5" stroke-linecap="round"/>
+  <rect x="96" y="516" width="34" height="16" rx="4" fill="#f0b429"/><text class="s" x="113" y="548" text-anchor="middle" style="font-size:10.5px">сайт κB</text>
+  <rect x="146" y="494" width="82" height="18" rx="9" fill="#3b6fd4"/><text class="w" x="187" y="507" style="font-size:9.5px">p50/RelA</text>
+  <rect x="470" y="516" width="34" height="16" rx="4" fill="#f0b429"/><text class="s" x="487" y="548" text-anchor="middle" style="font-size:10.5px">сайт κB</text>
+  <rect x="516" y="494" width="86" height="18" rx="9" fill="#c0397b"/><text class="w" x="559" y="507" style="font-size:9.5px">p52/RelB</text>
+  <text class="s" x="250" y="464" style="font-size:11.5px">гены выживания и воспаления:</text>
+  <text class="s" x="250" y="480" style="font-size:11.5px"><tspan font-style="italic">BCL2</tspan>, <tspan font-style="italic">BCL2L1</tspan>, <tspan font-style="italic">CCND1</tspan>, <tspan font-style="italic">IL6</tspan>, <tspan font-style="italic">TNF</tspan>,</text>
+  <text class="s" x="250" y="496" style="font-size:11.5px"><tspan font-style="italic">NFKBIA</tspan> (IκBα, обратная связь),</text>
+  <text class="s" x="250" y="512" style="font-size:11.5px"><tspan font-style="italic">TNFAIP3</tspan> (A20)</text>
+  <text class="s" x="630" y="464" style="font-size:11.5px">B-клеточное выживание и развитие</text><text class="s" x="630" y="480" style="font-size:11.5px">лимфоидных органов; при миеломе —</text><text class="s" x="630" y="496" style="font-size:11.5px">рост и выживание опухоли</text>
+
+  <rect class="box" x="20" y="574" width="860" height="86" rx="10" style="fill:#fdf1ef;stroke:#e0a89f"/>
+  <text class="b" x="34" y="594" style="fill:#c0392b">Где ломается в гематологии</text>
+  <text class="s" x="34" y="612" style="font-size:11.5px">Классический: <tspan font-style="italic">MYD88</tspan> L265P, <tspan font-style="italic">CARD11</tspan>, <tspan font-style="italic">CD79A/B</tspan>, потеря <tspan font-style="italic">TNFAIP3</tspan> (A20) — ABC-ДВККЛ, макроглобулинемия Вальденстрёма, лимфома Ходжкина.</text>
+  <text class="s" x="34" y="630" style="font-size:11.5px">Неклассический: потеря <tspan font-style="italic">TRAF3</tspan>, амплификация <tspan font-style="italic">MAP3K14</tspan> (NIK), мутации <tspan font-style="italic">NFKB2</tspan> — множественная миелома, ХЛЛ, лимфомы.</text>
+  <text class="s" x="34" y="648" style="font-size:11px">Схема упрощена: множество обратных связей и других участников (A20, CYLD, TAK1) не показаны.</text>
+</svg>

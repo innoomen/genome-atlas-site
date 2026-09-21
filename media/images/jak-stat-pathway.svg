@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Сигнальный путь JAK–STAT</title>
+  <desc id="d">Слева — клетка без цитокина: рецепторы не связаны, киназы JAK неактивны, белки STAT в цитоплазме. Справа — клетка с цитокином (например, эритропоэтином): цитокин сближает две молекулы рецептора, JAK2 фосфорилируют друг друга и хвосты рецепторов, к фосфотирозинам через SH2-домены присоединяются белки STAT, JAK фосфорилируют STAT, STAT образуют димер и входят в ядро, где связываются с ДНК и включают гены выживания и пролиферации (BCL2L1, MYC, CCND1) и гены отрицательной обратной связи (SOCS). SOCS, фосфатаза SHP1 и PIAS выключают путь.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rec { fill: #8a6d3b; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">JAK–STAT: от цитокина на поверхности — к генам в ядре</text>
+  <rect x="20" y="150" width="860" height="26" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/>
+  <text class="s" x="34" y="168" style="fill:#7a5a1e;font-size:11px">мембрана клетки</text>
+  <line x1="450" y1="50" x2="450" y2="370" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- ВЫКЛ -->
+  <text class="b" x="36" y="58" style="fill:#5b6577">Цитокина нет — путь выключен</text>
+  <rect class="rec" x="124" y="112" width="12" height="150" rx="5"/><rect class="rec" x="204" y="112" width="12" height="150" rx="5"/>
+  <text class="s" x="170" y="104" text-anchor="middle" style="font-size:11px">рецепторы порознь</text>
+  <ellipse cx="130" cy="222" rx="26" ry="14" fill="#9fb6d9"/><text class="w" x="130" y="226" style="fill:#1c2330;font-size:10px">JAK2</text>
+  <ellipse cx="210" cy="222" rx="26" ry="14" fill="#9fb6d9"/><text class="w" x="210" y="226" style="fill:#1c2330;font-size:10px">JAK2</text>
+  <text class="s" x="170" y="256" text-anchor="middle" style="font-size:11px">JAK «спят»</text>
+  <rect x="60" y="292" width="56" height="20" rx="10" fill="#3fa34d"/><text class="w" x="88" y="306">STAT</text>
+  <rect x="150" y="312" width="56" height="20" rx="10" fill="#3fa34d"/><text class="w" x="178" y="326">STAT</text>
+  <rect x="250" y="288" width="56" height="20" rx="10" fill="#3fa34d"/><text class="w" x="278" y="302">STAT</text>
+  <text class="s" x="180" y="352" text-anchor="middle" style="font-size:11px">STAT свободно плавают в цитоплазме</text>
+
+  <!-- ВКЛ -->
+  <text class="b" x="470" y="58" style="fill:#2f7d3f">Цитокин связан — путь включён</text>
+  <circle cx="686" cy="104" r="20" fill="#ee8a2b"/><text class="w" x="686" y="108" style="font-size:10px">EPO</text>
+  <text class="s" x="716" y="86" style="font-size:11px">цитокин (например,</text><text class="s" x="716" y="100" style="font-size:11px">эритропоэтин, ТПО)</text>
+  <rect class="rec" x="654" y="120" width="12" height="142" rx="5"/><rect class="rec" x="706" y="120" width="12" height="142" rx="5"/>
+  <ellipse cx="660" cy="222" rx="26" ry="14" fill="#3b6fd4"/><text class="w" x="660" y="226" style="font-size:10px">JAK2</text>
+  <ellipse cx="712" cy="222" rx="26" ry="14" fill="#3b6fd4"/><text class="w" x="712" y="226" style="font-size:10px">JAK2</text>
+  <circle cx="660" cy="202" r="8" fill="#c0392b"/><text class="w" x="660" y="205" style="font-size:9px">P</text>
+  <circle cx="712" cy="202" r="8" fill="#c0392b"/><text class="w" x="712" y="205" style="font-size:9px">P</text>
+  <path d="M676 208 Q686 190 696 208" fill="none" stroke="#c0392b" stroke-width="1.8" marker-end="url(#ar)"/>
+  <text class="s" x="686" y="186" text-anchor="middle" style="font-size:10px;fill:#c0392b">взаимное фосфорилирование</text>
+  <circle cx="660" cy="262" r="8" fill="#c0392b"/><text class="w" x="660" y="265" style="font-size:9px">P</text>
+  <circle cx="712" cy="262" r="8" fill="#c0392b"/><text class="w" x="712" y="265" style="font-size:9px">P</text>
+  <rect x="580" y="252" width="56" height="20" rx="10" fill="#3fa34d"/><text class="w" x="608" y="266">STAT</text>
+  <rect x="738" y="252" width="56" height="20" rx="10" fill="#3fa34d"/><text class="w" x="766" y="266">STAT</text>
+  <text class="s" x="560" y="290" style="font-size:11px">STAT садятся на фосфотирозины</text>
+  <path class="ar" d="M686 296 V318" marker-end="url(#ar)"/>
+  <rect x="656" y="322" width="56" height="20" rx="10" fill="#2f7d3f"/><rect x="716" y="322" width="56" height="20" rx="10" fill="#2f7d3f"/><text class="w" x="684" y="336" style="font-size:10px">STAT-P</text><text class="w" x="744" y="336" style="font-size:10px">STAT-P</text>
+  <text class="s" x="790" y="336" style="font-size:11px">димер</text>
+  <path class="ar" d="M714 346 V374" marker-end="url(#ar)"/>
+
+  <!-- регуляторы -->
+  <ellipse cx="540" cy="222" rx="34" ry="14" fill="#7b5ea7"/><text class="w" x="540" y="226" style="font-size:10px">SOCS</text>
+  <path d="M574 222 H632" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <ellipse cx="820" cy="222" rx="34" ry="14" fill="#7b5ea7"/><text class="w" x="820" y="226" style="font-size:10px">SHP1</text>
+  <path d="M786 222 H744" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="s" x="540" y="248" text-anchor="middle" style="font-size:10.5px">блокирует JAK</text>
+  <text class="s" x="820" y="248" text-anchor="middle" style="font-size:10.5px">снимает фосфат</text>
+
+  <!-- ядро -->
+  <rect x="470" y="380" width="410" height="170" rx="40" fill="#f3efff" stroke="#b6a4e0" stroke-width="2"/>
+  <text class="b" x="490" y="404" style="fill:#5e3f8a">Ядро</text>
+  <line x1="490" y1="500" x2="860" y2="500" stroke="#2f3f7a" stroke-width="5" stroke-linecap="round"/>
+  <rect x="560" y="492" width="34" height="16" rx="4" fill="#f0b429"/><text class="s" x="577" y="524" text-anchor="middle" style="font-size:10.5px">GAS</text>
+  <rect x="620" y="492" width="34" height="16" rx="4" fill="#ee8a2b"/><rect x="654" y="488" width="60" height="24" fill="#2e6f95"/>
+  <rect x="546" y="466" width="60" height="18" rx="9" fill="#2f7d3f"/><text class="w" x="576" y="479" style="font-size:9.5px">STAT-P ×2</text>
+  <path d="M726 500 h60" stroke="#3fa34d" stroke-width="3" fill="none" marker-end="url(#ar)"/><text class="s" x="730" y="488" style="font-size:11px">мРНК</text>
+  <text class="s" x="490" y="426" style="font-size:11.5px">Гены-мишени: <tspan font-style="italic">BCL2L1</tspan>, <tspan font-style="italic">MYC</tspan>, <tspan font-style="italic">CCND1</tspan>,</text>
+  <text class="s" x="490" y="442" style="font-size:11.5px">гены обратной связи <tspan font-style="italic">SOCS</tspan>, <tspan font-style="italic">CISH</tspan></text>
+  <text class="s" x="660" y="540" text-anchor="middle" style="font-size:10.5px">PIAS тоже тормозит STAT в ядре</text>
+
+  <!-- итог -->
+  <text class="b" x="36" y="400">Что важно запомнить</text>
+  <text class="s" x="36" y="422">• У рецепторов цитокинов нет своей киназы — её роль</text><text class="s" x="46" y="438">выполняют связанные JAK (JAK1, JAK2, JAK3, TYK2).</text>
+  <text class="s" x="36" y="462">• STAT (STAT1–6) — и передатчик сигнала, и</text><text class="s" x="46" y="478">транскрипционный фактор: путь «короткий».</text>
+  <text class="s" x="36" y="502">• Путь самоограничивается: SOCS, SHP1, PIAS.</text>
+  <text class="s" x="36" y="526">• В крови главные участники: JAK2 и STAT5 (эритро-,</text><text class="s" x="46" y="542">тромбо-, гранулопоэз), STAT3 и JAK1/3 (лимфоциты).</text>
+  <text class="s" x="36" y="580" style="font-size:12px">Мутации JAK2, рецепторов MPL и CALR «включают» путь без цитокина — так возникают миелопролиферативные новообразования.</text>
+</svg>

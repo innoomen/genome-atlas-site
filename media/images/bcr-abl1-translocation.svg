@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Филадельфийская хромосома: транслокация t(9;22) и варианты слитого гена BCR::ABL1</title>
+  <desc id="d">Сверху обмен участками между хромосомами 9 (ген ABL1 в 9q34) и 22 (ген BCR в 22q11): образуются производная хромосома 22 — филадельфийская — со слитым геном BCR::ABL1 и производная хромосома 9. Ниже три варианта слитого транскрипта: e13a2 и e14a2 (белок p210, хронический миелоидный лейкоз), e1a2 (p190, В-клеточный ОЛЛ), e19a2 (p230, нейтрофильный вариант). Слитый белок содержит домен олигомеризации BCR и киназный домен ABL1, лишённый «тормоза».</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">t(9;22)(q34;q11): обмен участками и рождение слитого гена</text>
+
+  <!-- до -->
+  <text class="b" x="80" y="58" text-anchor="middle">Хромосома 9</text><text class="b" x="230" y="58" text-anchor="middle">Хромосома 22</text>
+  <rect x="68" y="70" width="24" height="90" rx="10" fill="#7fa6d9"/><rect x="68" y="160" width="24" height="70" rx="10" fill="#3b6fd4"/><rect x="68" y="150" width="24" height="10" fill="#fff"/>
+  <rect x="218" y="70" width="24" height="70" rx="10" fill="#f4b183"/><rect x="218" y="140" width="24" height="90" rx="10" fill="#ee8a2b"/><rect x="218" y="130" width="24" height="10" fill="#fff"/>
+  <text class="s" x="104" y="240" style="font-size:11px">9q34: <tspan font-style="italic" font-weight="700">ABL1</tspan></text>
+  <text class="s" x="254" y="214" style="font-size:11px">22q11: <tspan font-style="italic" font-weight="700">BCR</tspan></text>
+  <path d="M100 130 C150 110 170 110 210 150" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#ar)"/>
+  <path d="M210 190 C170 230 150 230 100 200" fill="none" stroke="#c0392b" stroke-width="2.2" marker-end="url(#ar)"/>
+  <text class="s" x="155" y="252" text-anchor="middle" style="fill:#c0392b;font-size:11px">обмен концами</text>
+  <path class="ar" d="M290 150 H400" marker-end="url(#ar)"/><text class="s" x="345" y="140" text-anchor="middle" style="font-size:11px">t(9;22)</text>
+
+  <!-- после -->
+  <text class="b" x="480" y="58" text-anchor="middle">der(22) = Ph</text><text class="b" x="640" y="58" text-anchor="middle">der(9)</text>
+  <rect x="468" y="70" width="24" height="70" rx="10" fill="#f4b183"/><rect x="468" y="140" width="24" height="90" rx="10" fill="#3b6fd4"/><rect x="468" y="130" width="24" height="10" fill="#fff"/>
+  <rect x="628" y="70" width="24" height="90" rx="10" fill="#7fa6d9"/><rect x="628" y="160" width="24" height="70" rx="10" fill="#ee8a2b"/><rect x="628" y="150" width="24" height="10" fill="#fff"/>
+  <text class="s" x="504" y="182" style="font-size:11px;fill:#c0392b;font-weight:700"><tspan font-style="italic">BCR::ABL1</tspan></text>
+  <text class="s" x="504" y="198" style="font-size:11px">филадельфийская хромосома</text>
+  <text class="s" x="664" y="200" style="font-size:11px"><tspan font-style="italic">ABL1::BCR</tspan> (обычно не важен)</text>
+  <rect class="box" x="724" y="66" width="156" height="66" rx="10"/><text class="s" x="734" y="86" style="font-size:11px">Ph-хромосому находят</text><text class="s" x="734" y="102" style="font-size:11px">при ХМЛ (~95 %),</text><text class="s" x="734" y="118" style="font-size:11px">В-ОЛЛ (≈25 % у взрослых)</text>
+
+  <line x1="20" y1="274" x2="880" y2="274" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="300">Варианты слитого транскрипта</text>
+  <text class="s" x="20" y="320" style="font-size:11.5px">Оранжевое — экзоны <tspan font-style="italic">BCR</tspan>, синее — экзоны <tspan font-style="italic">ABL1</tspan> (почти всегда с экзона a2). Название показывает последний экзон BCR и первый ABL1.</text>
+
+  <g>
+    <text class="b" x="20" y="358" style="fill:#c0392b">p210</text><text class="s" x="20" y="374" style="font-size:11px">e13a2 / e14a2</text>
+    <rect x="130" y="342" width="250" height="26" rx="4" fill="#ee8a2b"/><text class="w" x="255" y="359">BCR: экзоны 1 … 13 (или 14)</text>
+    <rect x="380" y="342" width="240" height="26" rx="4" fill="#3b6fd4"/><text class="w" x="500" y="359">ABL1: экзоны 2 … 11</text>
+    <text class="s" x="636" y="360">ХМЛ (большинство); редко В-ОЛЛ</text>
+    <text class="b" x="20" y="418" style="fill:#c0392b">p190</text><text class="s" x="20" y="434" style="font-size:11px">e1a2</text>
+    <rect x="130" y="402" width="70" height="26" rx="4" fill="#ee8a2b"/><text class="w" x="165" y="419">BCR e1</text>
+    <rect x="200" y="402" width="240" height="26" rx="4" fill="#3b6fd4"/><text class="w" x="320" y="419">ABL1: экзоны 2 … 11</text>
+    <text class="s" x="456" y="420">Ph+ В-ОЛЛ (~⅔); реже ХМЛ с моноцитозом</text>
+    <text class="b" x="20" y="478" style="fill:#c0392b">p230</text><text class="s" x="20" y="494" style="font-size:11px">e19a2</text>
+    <rect x="130" y="462" width="330" height="26" rx="4" fill="#ee8a2b"/><text class="w" x="295" y="479">BCR: экзоны 1 … 19</text>
+    <rect x="460" y="462" width="200" height="26" rx="4" fill="#3b6fd4"/><text class="w" x="560" y="479">ABL1: экзоны 2 … 11</text>
+    <text class="s" x="676" y="480">нейтрофильный лейкоз (редко)</text>
+  </g>
+
+  <rect class="box" x="20" y="514" width="860" height="106" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="536">Что даёт слияние</text>
+  <text class="s" x="34" y="556">• <tspan font-weight="700">BCR</tspan> вносит домен олигомеризации: белки собираются в димеры/тетрамеры и постоянно фосфорилируют друг друга.</text>
+  <text class="s" x="34" y="574">• <tspan font-weight="700">ABL1</tspan> вносит киназный домен, но теряет аутоингибирующую миристоильную группу — «тормоза» больше нет.</text>
+  <text class="s" x="34" y="592">• Чем длиннее часть BCR, тем больше белок: p190 &lt; p210 &lt; p230; у p190 активность выше, что связывают с более агрессивной болезнью.</text>
+  <text class="s" x="34" y="610" style="font-size:11px">Слитые гены пишут курсивом через «::» (<tspan font-style="italic">BCR::ABL1</tspan>), белок — прямым шрифтом (BCR::ABL1).</text>
+</svg>

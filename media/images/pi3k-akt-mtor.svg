@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 626" role="img" aria-labelledby="t d">
+  <title id="t">Путь PI3K–AKT–mTOR</title>
+  <desc id="d">Рецептор (рецепторная тирозинкиназа, В-клеточный рецептор или цитокиновый рецептор) активирует PI3K, которая превращает PIP2 в PIP3 на внутренней стороне мембраны; фосфатаза PTEN обращает эту реакцию. PIP3 привлекает PDK1 и AKT; PDK1 и mTORC2 фосфорилируют AKT. AKT подавляет проапоптотические белки BAD и FOXO и белки TSC1/2, что включает mTORC1; mTORC1 запускает синтез белка через S6K1 и 4E-BP1 и рост клетки. Показаны места действия ингибиторов PI3K и mTOR.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rx { font-size: 10.5px; fill: #2f7d3f; font-weight: 700; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="626" fill="#ffffff"/>
+  <text class="h" x="20" y="28">PI3K–AKT–mTOR: сигнал «расти и выживай»</text>
+
+  <rect x="20" y="96" width="540" height="24" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/>
+  <text class="s" x="32" y="112" style="fill:#7a5a1e;font-size:10.5px">мембрана</text>
+  <rect x="130" y="52" width="12" height="80" rx="5" fill="#8a6d3b"/><rect x="190" y="52" width="12" height="80" rx="5" fill="#8a6d3b"/>
+  <text class="s" x="166" y="46" text-anchor="middle" style="font-size:11px">рецептор: RTK, BCR, цитокиновый</text>
+  <circle cx="136" cy="146" r="7" fill="#c0392b"/><circle cx="196" cy="146" r="7" fill="#c0392b"/>
+  <ellipse cx="166" cy="184" rx="44" ry="15" fill="#7b5ea7"/><text class="w" x="166" y="188" style="font-size:10px">PI3K (p110δ)</text>
+  <path d="M166 160 V168" stroke="#5b6577" stroke-width="2" fill="none"/>
+  <text class="rx" x="20" y="206">идеалисиб, дувелисиб</text><text class="rx" x="20" y="220">копанлисиб</text>
+
+  <circle cx="290" cy="150" r="11" fill="#9fb6d9"/><text class="s" x="290" y="176" text-anchor="middle" style="font-size:10.5px">PIP2</text>
+  <path d="M304 150 H368" class="ar" marker-end="url(#ar)"/><path d="M212 186 Q262 190 330 156" fill="none" stroke="#7b5ea7" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <circle cx="392" cy="150" r="11" fill="#3fa34d"/><text class="s" x="392" y="176" text-anchor="middle" style="font-size:10.5px">PIP3</text>
+  <ellipse cx="500" cy="150" rx="34" ry="14" fill="#c0392b"/><text class="w" x="500" y="154" style="font-size:10px">PTEN</text>
+  <path d="M466 150 H414" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="s" x="500" y="176" text-anchor="middle" style="font-size:10.5px">«тормоз»</text>
+
+  <path d="M392 190 V212" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="330" cy="232" rx="40" ry="15" fill="#e0a43a"/><text class="w" x="330" y="236" style="fill:#1c2330;font-size:10px">PDK1</text>
+  <ellipse cx="440" cy="232" rx="40" ry="15" fill="#e0a43a"/><text class="w" x="440" y="236" style="fill:#1c2330;font-size:10px">AKT</text>
+  <path d="M370 232 H398" class="ar" marker-end="url(#ar)"/><text class="s" x="384" y="222" text-anchor="middle" style="font-size:9.5px">T308</text>
+  <ellipse cx="540" cy="232" rx="30" ry="14" fill="#7b5ea7"/><text class="w" x="540" y="236" style="font-size:10px">mTORC2</text>
+  <path d="M510 232 H482" class="ar" marker-end="url(#ar)"/><text class="s" x="496" y="222" text-anchor="middle" style="font-size:9.5px">S473</text>
+
+  <path d="M420 248 L346 290" class="ar" marker-end="url(#inh)" style="stroke:#c0392b"/>
+  <ellipse cx="320" cy="306" rx="44" ry="15" fill="#8a94a8"/><text class="w" x="320" y="310" style="font-size:10px">TSC1/2</text>
+  <text class="s" x="390" y="282" style="font-size:10px;fill:#c0392b">AKT выключает TSC</text>
+  <path d="M320 322 V352" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="s" x="332" y="342" style="font-size:10px">(TSC тормозит mTORC1)</text>
+  <ellipse cx="320" cy="370" rx="54" ry="16" fill="#3b6fd4"/><text class="w" x="320" y="374" style="font-size:11px">mTORC1</text>
+  <text class="rx" x="392" y="366">сиролимус, эверолимус</text>
+  <path d="M290 386 L226 426" class="ar" marker-end="url(#ar)"/><path d="M350 386 L410 426" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="200" cy="440" rx="38" ry="14" fill="#e0a43a"/><text class="w" x="200" y="444" style="fill:#1c2330;font-size:10px">S6K1</text>
+  <ellipse cx="440" cy="440" rx="42" ry="14" fill="#e0a43a"/><text class="w" x="440" y="444" style="fill:#1c2330;font-size:10px">4E-BP1</text>
+  <text class="s" x="320" y="484" text-anchor="middle" style="font-size:11.5px">синтез белков (eIF4E), рост клетки, метаболизм</text>
+
+  <!-- правая ветка AKT -->
+  <path d="M480 232 H580" stroke="#5b6577" stroke-width="0" fill="none"/>
+  <rect x="580" y="176" width="300" height="130" rx="10" class="box"/>
+  <text class="b" x="594" y="198" style="font-size:12.5px">AKT также подавляет:</text>
+  <text class="s" x="594" y="220">• BAD → меньше апоптоза</text><text class="s" x="594" y="238">• FOXO (в ядре) → меньше гибели и остановки цикла</text><text class="s" x="594" y="256">• GSK3β → больше циклина D1 и MYC</text><text class="s" x="594" y="278" style="font-size:11px;color:#2f7d3f">Итог: выживание и деление.</text>
+
+  <rect class="box" x="580" y="48" width="300" height="112" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="594" y="70" style="fill:#2f7d3f;font-size:12.5px">PI3K в гематологии</text>
+  <text class="s" x="594" y="90">В лейкоцитах работает δ-изоформа p110δ —</text><text class="s" x="594" y="106">она нужна для сигнала В-клеточного рецептора</text><text class="s" x="594" y="122">(ХЛЛ, фолликулярная лимфома).</text><text class="s" x="594" y="142" style="font-size:11px">Ингибиторы PI3Kδ применяют с осторожностью.</text>
+
+  <rect class="box" x="580" y="322" width="300" height="164" rx="10"/>
+  <text class="b" x="594" y="344" style="font-size:12.5px">Где ломается</text>
+  <text class="s" x="594" y="366">• <tspan font-weight="700">PTEN</tspan>: потеря — Т-ОЛЛ и др.; сигнал</text><text class="s" x="604" y="382">PI3K «не гасится».</text>
+  <text class="s" x="594" y="402">• <tspan font-weight="700">PIK3CD</tspan> (активирующая): синдром APDS —</text><text class="s" x="604" y="418">иммунодефицит и лимфопролиферация.</text>
+  <text class="s" x="594" y="438">• <tspan font-weight="700">Осложнения PI3Kδ-ингибиторов:</tspan></text><text class="s" x="604" y="454">колит, пневмонит, гепатотоксичность,</text><text class="s" x="604" y="470">инфекции — нужен мониторинг.</text>
+
+  <rect class="box" x="20" y="512" width="860" height="104" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="s" x="34" y="534" style="font-size:12px">Путь связан с другими: RAS активирует PI3K; BCR::ABL1, FLT3-ITD и JAK2 запускают и его, и MAPK, и STAT5;</text>
+  <text class="s" x="34" y="552" style="font-size:12px">mTORC1 управляет трансляцией (см. тему «Трансляция»).</text>
+  <text class="s" x="34" y="574" style="font-size:12px">Сиролимус и эверолимус (ингибиторы mTORC1) применяют для иммуносупрессии (профилактика РТПХ, трансплантация)</text>
+  <text class="s" x="34" y="592" style="font-size:12px">и при некоторых опухолях.</text>
+  <text class="s" x="34" y="608" style="font-size:11px">Схема упрощена; показания и статус регистрации препаратов — по актуальным инструкциям и рекомендациям.</text>
+</svg>

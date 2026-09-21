@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 626" role="img" aria-labelledby="t d">
+  <title id="t">Сигнал В-клеточного рецептора и NF-κB в лимфомах, точки для терапии</title>
+  <desc id="d">Антиген связывается с В-клеточным рецептором (BCR с CD79A/CD79B). Запускается каскад: киназы SYK и BTK, затем PLCγ2 и PKCβ, комплекс CBM (CARD11–BCL10–MALT1), IKK и NF-κB. Отдельный вход в NF-κB идёт от Toll-подобных рецепторов через MYD88 (мутация L265P) и IRAK4. Показаны места действия ибрутиниба и других ингибиторов BTK, а также PI3Kδ. Мутация C481S в BTK делает ибрутиниб неэффективным; мутации PLCG2 и CARD11 — ниже по течению.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rx { font-size: 10.5px; fill: #2f7d3f; font-weight: 700; }
+    .mut { font-size: 10.5px; fill: #c0392b; font-weight: 700; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="626" fill="#ffffff"/>
+  <text class="h" x="20" y="28">От В-клеточного рецептора к NF-κB — и почему это важно для лечения</text>
+
+  <rect x="20" y="118" width="640" height="22" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/><text class="s" x="32" y="134" style="fill:#7a5a1e;font-size:10.5px">мембрана В-клетки</text>
+  <circle cx="200" cy="56" r="14" fill="#ee8a2b"/><text class="w" x="200" y="60" style="font-size:9px">антиген</text>
+  <rect x="176" y="80" width="12" height="60" rx="5" fill="#8a6d3b"/><rect x="216" y="80" width="12" height="60" rx="5" fill="#8a6d3b"/>
+  <text class="s" x="120" y="76" text-anchor="end" style="font-size:11px">BCR (IgM)</text>
+  <rect x="150" y="112" width="20" height="30" rx="5" fill="#3b6fd4"/><rect x="234" y="112" width="20" height="30" rx="5" fill="#3b6fd4"/>
+  <text class="s" x="146" y="106" text-anchor="end" style="font-size:10.5px">CD79A/B</text><text class="mut" x="20" y="94">мутации CD79B (ABC-ДВККЛ)</text>
+
+  <ellipse cx="200" cy="176" rx="40" ry="14" fill="#7b5ea7"/><text class="w" x="200" y="180" style="font-size:10px">SYK · LYN</text>
+  <path d="M200 190 V208" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="200" cy="224" rx="40" ry="14" fill="#e0a43a"/><text class="w" x="200" y="228" style="fill:#1c2330;font-size:10px">BTK</text>
+  <text class="rx" x="252" y="218">ибрутиниб, акалабрутиниб,</text><text class="rx" x="252" y="232">занубрутиниб, пирлтобрутиниб</text>
+  <text class="mut" x="252" y="248">C481S → устойчивость</text>
+  <path d="M200 238 V262" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="200" cy="278" rx="40" ry="14" fill="#7b5ea7"/><text class="w" x="200" y="282" style="font-size:10px">PLCγ2 · PKCβ</text>
+  <text class="mut" x="252" y="282">мутации PLCG2</text>
+  <path d="M200 292 V318" class="ar" marker-end="url(#ar)"/>
+  <rect x="120" y="322" width="160" height="30" rx="12" fill="#f9e9cf" stroke="#e0a43a" stroke-width="2"/><text class="b" x="200" y="342" text-anchor="middle" style="font-size:12px">CARD11 · BCL10 · MALT1</text>
+  <text class="mut" x="292" y="336">мутации CARD11 (ниже BTK)</text>
+  <path d="M200 352 V378" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="200" cy="394" rx="40" ry="14" fill="#7b5ea7"/><text class="w" x="200" y="398" style="font-size:10px">комплекс IKK</text>
+  <path d="M200 408 V432" class="ar" marker-end="url(#ar)"/>
+  <rect x="140" y="436" width="120" height="30" rx="14" fill="#3b6fd4"/><text class="w" x="200" y="455" style="font-size:12px">NF-κB → ядро</text>
+
+  <!-- MYD88 путь -->
+  <rect x="470" y="150" width="120" height="16" rx="4" fill="none"/>
+  <rect x="520" y="80" width="12" height="60" rx="5" fill="#8a6d3b"/><text class="s" x="490" y="74" style="font-size:11px">Toll-подобный рецептор</text>
+  <ellipse cx="526" cy="176" rx="44" ry="14" fill="#7b5ea7"/><text class="w" x="526" y="180" style="font-size:10px">MYD88</text>
+  <text class="mut" x="470" y="156">L265P (ВМ, ABC-ДВККЛ)</text>
+  <path d="M526 190 V208" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="526" cy="224" rx="44" ry="14" fill="#e0a43a"/><text class="w" x="526" y="228" style="fill:#1c2330;font-size:10px">IRAK4/IRAK1</text>
+  <path d="M486 234 L262 388" class="ar" marker-end="url(#ar)" style="stroke-dasharray:5 4"/>
+  <text class="s" x="380" y="320" style="font-size:10.5px">→ TRAF6 → TAK1 → IKK</text>
+  <text class="rx" x="480" y="256">ингибиторы IRAK4 (исследования)</text>
+
+  <!-- PI3K -->
+  <ellipse cx="380" cy="176" rx="34" ry="14" fill="#9fb6d9"/><text class="w" x="380" y="180" style="fill:#1c2330;font-size:10px">PI3Kδ</text>
+  <path d="M240 176 H344" stroke="#9fb6d9" stroke-width="2" fill="none" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <text class="rx" x="340" y="152">идеалисиб (ограничен)</text>
+
+  <!-- правая панель -->
+  <rect class="box" x="680" y="48" width="200" height="420" rx="10"/>
+  <text class="b" x="694" y="70" style="font-size:12.5px">Что означают мутации</text>
+  <text class="s" x="694" y="94"><tspan font-weight="700" fill="#c0392b">BTK C481S</tspan> — ТКИ не</text><text class="s" x="694" y="110">связывается: ибрутиниб</text><text class="s" x="694" y="126">теряет эффект (при ХЛЛ).</text>
+  <text class="s" x="694" y="152"><tspan font-weight="700" fill="#c0392b">PLCG2</tspan> — активация ниже</text><text class="s" x="694" y="168">BTK: тоже устойчивость.</text>
+  <text class="s" x="694" y="194"><tspan font-weight="700" fill="#c0392b">CARD11</tspan> — ABC-ДВККЛ:</text><text class="s" x="694" y="210">ибрутиниб малоэффективен.</text>
+  <text class="s" x="694" y="236"><tspan font-weight="700" fill="#c0392b">MYD88 L265P</tspan> — ВМ (≈90 %),</text><text class="s" x="694" y="252">ABC-ДВККЛ; чувствительность</text><text class="s" x="694" y="268">к ингибиторам BTK выше.</text>
+  <text class="s" x="694" y="294"><tspan font-weight="700" fill="#c0392b">TNFAIP3</tspan> (A20) — потеря</text><text class="s" x="694" y="310">«тормоза»: лимфомы,</text><text class="s" x="694" y="326">лимфома Ходжкина.</text>
+  <text class="s" x="694" y="352"><tspan font-weight="700" fill="#2f7d3f">Ответ:</tspan> при C481S — </text><text class="s" x="694" y="368">небековалентные BTK-</text><text class="s" x="694" y="384">ингибиторы (пирлтобрутиниб),</text><text class="s" x="694" y="400">венетоклакс, деградеры BTK</text><text class="s" x="694" y="416">(исследования).</text>
+
+  <rect class="box" x="20" y="490" width="860" height="122" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="512" style="fill:#2f7d3f">Клинический вывод</text>
+  <text class="s" x="34" y="532">• Подтип ДВККЛ определяет, какие мутации ждать: у ABC-подтипа NF-κB включён постоянно, у GCB — нет.</text>
+  <text class="s" x="34" y="550">• Ингибиторы BTK действуют выше по каскаду: при мутациях ниже (<tspan font-style="italic">CARD11</tspan>, <tspan font-style="italic">PLCG2</tspan>) они не работают.</text>
+  <text class="s" x="34" y="568">• Бортезомиб и другие ингибиторы протеасомы подавляют NF-κB иначе — блокируя распад IκB;</text>
+  <text class="s" x="46" y="584">их применяют при миеломе и лимфоме из клеток мантии.</text>
+  <text class="s" x="34" y="604" style="font-size:11px">Схема упрощена; конкретные показания препаратов — по актуальным инструкциям и рекомендациям.</text>
+</svg>

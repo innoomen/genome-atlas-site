@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Апоптоз: внешний и внутренний пути</title>
+  <desc id="d">Слева внешний путь: лиганд (FasL, TRAIL, TNF) активирует рецептор смерти, образуется комплекс DISC (FADD и прокаспаза-8), активируется каспаза-8; она напрямую активирует каспазы-3/7 или расщепляет BID до tBID, подключая митохондриальный путь. Справа внутренний путь: стресс активирует BH3-белки (BIM, PUMA, NOXA, BAD), они активируют BAX и BAK и подавляют BCL2, BCL-XL и MCL1; BAX/BAK образуют поры в мембране митохондрий (MOMP), выходят цитохром c и SMAC; цитохром c с APAF1 и прокаспазой-9 образует апоптосому; SMAC блокирует XIAP. Оба пути приводят к активации каспаз-3/7, которые расщепляют субстраты (PARP, ICAD) и вызывают фрагментацию ДНК и экспозицию фосфатидилсерина.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .rx { font-size: 10.5px; fill: #2f7d3f; font-weight: 700; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Апоптоз: два входа — один финал</text>
+
+  <!-- внешний -->
+  <text class="b" x="24" y="52" style="fill:#3b6fd4">Внешний путь</text>
+  <circle cx="110" cy="80" r="14" fill="#ee8a2b"/><text class="w" x="110" y="84" style="font-size:8.5px">лиганд</text>
+  <text class="s" x="132" y="72" style="font-size:10.5px">FasL, TRAIL, TNF</text>
+  <rect x="20" y="104" width="270" height="20" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/><rect x="94" y="94" width="12" height="46" rx="5" fill="#8a6d3b"/><rect x="124" y="94" width="12" height="46" rx="5" fill="#8a6d3b"/>
+  <text class="s" x="176" y="140" style="font-size:10.5px">рецептор смерти (FAS, DR4/5)</text>
+  <ellipse cx="115" cy="172" rx="80" ry="16" fill="#7b5ea7"/><text class="w" x="115" y="176" style="font-size:10px">DISC: FADD + прокаспаза-8</text>
+  <path d="M115 188 V206" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="115" cy="224" rx="54" ry="15" fill="#e0a43a"/><text class="w" x="115" y="228" style="fill:#1c2330;font-size:10.5px">каспаза-8</text>
+  <path d="M115 240 V430" class="ar" marker-end="url(#ar)"/><text class="s" x="126" y="330" style="font-size:10.5px">«тип I»: прямая</text><text class="s" x="126" y="344" style="font-size:10.5px">активация каспазы-3/7</text>
+  <path d="M170 224 H206" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="236" cy="224" rx="32" ry="15" fill="#9fb6d9"/><text class="w" x="236" y="228" style="fill:#1c2330;font-size:10px">BID→tBID</text>
+  <path d="M262 236 C310 262 350 280 400 296" fill="none" stroke="#5b6577" stroke-width="2.2" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+  <text class="s" x="240" y="262" style="font-size:10.5px">«тип II»: через</text><text class="s" x="240" y="276" style="font-size:10.5px">митохондрии</text>
+
+  <line x1="310" y1="44" x2="310" y2="420" stroke="#e1e6ee" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- внутренний -->
+  <text class="b" x="330" y="52" style="fill:#c0397b">Внутренний (митохондриальный) путь</text>
+  <text class="s" x="330" y="72" style="font-size:11px">Стресс: повреждение ДНК, нехватка факторов роста, онкогены, лекарства</text>
+  <path d="M470 80 V96" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="366" cy="112" rx="30" ry="13" fill="#e0a43a"/><text class="w" x="366" y="116" style="fill:#1c2330;font-size:10px">BIM</text>
+  <ellipse cx="430" cy="112" rx="32" ry="13" fill="#e0a43a"/><text class="w" x="430" y="116" style="fill:#1c2330;font-size:10px">PUMA</text>
+  <ellipse cx="496" cy="112" rx="32" ry="13" fill="#e0a43a"/><text class="w" x="496" y="116" style="fill:#1c2330;font-size:10px">NOXA</text>
+  <ellipse cx="558" cy="112" rx="28" ry="13" fill="#e0a43a"/><text class="w" x="558" y="116" style="fill:#1c2330;font-size:10px">BAD</text>
+  <text class="s" x="366" y="140" style="font-size:10.5px">BH3-белки («сенсоры»)</text>
+  <path d="M430 150 V172" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="430" cy="190" rx="64" ry="16" fill="#3fa34d"/><text class="w" x="430" y="194" style="font-size:10.5px">BAX / BAK</text>
+  <rect x="680" y="172" width="196" height="40" rx="10" fill="#3b6fd4"/><text class="w" x="778" y="190" style="font-size:11px">BCL2 · BCL-XL · MCL1</text><text class="w" x="778" y="204" style="font-size:9.5px">(защитники)</text>
+  <path d="M680 192 H500" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <path d="M584 120 C640 130 700 150 740 168" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#inh)"/>
+  <text class="rx" x="690" y="232">венетоклакс (BCL2)</text><text class="rx" x="690" y="246">навитоклакс (BCL2/BCL-XL)</text>
+  <path d="M430 208 V240" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="430" cy="290" rx="120" ry="44" fill="#f4d6c0" stroke="#b4531a" stroke-width="2"/>
+  <text class="b" x="430" y="284" text-anchor="middle" style="font-size:12px">Митохондрия</text><text class="s" x="430" y="302" text-anchor="middle" style="font-size:11px">МОМР — поры во внешней мембране</text>
+  <circle cx="330" cy="268" r="6" fill="#c0392b"/><circle cx="322" cy="290" r="6" fill="#c0392b"/><circle cx="334" cy="312" r="6" fill="#c0392b"/>
+  <text class="s" x="270" y="330" style="font-size:10.5px;fill:#c0392b">цитохром c</text>
+  <circle cx="540" cy="268" r="6" fill="#7b5ea7"/><circle cx="548" cy="292" r="6" fill="#7b5ea7"/>
+  <text class="s" x="556" y="330" style="font-size:10.5px;fill:#7b5ea7">SMAC</text>
+  <path d="M430 334 V352" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="430" cy="372" rx="118" ry="18" fill="#7b5ea7"/><text class="w" x="430" y="376" style="font-size:10.5px">апоптосома: APAF1 + цитохром c</text>
+  <path d="M430 392 V430" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="740" cy="372" rx="60" ry="15" fill="#8a94a8"/><text class="w" x="740" y="376" style="font-size:10.5px">XIAP</text>
+  <path d="M680 372 H552" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)" style="opacity:.85"/>
+  <text class="s" x="740" y="398" text-anchor="middle" style="font-size:10.5px">блокирует каспазы</text>
+  <path d="M552 300 C620 320 690 350 720 358" fill="none" stroke="#7b5ea7" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#inh)"/>
+  <text class="s" x="608" y="326" style="font-size:10.5px;fill:#7b5ea7">SMAC снимает</text><text class="s" x="608" y="340" style="font-size:10.5px;fill:#7b5ea7">блок XIAP</text>
+
+  <!-- финал -->
+  <rect x="20" y="434" width="860" height="86" rx="14" fill="#fdf1ef" stroke="#e0a89f" stroke-width="2"/>
+  <text class="b" x="36" y="456" style="fill:#c0392b">Исполнение: каспазы-3/7</text>
+  <text class="s" x="36" y="476" style="font-size:12px">Разрезают сотни белков: PARP, ламины, ICAD → фрагментация ДНК (лесенка), сморщивание клетки, апоптотические тельца;</text>
+  <text class="s" x="36" y="494" style="font-size:12px">на наружной стороне мембраны появляется фосфатидилсерин — «съешь меня» для макрофагов. Воспаления при этом нет.</text>
+  <text class="s" x="36" y="512" style="font-size:11px">Для сравнения: при некрозе клетка лопается и вызывает воспаление.</text>
+
+  <rect class="box" x="20" y="534" width="860" height="94" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="556" style="fill:#2f7d3f">Как апоптоз видят в лаборатории</text>
+  <text class="s" x="34" y="576">• <tspan font-weight="700">Аннексин V / йодистый пропидий</tspan> (проточная цитометрия): ранний апоптоз — аннексин V+, PI−; поздний/некроз — оба +.</text>
+  <text class="s" x="34" y="594">• <tspan font-weight="700">Расщеплённые каспаза-3 и PARP</tspan> (вестерн-блот, ИГХ); <tspan font-weight="700">TUNEL</tspan> — фрагментация ДНК; <tspan font-weight="700">BH3-профилирование</tspan> — зависимость клеток от BCL2/MCL1.</text>
+  <text class="s" x="34" y="612" style="font-size:11px">Схема упрощена: роль каспазы-2, некроптоза и других форм клеточной гибели не показана.</text>
+</svg>

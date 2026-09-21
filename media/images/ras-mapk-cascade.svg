@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Каскад RAS–RAF–MEK–ERK и где он ломается в гематологии</title>
+  <desc id="d">Слева схема каскада. Ростовой фактор связывается с рецепторной тирозинкиназой (например, FLT3 или KIT); адаптер GRB2 и белок SOS (GEF) переводят RAS из GDP-формы в GTP-форму. RAS-GTP активирует RAF (BRAF), затем MEK, затем ERK, и ERK входит в ядро, включая гены пролиферации и выживания. Белок NF1 (GAP) выключает RAS. Справа — список точек поломки: мутации FLT3/KIT, PTPN11, NRAS/KRAS, потеря NF1, BRAF V600E, и соответствующие препараты.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+    .num { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">RAS–MAPK: «педаль газа» клеточного деления</text>
+
+  <rect x="20" y="118" width="500" height="24" rx="6" fill="#f0d9b0" stroke="#b98a3e" stroke-width="1.5"/>
+  <text class="s" x="32" y="134" style="fill:#7a5a1e;font-size:10.5px">мембрана</text>
+  <circle cx="204" cy="60" r="16" fill="#ee8a2b"/><text class="w" x="204" y="64" style="font-size:9.5px">лиганд</text>
+  <rect x="162" y="80" width="12" height="80" rx="5" fill="#8a6d3b"/><rect x="234" y="80" width="12" height="80" rx="5" fill="#8a6d3b"/>
+  <path d="M204 78 V96" stroke="#ee8a2b" stroke-width="2.4" fill="none" marker-end="url(#ar)"/>
+  <circle cx="168" cy="172" r="7" fill="#c0392b"/><circle cx="240" cy="172" r="7" fill="#c0392b"/>
+  <text class="s" x="256" y="100" style="font-size:11px">рецепторная</text><text class="s" x="256" y="114" style="font-size:11px">тирозинкиназа</text>
+  <circle cx="132" cy="96" r="11" fill="#3b6fd4"/><text class="num" x="132" y="100" style="font-size:10px">1</text>
+  <rect x="162" y="186" width="84" height="24" rx="10" fill="#7b5ea7"/><text class="w" x="204" y="202" style="font-size:10px">GRB2 · SOS</text>
+  <path d="M246 198 H290" class="ar" marker-end="url(#ar)"/>
+  <text class="s" x="268" y="190" text-anchor="middle" style="font-size:10px">GEF</text>
+
+  <ellipse cx="340" cy="198" rx="50" ry="16" fill="#8a94a8"/><text class="w" x="340" y="202" style="font-size:10.5px">RAS – GDP</text>
+  <path d="M340 216 V246" class="ar" marker-end="url(#ar)"/><text class="s" x="350" y="236" style="font-size:10px">обмен GDP→GTP</text>
+  <ellipse cx="340" cy="264" rx="50" ry="16" fill="#3fa34d"/><text class="w" x="340" y="268" style="font-size:10.5px">RAS – GTP</text>
+  <circle cx="284" cy="264" r="11" fill="#3b6fd4"/><text class="num" x="284" y="268" style="font-size:10px">3</text>
+  <ellipse cx="470" cy="264" rx="34" ry="14" fill="#c0392b"/><text class="w" x="470" y="268" style="font-size:10px">NF1 (GAP)</text>
+  <path d="M436 264 H392" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
+  <text class="s" x="470" y="292" text-anchor="middle" style="font-size:10.5px">GTP → GDP</text>
+  <circle cx="512" cy="248" r="11" fill="#3b6fd4"/><text class="num" x="512" y="252" style="font-size:10px">4</text>
+
+  <path d="M340 282 V312" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="340" cy="330" rx="60" ry="16" fill="#e0a43a"/><text class="w" x="340" y="334" style="fill:#1c2330">RAF (BRAF)</text>
+  <circle cx="264" cy="330" r="11" fill="#3b6fd4"/><text class="num" x="264" y="334" style="font-size:10px">5</text>
+  <path d="M340 348 V368" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="340" cy="386" rx="60" ry="16" fill="#e0a43a"/><text class="w" x="340" y="390" style="fill:#1c2330">MEK1/2</text>
+  <path d="M340 404 V424" class="ar" marker-end="url(#ar)"/>
+  <ellipse cx="340" cy="442" rx="60" ry="16" fill="#e0a43a"/><text class="w" x="340" y="446" style="fill:#1c2330">ERK1/2</text>
+  <text class="s" x="416" y="330" style="font-size:10.5px">фосфорилирование по</text><text class="s" x="416" y="344" style="font-size:10.5px">цепочке (P → P → P)</text>
+  <path d="M340 460 V486" class="ar" marker-end="url(#ar)"/>
+
+  <rect x="60" y="490" width="440" height="100" rx="34" fill="#f3efff" stroke="#b6a4e0" stroke-width="2"/>
+  <text class="b" x="80" y="514" style="fill:#5e3f8a">Ядро</text>
+  <text class="s" x="80" y="536" style="font-size:12px">ERK включает транскрипционные факторы</text>
+  <text class="s" x="80" y="554" style="font-size:12px"><tspan font-weight="700">ELK1, FOS, MYC</tspan> → циклин D1, гены роста;</text>
+  <text class="s" x="80" y="572" style="font-size:12px">итог: деление и выживание, торможение созревания.</text>
+
+  <!-- список поломок -->
+  <text class="b" x="548" y="52">Где путь ломается</text>
+  <g>
+    <rect class="box" x="540" y="62" width="340" height="80" rx="10"/><circle cx="560" cy="82" r="11" fill="#3b6fd4"/><text class="num" x="560" y="86" style="font-size:10px">1</text>
+    <text class="b" x="580" y="86" style="font-size:12.5px">Рецепторные киназы: FLT3, KIT</text><text class="s" x="556" y="106">FLT3-ITD/TKD — ОМЛ; KIT D816V — мастоцитоз.</text><text class="s" x="556" y="124" style="fill:#2f7d3f">Препараты: мидостаурин, гилтеритиниб; авапритиниб</text>
+    <rect class="box" x="540" y="150" width="340" height="64" rx="10"/><circle cx="560" cy="170" r="11" fill="#3b6fd4"/><text class="num" x="560" y="174" style="font-size:10px">2</text>
+    <text class="b" x="580" y="174" style="font-size:12.5px">PTPN11 (SHP2)</text><text class="s" x="556" y="194">Усиливает сигнал к RAS: ювенильный миеломоноцитарный</text><text class="s" x="556" y="208" style="font-size:11px">лейкоз, синдром Нунан.</text>
+    <rect class="box" x="540" y="222" width="340" height="80" rx="10"/><circle cx="560" cy="242" r="11" fill="#3b6fd4"/><text class="num" x="560" y="246" style="font-size:10px">3</text>
+    <text class="b" x="580" y="246" style="font-size:12.5px">NRAS / KRAS (G12, G13, Q61)</text><text class="s" x="556" y="266">Белок не может «выключиться»: ОМЛ, МДС/ХММЛ,</text><text class="s" x="556" y="282">миелома, ЮММЛ. Прямых одобренных препаратов нет.</text>
+    <rect class="box" x="540" y="310" width="340" height="64" rx="10"/><circle cx="560" cy="330" r="11" fill="#3b6fd4"/><text class="num" x="560" y="334" style="font-size:10px">4</text>
+    <text class="b" x="580" y="334" style="font-size:12.5px">NF1 (GAP)</text><text class="s" x="556" y="354">Потеря функции — нет «тормоза»: нейрофиброматоз 1,</text><text class="s" x="556" y="368" style="font-size:11px">ЮММЛ, ХММЛ.</text>
+    <rect class="box" x="540" y="382" width="340" height="80" rx="10"/><circle cx="560" cy="402" r="11" fill="#3b6fd4"/><text class="num" x="560" y="406" style="font-size:10px">5</text>
+    <text class="b" x="580" y="406" style="font-size:12.5px">BRAF V600E</text><text class="s" x="556" y="426">Волосато-клеточный лейкоз (почти всегда), гистиоцитоз</text><text class="s" x="556" y="442">клеток Лангерганса, болезнь Эрдгейма–Честера.</text><text class="s" x="556" y="456" style="fill:#2f7d3f;font-size:11px">Вемурафениб, дабрафениб (+ траметиниб)</text>
+    <rect class="box" x="540" y="470" width="340" height="64" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+    <text class="b" x="556" y="492" style="fill:#2f7d3f;font-size:12.5px">Ингибиторы MEK</text><text class="s" x="556" y="512">Траметиниб, кобиметиниб — «ниже по течению»;</text><text class="s" x="556" y="526" style="font-size:11px">применяют при мутациях BRAF, изучают при RAS.</text>
+  </g>
+  <text class="s" x="548" y="562" style="font-size:11px">Цифры на схеме слева соответствуют строкам списка справа.</text>
+  <text class="s" x="548" y="578" style="font-size:11px">Показания и режимы — по актуальным рекомендациям.</text>
+</svg>

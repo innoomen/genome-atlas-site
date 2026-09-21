@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Семейство BCL2 и механизм действия венетоклакса</title>
+  <desc id="d">Три группы белков семейства BCL2: защитники (BCL2, BCL-XL, MCL1), эффекторы (BAX, BAK) и BH3-белки (BIM, BID, PUMA — активаторы; BAD, NOXA — сенсибилизаторы). В опухолевой клетке, зависимой от BCL2, белок BIM связан с BCL2 и удерживается им. Венетоклакс (BH3-миметик) занимает BH3-борозду BCL2 и вытесняет BIM, тот активирует BAX/BAK, клетка вступает в апоптоз. Механизмы устойчивости: рост MCL1 или BCL-XL, мутации BCL2 (G101V), потеря BAX. Быстрая гибель клеток может вызвать синдром лизиса опухоли, поэтому дозу повышают ступенчато.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">BCL2: «весы» выживания и как их сдвигает венетоклакс</text>
+
+  <!-- семейство -->
+  <rect class="box" x="20" y="44" width="280" height="150" rx="12" style="fill:#e7f1fb;stroke:#3b6fd4"/>
+  <text class="b" x="34" y="66" style="fill:#3b6fd4">Защитники</text>
+  <text class="s" x="34" y="84" style="font-size:11px">домены BH1–BH4, «борозда» для BH3</text>
+  <ellipse cx="80" cy="120" rx="40" ry="16" fill="#3b6fd4"/><text class="w" x="80" y="124">BCL2</text>
+  <ellipse cx="170" cy="120" rx="44" ry="16" fill="#3b6fd4"/><text class="w" x="170" y="124">BCL-XL</text>
+  <ellipse cx="248" cy="120" rx="36" ry="16" fill="#3b6fd4"/><text class="w" x="248" y="124">MCL1</text>
+  <text class="s" x="34" y="160" style="font-size:11px">Связывают BH3-белки и BAX/BAK:</text><text class="s" x="34" y="176" style="font-size:11px">клетка остаётся живой.</text>
+  <rect class="box" x="310" y="44" width="280" height="150" rx="12" style="fill:#eaf6ee;stroke:#3fa34d"/>
+  <text class="b" x="324" y="66" style="fill:#2f7d3f">Эффекторы</text>
+  <ellipse cx="400" cy="120" rx="44" ry="16" fill="#3fa34d"/><text class="w" x="400" y="124">BAX</text>
+  <ellipse cx="490" cy="120" rx="44" ry="16" fill="#3fa34d"/><text class="w" x="490" y="124">BAK</text>
+  <text class="s" x="324" y="160" style="font-size:11px">Образуют поры в митохондриях — точка</text><text class="s" x="324" y="176" style="font-size:11px">«невозврата» апоптоза.</text>
+  <rect class="box" x="600" y="44" width="280" height="150" rx="12" style="fill:#fff4e0;stroke:#e0a43a"/>
+  <text class="b" x="614" y="66" style="fill:#b4531a">BH3-белки</text>
+  <text class="s" x="614" y="84" style="font-size:11px">активаторы: BIM, BID, PUMA</text>
+  <ellipse cx="660" cy="112" rx="34" ry="13" fill="#e0a43a"/><text class="w" x="660" y="116" style="fill:#1c2330;font-size:10px">BIM</text>
+  <ellipse cx="730" cy="112" rx="34" ry="13" fill="#e0a43a"/><text class="w" x="730" y="116" style="fill:#1c2330;font-size:10px">PUMA</text>
+  <text class="s" x="614" y="142" style="font-size:11px">сенсибилизаторы: BAD, NOXA</text>
+  <ellipse cx="660" cy="166" rx="34" ry="13" fill="#f0c27a"/><text class="w" x="660" y="170" style="fill:#1c2330;font-size:10px">BAD</text>
+  <ellipse cx="730" cy="166" rx="34" ry="13" fill="#f0c27a"/><text class="w" x="730" y="170" style="fill:#1c2330;font-size:10px">NOXA</text>
+
+  <!-- механизм -->
+  <text class="h" x="20" y="226">Опухоль «зависима от BCL2»: как работает венетоклакс</text>
+  <rect class="box" x="20" y="240" width="280" height="176" rx="12"/>
+  <text class="b" x="34" y="262">1. До лечения</text>
+  <ellipse cx="120" cy="322" rx="60" ry="24" fill="#3b6fd4"/><text class="w" x="120" y="326" style="font-size:12px">BCL2</text>
+  <ellipse cx="192" cy="308" rx="34" ry="13" fill="#e0a43a"/><text class="w" x="192" y="312" style="fill:#1c2330;font-size:10px">BIM</text>
+  <text class="s" x="34" y="366" style="font-size:11.5px">BCL2 «держит» BIM в кармане:</text><text class="s" x="34" y="382" style="font-size:11.5px">BAX/BAK молчат, клетка выживает</text><text class="s" x="34" y="398" style="font-size:11.5px">(в ХЛЛ уровень BCL2 очень высок).</text>
+  <path d="M300 328 H328" class="ar" marker-end="url(#ar)"/>
+  <rect class="box" x="330" y="240" width="280" height="176" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="344" y="262" style="fill:#2f7d3f">2. Венетоклакс</text>
+  <ellipse cx="420" cy="322" rx="60" ry="24" fill="#3b6fd4"/><text class="w" x="420" y="326" style="font-size:12px">BCL2</text>
+  <rect x="396" y="288" width="48" height="16" rx="8" fill="#c0392b"/><text class="w" x="420" y="299" style="font-size:9.5px">VEN</text>
+  <ellipse cx="530" cy="284" rx="34" ry="13" fill="#e0a43a"/><text class="w" x="530" y="288" style="fill:#1c2330;font-size:10px">BIM</text>
+  <path d="M500 296 L470 306" stroke="#5b6577" stroke-width="1.6" fill="none" stroke-dasharray="3 3"/>
+  <text class="s" x="344" y="366" style="font-size:11.5px">Препарат занимает BH3-борозду,</text><text class="s" x="344" y="382" style="font-size:11.5px">BIM освобождается («BH3-миметик»).</text>
+  <path d="M610 328 H638" class="ar" marker-end="url(#ar)"/>
+  <rect class="box" x="640" y="240" width="240" height="176" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/>
+  <text class="b" x="654" y="262" style="fill:#c0392b">3. Апоптоз</text>
+  <ellipse cx="710" cy="310" rx="44" ry="16" fill="#3fa34d"/><text class="w" x="710" y="314">BAX / BAK</text>
+  <text class="s" x="654" y="352" style="font-size:11.5px">BIM активирует BAX/BAK → поры →</text><text class="s" x="654" y="368" style="font-size:11.5px">цитохром c → каспазы. Опухолевые</text><text class="s" x="654" y="384" style="font-size:11.5px">клетки гибнут быстро (часы).</text>
+
+  <rect class="box" x="20" y="432" width="430" height="194" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/>
+  <text class="b" x="34" y="454" style="fill:#c0392b">Устойчивость</text>
+  <text class="s" x="34" y="476">• ↑ <tspan font-weight="700">MCL1</tspan> или <tspan font-weight="700">BCL-XL</tspan>: BIM «переезжает» на них</text><text class="s" x="34" y="494">  (в том числе через сплайсинг; см. тему «Транскрипция»);</text>
+  <text class="s" x="34" y="514">• мутации <tspan font-weight="700">BCL2</tspan> (G101V, A113G) — борозда меняется;</text>
+  <text class="s" x="34" y="534">• потеря или мутации <tspan font-weight="700">BAX</tspan>;</text>
+  <text class="s" x="34" y="554">• <tspan font-weight="700">TP53</tspan>-мутации и другие изменения, снижающие «праймирование»;</text>
+  <text class="s" x="34" y="574">• при ОМЛ — метаболические адаптации.</text>
+  <text class="s" x="34" y="600" style="font-size:11px">При прогрессии: смена терапии, секвенирование, оценка зависимости.</text>
+
+  <rect class="box" x="470" y="432" width="410" height="194" rx="12" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="484" y="454" style="fill:#b4531a">Практика</text>
+  <text class="s" x="484" y="476">• <tspan font-weight="700">Синдром лизиса опухоли</tspan>: быстрая гибель клеток →</text><text class="s" x="496" y="492">↑ K⁺, мочевая кислота, фосфат, ↓ Ca²⁺. Поэтому дозу</text><text class="s" x="496" y="508">повышают ступенчато («ramp-up»), оценивают риск,</text><text class="s" x="496" y="524">обеспечивают гидратацию и профилактику.</text>
+  <text class="s" x="484" y="548">• <tspan font-weight="700">Взаимодействия:</tspan> сильные ингибиторы CYP3A</text><text class="s" x="496" y="564">повышают концентрацию венетоклакса.</text>
+  <text class="s" x="484" y="588">• Навитоклакс (BCL2/BCL-XL) вызывает тромбоцитопению:</text><text class="s" x="496" y="604">тромбоциты зависят от BCL-XL.</text>
+</svg>

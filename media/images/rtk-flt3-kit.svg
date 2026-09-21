@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Рецепторные тирозинкиназы FLT3 и KIT: нормальная работа и мутации</title>
+  <desc id="d">Схема рецептора: внеклеточная часть с иммуноглобулиноподобными доменами, трансмембранный участок, околомембранный домен, который в норме удерживает киназу выключенной, и киназный домен с петлёй активации. Слева норма: активация только при связывании лиганда (FLT3-лиганд или фактор стволовых клеток). В середине FLT3-ITD: внутренняя тандемная дупликация околомембранного домена выключает автоингибирование, рецептор работает без лиганда. Справа мутации киназного домена (FLT3-TKD D835, KIT D816V) удерживают петлю активации в открытом положении. Внизу: типы ингибиторов и чувствительность мутаций.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">FLT3 и KIT: как рецептор «застревает» во включённом положении</text>
+
+  <!-- три колонки -->
+  <g>
+    <rect class="box" x="20" y="44" width="280" height="340" rx="12"/><text class="b" x="34" y="68" style="fill:#5b6577">Норма</text>
+    <rect x="34" y="200" width="252" height="22" rx="5" fill="#f0d9b0" stroke="#b98a3e"/>
+    <circle cx="160" cy="88" r="14" fill="#ee8a2b"/><text class="w" x="160" y="92" style="font-size:9px">лиганд</text>
+    <rect x="110" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/><rect x="170" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/><text class="s" x="240" y="130" style="font-size:10.5px">Ig-домены</text>
+    <rect x="128" y="146" width="10" height="54" rx="4" fill="#8a6d3b"/><rect x="182" y="146" width="10" height="54" rx="4" fill="#8a6d3b" style="display:none"/>
+    <rect x="128" y="222" width="10" height="20" fill="#8a6d3b"/>
+    <rect x="100" y="244" width="60" height="18" rx="6" fill="#e0a43a"/><text class="w" x="130" y="257" style="fill:#1c2330;font-size:9px">JM (тормоз)</text>
+    <rect x="100" y="268" width="90" height="26" rx="6" fill="#3b6fd4" opacity=".45"/><text class="w" x="145" y="285" style="font-size:10px">киназа: выкл.</text>
+    <text class="s" x="34" y="322">Нет лиганда — нет сигнала.</text><text class="s" x="34" y="338">Околомембранный домен (JM)</text><text class="s" x="34" y="354">«прижимает» киназу.</text>
+  </g>
+  <g>
+    <rect class="box" x="310" y="44" width="280" height="340" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/><text class="b" x="324" y="68" style="fill:#c0392b">FLT3-ITD</text>
+    <rect x="324" y="200" width="252" height="22" rx="5" fill="#f0d9b0" stroke="#b98a3e"/>
+    <text class="s" x="450" y="100" text-anchor="middle" style="font-size:11px">лиганда нет</text>
+    <rect x="400" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/><rect x="460" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/>
+    <rect x="418" y="146" width="10" height="54" rx="4" fill="#8a6d3b"/><rect x="418" y="222" width="10" height="20" fill="#8a6d3b"/>
+    <rect x="388" y="244" width="30" height="18" rx="6" fill="#e0a43a"/><rect x="420" y="244" width="30" height="18" rx="6" fill="#d1432f"/><text class="w" x="435" y="257" style="font-size:9px">ITD</text>
+    <rect x="388" y="268" width="90" height="26" rx="6" fill="#3b6fd4"/><text class="w" x="433" y="285" style="font-size:10px">киназа: ВКЛ.</text>
+    <circle cx="500" cy="280" r="9" fill="#c0392b"/><text class="w" x="500" y="283" style="font-size:9px">P</text>
+    <text class="s" x="324" y="322">Дупликация в JM выключает «тормоз»:</text><text class="s" x="324" y="338">рецептор активен без лиганда;</text><text class="s" x="324" y="354">сильнее всего включает STAT5.</text>
+  </g>
+  <g>
+    <rect class="box" x="600" y="44" width="280" height="340" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/><text class="b" x="614" y="68" style="fill:#c0392b">FLT3-TKD, KIT D816V</text>
+    <rect x="614" y="200" width="252" height="22" rx="5" fill="#f0d9b0" stroke="#b98a3e"/>
+    <text class="s" x="740" y="100" text-anchor="middle" style="font-size:11px">лиганда нет</text>
+    <rect x="690" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/><rect x="750" y="110" width="40" height="30" rx="6" fill="#9fb6d9"/>
+    <rect x="708" y="146" width="10" height="54" rx="4" fill="#8a6d3b"/><rect x="708" y="222" width="10" height="20" fill="#8a6d3b"/>
+    <rect x="678" y="244" width="60" height="18" rx="6" fill="#e0a43a"/><text class="w" x="708" y="257" style="fill:#1c2330;font-size:9px">JM</text>
+    <rect x="678" y="268" width="90" height="26" rx="6" fill="#3b6fd4"/><text class="w" x="723" y="285" style="font-size:10px">киназа: ВКЛ.</text>
+    <circle cx="790" cy="264" r="12" fill="#c0392b"/><text class="w" x="790" y="267" style="font-size:8px">D835</text>
+    <text class="s" x="614" y="322">Замена в петле активации</text><text class="s" x="614" y="338">удерживает киназу «открытой».</text><text class="s" x="614" y="354">FLT3-TKD (D835), KIT D816V.</text>
+  </g>
+
+  <rect class="box" x="20" y="400" width="860" height="184" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="424" style="fill:#2f7d3f">Ингибиторы: тип I и тип II</text>
+  <text class="s" x="34" y="446" style="font-size:12px"><tspan font-weight="700">Тип I</tspan> (гилтеритиниб, мидостаурин, авапритиниб) связываются с «открытой» активной формой киназы —</text>
+  <text class="s" x="34" y="462" style="font-size:12px">действуют и при ITD, и при мутациях петли активации (TKD, D816V).</text>
+  <text class="s" x="34" y="486" style="font-size:12px"><tspan font-weight="700">Тип II</tspan> (квизартиниб, сорафениб, иматиниб) связываются с «закрытой» неактивной формой — эффективны</text>
+  <text class="s" x="34" y="502" style="font-size:12px">против ITD, но <tspan font-weight="700">не</tspan> против мутаций петли активации (D835, D816V).</text>
+  <text class="s" x="34" y="526" style="font-size:12px">Практическое следствие: тип мутации определяет выбор препарата; при появлении TKD-мутации во время терапии</text>
+  <text class="s" x="34" y="542" style="font-size:12px">возможна устойчивость к типу II. FLT3-ITD встречается примерно у 25 % больных ОМЛ; по ELN 2022 такие случаи относят</text>
+  <text class="s" x="34" y="558" style="font-size:12px">к промежуточной группе риска.</text>
+  <text class="s" x="34" y="576" style="font-size:11px">Схема упрощена. Показания препаратов — по актуальным рекомендациям и инструкциям.</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg class="pm-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="pm-t pm-d">
+  <title id="pm-t">Анимация: p53 и MDM2 — стабилизация белка при повреждении ДНК</title>
+  <desc id="pm-d">В норме MDM2 присоединяет к p53 убиквитин, и p53 разрушается в протеасоме, поэтому его мало. При повреждении ДНК киназа ATM фосфорилирует p53 и MDM2, они перестают связываться, p53 накапливается, входит в ядро и включает гены p21, репарации и апоптоза. При мутации TP53 этого ответа нет, и клетка продолжает делиться с повреждённой ДНК.</desc>
+  <style>
+    .pm-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 12.5px; }
+    .pm-svg .pm-w { fill: #fff; font-weight: 700; text-anchor: middle; font-size: 11px; }
+    .pm-svg .pm-m { fill: #5b6577; }
+    .pm-svg .pm-cap { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .pm-svg .pm-mdm { animation: pm-mdm 18s ease-in-out infinite; }
+    .pm-svg .pm-ub { animation: pm-ub 18s linear infinite; }
+    .pm-svg .pm-dna { animation: pm-dna 18s linear infinite; }
+    .pm-svg .pm-atm { animation: pm-atm 18s linear infinite; }
+    .pm-svg .pm-p53a { animation: pm-p53a 18s ease-in-out infinite; }
+    .pm-svg .pm-p53b { animation: pm-p53b 18s ease-in-out infinite; }
+    .pm-svg .pm-p53c { animation: pm-p53c 18s ease-in-out infinite; }
+    .pm-svg .pm-out { animation: pm-out 18s linear infinite; }
+    .pm-svg .pm-scene { animation: pm-scene 18s linear infinite; }
+    .pm-svg .pm-c1 { animation: pm-c1 18s linear infinite; } .pm-svg .pm-c2 { animation: pm-c2 18s linear infinite; }
+    .pm-svg .pm-c3 { animation: pm-c3 18s linear infinite; } .pm-svg .pm-c4 { animation: pm-c4 18s linear infinite; }
+    @keyframes pm-scene { 0% { opacity: 1; } 94% { opacity: 1; } 98% { opacity: 0; } 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes pm-mdm { 0%, 40% { opacity: 1; transform: translate(0,0); } 52%, 100% { opacity: 0; transform: translate(-40px,-30px); } }
+    @keyframes pm-ub { 0%, 6% { opacity: 0; } 10%, 36% { opacity: 1; } 42%, 100% { opacity: 0; } }
+    @keyframes pm-dna { 0%, 26% { opacity: 0; } 30%, 100% { opacity: 1; } }
+    @keyframes pm-atm { 0%, 34% { opacity: 0; } 38%, 100% { opacity: 1; } }
+    @keyframes pm-p53a { 0%, 36% { opacity: 1; } 42%, 100% { opacity: 0; } }
+    @keyframes pm-p53b { 0%, 40% { opacity: 0; transform: translate(0,0); } 46%, 56% { opacity: 1; transform: translate(0,0); } 66%, 100% { opacity: 1; transform: translate(150px, 0); } }
+    @keyframes pm-p53c { 0%, 60% { opacity: 0; } 66%, 100% { opacity: 1; } }
+    @keyframes pm-out { 0%, 74% { opacity: 0; } 80%, 100% { opacity: 1; } }
+    @keyframes pm-c1 { 0%, 1% { opacity: 0; } 3%, 24% { opacity: 1; } 28%, 100% { opacity: 0; } }
+    @keyframes pm-c2 { 0%, 28% { opacity: 0; } 31%, 44% { opacity: 1; } 48%, 100% { opacity: 0; } }
+    @keyframes pm-c3 { 0%, 48% { opacity: 0; } 51%, 70% { opacity: 1; } 74%, 100% { opacity: 0; } }
+    @keyframes pm-c4 { 0%, 74% { opacity: 0; } 77%, 94% { opacity: 1; } 98%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .pm-svg * { animation-play-state: paused; } }
+  </style>
+  <rect width="720" height="420" fill="#ffffff"/>
+  <g class="pm-scene">
+    <ellipse cx="200" cy="230" rx="180" ry="150" fill="#fdf6ee" stroke="#e0b98a" stroke-width="3"/>
+    <text class="pm-m" x="44" y="132" style="font-size:11px">цитоплазма</text>
+    <ellipse cx="500" cy="240" rx="200" ry="140" fill="#f3efff" stroke="#b6a4e0" stroke-width="3"/>
+    <text class="pm-m" x="330" y="122" style="font-size:11px">ядро</text>
+    <!-- p53 в покое -->
+    <g class="pm-p53a"><circle cx="240" cy="230" r="28" fill="#3fa34d"/><text class="pm-w" x="240" y="235" style="font-size:13px">p53</text></g>
+    <g class="pm-mdm"><ellipse cx="180" cy="190" rx="44" ry="18" fill="#c0392b"/><text class="pm-w" x="180" y="194">MDM2</text><path d="M212 200 L228 214" stroke="#c0392b" stroke-width="3" fill="none"/></g>
+    <g class="pm-ub"><circle cx="270" cy="204" r="7" fill="#e0a43a"/><circle cx="286" cy="196" r="7" fill="#e0a43a"/><circle cx="302" cy="190" r="7" fill="#e0a43a"/><text class="pm-m" x="270" y="180" style="font-size:11px">Ub-метки → протеасома</text></g>
+    <ellipse cx="240" cy="330" rx="66" ry="18" fill="#8a94a8" class="pm-ub"/><text class="pm-w pm-ub" x="240" y="334" style="font-size:10.5px">протеасома</text>
+    <!-- повреждение ДНК -->
+    <g class="pm-dna"><path d="M420 350 h180" stroke="#2f3f7a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M480 340 l20 20 M500 340 l-20 20" stroke="#c0392b" stroke-width="4"/><text class="pm-m" x="510" y="380" text-anchor="middle" style="font-size:11px;fill:#c0392b">разрыв ДНК</text></g>
+    <g class="pm-atm"><ellipse cx="240" cy="290" rx="42" ry="16" fill="#e0a43a"/><text class="pm-w" x="240" y="294" style="fill:#1c2330">ATM</text><text class="pm-m" x="292" y="294" style="font-size:11px">P → p53</text></g>
+    <!-- p53 идёт в ядро -->
+    <g class="pm-p53b"><circle cx="240" cy="230" r="28" fill="#3fa34d"/><text class="pm-w" x="240" y="235" style="font-size:13px">p53</text><circle cx="222" cy="210" r="9" fill="#c0392b"/><text class="pm-w" x="222" y="213" style="font-size:8.5px">P</text></g>
+    <g class="pm-p53c"><rect x="410" y="150" width="60" height="22" rx="11" fill="#3fa34d"/><text class="pm-w" x="440" y="165" style="font-size:10.5px">p53 ×4</text></g>
+    <g class="pm-out"><text class="pm-m" x="500" y="216" style="font-size:12px"><tspan font-weight="700" fill="#3b6fd4">p21</tspan> — пауза цикла</text><text class="pm-m" x="500" y="236" style="font-size:12px"><tspan font-weight="700" fill="#2f7d3f">GADD45</tspan> — ремонт ДНК</text><text class="pm-m" x="500" y="256" style="font-size:12px"><tspan font-weight="700" fill="#c0392b">BAX, PUMA</tspan> — апоптоз</text></g>
+  </g>
+  <text class="pm-cap pm-c1" x="360" y="34">1. В покое MDM2 метит p53 убиквитином — белок разрушается</text>
+  <text class="pm-cap pm-c2" x="360" y="34">2. Повреждение ДНК активирует ATM</text>
+  <text class="pm-cap pm-c3" x="360" y="34">3. ATM фосфорилирует p53 и MDM2: p53 стабилен и идёт в ядро</text>
+  <text class="pm-cap pm-c4" x="360" y="34">4. p53 включает гены паузы, ремонта или гибели клетки</text>
+</svg>

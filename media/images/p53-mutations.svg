@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Мутации TP53: домены белка, горячие точки и клинические ситуации</title>
+  <desc id="d">Вверху доменная схема белка p53 длиной 393 аминокислоты: трансактивационный домен, пролин-богатая область, ДНК-связывающий домен (около 94–292), домен тетрамеризации и регуляторный С-конец. Над ДНК-связывающим доменом отмечены горячие точки R175, G245, R248, R249, R273, R282. Ниже: как мутантный белок в тетрамере с нормальным подавляет его (доминантно-негативный эффект), роль делеции 17p и понятие «мульти-хит» TP53. Внизу таблица клинических ситуаций: МДС, ОМЛ, ХЛЛ, миелома, синдром Ли–Фраумени.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .hot { font-size: 10.5px; font-weight: 700; fill: #c0392b; text-anchor: middle; }
+  </style>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">TP53: где ломается «страж» и что это значит для пациента</text>
+
+  <!-- домены: 393 аа на 840 px => 2.137 px/aa, старт 30 -->
+  <rect x="30" y="118" width="130" height="30" rx="5" fill="#8a94a8"/><text class="w" x="95" y="138" style="font-size:10px">TAD (1–61)</text>
+  <rect x="162" y="118" width="70" height="30" rx="5" fill="#b7c0cf"/><text class="w" x="197" y="138" style="fill:#1c2330;font-size:10px">PRD</text>
+  <rect x="234" y="118" width="424" height="30" rx="5" fill="#3b6fd4"/><text class="w" x="446" y="138" style="font-size:11px">ДНК-связывающий домен (≈94–292)</text>
+  <rect x="660" y="118" width="70" height="30" rx="5" fill="#3fa34d"/><text class="w" x="695" y="138" style="font-size:10px">Тетрамер.</text>
+  <rect x="732" y="118" width="138" height="30" rx="5" fill="#e0a43a"/><text class="w" x="801" y="138" style="fill:#1c2330;font-size:10px">C-конец (363–393)</text>
+  <text class="s" x="30" y="166" style="font-size:11px">Трансактивация</text><text class="s" x="162" y="166" style="font-size:11px">пролин-богатая</text><text class="s" x="662" y="166" style="font-size:11px">4 белка = 1 «страж»</text>
+  <!-- леденцы -->
+  <g stroke="#c0392b" stroke-width="2"><line x1="313" y1="118" x2="313" y2="78"/><line x1="429" y1="118" x2="429" y2="60"/><line x1="463" y1="118" x2="463" y2="50"/><line x1="470" y1="118" x2="470" y2="68"/><line x1="546" y1="118" x2="546" y2="48"/><line x1="580" y1="118" x2="580" y2="70"/></g>
+  <g fill="#c0392b"><circle cx="313" cy="78" r="6"/><circle cx="429" cy="60" r="7"/><circle cx="463" cy="50" r="8"/><circle cx="470" cy="68" r="6"/><circle cx="546" cy="48" r="8"/><circle cx="580" cy="70" r="6"/></g>
+  <text class="hot" x="313" y="68">R175</text><text class="hot" x="405" y="52">G245</text><text class="hot" x="486" y="40">R248</text><text class="hot" x="500" y="66">R249</text><text class="hot" x="546" y="38">R273</text><text class="hot" x="606" y="68">R282</text>
+  <text class="s" x="30" y="60" style="font-size:11px">«Горячие точки» —</text><text class="s" x="30" y="76" style="font-size:11px">высота ≈ частота</text>
+  <text class="s" x="30" y="94" style="font-size:10.5px">(схематично)</text>
+
+  <!-- классы -->
+  <rect class="box" x="20" y="184" width="270" height="150" rx="10"/>
+  <text class="b" x="34" y="206" style="font-size:12.5px">Два типа замен</text>
+  <text class="s" x="34" y="226"><tspan font-weight="700">Контактные</tspan> (R248, R273):</text><text class="s" x="34" y="242">белок сохраняет форму, но</text><text class="s" x="34" y="258">не «цепляется» за ДНК.</text>
+  <text class="s" x="34" y="280"><tspan font-weight="700">Структурные</tspan> (R175, G245,</text><text class="s" x="34" y="296">R249, R282): белок теряет форму</text><text class="s" x="34" y="312">и стабильность.</text>
+  <rect class="box" x="300" y="184" width="280" height="150" rx="10"/>
+  <text class="b" x="314" y="206" style="font-size:12.5px">Доминантно-негативный эффект</text>
+  <g>
+    <circle cx="350" cy="252" r="16" fill="#3fa34d"/><circle cx="392" cy="252" r="16" fill="#c0392b"/><circle cx="434" cy="252" r="16" fill="#3fa34d"/><circle cx="476" cy="252" r="16" fill="#c0392b"/>
+    <text class="w" x="350" y="256" style="font-size:9px">wt</text><text class="w" x="392" y="256" style="font-size:9px">mut</text><text class="w" x="434" y="256" style="font-size:9px">wt</text><text class="w" x="476" y="256" style="font-size:9px">mut</text>
+  </g>
+  <text class="s" x="314" y="290" style="font-size:11px">Тетрамер с одним мутантным белком</text><text class="s" x="314" y="306" style="font-size:11px">уже нефункционален: одна мутантная</text><text class="s" x="314" y="322" style="font-size:11px">копия «глушит» нормальную.</text>
+  <rect class="box" x="590" y="184" width="290" height="150" rx="10"/>
+  <text class="b" x="604" y="206" style="font-size:12.5px">Второй «удар» и «мульти-хит»</text>
+  <text class="s" x="604" y="226">Потеря второй копии (делеция 17p,</text><text class="s" x="604" y="242">нейтральная потеря гетерозиготности)</text><text class="s" x="604" y="258">— <tspan font-weight="700">биаллельная</tspan> инактивация.</text>
+  <text class="s" x="604" y="282" style="font-size:11px">«Мульти-хит»: ≥ 2 изменений TP53 —</text><text class="s" x="604" y="298" style="font-size:11px">выделяется при МДС/ОМЛ; прогноз</text><text class="s" x="604" y="314" style="font-size:11px">хуже, чем при одной мутации.</text>
+
+  <!-- таблица -->
+  <text class="b" x="20" y="362" style="font-size:14px">В гематологии</text>
+  <rect class="box" x="20" y="374" width="860" height="248" rx="10"/>
+  <g style="font-size:11.5px">
+    <text class="b" x="34" y="396" style="font-size:12px">Ситуация</text><text class="b" x="244" y="396" style="font-size:12px">Что важно</text><text class="b" x="604" y="396" style="font-size:12px">Тактика</text>
+    <line x1="30" y1="404" x2="870" y2="404" stroke="#d4dae6" stroke-width="1.4"/>
+    <text class="s" x="34" y="426"><tspan font-weight="700" fill="#1c2330">МДС с мутацией</tspan></text><text class="s" x="34" y="442"><tspan font-weight="700" fill="#1c2330">TP53 (мульти-хит)</tspan></text><text class="s" x="244" y="426">Сложный кариотип, быстрая прогрессия,</text><text class="s" x="244" y="442">плохой ответ на гипометилирующие агенты.</text><text class="s" x="604" y="426">Раннее обсуждение аллоТГСК;</text><text class="s" x="604" y="442">включение в исследования.</text>
+    <line x1="30" y1="454" x2="870" y2="454" stroke="#e6eaf1" stroke-width="1"/>
+    <text class="s" x="34" y="476"><tspan font-weight="700" fill="#1c2330">ОМЛ с мутацией</tspan></text><text class="s" x="34" y="492"><tspan font-weight="700" fill="#1c2330">TP53</tspan></text><text class="s" x="244" y="476">Группа неблагоприятного риска ELN 2022</text><text class="s" x="244" y="492">(VAF ≥ 10 %); устойчивость к химиотерапии.</text><text class="s" x="604" y="476">Аллогенная ТГСК при возможности;</text><text class="s" x="604" y="492">результаты остаются ограниченными.</text>
+    <line x1="30" y1="504" x2="870" y2="504" stroke="#e6eaf1" stroke-width="1"/>
+    <text class="s" x="34" y="526"><tspan font-weight="700" fill="#1c2330">ХЛЛ: del(17p) и/или</tspan></text><text class="s" x="34" y="542"><tspan font-weight="700" fill="#1c2330">мутация TP53</tspan></text><text class="s" x="244" y="526">Химиоиммунотерапия (FCR) малоэффективна,</text><text class="s" x="244" y="542">т. к. её действие зависит от p53.</text><text class="s" x="604" y="526">Ингибиторы BTK, венетоклакс — не зависят</text><text class="s" x="604" y="542">от p53; проверять статус перед каждой линией.</text>
+    <line x1="30" y1="554" x2="870" y2="554" stroke="#e6eaf1" stroke-width="1"/>
+    <text class="s" x="34" y="576"><tspan font-weight="700" fill="#1c2330">Миелома: del(17p)</tspan></text><text class="s" x="244" y="576">Высокий риск (R-ISS, IMWG); FISH при диагностике.</text><text class="s" x="604" y="576">Интенсификация терапии, наблюдение.</text>
+    <line x1="30" y1="588" x2="870" y2="588" stroke="#e6eaf1" stroke-width="1"/>
+    <text class="s" x="34" y="606"><tspan font-weight="700" fill="#1c2330">Синдром Ли–Фраумени</tspan></text><text class="s" x="244" y="606">Герминальная мутация: ранние опухоли, гиподиплоидный ОЛЛ.</text><text class="s" x="604" y="606">VAF ≈ 50 % — подозрение на герминальную.</text>
+  </g>
+</svg>
