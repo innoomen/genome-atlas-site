@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 660" role="img" aria-labelledby="t d">
+  <title id="t">Азотистые основания: пурины и пиримидины</title>
+  <desc id="d">Структурные формулы азотистых оснований. Пурины (аденин и гуанин) состоят из двух конденсированных колец — шестичленного и пятичленного. Пиримидины (цитозин, тимин и урацил) состоят из одного шестичленного кольца. Показана нумерация атомов колец.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 18px; font-weight: 700; }
+    .s { font-size: 13.5px; fill: #5b6577; }
+    .nm { font-size: 15px; font-weight: 700; }
+    .a { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .n { font-size: 10.5px; text-anchor: middle; fill: #8a94a8; }
+    .sg { font-size: 12px; text-anchor: middle; fill: #5b6577; font-style: italic; }
+    .bd { stroke: #2b3242; stroke-width: 2.3; stroke-linecap: round; fill: none; }
+  </style>
+  <rect width="760" height="660" fill="#ffffff"/>
+
+  <text class="h" x="30" y="34">Пурины — два кольца (6 + 5)</text>
+  <text class="s" x="30" y="56">Присоединяются к сахару через атом N9</text>
+  <rect x="24" y="66" width="712" height="234" rx="12" fill="#f6f8fb"/>
+
+  <line class="bd" x1="204.6" y1="188.0" x2="204.6" y2="148.0"/>
+<line class="bd" x1="199.6" y1="182.4" x2="199.6" y2="153.6"/>
+<line class="bd" x1="204.6" y1="148.0" x2="170.0" y2="128.0"/>
+<line class="bd" x1="135.4" y1="148.0" x2="135.4" y2="188.0"/>
+<line class="bd" x1="170.0" y1="208.0" x2="204.6" y2="188.0"/>
+<line class="bd" x1="204.6" y1="148.0" x2="242.7" y2="135.6"/>
+<line class="bd" x1="242.7" y1="135.6" x2="266.2" y2="168.0"/>
+<line class="bd" x1="241.9" y1="143.1" x2="258.9" y2="166.4"/>
+<line class="bd" x1="266.2" y1="168.0" x2="242.7" y2="200.4"/>
+<line class="bd" x1="242.7" y1="200.4" x2="204.6" y2="188.0"/>
+<line class="bd" x1="242.7" y1="200.4" x2="255.0" y2="238.4"/>
+<line class="bd" x1="170.0" y1="128.0" x2="135.4" y2="148.0"/>
+<line class="bd" x1="167.7" y1="135.1" x2="142.7" y2="149.5"/>
+<line class="bd" x1="135.4" y1="188.0" x2="170.0" y2="208.0"/>
+<line class="bd" x1="142.7" y1="186.5" x2="167.7" y2="200.9"/>
+<line class="bd" x1="170.0" y1="128.0" x2="170.0" y2="88.0"/>
+<rect x="162.0" y="198.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="170.0" y="213.0" style="fill:#1f4e8c">N</text>
+<rect x="211.6" y="229.4" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="255.0" y="242.4">к C1′ сахара</text>
+<rect x="152.0" y="78.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="170.0" y="93.0" style="fill:#1f4e8c">NH₂</text>
+<rect x="234.7" y="190.4" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="242.7" y="205.4" style="fill:#1f4e8c">N</text>
+<rect x="234.7" y="125.6" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="242.7" y="140.6" style="fill:#1f4e8c">N</text>
+<rect x="127.4" y="138.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="135.4" y="153.0" style="fill:#1f4e8c">N</text>
+<text class="n" x="170.0" y="196.5">3</text>
+<text class="n" x="238.0" y="189.6">9</text>
+<text class="n" x="251.2" y="171.5">8</text>
+<text class="n" x="191.6" y="159.0">5</text>
+<text class="n" x="148.4" y="184.0">2</text>
+<text class="n" x="191.6" y="184.0">4</text>
+<text class="n" x="170.0" y="146.5">6</text>
+<text class="n" x="238.0" y="153.4">7</text>
+<text class="n" x="148.4" y="159.0">1</text>
+
+  <line class="bd" x1="544.6" y1="188.0" x2="544.6" y2="148.0"/>
+<line class="bd" x1="539.6" y1="182.4" x2="539.6" y2="153.6"/>
+<line class="bd" x1="544.6" y1="148.0" x2="510.0" y2="128.0"/>
+<line class="bd" x1="475.4" y1="148.0" x2="475.4" y2="188.0"/>
+<line class="bd" x1="510.0" y1="208.0" x2="544.6" y2="188.0"/>
+<line class="bd" x1="544.6" y1="148.0" x2="582.7" y2="135.6"/>
+<line class="bd" x1="582.7" y1="135.6" x2="606.2" y2="168.0"/>
+<line class="bd" x1="581.9" y1="143.1" x2="598.9" y2="166.4"/>
+<line class="bd" x1="606.2" y1="168.0" x2="582.7" y2="200.4"/>
+<line class="bd" x1="582.7" y1="200.4" x2="544.6" y2="188.0"/>
+<line class="bd" x1="582.7" y1="200.4" x2="595.0" y2="238.4"/>
+<line class="bd" x1="506.6" y1="128.0" x2="506.6" y2="88.0"/>
+<line class="bd" x1="513.4" y1="128.0" x2="513.4" y2="88.0"/>
+<line class="bd" x1="510.0" y1="128.0" x2="475.4" y2="148.0"/>
+<line class="bd" x1="475.4" y1="188.0" x2="510.0" y2="208.0"/>
+<line class="bd" x1="482.7" y1="186.5" x2="507.7" y2="200.9"/>
+<line class="bd" x1="475.4" y1="188.0" x2="440.7" y2="208.0"/>
+<rect x="502.0" y="198.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="510.0" y="213.0" style="fill:#1f4e8c">N</text>
+<rect x="551.6" y="229.4" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="595.0" y="242.4">к C1′ сахара</text>
+<rect x="502.0" y="78.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="510.0" y="93.0" style="fill:#c0392b">O</text>
+<rect x="574.7" y="190.4" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="582.7" y="205.4" style="fill:#1f4e8c">N</text>
+<rect x="422.7" y="198.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="440.7" y="213.0" style="fill:#1f4e8c">NH₂</text>
+<rect x="574.7" y="125.6" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="582.7" y="140.6" style="fill:#1f4e8c">N</text>
+<rect x="462.4" y="138.0" width="26.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="475.4" y="153.0" style="fill:#1f4e8c">NH</text>
+<text class="n" x="510.0" y="196.5">3</text>
+<text class="n" x="578.0" y="189.6">9</text>
+<text class="n" x="591.2" y="171.5">8</text>
+<text class="n" x="531.6" y="159.0">5</text>
+<text class="n" x="488.4" y="184.0">2</text>
+<text class="n" x="531.6" y="184.0">4</text>
+<text class="n" x="510.0" y="146.5">6</text>
+<text class="n" x="578.0" y="153.4">7</text>
+<text class="n" x="488.4" y="159.0">1</text>
+
+
+  <circle cx="60" cy="262" r="8" fill="#e4572e"/><text class="nm" x="76" y="267">Аденин (A)</text><text class="s" x="76" y="284">6-аминопурин</text>
+  <circle cx="400" cy="262" r="8" fill="#3fa34d"/><text class="nm" x="416" y="267">Гуанин (G)</text><text class="s" x="416" y="284">2-амино-6-оксопурин</text>
+
+  <text class="h" x="30" y="336">Пиримидины — одно кольцо (6)</text>
+  <text class="s" x="30" y="358">Присоединяются к сахару через атом N1</text>
+  <rect x="24" y="368" width="712" height="250" rx="12" fill="#f6f8fb"/>
+
+  <line class="bd" x1="130.0" y1="510.0" x2="95.4" y2="490.0"/>
+<line class="bd" x1="95.4" y1="490.0" x2="95.4" y2="450.0"/>
+<line class="bd" x1="130.0" y1="430.0" x2="164.6" y2="450.0"/>
+<line class="bd" x1="164.6" y1="450.0" x2="164.6" y2="490.0"/>
+<line class="bd" x1="159.6" y1="455.6" x2="159.6" y2="484.4"/>
+<line class="bd" x1="164.6" y1="490.0" x2="130.0" y2="510.0"/>
+<line class="bd" x1="97.1" y1="492.9" x2="62.4" y2="512.9"/>
+<line class="bd" x1="93.7" y1="487.1" x2="59.0" y2="507.1"/>
+<line class="bd" x1="130.0" y1="510.0" x2="130.0" y2="550.0"/>
+<line class="bd" x1="95.4" y1="450.0" x2="130.0" y2="430.0"/>
+<line class="bd" x1="102.7" y1="451.5" x2="127.7" y2="437.1"/>
+<line class="bd" x1="130.0" y1="430.0" x2="130.0" y2="390.0"/>
+<rect x="87.4" y="440.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="95.4" y="455.0" style="fill:#1f4e8c">N</text>
+<rect x="122.0" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="130.0" y="515.0" style="fill:#1f4e8c">N</text>
+<rect x="112.0" y="380.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="130.0" y="395.0" style="fill:#1f4e8c">NH₂</text>
+<rect x="86.6" y="541.0" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="130.0" y="554.0">к C1′ сахара</text>
+<rect x="52.7" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="60.7" y="515.0" style="fill:#c0392b">O</text>
+<text class="n" x="108.4" y="461.0">3</text>
+<text class="n" x="151.6" y="461.0">5</text>
+<text class="n" x="108.4" y="486.0">2</text>
+<text class="n" x="130.0" y="448.5">4</text>
+<text class="n" x="151.6" y="486.0">6</text>
+<text class="n" x="130.0" y="498.5">1</text>
+
+  <line class="bd" x1="360.0" y1="510.0" x2="325.4" y2="490.0"/>
+<line class="bd" x1="325.4" y1="490.0" x2="325.4" y2="450.0"/>
+<line class="bd" x1="360.0" y1="430.0" x2="394.6" y2="450.0"/>
+<line class="bd" x1="394.6" y1="450.0" x2="394.6" y2="490.0"/>
+<line class="bd" x1="389.6" y1="455.6" x2="389.6" y2="484.4"/>
+<line class="bd" x1="394.6" y1="490.0" x2="360.0" y2="510.0"/>
+<line class="bd" x1="327.1" y1="492.9" x2="292.4" y2="512.9"/>
+<line class="bd" x1="323.7" y1="487.1" x2="289.0" y2="507.1"/>
+<line class="bd" x1="360.0" y1="510.0" x2="360.0" y2="550.0"/>
+<line class="bd" x1="325.4" y1="450.0" x2="360.0" y2="430.0"/>
+<line class="bd" x1="356.6" y1="430.0" x2="356.6" y2="390.0"/>
+<line class="bd" x1="363.4" y1="430.0" x2="363.4" y2="390.0"/>
+<line class="bd" x1="394.6" y1="450.0" x2="429.3" y2="430.0"/>
+<rect x="352.0" y="380.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="360.0" y="395.0" style="fill:#c0392b">O</text>
+<rect x="316.6" y="541.0" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="360.0" y="554.0">к C1′ сахара</text>
+<rect x="411.3" y="420.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="429.3" y="435.0" style="fill:#2b3242">CH₃</text>
+<rect x="282.7" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="290.7" y="515.0" style="fill:#c0392b">O</text>
+<rect x="312.4" y="440.0" width="26.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="325.4" y="455.0" style="fill:#1f4e8c">NH</text>
+<rect x="352.0" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="360.0" y="515.0" style="fill:#1f4e8c">N</text>
+<text class="n" x="338.4" y="461.0">3</text>
+<text class="n" x="381.6" y="461.0">5</text>
+<text class="n" x="338.4" y="486.0">2</text>
+<text class="n" x="360.0" y="448.5">4</text>
+<text class="n" x="381.6" y="486.0">6</text>
+<text class="n" x="360.0" y="498.5">1</text>
+
+  <line class="bd" x1="590.0" y1="510.0" x2="555.4" y2="490.0"/>
+<line class="bd" x1="555.4" y1="490.0" x2="555.4" y2="450.0"/>
+<line class="bd" x1="590.0" y1="430.0" x2="624.6" y2="450.0"/>
+<line class="bd" x1="624.6" y1="450.0" x2="624.6" y2="490.0"/>
+<line class="bd" x1="619.6" y1="455.6" x2="619.6" y2="484.4"/>
+<line class="bd" x1="624.6" y1="490.0" x2="590.0" y2="510.0"/>
+<line class="bd" x1="557.1" y1="492.9" x2="522.4" y2="512.9"/>
+<line class="bd" x1="553.7" y1="487.1" x2="519.0" y2="507.1"/>
+<line class="bd" x1="590.0" y1="510.0" x2="590.0" y2="550.0"/>
+<line class="bd" x1="555.4" y1="450.0" x2="590.0" y2="430.0"/>
+<line class="bd" x1="586.6" y1="430.0" x2="586.6" y2="390.0"/>
+<line class="bd" x1="593.4" y1="430.0" x2="593.4" y2="390.0"/>
+<rect x="542.4" y="440.0" width="26.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="555.4" y="455.0" style="fill:#1f4e8c">NH</text>
+<rect x="582.0" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="590.0" y="515.0" style="fill:#1f4e8c">N</text>
+<rect x="582.0" y="380.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="590.0" y="395.0" style="fill:#c0392b">O</text>
+<rect x="546.6" y="541.0" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="590.0" y="554.0">к C1′ сахара</text>
+<rect x="512.7" y="500.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="520.7" y="515.0" style="fill:#c0392b">O</text>
+<text class="n" x="568.4" y="461.0">3</text>
+<text class="n" x="611.6" y="461.0">5</text>
+<text class="n" x="568.4" y="486.0">2</text>
+<text class="n" x="590.0" y="448.5">4</text>
+<text class="n" x="611.6" y="486.0">6</text>
+<text class="n" x="590.0" y="498.5">1</text>
+
+
+  <circle cx="60" cy="572" r="8" fill="#f0b429"/><text class="nm" x="76" y="577">Цитозин (C)</text><text class="s" x="76" y="594">4-амино-2-оксопиримидин</text>
+  <circle cx="290" cy="572" r="8" fill="#2e86ab"/><text class="nm" x="306" y="577">Тимин (T)</text><text class="s" x="306" y="594">5-метилурацил</text>
+  <circle cx="520" cy="572" r="8" fill="#7b5ea7"/><text class="nm" x="536" y="577">Урацил (U) — в РНК</text><text class="s" x="536" y="594">2,4-диоксопиримидин</text>
+
+  <text class="s" x="30" y="642">Синий — азот, красный — кислород. Серые цифры — нумерация атомов кольца.</text>
+</svg>

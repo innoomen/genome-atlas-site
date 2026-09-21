@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d">
+  <title id="t">Комплементарные пары оснований A–T и G–C</title>
+  <desc id="d">Структурные формулы комплементарных пар. Пара аденин–тимин удерживается двумя водородными связями, пара гуанин–цитозин — тремя. Водородные связи показаны оранжевыми пунктирами. В каждой паре один пурин и один пиримидин.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 18px; font-weight: 700; text-anchor: middle; }
+    .s { font-size: 13.5px; fill: #5b6577; text-anchor: middle; }
+    .a { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .sg { font-size: 12px; text-anchor: middle; fill: #5b6577; font-style: italic; }
+    .bd { stroke: #2b3242; stroke-width: 2.3; stroke-linecap: round; fill: none; }
+    .hb { stroke: #ee8a2b; stroke-width: 2.6; stroke-dasharray: 5 4; stroke-linecap: round; }
+  </style>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <rect x="14" y="14" width="380" height="330" rx="12" fill="#f6f8fb"/>
+  <rect x="406" y="14" width="380" height="330" rx="12" fill="#f6f8fb"/>
+
+  <text class="h" x="204" y="46">Пара A–T</text>
+  <text class="h" x="596" y="46">Пара G–C</text>
+
+  <line class="hb" x1="179.4" y1="173.0" x2="263.4" y2="173.0"/>
+<line class="hb" x1="179.4" y1="139.0" x2="263.4" y2="139.0"/>
+<line class="bd" x1="120.6" y1="207.0" x2="120.6" y2="173.0"/>
+<line class="bd" x1="125.6" y1="202.2" x2="125.6" y2="177.8"/>
+<line class="bd" x1="120.6" y1="173.0" x2="150.0" y2="156.0"/>
+<line class="bd" x1="179.4" y1="173.0" x2="179.4" y2="207.0"/>
+<line class="bd" x1="150.0" y1="224.0" x2="120.6" y2="207.0"/>
+<line class="bd" x1="120.6" y1="173.0" x2="88.2" y2="162.5"/>
+<line class="bd" x1="88.2" y1="162.5" x2="68.2" y2="190.0"/>
+<line class="bd" x1="89.5" y1="169.3" x2="75.1" y2="189.1"/>
+<line class="bd" x1="68.2" y1="190.0" x2="88.2" y2="217.5"/>
+<line class="bd" x1="88.2" y1="217.5" x2="120.6" y2="207.0"/>
+<line class="bd" x1="88.2" y1="217.5" x2="77.7" y2="249.8"/>
+<line class="bd" x1="150.0" y1="156.0" x2="179.4" y2="173.0"/>
+<line class="bd" x1="151.6" y1="162.7" x2="172.8" y2="175.0"/>
+<line class="bd" x1="179.4" y1="207.0" x2="150.0" y2="224.0"/>
+<line class="bd" x1="172.8" y1="205.0" x2="151.6" y2="217.3"/>
+<line class="bd" x1="150.0" y1="156.0" x2="179.4" y2="139.0"/>
+<rect x="142.0" y="214.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="150.0" y="229.0" style="fill:#1f4e8c">N</text>
+<rect x="34.3" y="240.8" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="77.7" y="253.8">к C1′ сахара</text>
+<rect x="161.4" y="129.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="179.4" y="144.0" style="fill:#1f4e8c">NH₂</text>
+<rect x="80.2" y="207.5" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="88.2" y="222.5" style="fill:#1f4e8c">N</text>
+<rect x="80.2" y="152.5" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="88.2" y="167.5" style="fill:#1f4e8c">N</text>
+<rect x="171.4" y="163.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="179.4" y="178.0" style="fill:#1f4e8c">N</text>
+<line class="bd" x1="292.8" y1="224.0" x2="263.4" y2="207.0"/>
+<line class="bd" x1="263.4" y1="207.0" x2="263.4" y2="173.0"/>
+<line class="bd" x1="292.8" y1="156.0" x2="322.2" y2="173.0"/>
+<line class="bd" x1="322.2" y1="173.0" x2="322.2" y2="207.0"/>
+<line class="bd" x1="317.2" y1="177.8" x2="317.2" y2="202.2"/>
+<line class="bd" x1="322.2" y1="207.0" x2="292.8" y2="224.0"/>
+<line class="bd" x1="266.1" y1="209.0" x2="245.7" y2="236.2"/>
+<line class="bd" x1="260.6" y1="205.0" x2="240.2" y2="232.2"/>
+<line class="bd" x1="292.8" y1="224.0" x2="292.8" y2="258.0"/>
+<line class="bd" x1="263.4" y1="173.0" x2="292.8" y2="156.0"/>
+<line class="bd" x1="291.1" y1="158.9" x2="261.7" y2="141.9"/>
+<line class="bd" x1="294.5" y1="153.1" x2="265.1" y2="136.1"/>
+<line class="bd" x1="322.2" y1="173.0" x2="351.7" y2="156.0"/>
+<rect x="255.4" y="129.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="263.4" y="144.0" style="fill:#c0392b">O</text>
+<rect x="249.4" y="249.0" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="292.8" y="262.0">к C1′ сахара</text>
+<rect x="333.7" y="146.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="351.7" y="161.0" style="fill:#2b3242">CH₃</text>
+<rect x="235.0" y="224.2" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="243.0" y="239.2" style="fill:#c0392b">O</text>
+<rect x="250.4" y="163.0" width="26.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="263.4" y="178.0" style="fill:#1f4e8c">NH</text>
+<rect x="284.8" y="214.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="292.8" y="229.0" style="fill:#1f4e8c">N</text>
+
+  <line class="hb" x1="594.4" y1="139.0" x2="678.4" y2="139.0"/>
+<line class="hb" x1="594.4" y1="173.0" x2="678.4" y2="173.0"/>
+<line class="hb" x1="614.8" y1="234.2" x2="658.0" y2="234.2"/>
+<line class="bd" x1="535.6" y1="207.0" x2="535.6" y2="173.0"/>
+<line class="bd" x1="540.6" y1="202.2" x2="540.6" y2="177.8"/>
+<line class="bd" x1="535.6" y1="173.0" x2="565.0" y2="156.0"/>
+<line class="bd" x1="594.4" y1="173.0" x2="594.4" y2="207.0"/>
+<line class="bd" x1="565.0" y1="224.0" x2="535.6" y2="207.0"/>
+<line class="bd" x1="535.6" y1="173.0" x2="503.2" y2="162.5"/>
+<line class="bd" x1="503.2" y1="162.5" x2="483.2" y2="190.0"/>
+<line class="bd" x1="504.5" y1="169.3" x2="490.1" y2="189.1"/>
+<line class="bd" x1="483.2" y1="190.0" x2="503.2" y2="217.5"/>
+<line class="bd" x1="503.2" y1="217.5" x2="535.6" y2="207.0"/>
+<line class="bd" x1="503.2" y1="217.5" x2="492.7" y2="249.8"/>
+<line class="bd" x1="563.3" y1="153.1" x2="592.7" y2="136.1"/>
+<line class="bd" x1="566.7" y1="158.9" x2="596.1" y2="141.9"/>
+<line class="bd" x1="565.0" y1="156.0" x2="594.4" y2="173.0"/>
+<line class="bd" x1="594.4" y1="207.0" x2="565.0" y2="224.0"/>
+<line class="bd" x1="587.8" y1="205.0" x2="566.6" y2="217.3"/>
+<line class="bd" x1="594.4" y1="207.0" x2="614.8" y2="234.2"/>
+<rect x="557.0" y="214.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="565.0" y="229.0" style="fill:#1f4e8c">N</text>
+<rect x="449.3" y="240.8" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="492.7" y="253.8">к C1′ сахара</text>
+<rect x="586.4" y="129.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="594.4" y="144.0" style="fill:#c0392b">O</text>
+<rect x="495.2" y="207.5" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="503.2" y="222.5" style="fill:#1f4e8c">N</text>
+<rect x="596.8" y="224.2" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="614.8" y="239.2" style="fill:#1f4e8c">NH₂</text>
+<rect x="495.2" y="152.5" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="503.2" y="167.5" style="fill:#1f4e8c">N</text>
+<rect x="581.4" y="163.0" width="26.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="594.4" y="178.0" style="fill:#1f4e8c">NH</text>
+<line class="bd" x1="707.8" y1="224.0" x2="678.4" y2="207.0"/>
+<line class="bd" x1="678.4" y1="207.0" x2="678.4" y2="173.0"/>
+<line class="bd" x1="707.8" y1="156.0" x2="737.2" y2="173.0"/>
+<line class="bd" x1="737.2" y1="173.0" x2="737.2" y2="207.0"/>
+<line class="bd" x1="732.2" y1="177.8" x2="732.2" y2="202.2"/>
+<line class="bd" x1="737.2" y1="207.0" x2="707.8" y2="224.0"/>
+<line class="bd" x1="681.1" y1="209.0" x2="660.7" y2="236.2"/>
+<line class="bd" x1="675.6" y1="205.0" x2="655.2" y2="232.2"/>
+<line class="bd" x1="707.8" y1="224.0" x2="707.8" y2="258.0"/>
+<line class="bd" x1="678.4" y1="173.0" x2="707.8" y2="156.0"/>
+<line class="bd" x1="685.0" y1="175.0" x2="706.2" y2="162.7"/>
+<line class="bd" x1="707.8" y1="156.0" x2="678.4" y2="139.0"/>
+<rect x="670.4" y="163.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="678.4" y="178.0" style="fill:#1f4e8c">N</text>
+<rect x="699.8" y="214.0" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="707.8" y="229.0" style="fill:#1f4e8c">N</text>
+<rect x="660.4" y="129.0" width="36.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="678.4" y="144.0" style="fill:#1f4e8c">NH₂</text>
+<rect x="664.4" y="249.0" width="86.8" height="17" rx="4" fill="#f6f8fb"/><text class="sg" x="707.8" y="262.0">к C1′ сахара</text>
+<rect x="650.0" y="224.2" width="16.0" height="20" rx="5" fill="#f6f8fb"/><text class="a" x="658.0" y="239.2" style="fill:#c0392b">O</text>
+
+
+  <text class="h" x="204" y="322" style="fill:#c7501f">2 водородные связи</text>
+  <text class="h" x="596" y="322" style="fill:#c7501f">3 водородные связи</text>
+  <text class="s" x="204" y="368">Аденин (пурин) + тимин (пиримидин)</text>
+  <text class="s" x="596" y="368">Гуанин (пурин) + цитозин (пиримидин)</text>
+  <text class="s" x="400" y="404">В каждой паре один пурин (2 кольца) и один пиримидин (1 кольцо),</text>
+  <text class="s" x="400" y="424">поэтому ширина двойной спирали постоянна — около 2 нм.</text>
+</svg>

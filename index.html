@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-theme="science">
+<html lang="ru" data-mode="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,8 @@
   <script>
     /* тема и режим применяются до отрисовки, чтобы не было мигания */
     (function () {
-      var d = document.documentElement, th = null, m = null;
-      try { th = localStorage.getItem('ws.theme'); m = localStorage.getItem('ws.mode'); } catch (e) {}
-      if (th === 'fantasy') d.dataset.theme = 'fantasy';
+      var d = document.documentElement, m = null;
+      try { m = localStorage.getItem('ws.mode'); } catch (e) {}
       if (m !== 'light' && m !== 'dark') m = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       d.dataset.mode = m;
     })();
@@ -33,7 +32,6 @@
         <a href="#/glossary">Глоссарий</a>
         <a href="#/bestiary" id="nav-bestiary">Бестиарий</a>
         <a href="#/about">О проекте</a>
-        <button type="button" id="theme-toggle" class="btn btn-small" aria-pressed="false" title="Переключить вид: научный / тематический"></button>
         <button type="button" id="mode-toggle" class="btn btn-small" aria-pressed="false" title="Переключить светлую и тёмную тему"></button>
       </nav>
     </div>

@@ -1,4 +1,4 @@
-/* Атлас генома — оформление. Два вида: science (научный) и fantasy (тематический). */
+/* Атлас генома — оформление (научный вид; светлая и тёмная темы). */
 :root {
   --bg: #f7f8fa; --surface: #ffffff; --surface-2: #eef1f5; --text: #1c2330; --muted: #5b6577;
   --border: #d9dee7; --accent: #0f6b74; --accent-ink: #ffffff; --accent-soft: #dff1f2;
@@ -19,38 +19,14 @@
   --adv: #b1a6f5; --adv-soft: #2a2550; --clin: #f0977f; --clin-soft: #3b211a;
   --shadow: 0 1px 2px rgba(0, 0, 0, .4);
 }
-:root[data-theme="fantasy"] {
-  --bg: #efe3c8; --surface: #f8efd9; --surface-2: #e8d8b3; --text: #2b1d10; --muted: #6a5238;
-  --border: #b99a63; --accent: #7a1f1f; --accent-ink: #fff5e0; --accent-soft: #ecd2a8;
-  --link: #6a2a10; --ok: #2f6b2f; --ok-soft: #dfe8bf; --bad: #8f1b1b; --bad-soft: #f0cdb8;
-  --adv: #4b3a7a; --adv-soft: #e3d8ec; --clin: #8f1b1b; --clin-soft: #f0cdb8;
-  --shadow: 0 2px 0 rgba(90, 60, 20, .25), 0 6px 16px rgba(90, 60, 20, .18);
-  --radius: 6px;
-  --font: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  --font-head: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 1.0625rem/1.65 var(--font); -webkit-text-size-adjust: 100%; }
-:root[data-theme="fantasy"][data-mode="dark"] {
-  --bg: #1b140d; --surface: #281d13; --surface-2: #33261a; --text: #f1e3c4; --muted: #b9a37c;
-  --border: #5e4728; --accent: #e3a857; --accent-ink: #2a1a08; --accent-soft: #4a3418;
-  --link: #f0b877; --ok: #9fd18b; --ok-soft: #26361d; --bad: #f19b8b; --bad-soft: #452019;
-  --adv: #c4b5f2; --adv-soft: #34294f; --clin: #f0a08a; --clin-soft: #47231b;
-  --shadow: 0 2px 0 rgba(0, 0, 0, .5), 0 6px 16px rgba(0, 0, 0, .4);
-}
-:root[data-theme="fantasy"] body {
-  background-image: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, .35), transparent 40%), radial-gradient(circle at 90% 80%, rgba(120, 80, 30, .12), transparent 45%);
-}
-:root[data-theme="fantasy"][data-mode="dark"] body {
-  background-image: radial-gradient(circle at 20% 10%, rgba(255, 200, 120, .06), transparent 40%), radial-gradient(circle at 90% 80%, rgba(0, 0, 0, .35), transparent 45%);
-}
 h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; margin: 1.6em 0 .5em; }
 h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .2em; }
 h2 { font-size: 1.45rem; }
 h3 { font-size: 1.15rem; }
-:root[data-theme="fantasy"] h1, :root[data-theme="fantasy"] h2 { letter-spacing: .01em; }
 a { color: var(--link); }
 img, svg { max-width: 100%; height: auto; }
 code { font-family: ui-monospace, Consolas, monospace; font-size: .92em; background: var(--surface-2); padding: .1em .35em; border-radius: 4px; }
@@ -71,8 +47,6 @@ main { padding-block: 1.5rem 3rem; outline: none; min-height: 60vh; }
 .brand-mark { font-size: 1.5rem; }
 .search { position: relative; flex: 1 1 14rem; min-width: 0; }
 .search input, .hero-search input { width: 100%; padding: .55rem .8rem; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; }
-:root[data-theme="fantasy"] .search input, :root[data-theme="fantasy"] .hero-search input { border-radius: 6px; }
-:root[data-theme="fantasy"][data-mode="light"] .search input, :root[data-theme="fantasy"][data-mode="light"] .hero-search input { background: #fbf5e4; }
 .nav { display: flex; align-items: center; flex-wrap: wrap; gap: .3rem .9rem; font-size: .95rem; }
 .nav a { color: var(--text); text-decoration: none; padding: .2rem .1rem; border-bottom: 2px solid transparent; }
 .nav a:hover { border-color: var(--accent); }
@@ -87,7 +61,6 @@ main { padding-block: 1.5rem 3rem; outline: none; min-height: 60vh; }
 .btn-primary:hover { filter: brightness(1.1); }
 .btn-small { padding: .3rem .75rem; font-size: .85rem; }
 .btn-link { border: 0; background: none; color: var(--link); text-decoration: underline; padding: .3rem 0; }
-:root[data-theme="fantasy"] .btn { border-radius: 6px; }
 
 /* хлебные крошки, заголовки страниц */
 .crumbs { font-size: .9rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .3rem .5rem; margin-bottom: 1rem; }
@@ -99,10 +72,6 @@ main { padding-block: 1.5rem 3rem; outline: none; min-height: 60vh; }
 /* главная */
 .hero { padding: 1.5rem 0 1rem; }
 .hero-search { display: flex; gap: .5rem; max-width: 36rem; margin-top: 1.2rem; }
-.how { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.how-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .2rem 1.1rem 1rem; }
-.how-item h3 { margin-top: .9rem; }
-.how-item p { margin: 0; color: var(--muted); font-size: .97rem; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); gap: 1rem; }
 .card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.1rem; text-decoration: none; color: var(--text); box-shadow: var(--shadow); transition: transform .12s, border-color .12s; position: relative; }
 .card:hover { transform: translateY(-2px); border-color: var(--accent); }
@@ -155,7 +124,8 @@ th { background: var(--surface-2); }
 .clinical { background: var(--clin-soft); border: 1px solid var(--clin); border-radius: var(--radius); padding: 1rem 1.2rem 1.2rem; }
 .clinical > h2 { border-color: var(--clin); font-size: 1.25rem; }
 .clinical table { background: var(--surface); }
-.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; }
+.figures { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 46rem; }
+.figures img { width: 100%; height: auto; }
 figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: .8rem; }
 figure img { display: block; margin: 0 auto; background: #fff; border-radius: 8px; }
 figcaption { font-size: .88rem; color: var(--muted); margin-top: .5rem; }
@@ -217,7 +187,6 @@ a.term-prot:hover { background: var(--clin-soft); }
 .beast-grid { grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
 .beast-card { text-align: center; }
 .sigil { --h: 200; width: 5rem; height: 5rem; margin: 0 auto .4rem; border-radius: 50%; display: grid; place-items: center; font: 700 1rem var(--font-head); color: hsl(var(--h) 55% 22%); background: radial-gradient(circle at 30% 30%, hsl(var(--h) 80% 92%), hsl(var(--h) 60% 72%)); border: 3px solid hsl(var(--h) 45% 40%); }
-:root[data-theme="fantasy"] .sigil { border-radius: 14px; }
 .sigil-img { width: 100%; max-height: 12rem; object-fit: contain; border-radius: 8px; background: #fff; }
 .beast-full { display: grid; grid-template-columns: 14rem 1fr; gap: 1.5rem; align-items: start; }
 .beast-side .sigil { width: 9rem; height: 9rem; font-size: 1.6rem; }

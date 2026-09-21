@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="t d">
+  <title id="t">Почему ДНК заряжена отрицательно</title>
+  <desc id="d">Слева фрагмент сахарофосфатного остова: у каждой фосфатной группы один атом кислорода несёт отрицательный заряд, положительные ионы Na+ и Mg2+ компенсируют его. Справа схема гель-электрофореза: отрицательно заряженные фрагменты ДНК движутся от катода к аноду, короткие быстрее длинных.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .s { font-size: 13.5px; fill: #5b6577; }
+    .a { font-size: 14px; font-weight: 700; text-anchor: middle; }
+    .bd { stroke: #2b3242; stroke-width: 2.6; stroke-linecap: round; }
+  </style>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <!-- ЛЕВАЯ ПАНЕЛЬ -->
+  <text class="h" x="190" y="26" text-anchor="middle">Сахарофосфатный остов</text>
+  <text class="a" x="150" y="52" style="fill:#7b3f9e">5′</text>
+  <line class="bd" x1="150" y1="58" x2="150" y2="446"/>
+
+  <!-- фосфаты -->
+  <g>
+    <circle cx="150" cy="90" r="16" fill="#ee8a2b"/><text class="a" x="150" y="96" style="fill:#fff">P</text>
+    <line class="bd" x1="134" y1="86" x2="106" y2="86"/><line class="bd" x1="134" y1="94" x2="106" y2="94"/><text class="a" x="94" y="96" style="fill:#c0392b">O</text>
+    <line class="bd" x1="166" y1="90" x2="192" y2="90"/><circle cx="208" cy="90" r="15" fill="#fde3df" stroke="#c0392b" stroke-width="2"/><text class="a" x="208" y="95" style="fill:#c0392b">O⁻</text>
+    <line x1="223" y1="90" x2="250" y2="90" stroke="#5b6577" stroke-width="1.8" stroke-dasharray="4 3"/><circle cx="268" cy="90" r="16" fill="#dbe9fb" stroke="#1f4e8c" stroke-width="2"/><text class="a" x="268" y="95" style="fill:#1f4e8c;font-size:13px">Na⁺</text>
+
+    <circle cx="150" cy="240" r="16" fill="#ee8a2b"/><text class="a" x="150" y="246" style="fill:#fff">P</text>
+    <line class="bd" x1="134" y1="236" x2="106" y2="236"/><line class="bd" x1="134" y1="244" x2="106" y2="244"/><text class="a" x="94" y="246" style="fill:#c0392b">O</text>
+    <line class="bd" x1="166" y1="240" x2="192" y2="240"/><circle cx="208" cy="240" r="15" fill="#fde3df" stroke="#c0392b" stroke-width="2"/><text class="a" x="208" y="245" style="fill:#c0392b">O⁻</text>
+    <line x1="223" y1="240" x2="248" y2="240" stroke="#5b6577" stroke-width="1.8" stroke-dasharray="4 3"/><circle cx="270" cy="240" r="19" fill="#dbe9fb" stroke="#1f4e8c" stroke-width="2"/><text class="a" x="270" y="245" style="fill:#1f4e8c;font-size:12px">Mg²⁺</text>
+
+    <circle cx="150" cy="390" r="16" fill="#ee8a2b"/><text class="a" x="150" y="396" style="fill:#fff">P</text>
+    <line class="bd" x1="134" y1="386" x2="106" y2="386"/><line class="bd" x1="134" y1="394" x2="106" y2="394"/><text class="a" x="94" y="396" style="fill:#c0392b">O</text>
+    <line class="bd" x1="166" y1="390" x2="192" y2="390"/><circle cx="208" cy="390" r="15" fill="#fde3df" stroke="#c0392b" stroke-width="2"/><text class="a" x="208" y="395" style="fill:#c0392b">O⁻</text>
+    <line x1="223" y1="390" x2="250" y2="390" stroke="#5b6577" stroke-width="1.8" stroke-dasharray="4 3"/><circle cx="268" cy="390" r="16" fill="#dbe9fb" stroke="#1f4e8c" stroke-width="2"/><text class="a" x="268" y="395" style="fill:#1f4e8c;font-size:13px">Na⁺</text>
+  </g>
+
+  <!-- сахара и основания -->
+  <g>
+    <polygon points="150,127 177,147 167,179 133,179 123,147" fill="#eaf1fb" stroke="#2b3242" stroke-width="2.4" stroke-linejoin="round"/>
+    <line class="bd" x1="123" y1="147" x2="92" y2="147"/><rect x="22" y="128" width="70" height="38" rx="8" fill="#dfe9f5" stroke="#2b3242" stroke-width="2"/><text class="s" x="57" y="151" text-anchor="middle" style="font-size:12px">основание</text>
+    <polygon points="150,277 177,297 167,329 133,329 123,297" fill="#eaf1fb" stroke="#2b3242" stroke-width="2.4" stroke-linejoin="round"/>
+    <line class="bd" x1="123" y1="297" x2="92" y2="297"/><rect x="22" y="278" width="70" height="38" rx="8" fill="#dfe9f5" stroke="#2b3242" stroke-width="2"/><text class="s" x="57" y="301" text-anchor="middle" style="font-size:12px">основание</text>
+  </g>
+  <text class="a" x="150" y="468" style="fill:#7b3f9e">3′</text>
+
+  <text class="h" x="20" y="496" style="font-size:14.5px">–O–H  ⇄  –O⁻ + H⁺   (при pH 7,4 фосфат ионизован)</text>
+
+  <line x1="405" y1="20" x2="405" y2="500" stroke="#d9dee7" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- ПРАВАЯ ПАНЕЛЬ: гель-электрофорез -->
+  <text class="h" x="580" y="26" text-anchor="middle">Следствие: ДНК идёт к аноду (+)</text>
+  <text class="a" x="580" y="66" style="fill:#5b6577">катод (−)</text>
+  <line x1="450" y1="76" x2="710" y2="76" stroke="#2b3242" stroke-width="4" stroke-linecap="round"/>
+  <rect x="450" y="82" width="260" height="310" rx="6" fill="#eef3fa" stroke="#8a94a8" stroke-width="2"/>
+  <g fill="#2b3242"><rect x="475" y="92" width="46" height="14" rx="2"/><rect x="547" y="92" width="46" height="14" rx="2"/><rect x="619" y="92" width="46" height="14" rx="2"/></g>
+  <g fill="#4b4f9e">
+    <rect x="477" y="150" width="42" height="7" rx="2"/><rect x="477" y="212" width="42" height="7" rx="2"/><rect x="477" y="300" width="42" height="7" rx="2"/>
+    <rect x="549" y="170" width="42" height="7" rx="2"/><rect x="549" y="255" width="42" height="7" rx="2"/>
+    <rect x="621" y="190" width="42" height="7" rx="2"/><rect x="621" y="330" width="42" height="7" rx="2"/>
+  </g>
+  <line x1="690" y1="112" x2="690" y2="372" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="690,382 682,364 698,364" fill="#c0392b"/>
+  <text class="a" x="580" y="416" style="fill:#5b6577">анод (+)</text>
+  <text class="s" x="580" y="448" text-anchor="middle">Короткие фрагменты движутся быстрее длинных.</text>
+  <text class="s" x="580" y="468" text-anchor="middle">Заряд растёт вместе с длиной, поэтому</text>
+  <text class="s" x="580" y="488" text-anchor="middle">скорость определяется размером фрагмента.</text>
+</svg>

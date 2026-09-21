@@ -11,22 +11,15 @@
     get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } }
   };
-  let theme = store.get('ws.theme', 'science') === 'fantasy' ? 'fantasy' : 'science';
   let level = store.get('ws.level', 'basic') === 'advanced' ? 'advanced' : 'basic';
   let clinical = store.get('ws.clinical', '0') === '1';
 
-  /* ---------- подписи: научный / тематический вид ---------- */
-  const LEX = {
-    science: {
-      block: 'Блок', blocks: 'Блоки', quizTitle: 'Проверьте себя', quizStart: 'Начать тест', quizWord: 'Тест',
-      themeLabel: 'Вид: научный', result: (s, t, r) => r === 1 ? 'Отличный результат — все ответы верны.' : r >= 0.8 ? 'Хороший результат. Загляните в пояснения к ошибкам.' : r >= 0.6 ? 'Неплохо, но есть что повторить.' : 'Стоит перечитать тему и попробовать ещё раз.'
-    },
-    fantasy: {
-      block: 'Кампания', blocks: 'Кампании', quizTitle: 'Испытание', quizStart: 'Бросить d20 и начать', quizWord: 'Испытание',
-      themeLabel: 'Вид: тематический', result: (s, t, r) => r === 1 ? 'Критический успех! Все ответы верны.' : r >= 0.8 ? 'Отличный бросок — испытание пройдено.' : r >= 0.6 ? 'Пройдено, но не без потерь. Повторите слабые места.' : 'Испытание провалено. Перечитайте свиток и бросьте кости снова.'
-    }
+  /* ---------- подписи интерфейса ---------- */
+  const LABELS = {
+    block: 'Блок', blocks: 'Блоки', quizTitle: 'Проверьте себя', quizStart: 'Начать тест',
+    result: (s, t, r) => r === 1 ? 'Отличный результат — все ответы верны.' : r >= 0.8 ? 'Хороший результат. Загляните в пояснения к ошибкам.' : r >= 0.6 ? 'Неплохо, но есть что повторить.' : 'Стоит перечитать тему и попробовать ещё раз.'
   };
-  const L = () => LEX[theme];
+  const L = () => LABELS;
 
   const plural = (n, f) => { const a = n % 100, b = n % 10; return f[a > 10 && a < 20 ? 2 : b === 1 ? 0 : b >= 2 && b <= 4 ? 1 : 2]; };
   const fmtDate = s => { const d = new Date(s); return isNaN(d) ? esc(s) : d.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long', day: 'numeric' }); };
@@ -38,11 +31,7 @@
 
   function applyTheme() {
     const root = document.documentElement;
-    root.dataset.theme = theme;
     root.dataset.mode = mode;
-    const b = $('#theme-toggle');
-    b.textContent = (theme === 'fantasy' ? '🎲 ' : '🔬 ') + L().themeLabel;
-    b.setAttribute('aria-pressed', theme === 'fantasy');
     const m = $('#mode-toggle');
     m.textContent = mode === 'dark' ? '☀️ Светлая' : '🌙 Тёмная';
     m.setAttribute('aria-pressed', mode === 'dark');
@@ -88,9 +77,6 @@
       '<section class="hero"><h1>Атлас генома</h1>' +
       '<p class="lead">Открытый справочник по молекулярной генетике: от структуры ДНК до клиники в гематологии. Для школьников, студентов, ординаторов и врачей.</p>' +
       '<form class="hero-search" id="hero-search"><label class="sr-only" for="hq">Поиск</label><input id="hq" type="search" placeholder="Например: репликация, нуклеосома, polymerase"><button class="btn btn-primary">Найти</button></form></section>' +
-      '<section class="how" aria-label="Как устроен сайт"><div class="how-item"><h3>Три слоя глубины</h3><p>В каждой теме переключайте уровень: <strong>базовый</strong>, <strong>продвинутый</strong> и <strong>клинический</strong>.</p></div>' +
-      '<div class="how-item"><h3>Термины под рукой</h3><p>Первое упоминание термина или белка — ссылка на глоссарий или карточку бестиария.</p></div>' +
-      '<div class="how-item"><h3>Проверьте себя</h3><p>После каждой темы — короткий тест с пояснениями. Результаты остаются только в вашем браузере.</p></div></section>' +
       '<section aria-labelledby="blocks-h"><h2 id="blocks-h">' + L().blocks + '</h2><div class="grid">' + cards + extra + '</div></section>';
     $('#hero-search').addEventListener('submit', e => { e.preventDefault(); goSearch($('#hq').value); });
   }
@@ -356,7 +342,7 @@
       '<header class="page-head"><h1>О проекте</h1></header><div class="prose">' +
       '<p><strong>Атлас генома</strong> — открытый бесплатный справочник по молекулярной генетике для тех, кто хочет повторить, обновить или узнать что-то новое: школьников, студентов, ординаторов и врачей-гематологов.</p>' +
       '<h2>Как читать</h2><ul><li><strong>Базовый слой</strong> — суть простыми словами и аналогии.</li><li><strong>Продвинутый слой</strong> — механизмы, ключевые молекулы, термины.</li><li><strong>Клинический слой</strong> — «Как это выглядит в гематологии»: мутация → болезнь → лабораторный тест → терапия. Доступен и на базовом уровне.</li></ul>' +
-      '<p>Выбор слоя запоминается в вашем браузере. Кнопка «Вид» в шапке переключает научное и тематическое (настольные игры) оформление — содержание от этого не меняется.</p>' +
+      '<p>Выбор слоя запоминается в вашем браузере. Кнопка в шапке переключает светлую и тёмную тему оформления.</p>' +
       '<h2>Важно</h2><p>Это образовательный ресурс, а не клинические рекомендации. Он не заменяет консультацию врача. Тексты прототипа — черновики и проходят научную вычитку; клинические данные проверяйте по первоисточникам.</p>' +
       '<h2>Приватность</h2><p>Сайт не собирает персональные данные. Слой, вид оформления и результаты тестов хранятся только в вашем браузере.</p>' +
       '<p class="muted">Версия прототипа 0.1. Контент собран: ' + esc(D.built || '—') + '.</p></div>';
@@ -428,7 +414,6 @@
 
   /* ---------- запуск ---------- */
   $('.skip').addEventListener('click', e => { e.preventDefault(); main.focus(); });
-  $('#theme-toggle').addEventListener('click', () => { theme = theme === 'fantasy' ? 'science' : 'fantasy'; store.set('ws.theme', theme); applyTheme(); route(); });
   $('#mode-toggle').addEventListener('click', () => { mode = mode === 'dark' ? 'light' : 'dark'; store.set('ws.mode', mode); applyTheme(); });
   if (D.built) $('#built').textContent = 'Контент собран: ' + D.built + '.';
   WS.autolink.build();

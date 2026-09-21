@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" role="img" aria-labelledby="t d">
+  <title id="t">Строение дезоксирибонуклеотида</title>
+  <desc id="d">Дезоксирибоза — пятичленное кольцо из четырёх атомов углерода (1', 2', 3', 4') и кислорода. К углероду 1' присоединено азотистое основание, к углероду 3' — гидроксильная группа OH, через углерод 5' — фосфатная группа с атомом фосфора P. У углерода 2' два атома водорода.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 17px; font-weight: 700; }
+    .s { font-size: 13.5px; fill: #5b6577; }
+    .b { font-size: 14px; font-weight: 700; }
+    .a { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .num { font-size: 13px; font-weight: 700; text-anchor: middle; fill: #7b3f9e; }
+    .bd { stroke: #2b3242; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+    .br { stroke: #8a94a8; stroke-width: 2; fill: none; }
+  </style>
+  <rect width="760" height="480" fill="#ffffff"/>
+  <text class="h" x="380" y="28" text-anchor="middle">Дезоксирибонуклеотид (на примере dNMP)</text>
+
+  <!-- скобки: нуклеозид и нуклеотид -->
+  <path class="br" d="M300 118 v-8 h300 v8"/>
+  <text class="b" x="450" y="100" text-anchor="middle">Нуклеозид = основание + дезоксирибоза</text>
+  <path class="br" d="M140 82 v-8 h460 v8"/>
+  <text class="b" x="370" y="64" text-anchor="middle">Нуклеотид = нуклеозид + фосфат</text>
+
+  <!-- 5'-фосфат: подсветка -->
+  <rect x="120" y="124" width="130" height="152" rx="16" fill="#fff1e0" stroke="#ee8a2b" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- дезоксирибоза -->
+  <polygon points="380,183.2 424.5,215.5 407.5,267.9 352.5,267.9 335.5,215.5" fill="#eaf1fb" stroke="#2b3242" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="380" cy="183.2" r="11" fill="#eaf1fb"/>
+  <text class="a" x="380" y="188.5" style="fill:#c0392b">O</text>
+  <text class="num" x="410" y="223">1′</text>
+  <text class="num" x="402" y="259">2′</text>
+  <text class="num" x="358" y="259" style="fill:#c0392b;font-size:15px">3′</text>
+  <text class="num" x="349" y="223">4′</text>
+  <text class="s" x="380" y="234" text-anchor="middle" style="font-size:11px">O4′</text>
+
+  <!-- азотистое основание -->
+  <line class="bd" x1="424.5" y1="215.5" x2="482" y2="190"/>
+  <rect x="482" y="160" width="130" height="60" rx="12" fill="#dfe9f5" stroke="#2b3242" stroke-width="2.2"/>
+  <text class="a" x="547" y="186">азотистое</text><text class="a" x="547" y="206">основание</text>
+  <text class="s" x="428" y="146" text-anchor="middle">N-гликозидная</text><text class="s" x="428" y="162" text-anchor="middle">связь C1′–N</text>
+
+  <!-- C2': два H -->
+  <line class="bd" x1="407.5" y1="267.9" x2="428" y2="292"/><text class="a" x="436" y="300">H</text>
+  <line class="bd" x1="407.5" y1="267.9" x2="412" y2="300"/><text class="a" x="412" y="316">H</text>
+
+  <!-- C3': OH -->
+  <line class="bd" x1="352.5" y1="267.9" x2="332" y2="310"/>
+  <circle cx="327" cy="318" r="14" fill="#fde3df" stroke="#c0392b" stroke-width="2"/>
+  <text class="a" x="327" y="323" style="fill:#c0392b">OH</text>
+
+  <!-- C5' и фосфат -->
+  <line class="bd" x1="335.5" y1="215.5" x2="300" y2="186"/>
+  <text class="num" x="292" y="176">5′</text>
+  <line class="bd" x1="300" y1="186" x2="262" y2="210"/>
+  <text class="a" x="252" y="216" style="fill:#c0392b">O</text>
+  <line class="bd" x1="246" y1="205" x2="212" y2="196"/>
+  <circle cx="200" cy="192" r="16" fill="#ee8a2b"/><text class="a" x="200" y="198" style="fill:#fff">P</text>
+  <line class="bd" x1="197" y1="176" x2="197" y2="152"/><line class="bd" x1="203" y1="176" x2="203" y2="152"/>
+  <text class="a" x="200" y="148" style="fill:#c0392b">O</text>
+  <line class="bd" x1="200" y1="208" x2="200" y2="238"/>
+  <text class="a" x="200" y="254" style="fill:#c0392b">O⁻</text>
+  <line class="bd" x1="184" y1="192" x2="152" y2="192"/>
+  <text class="a" x="140" y="198" style="fill:#c0392b">O⁻</text>
+
+  <!-- пояснения -->
+  <g>
+    <circle cx="44" cy="360" r="8" fill="#ee8a2b"/><text class="b" x="62" y="365">C5′ несёт фосфатную группу (P): к ней присоединяется предыдущий нуклеотид.</text>
+    <circle cx="44" cy="388" r="8" fill="#c0392b"/><text class="b" x="62" y="393">C3′ несёт гидроксил (OH): к нему присоединяется следующий нуклеотид.</text>
+    <circle cx="44" cy="416" r="8" fill="#7b3f9e"/><text class="b" x="62" y="421">C1′ соединён с основанием: с N9 у пуринов, с N1 у пиримидинов.</text>
+    <circle cx="44" cy="444" r="8" fill="#7b3f9e"/><text class="b" x="62" y="449">C2′ имеет два атома H (в РНК здесь OH), поэтому сахар — «дезокси».</text>
+  </g>
+</svg>

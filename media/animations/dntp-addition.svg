@@ -1,0 +1,139 @@
+<svg class="dn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="80 0 540 620" role="img" aria-labelledby="dn-t dn-d">
+  <title id="dn-t">Анимация: присоединение dNTP к растущей цепи ДНК</title>
+  <desc id="dn-d">Вверху цепь ДНК с фосфатной группой P и дезоксирибозой; у её 3' углерода свободная гидроксильная группа OH. Снизу подходит дезоксирибонуклеозидтрифосфат с тремя фосфатами (альфа, бета, гамма). Гидроксил 3' атакует альфа-фосфор, образуется фосфодиэфирная связь, а пирофосфат (бета и гамма фосфаты) отщепляется. У нового нуклеотида снова свободный 3' OH.</desc>
+  <style>
+    .dn-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .dn-svg .dn-a { font-size: 15px; font-weight: 700; text-anchor: middle; }
+    .dn-svg .dn-red { fill: #c0392b; }
+    .dn-svg .dn-num { font-size: 12.5px; font-weight: 700; text-anchor: middle; fill: #7b3f9e; }
+    .dn-svg .dn-lab { font-size: 14px; font-weight: 700; }
+    .dn-svg .dn-cap { font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .dn-svg .dn-bd { stroke: #2b3242; stroke-width: 2.6; stroke-linecap: round; fill: none; }
+    .dn-svg .dn-p { fill: #ee8a2b; }
+    .dn-svg .dn-ring { fill: #eaf1fb; stroke: #2b3242; stroke-width: 2.6; stroke-linejoin: round; }
+    .dn-svg .dn-base { fill: #dfe9f5; stroke: #2b3242; stroke-width: 2.2; }
+    .dn-svg .dn-o { fill: #ffffff; }
+
+    .dn-svg .dn-core { animation: dn-core 12s ease-in-out infinite; }
+    .dn-svg .dn-ppi { animation: dn-ppi 12s ease-in-out infinite; }
+    .dn-svg .dn-ppilab { animation: dn-ppilab 12s linear infinite; }
+    .dn-svg .dn-halo { animation: dn-halo 12s linear infinite; }
+    .dn-svg .dn-halo2 { animation: dn-halo2 12s linear infinite; }
+    .dn-svg .dn-dash { animation: dn-dash 12s linear infinite; }
+    .dn-svg .dn-newbond { animation: dn-newbond 12s linear infinite; }
+    .dn-svg .dn-hatom { animation: dn-hatom 12s linear infinite; }
+    .dn-svg .dn-hplus { animation: dn-hplus 12s ease-out infinite; }
+    .dn-svg .dn-c1 { animation: dn-c1 12s linear infinite; }
+    .dn-svg .dn-c2 { animation: dn-c2 12s linear infinite; }
+    .dn-svg .dn-c3 { animation: dn-c3 12s linear infinite; }
+    .dn-svg .dn-c4 { animation: dn-c4 12s linear infinite; }
+
+    @keyframes dn-core { 0% { transform: translate(170px, 40px); opacity: 0; } 6% { transform: translate(170px, 40px); opacity: 1; } 30% { transform: translate(0, 0); opacity: 1; } 93% { transform: translate(0, 0); opacity: 1; } 98%, 100% { transform: translate(170px, 40px); opacity: 0; } }
+    @keyframes dn-ppi { 0% { transform: translate(170px, 40px); opacity: 0; } 6% { transform: translate(170px, 40px); opacity: 1; } 30% { transform: translate(0, 0); opacity: 1; } 56% { transform: translate(0, 0); opacity: 1; } 80% { transform: translate(150px, 70px); opacity: 0; } 100% { transform: translate(170px, 40px); opacity: 0; } }
+    @keyframes dn-ppilab { 0%, 56% { opacity: 0; } 62% { opacity: 1; } 76% { opacity: 1; } 82%, 100% { opacity: 0; } }
+    @keyframes dn-halo { 0%, 30% { opacity: 0; } 34% { opacity: 1; } 46% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes dn-halo2 { 0%, 85% { opacity: 0; } 88% { opacity: 1; } 94% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes dn-dash { 0%, 35.9% { opacity: 0; } 36% { opacity: 1; } 47.9% { opacity: 1; } 48%, 100% { opacity: 0; } }
+    @keyframes dn-newbond { 0%, 47.9% { opacity: 0; } 48% { opacity: 1; } 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+    @keyframes dn-hatom { 0%, 47% { opacity: 1; } 51%, 98% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes dn-hplus { 0%, 48% { transform: translate(0, 0); opacity: 0; } 49% { transform: translate(0, 0); opacity: 1; } 64% { transform: translate(28px, -48px); opacity: 0; } 100% { transform: translate(0, 0); opacity: 0; } }
+    @keyframes dn-c1 { 0%, 4% { opacity: 0; } 6% { opacity: 1; } 28% { opacity: 1; } 31%, 100% { opacity: 0; } }
+    @keyframes dn-c2 { 0%, 30% { opacity: 0; } 32% { opacity: 1; } 46% { opacity: 1; } 48.5%, 100% { opacity: 0; } }
+    @keyframes dn-c3 { 0%, 48% { opacity: 0; } 50% { opacity: 1; } 80% { opacity: 1; } 83%, 100% { opacity: 0; } }
+    @keyframes dn-c4 { 0%, 83% { opacity: 0; } 86% { opacity: 1; } 96% { opacity: 1; } 99%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .dn-svg * { animation-play-state: paused; } }
+  </style>
+  <rect x="80" width="540" height="620" fill="#ffffff"/>
+
+  <!-- стрелка направления роста -->
+  <line x1="112" y1="112" x2="112" y2="556" stroke="#8a94a8" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="112,568 104,550 120,550" fill="#8a94a8"/>
+  <text class="dn-a" x="112" y="102" style="fill:#7b3f9e;font-size:16px">5′</text>
+  <text class="dn-a" x="112" y="590" style="fill:#7b3f9e;font-size:16px">3′</text>
+  <text x="97" y="334" text-anchor="middle" transform="rotate(-90 97 334)" style="font-size:13.5px;fill:#5b6577">цепь растёт 5′ → 3′</text>
+
+  <!-- ===== растущая цепь: нуклеотид n ===== -->
+  <line class="dn-bd" x1="185" y1="24" x2="185" y2="48" stroke-dasharray="4 4"/>
+  <text x="200" y="22" style="font-size:12.5px;fill:#5b6577">к 5′-концу цепи (предыдущие нуклеотиды)</text>
+  <line class="dn-bd" x1="185" y1="76" x2="185" y2="90"/>
+  <circle class="dn-p" cx="185" cy="62" r="14"/><text class="dn-a" x="185" y="67" style="fill:#fff">P</text>
+  <line class="dn-bd" x1="172" y1="55" x2="156" y2="46"/><line class="dn-bd" x1="176" y1="50" x2="160" y2="41"/>
+  <text class="dn-a dn-red" x="148" y="44">O</text>
+  <line class="dn-bd" x1="199" y1="62" x2="222" y2="62"/><text class="dn-a dn-red" x="236" y="67">O⁻</text>
+  <circle class="dn-o" cx="185" cy="100" r="10"/><text class="dn-a dn-red" x="185" y="105">O</text>
+  <line class="dn-bd" x1="185" y1="110" x2="185" y2="138"/>
+  <text class="dn-num" x="166" y="134" style="fill:#c7501f;font-size:14px">5′</text>
+  <line class="dn-bd" x1="185" y1="138" x2="205.5" y2="175.5"/>
+  <polygon class="dn-ring" points="250,143.2 294.5,175.5 277.5,227.9 222.5,227.9 205.5,175.5"/>
+  <circle class="dn-o" cx="250" cy="143.2" r="10"/><text class="dn-a dn-red" x="250" y="148">O</text>
+  <text class="dn-num" x="281" y="180">1′</text><text class="dn-num" x="269" y="217">2′</text>
+  <text class="dn-num" x="231" y="217" style="fill:#c0392b;font-size:14px">3′</text><text class="dn-num" x="219" y="180">4′</text>
+  <line class="dn-bd" x1="294.5" y1="175.5" x2="345" y2="150"/>
+  <rect class="dn-base" x="345" y="128" width="84" height="44" rx="10"/>
+  <text class="dn-a" x="387" y="147" style="font-size:12.5px">азотистое</text><text class="dn-a" x="387" y="163" style="font-size:12.5px">основание</text>
+  <line class="dn-bd" x1="222.5" y1="227.9" x2="222.5" y2="270"/>
+  <circle cx="222.5" cy="282" r="12" fill="#fde3df" stroke="#c0392b" stroke-width="2"/><text class="dn-a dn-red" x="222.5" y="287">O</text>
+  <g class="dn-hatom"><line class="dn-bd" x1="231" y1="290" x2="242" y2="298" style="stroke-width:2"/><circle cx="248" cy="302" r="8" fill="#fff" stroke="#c0392b" stroke-width="1.6"/><text class="dn-a dn-red" x="248" y="306" style="font-size:11px">H</text></g>
+  <text class="dn-lab dn-red dn-hatom" x="196" y="272" text-anchor="end">3′-OH</text>
+  <circle class="dn-halo" cx="222.5" cy="282" r="21" fill="none" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/>
+  <circle class="dn-halo" cx="185" cy="322" r="24" fill="none" stroke="#ee8a2b" stroke-width="3" stroke-dasharray="5 4"/>
+
+  <!-- ===== уходящий H+ ===== -->
+  <text class="dn-hplus dn-a dn-red" x="248" y="304">H⁺</text>
+
+  <!-- ===== вступающий dNTP: часть с нуклеотидом ===== -->
+  <g class="dn-core">
+    <circle class="dn-p" cx="185" cy="322" r="14"/><text class="dn-a" x="185" y="327" style="fill:#fff">P</text>
+    <text class="dn-a" x="204" y="346" style="fill:#7b3f9e;font-size:14px">α</text>
+    <line class="dn-bd" x1="172" y1="314" x2="156" y2="304"/><line class="dn-bd" x1="176" y1="309" x2="160" y2="299"/>
+    <text class="dn-a dn-red" x="148" y="302">O</text>
+    <line class="dn-bd" x1="174" y1="331" x2="160" y2="344"/><text class="dn-a dn-red" x="148" y="356">O⁻</text>
+    <line class="dn-bd" x1="185" y1="336" x2="185" y2="350"/>
+    <circle class="dn-o" cx="185" cy="360" r="10"/><text class="dn-a dn-red" x="185" y="365">O</text>
+    <line class="dn-bd" x1="185" y1="370" x2="185" y2="398"/>
+    <text class="dn-num" x="166" y="394" style="fill:#c7501f;font-size:14px">5′</text>
+    <line class="dn-bd" x1="185" y1="398" x2="205.5" y2="435.5"/>
+    <polygon class="dn-ring" points="250,403.2 294.5,435.5 277.5,487.9 222.5,487.9 205.5,435.5"/>
+    <circle class="dn-o" cx="250" cy="403.2" r="10"/><text class="dn-a dn-red" x="250" y="408">O</text>
+    <text class="dn-num" x="281" y="440">1′</text><text class="dn-num" x="269" y="477">2′</text>
+    <text class="dn-num" x="231" y="477" style="fill:#c0392b;font-size:14px">3′</text><text class="dn-num" x="219" y="440">4′</text>
+    <line class="dn-bd" x1="294.5" y1="435.5" x2="345" y2="410"/>
+    <rect class="dn-base" x="345" y="388" width="84" height="44" rx="10"/>
+    <text class="dn-a" x="387" y="407" style="font-size:12.5px">азотистое</text><text class="dn-a" x="387" y="423" style="font-size:12.5px">основание</text>
+    <line class="dn-bd" x1="222.5" y1="487.9" x2="222.5" y2="530"/>
+    <circle cx="222.5" cy="542" r="12" fill="#fde3df" stroke="#c0392b" stroke-width="2"/><text class="dn-a dn-red" x="222.5" y="547">O</text>
+    <line class="dn-bd" x1="231" y1="550" x2="242" y2="558" style="stroke-width:2"/><circle cx="248" cy="562" r="8" fill="#fff" stroke="#c0392b" stroke-width="1.6"/><text class="dn-a dn-red" x="248" y="566" style="font-size:11px">H</text>
+    <text class="dn-lab dn-red" x="196" y="532" text-anchor="end">3′-OH</text>
+  </g>
+
+  <!-- ===== вступающий dNTP: уходящая часть (бета- и гамма-фосфаты = пирофосфат) ===== -->
+  <g class="dn-ppi">
+    <line class="dn-bd" x1="199" y1="322" x2="225" y2="322"/>
+    <circle class="dn-o" cx="235" cy="322" r="10"/><text class="dn-a dn-red" x="235" y="327">O</text>
+    <line class="dn-bd" x1="245" y1="322" x2="271" y2="322"/>
+    <circle class="dn-p" cx="285" cy="322" r="14"/><text class="dn-a" x="285" y="327" style="fill:#fff">P</text>
+    <text class="dn-a" x="304" y="343" style="fill:#7b3f9e;font-size:14px">β</text>
+    <line class="dn-bd" x1="282" y1="308" x2="282" y2="299"/><line class="dn-bd" x1="288" y1="308" x2="288" y2="299"/><text class="dn-a dn-red" x="285" y="292">O</text>
+    <line class="dn-bd" x1="285" y1="336" x2="285" y2="348"/><text class="dn-a dn-red" x="285" y="364">O⁻</text>
+    <line class="dn-bd" x1="299" y1="322" x2="325" y2="322"/>
+    <circle class="dn-o" cx="335" cy="322" r="10"/><text class="dn-a dn-red" x="335" y="327">O</text>
+    <line class="dn-bd" x1="345" y1="322" x2="371" y2="322"/>
+    <circle class="dn-p" cx="385" cy="322" r="14"/><text class="dn-a" x="385" y="327" style="fill:#fff">P</text>
+    <text class="dn-a" x="404" y="343" style="fill:#7b3f9e;font-size:14px">γ</text>
+    <line class="dn-bd" x1="382" y1="308" x2="382" y2="299"/><line class="dn-bd" x1="388" y1="308" x2="388" y2="299"/><text class="dn-a dn-red" x="385" y="292">O</text>
+    <line class="dn-bd" x1="385" y1="336" x2="385" y2="348"/><text class="dn-a dn-red" x="385" y="364">O⁻</text>
+    <line class="dn-bd" x1="399" y1="322" x2="412" y2="322"/><text class="dn-a dn-red" x="426" y="327">O⁻</text>
+    <text class="dn-lab dn-ppilab" x="375" y="262" text-anchor="middle">пирофосфат (PPi)</text>
+  </g>
+
+  <!-- связь и ореолы -->
+  <line class="dn-dash" x1="222.5" y1="294" x2="196" y2="312" stroke="#ee8a2b" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <line class="dn-newbond" x1="222.5" y1="294" x2="196" y2="312" stroke="#2b3242" stroke-width="3" stroke-linecap="round"/>
+  <circle class="dn-halo2" cx="222.5" cy="542" r="21" fill="none" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/>
+
+  <!-- подписи по шагам -->
+  <text class="dn-cap dn-c1" x="350" y="606">1. dNTP приближается к 3′-концу цепи</text>
+  <text class="dn-cap dn-c2" x="350" y="606">2. Гидроксил 3′-OH атакует α-фосфор (P) dNTP</text>
+  <text class="dn-cap dn-c3" x="350" y="606">3. Образуется фосфодиэфирная связь, уходит пирофосфат</text>
+  <text class="dn-cap dn-c4" x="350" y="606">4. У цепи снова свободный 3′-OH: она растёт 5′ → 3′</text>
+</svg>
