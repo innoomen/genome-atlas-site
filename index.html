@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru" data-theme="science">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Атлас генома — открытый справочник по молекулярной генетике</title>
+  <meta name="description" content="Бесплатный справочник по молекулярной генетике с тремя слоями глубины, тестами, глоссарием и бестиарием белков. Для школьников, студентов, ординаторов и врачей-гематологов.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* тема и режим применяются до отрисовки, чтобы не было мигания */
+    (function () {
+      var d = document.documentElement, th = null, m = null;
+      try { th = localStorage.getItem('ws.theme'); m = localStorage.getItem('ws.mode'); } catch (e) {}
+      if (th === 'fantasy') d.dataset.theme = 'fantasy';
+      if (m !== 'light' && m !== 'dark') m = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      d.dataset.mode = m;
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a class="brand" href="#/" aria-label="Атлас генома — на главную"><span class="brand-mark" aria-hidden="true">🧬</span><span class="brand-name">Атлас генома</span></a>
+      <form class="search" id="search-form" role="search" autocomplete="off">
+        <label class="sr-only" for="q">Поиск по сайту</label>
+        <input id="q" type="search" placeholder="Поиск: тема, термин, белок…  ( / )" aria-autocomplete="list" aria-controls="suggest" aria-expanded="false" role="combobox">
+        <ul id="suggest" class="suggest" role="listbox" hidden></ul>
+      </form>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#/glossary">Глоссарий</a>
+        <a href="#/bestiary" id="nav-bestiary">Бестиарий</a>
+        <a href="#/about">О проекте</a>
+        <button type="button" id="theme-toggle" class="btn btn-small" aria-pressed="false" title="Переключить вид: научный / тематический"></button>
+        <button type="button" id="mode-toggle" class="btn btn-small" aria-pressed="false" title="Переключить светлую и тёмную тему"></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Образовательный ресурс.</strong> Материалы не являются клиническими рекомендациями и не заменяют консультацию врача. Проверяйте клинические данные по первоисточникам и действующим рекомендациям.</p>
+      <p class="muted">Сайт не собирает персональные данные и не требует регистрации: выбранный слой, тема оформления и результаты тестов хранятся только в вашем браузере. <span id="built"></span></p>
+    </div>
+  </footer>
+
+  <script src="data/bundle.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/autolink.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

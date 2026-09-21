@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-labelledby="t d">
+  <title id="t">Двойная спираль ДНК</title>
+  <desc id="d">Две закрученные сахарофосфатные цепи соединены парами оснований: A с T и G с C. Цепи антипараллельны: 5' конец одной находится рядом с 3' концом другой.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 15px; font-weight: 700; }
+    .s { font-size: 13px; }
+    .e { font-size: 15px; font-weight: 700; fill: #4b4f9e; }
+    .b { font-size: 9px; font-weight: 700; text-anchor: middle; }
+  </style>
+  <rect width="560" height="560" fill="#ffffff"/>
+  <g>
+<line x1="206.8" y1="73.0" x2="170.0" y2="73.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="170.0" y1="73.0" x2="133.2" y2="73.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="133.2" y1="119.0" x2="170.0" y2="119.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="170.0" y1="119.0" x2="206.8" y2="119.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="118.0" y1="142.0" x2="170.0" y2="142.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="170.0" y1="142.0" x2="222.0" y2="142.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="133.2" y1="165.0" x2="170.0" y2="165.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="170.0" y1="165.0" x2="206.8" y2="165.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="206.8" y1="211.0" x2="170.0" y2="211.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="170.0" y1="211.0" x2="133.2" y2="211.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="222.0" y1="234.0" x2="170.0" y2="234.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="170.0" y1="234.0" x2="118.0" y2="234.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="206.8" y1="257.0" x2="170.0" y2="257.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="170.0" y1="257.0" x2="133.2" y2="257.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="133.2" y1="303.0" x2="170.0" y2="303.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="170.0" y1="303.0" x2="206.8" y2="303.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="118.0" y1="326.0" x2="170.0" y2="326.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="170.0" y1="326.0" x2="222.0" y2="326.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="133.2" y1="349.0" x2="170.0" y2="349.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="170.0" y1="349.0" x2="206.8" y2="349.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="206.8" y1="395.0" x2="170.0" y2="395.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="170.0" y1="395.0" x2="133.2" y2="395.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="222.0" y1="418.0" x2="170.0" y2="418.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="170.0" y1="418.0" x2="118.0" y2="418.0" stroke="#2e86ab" stroke-width="4"/>
+<line x1="206.8" y1="441.0" x2="170.0" y2="441.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="170.0" y1="441.0" x2="133.2" y2="441.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="133.2" y1="487.0" x2="170.0" y2="487.0" stroke="#f0b429" stroke-width="4"/>
+<line x1="170.0" y1="487.0" x2="206.8" y2="487.0" stroke="#3fa34d" stroke-width="4"/>
+<line x1="118.0" y1="510.0" x2="170.0" y2="510.0" stroke="#e4572e" stroke-width="4"/>
+<line x1="170.0" y1="510.0" x2="222.0" y2="510.0" stroke="#2e86ab" stroke-width="4"/>
+<path d="M118.0,50.0 L118.5,54.0 L119.9,58.0 L122.3,62.0 L125.6,66.0 L129.7,70.0 L134.5,74.0 L140.0,78.0 L146.1,82.0 L152.6,86.0 L159.4,90.0 L166.5,94.0 L173.5,98.0 L180.6,102.0 L187.4,106.0 L193.9,110.0 L200.0,114.0 L205.5,118.0 L210.3,122.0 L214.4,126.0 L217.7,130.0 L220.1,134.0 L221.5,138.0 L222.0,142.0 L221.5,146.0 L220.1,150.0 L217.7,154.0 L214.4,158.0 L210.3,162.0 L205.5,166.0 L200.0,170.0 L193.9,174.0 L187.4,178.0 L180.6,182.0 L173.5,186.0 L166.5,190.0 L159.4,194.0 L152.6,198.0 L146.1,202.0 L140.0,206.0 L134.5,210.0 L129.7,214.0 L125.6,218.0 L122.3,222.0 L119.9,226.0 L118.5,230.0 L118.0,234.0 L118.5,238.0 L119.9,242.0 L122.3,246.0 L125.6,250.0 L129.7,254.0 L134.5,258.0 L140.0,262.0 L146.1,266.0 L152.6,270.0 L159.4,274.0 L166.5,278.0 L173.5,282.0 L180.6,286.0 L187.4,290.0 L193.9,294.0 L200.0,298.0 L205.5,302.0 L210.3,306.0 L214.4,310.0 L217.7,314.0 L220.1,318.0 L221.5,322.0 L222.0,326.0 L221.5,330.0 L220.1,334.0 L217.7,338.0 L214.4,342.0 L210.3,346.0 L205.5,350.0 L200.0,354.0 L193.9,358.0 L187.4,362.0 L180.6,366.0 L173.5,370.0 L166.5,374.0 L159.4,378.0 L152.6,382.0 L146.1,386.0 L140.0,390.0 L134.5,394.0 L129.7,398.0 L125.6,402.0 L122.3,406.0 L119.9,410.0 L118.5,414.0 L118.0,418.0 L118.5,422.0 L119.9,426.0 L122.3,430.0 L125.6,434.0 L129.7,438.0 L134.5,442.0 L140.0,446.0 L146.1,450.0 L152.6,454.0 L159.4,458.0 L166.5,462.0 L173.5,466.0 L180.6,470.0 L187.4,474.0 L193.9,478.0 L200.0,482.0 L205.5,486.0 L210.3,490.0 L214.4,494.0 L217.7,498.0 L220.1,502.0 L221.5,506.0 L222.0,510.0" fill="none" stroke="#8b93c9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M222.0,50.0 L221.5,54.0 L220.1,58.0 L217.7,62.0 L214.4,66.0 L210.3,70.0 L205.5,74.0 L200.0,78.0 L193.9,82.0 L187.4,86.0 L180.6,90.0 L173.5,94.0 L166.5,98.0 L159.4,102.0 L152.6,106.0 L146.1,110.0 L140.0,114.0 L134.5,118.0 L129.7,122.0 L125.6,126.0 L122.3,130.0 L119.9,134.0 L118.5,138.0 L118.0,142.0 L118.5,146.0 L119.9,150.0 L122.3,154.0 L125.6,158.0 L129.7,162.0 L134.5,166.0 L140.0,170.0 L146.1,174.0 L152.6,178.0 L159.4,182.0 L166.5,186.0 L173.5,190.0 L180.6,194.0 L187.4,198.0 L193.9,202.0 L200.0,206.0 L205.5,210.0 L210.3,214.0 L214.4,218.0 L217.7,222.0 L220.1,226.0 L221.5,230.0 L222.0,234.0 L221.5,238.0 L220.1,242.0 L217.7,246.0 L214.4,250.0 L210.3,254.0 L205.5,258.0 L200.0,262.0 L193.9,266.0 L187.4,270.0 L180.6,274.0 L173.5,278.0 L166.5,282.0 L159.4,286.0 L152.6,290.0 L146.1,294.0 L140.0,298.0 L134.5,302.0 L129.7,306.0 L125.6,310.0 L122.3,314.0 L119.9,318.0 L118.5,322.0 L118.0,326.0 L118.5,330.0 L119.9,334.0 L122.3,338.0 L125.6,342.0 L129.7,346.0 L134.5,350.0 L140.0,354.0 L146.1,358.0 L152.6,362.0 L159.4,366.0 L166.5,370.0 L173.5,374.0 L180.6,378.0 L187.4,382.0 L193.9,386.0 L200.0,390.0 L205.5,394.0 L210.3,398.0 L214.4,402.0 L217.7,406.0 L220.1,410.0 L221.5,414.0 L222.0,418.0 L221.5,422.0 L220.1,426.0 L217.7,430.0 L214.4,434.0 L210.3,438.0 L205.5,442.0 L200.0,446.0 L193.9,450.0 L187.4,454.0 L180.6,458.0 L173.5,462.0 L166.5,466.0 L159.4,470.0 L152.6,474.0 L146.1,478.0 L140.0,482.0 L134.5,486.0 L129.7,490.0 L125.6,494.0 L122.3,498.0 L119.9,502.0 L118.5,506.0 L118.0,510.0" fill="none" stroke="#4b4f9e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="206.8" cy="73.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="76.3">G</text>
+<circle cx="133.2" cy="73.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="76.3">C</text>
+<circle cx="133.2" cy="119.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="122.3">C</text>
+<circle cx="206.8" cy="119.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="122.3">G</text>
+<circle cx="118.0" cy="142.0" r="7" fill="#e4572e"/><text class="b" x="118.0" y="145.3">A</text>
+<circle cx="222.0" cy="142.0" r="7" fill="#2e86ab"/><text class="b" x="222.0" y="145.3">T</text>
+<circle cx="133.2" cy="165.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="168.3">C</text>
+<circle cx="206.8" cy="165.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="168.3">G</text>
+<circle cx="206.8" cy="211.0" r="7" fill="#2e86ab"/><text class="b" x="206.8" y="214.3">T</text>
+<circle cx="133.2" cy="211.0" r="7" fill="#e4572e"/><text class="b" x="133.2" y="214.3">A</text>
+<circle cx="222.0" cy="234.0" r="7" fill="#e4572e"/><text class="b" x="222.0" y="237.3">A</text>
+<circle cx="118.0" cy="234.0" r="7" fill="#2e86ab"/><text class="b" x="118.0" y="237.3">T</text>
+<circle cx="206.8" cy="257.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="260.3">G</text>
+<circle cx="133.2" cy="257.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="260.3">C</text>
+<circle cx="133.2" cy="303.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="306.3">C</text>
+<circle cx="206.8" cy="303.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="306.3">G</text>
+<circle cx="118.0" cy="326.0" r="7" fill="#e4572e"/><text class="b" x="118.0" y="329.3">A</text>
+<circle cx="222.0" cy="326.0" r="7" fill="#2e86ab"/><text class="b" x="222.0" y="329.3">T</text>
+<circle cx="133.2" cy="349.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="352.3">C</text>
+<circle cx="206.8" cy="349.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="352.3">G</text>
+<circle cx="206.8" cy="395.0" r="7" fill="#2e86ab"/><text class="b" x="206.8" y="398.3">T</text>
+<circle cx="133.2" cy="395.0" r="7" fill="#e4572e"/><text class="b" x="133.2" y="398.3">A</text>
+<circle cx="222.0" cy="418.0" r="7" fill="#e4572e"/><text class="b" x="222.0" y="421.3">A</text>
+<circle cx="118.0" cy="418.0" r="7" fill="#2e86ab"/><text class="b" x="118.0" y="421.3">T</text>
+<circle cx="206.8" cy="441.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="444.3">G</text>
+<circle cx="133.2" cy="441.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="444.3">C</text>
+<circle cx="133.2" cy="487.0" r="7" fill="#f0b429"/><text class="b" x="133.2" y="490.3">C</text>
+<circle cx="206.8" cy="487.0" r="7" fill="#3fa34d"/><text class="b" x="206.8" y="490.3">G</text>
+<circle cx="118.0" cy="510.0" r="7" fill="#e4572e"/><text class="b" x="118.0" y="513.3">A</text>
+<circle cx="222.0" cy="510.0" r="7" fill="#2e86ab"/><text class="b" x="222.0" y="513.3">T</text>
+</g>
+  <text class="e" x="222" y="30" text-anchor="middle">5′</text>
+  <text class="e" x="118" y="30" text-anchor="middle">3′</text>
+  <text class="e" x="118" y="540" text-anchor="middle">3′</text>
+  <text class="e" x="222" y="540" text-anchor="middle">5′</text>
+
+  <text class="h" x="330" y="70">Обозначения</text>
+  <circle cx="342" cy="96" r="8" fill="#e4572e"/><text class="s" x="358" y="101">A — аденин</text>
+  <circle cx="342" cy="126" r="8" fill="#2e86ab"/><text class="s" x="358" y="131">T — тимин</text>
+  <circle cx="342" cy="156" r="8" fill="#3fa34d"/><text class="s" x="358" y="161">G — гуанин</text>
+  <circle cx="342" cy="186" r="8" fill="#f0b429"/><text class="s" x="358" y="191">C — цитозин</text>
+
+  <text class="h" x="330" y="240">Правила спаривания</text>
+  <text class="s" x="330" y="266">A = T — две водородные связи</text>
+  <text class="s" x="330" y="288">G ≡ C — три водородные связи</text>
+
+  <line x1="330" y1="330" x2="362" y2="330" stroke="#4b4f9e" stroke-width="5" stroke-linecap="round"/>
+  <text class="s" x="372" y="335">Сахарофосфатный остов</text>
+  <text class="s" x="330" y="366">5′ и 3′ — концы цепей.</text>
+  <text class="s" x="330" y="386">Цепи антипараллельны:</text>
+  <text class="s" x="330" y="406">одна идёт 5′→3′,</text>
+  <text class="s" x="330" y="426">другая 3′→5′.</text>
+  <text class="s" x="330" y="470">Один виток ≈ 10,5 пар</text>
+  <text class="s" x="330" y="490">оснований (≈ 3,6 нм).</text>
+</svg>

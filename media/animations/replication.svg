@@ -1,0 +1,102 @@
+<svg class="rep-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="rep-t rep-d">
+  <title id="rep-t">Анимация: репликативная вилка</title>
+  <desc id="rep-d">Репликативная вилка движется вправо. Геликаза расплетает родительскую ДНК. Верхняя новая цепь (лидирующая) растёт непрерывно, нижняя (отстающая) строится отдельными фрагментами Окадзаки, которые затем сшивает лигаза.</desc>
+  <style>
+    .rep-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 13px; }
+    .rep-svg .rep-h { font-weight: 700; font-size: 14px; }
+    .rep-svg .rep-mut { fill: #5b6577; }
+    .rep-svg .rep-old { stroke: #2f3f7a; stroke-width: 6; stroke-linecap: round; fill: none; }
+    .rep-svg .rep-new { stroke: #ee8a2b; stroke-width: 6; stroke-linecap: round; fill: none; }
+    .rep-svg .rep-primer { stroke: #b4531a; stroke-width: 6; stroke-linecap: round; }
+    .rep-svg .rep-rung { stroke: #c3cad8; stroke-width: 2; }
+    .rep-svg .rep-pol { fill: #6c7a96; stroke: #fff; stroke-width: 2; }
+    .rep-svg .rep-dash { stroke-dasharray: 100; }
+
+    .rep-svg .rep-lead { animation: rep-lead 10s linear infinite; }
+    .rep-svg .rep-leadpol { animation: rep-leadpol 10s linear infinite; }
+    .rep-svg .rep-f1 { animation: rep-f1 10s linear infinite; }
+    .rep-svg .rep-f2 { animation: rep-f2 10s linear infinite; }
+    .rep-svg .rep-f3 { animation: rep-f3 10s linear infinite; }
+    .rep-svg .rep-p1 { animation: rep-p1 10s linear infinite; }
+    .rep-svg .rep-p2 { animation: rep-p2 10s linear infinite; }
+    .rep-svg .rep-p3 { animation: rep-p3 10s linear infinite; }
+    .rep-svg .rep-q1 { animation: rep-q1 10s linear infinite; }
+    .rep-svg .rep-q2 { animation: rep-q2 10s linear infinite; }
+    .rep-svg .rep-q3 { animation: rep-q3 10s linear infinite; }
+    .rep-svg .rep-lig { fill: #3fa34d; stroke: #fff; stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: rep-lig 10s ease-out infinite; }
+    .rep-svg .rep-hel { fill: #2e86ab; stroke: #fff; stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: rep-hel 1.6s ease-in-out infinite; }
+
+    @keyframes rep-lead { 0% { stroke-dashoffset: 100; opacity: 1; } 55% { stroke-dashoffset: 0; opacity: 1; } 90% { stroke-dashoffset: 0; opacity: 1; } 97% { stroke-dashoffset: 0; opacity: 0; } 100% { stroke-dashoffset: 100; opacity: 0; } }
+    @keyframes rep-leadpol { 0% { transform: translateX(0); opacity: 1; } 55% { transform: translateX(316px); opacity: 1; } 58% { transform: translateX(316px); opacity: 0; } 100% { transform: translateX(0); opacity: 0; } }
+    @keyframes rep-f1 { 0%, 4% { stroke-dashoffset: 100; opacity: 1; } 20% { stroke-dashoffset: 0; } 90% { stroke-dashoffset: 0; opacity: 1; } 97% { stroke-dashoffset: 0; opacity: 0; } 100% { stroke-dashoffset: 100; opacity: 0; } }
+    @keyframes rep-f2 { 0%, 22% { stroke-dashoffset: 100; opacity: 1; } 38% { stroke-dashoffset: 0; } 90% { stroke-dashoffset: 0; opacity: 1; } 97% { stroke-dashoffset: 0; opacity: 0; } 100% { stroke-dashoffset: 100; opacity: 0; } }
+    @keyframes rep-f3 { 0%, 40% { stroke-dashoffset: 100; opacity: 1; } 56% { stroke-dashoffset: 0; } 90% { stroke-dashoffset: 0; opacity: 1; } 97% { stroke-dashoffset: 0; opacity: 0; } 100% { stroke-dashoffset: 100; opacity: 0; } }
+    @keyframes rep-p1 { 0%, 3.9% { opacity: 0; } 4% { opacity: 1; } 90% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes rep-p2 { 0%, 21.9% { opacity: 0; } 22% { opacity: 1; } 90% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes rep-p3 { 0%, 39.9% { opacity: 0; } 40% { opacity: 1; } 90% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes rep-q1 { 0%, 3.9% { transform: translateX(0); opacity: 0; } 4% { transform: translateX(0); opacity: 1; } 20% { transform: translateX(-90px); opacity: 1; } 21%, 100% { transform: translateX(-90px); opacity: 0; } }
+    @keyframes rep-q2 { 0%, 21.9% { transform: translateX(0); opacity: 0; } 22% { transform: translateX(0); opacity: 1; } 38% { transform: translateX(-90px); opacity: 1; } 39%, 100% { transform: translateX(-90px); opacity: 0; } }
+    @keyframes rep-q3 { 0%, 39.9% { transform: translateX(0); opacity: 0; } 40% { transform: translateX(0); opacity: 1; } 56% { transform: translateX(-90px); opacity: 1; } 57%, 100% { transform: translateX(-90px); opacity: 0; } }
+    @keyframes rep-lig { 0%, 62% { opacity: 0; transform: scale(0); } 68% { opacity: 1; transform: scale(1.4); } 72% { transform: scale(1); } 90% { opacity: 1; } 97%, 100% { opacity: 0; } }
+    @keyframes rep-hel { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.14); } }
+    @media (prefers-reduced-motion: reduce) { .rep-svg * { animation-play-state: paused; } }
+  </style>
+  <defs>
+    <marker id="rep-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  </defs>
+  <rect width="700" height="360" fill="#ffffff"/>
+
+  <!-- родительская ДНК -->
+  <line class="rep-old" x1="440" y1="158" x2="690" y2="158"/>
+  <line class="rep-old" x1="440" y1="182" x2="690" y2="182"/>
+  <g class="rep-rung"><line x1="470" y1="158" x2="470" y2="182"/><line x1="500" y1="158" x2="500" y2="182"/><line x1="530" y1="158" x2="530" y2="182"/><line x1="560" y1="158" x2="560" y2="182"/><line x1="590" y1="158" x2="590" y2="182"/><line x1="620" y1="158" x2="620" y2="182"/><line x1="650" y1="158" x2="650" y2="182"/><line x1="680" y1="158" x2="680" y2="182"/></g>
+  <text class="rep-h" x="560" y="140" text-anchor="middle">родительская ДНК</text>
+  <line x1="500" y1="222" x2="620" y2="222" stroke="#5b6577" stroke-width="2.5" marker-end="url(#rep-ar)"/>
+  <text class="rep-mut" x="560" y="244" text-anchor="middle">движение вилки</text>
+
+  <!-- верхнее плечо: лидирующая цепь -->
+  <g transform="translate(440 158) rotate(14)">
+    <line class="rep-old" x1="0" y1="0" x2="-380" y2="0"/>
+    <path class="rep-new rep-dash rep-lead" pathLength="100" d="M-340 13 L-24 13"/>
+    <circle class="rep-pol rep-leadpol" cx="-340" cy="13" r="10"/>
+  </g>
+
+  <!-- нижнее плечо: отстающая цепь -->
+  <g transform="translate(440 182) rotate(-14)">
+    <line class="rep-old" x1="0" y1="0" x2="-380" y2="0"/>
+    <!-- фрагмент 1 -->
+    <path class="rep-new rep-dash rep-f1" pathLength="100" d="M-240 -13 L-330 -13"/>
+    <line class="rep-primer rep-p1" x1="-240" y1="-13" x2="-254" y2="-13"/>
+    <circle class="rep-pol rep-q1" cx="-240" cy="-13" r="9"/>
+    <!-- фрагмент 2 -->
+    <path class="rep-new rep-dash rep-f2" pathLength="100" d="M-145 -13 L-235 -13"/>
+    <line class="rep-primer rep-p2" x1="-145" y1="-13" x2="-159" y2="-13"/>
+    <circle class="rep-pol rep-q2" cx="-145" cy="-13" r="9"/>
+    <!-- фрагмент 3 -->
+    <path class="rep-new rep-dash rep-f3" pathLength="100" d="M-50 -13 L-140 -13"/>
+    <line class="rep-primer rep-p3" x1="-50" y1="-13" x2="-64" y2="-13"/>
+    <circle class="rep-pol rep-q3" cx="-50" cy="-13" r="9"/>
+    <!-- лигаза: стыки фрагментов -->
+    <circle class="rep-lig" cx="-237.5" cy="-13" r="6"/>
+    <circle class="rep-lig" cx="-142.5" cy="-13" r="6"/>
+  </g>
+
+  <!-- геликаза -->
+  <circle class="rep-hel" cx="440" cy="170" r="15"/>
+  <text class="rep-h" x="456" y="208" style="font-size:13px">геликаза</text>
+
+  <!-- подписи к цепям -->
+  <text class="rep-h" x="60" y="44">лидирующая цепь</text>
+  <text class="rep-mut" x="60" y="62">строится непрерывно, к вилке</text>
+  <text class="rep-h" x="40" y="318">отстающая цепь</text>
+  <text class="rep-mut" x="40" y="336">короткими фрагментами Окадзаки от вилки</text>
+
+  <!-- легенда -->
+  <g transform="translate(340 296)">
+    <line class="rep-old" x1="0" y1="0" x2="26" y2="0"/><text x="34" y="4">старая цепь</text>
+    <line class="rep-new" x1="170" y1="0" x2="196" y2="0"/><text x="204" y="4">новая цепь</text>
+    <circle class="rep-pol" cx="13" cy="26" r="8"/><text x="34" y="30">ДНК-полимераза</text>
+    <circle style="fill:#3fa34d" cx="183" cy="26" r="7"/><text x="204" y="30">лигаза «сшивает»</text>
+    <line class="rep-primer" x1="0" y1="52" x2="26" y2="52"/><text x="34" y="56">РНК-праймер</text>
+  </g>
+</svg>

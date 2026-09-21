@@ -1,2 +1,3 @@
-# genome-atlas-site
-Atlas Genoma - built static site (generated; edit the source repository, not this one)
+# Atlas Genoma - site
+
+Built static copy of the site, published with GitHub Pages. Generated from a private source repository - do not edit files here.

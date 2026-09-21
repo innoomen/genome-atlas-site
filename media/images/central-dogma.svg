@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img" aria-labelledby="t d">
+  <title id="t">Центральная догма молекулярной биологии</title>
+  <desc id="d">ДНК копируется в ДНК (репликация), считывается в РНК (транскрипция), а РНК переводится в белок (трансляция). Пунктирными стрелками показаны обратная транскрипция (РНК в ДНК) и репликация РНК у некоторых вирусов.</desc>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1c2330"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#8a94a8"/></marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .n { font-size: 22px; font-weight: 700; text-anchor: middle; fill: #fff; }
+    .l { font-size: 13.5px; text-anchor: middle; }
+    .g { font-size: 12.5px; text-anchor: middle; fill: #5b6577; }
+  </style>
+  <rect width="720" height="330" fill="#fff"/>
+
+  <rect x="30" y="130" width="140" height="70" rx="14" fill="#4b4f9e"/><text class="n" x="100" y="174">ДНК</text>
+  <rect x="290" y="130" width="140" height="70" rx="14" fill="#ee8a2b"/><text class="n" x="360" y="174">РНК</text>
+  <rect x="550" y="130" width="140" height="70" rx="14" fill="#3fa34d"/><text class="n" x="620" y="174">Белок</text>
+
+  <!-- репликация (петля над ДНК) -->
+  <path d="M60 130 C35 60 165 60 140 130" fill="none" stroke="#1c2330" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text class="l" x="100" y="50">репликация</text>
+
+  <!-- транскрипция -->
+  <line x1="170" y1="152" x2="290" y2="152" stroke="#1c2330" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text class="l" x="230" y="140">транскрипция</text>
+
+  <!-- обратная транскрипция -->
+  <line x1="290" y1="182" x2="170" y2="182" stroke="#8a94a8" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#ag)"/>
+  <text class="g" x="230" y="204">обратная</text><text class="g" x="230" y="220">транскрипция</text>
+
+  <!-- трансляция -->
+  <line x1="430" y1="165" x2="550" y2="165" stroke="#1c2330" stroke-width="2.5" marker-end="url(#ar)"/>
+  <text class="l" x="490" y="153">трансляция</text>
+
+  <!-- репликация РНК -->
+  <path d="M325 200 C300 268 420 268 395 200" fill="none" stroke="#8a94a8" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#ag)"/>
+  <text class="g" x="360" y="276">репликация РНК</text><text class="g" x="360" y="292">(РНК-вирусы)</text>
+
+  <text class="g" x="620" y="230">информация не возвращается</text><text class="g" x="620" y="246">от белка к нуклеиновым кислотам</text>
+  <text class="g" x="20" y="288" style="text-anchor:start">Сплошные стрелки —</text><text class="g" x="20" y="306" style="text-anchor:start">основные потоки информации;</text><text class="g" x="20" y="324" style="text-anchor:start">пунктирные — особые случаи.</text>
+</svg>

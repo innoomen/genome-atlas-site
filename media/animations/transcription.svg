@@ -1,0 +1,49 @@
+<svg class="tx-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" role="img" aria-labelledby="tx-t tx-d">
+  <title id="tx-t">Анимация: транскрипция</title>
+  <desc id="tx-d">РНК-полимераза движется вдоль двойной спирали слева направо, расплетает её на небольшом участке и строит по матричной цепи новую цепь РНК, которая отходит от полимеразы.</desc>
+  <style>
+    .tx-svg text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; font-size: 13px; }
+    .tx-svg .tx-h { font-weight: 700; font-size: 14px; }
+    .tx-svg .tx-mut { fill: #5b6577; }
+    .tx-svg .tx-dna { stroke: #2f3f7a; stroke-width: 6; stroke-linecap: round; fill: none; }
+    .tx-svg .tx-rung { stroke: #c3cad8; stroke-width: 2; }
+    .tx-svg .tx-rna { stroke: #ee8a2b; stroke-width: 6; stroke-linecap: butt; fill: none; transform-origin: 180px 100px; animation: tx-grow 10s linear infinite; }
+    .tx-svg .tx-pol-body { fill: #d5dbe6; stroke: #6c7a96; stroke-width: 3; }
+    .tx-svg .tx-move { animation: tx-move 10s linear infinite; }
+    @keyframes tx-move { 0% { transform: translateX(0); opacity: 1; } 88% { transform: translateX(360px); opacity: 1; } 96% { transform: translateX(360px); opacity: 0; } 100% { transform: translateX(0); opacity: 0; } }
+    @keyframes tx-grow { 0% { transform: scaleX(0.01); opacity: 1; } 88% { transform: scaleX(1); opacity: 1; } 96% { transform: scaleX(1); opacity: 0; } 100% { transform: scaleX(0.01); opacity: 0; } }
+  </style>
+  <defs>
+    <marker id="tx-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  </defs>
+  <rect width="700" height="340" fill="#ffffff"/>
+
+  <!-- ДНК: кодирующая (верхняя) и матричная (нижняя) цепи -->
+  <line class="tx-dna" x1="30" y1="150" x2="670" y2="150"/>
+  <line class="tx-dna" x1="30" y1="200" x2="670" y2="200"/>
+  <g class="tx-rung"><line x1="50" y1="150" x2="50" y2="200"/><line x1="80" y1="150" x2="80" y2="200"/><line x1="110" y1="150" x2="110" y2="200"/><line x1="140" y1="150" x2="140" y2="200"/><line x1="170" y1="150" x2="170" y2="200"/><line x1="200" y1="150" x2="200" y2="200"/><line x1="230" y1="150" x2="230" y2="200"/><line x1="260" y1="150" x2="260" y2="200"/><line x1="290" y1="150" x2="290" y2="200"/><line x1="320" y1="150" x2="320" y2="200"/><line x1="350" y1="150" x2="350" y2="200"/><line x1="380" y1="150" x2="380" y2="200"/><line x1="410" y1="150" x2="410" y2="200"/><line x1="440" y1="150" x2="440" y2="200"/><line x1="470" y1="150" x2="470" y2="200"/><line x1="500" y1="150" x2="500" y2="200"/><line x1="530" y1="150" x2="530" y2="200"/><line x1="560" y1="150" x2="560" y2="200"/><line x1="590" y1="150" x2="590" y2="200"/><line x1="620" y1="150" x2="620" y2="200"/><line x1="650" y1="150" x2="650" y2="200"/></g>
+
+  <text class="tx-mut" x="30" y="138">кодирующая цепь ДНК (5′ → 3′)</text>
+  <text class="tx-mut" x="30" y="226">матричная цепь ДНК (3′ → 5′)</text>
+
+  <!-- РНК: растёт вправо вместе с полимеразой -->
+  <line class="tx-rna" x1="180" y1="100" x2="540" y2="100"/>
+  <text class="tx-mut" x="150" y="94" text-anchor="end">5′</text>
+
+  <!-- полимераза: тело + «пузырь» расплетённой ДНК; РНК выходит сверху -->
+  <g class="tx-move">
+    <rect x="132" y="128" width="96" height="94" rx="28" class="tx-pol-body"/>
+    <rect x="152" y="152" width="56" height="46" rx="10" fill="#ffffff"/>
+    <line class="tx-dna" x1="152" y1="165" x2="208" y2="165" style="stroke:#8b93c9"/>
+    <line class="tx-dna" x1="152" y1="185" x2="208" y2="185" style="stroke:#8b93c9"/>
+    <line x1="180" y1="100" x2="180" y2="130" stroke="#ee8a2b" stroke-width="6"/>
+    <circle cx="180" cy="100" r="7" fill="#b4531a"/>
+    <text class="tx-h" x="180" y="248" text-anchor="middle">РНК-полимераза</text>
+    <text class="tx-mut" x="196" y="94">3′</text>
+  </g>
+
+  <line x1="60" y1="290" x2="190" y2="290" stroke="#5b6577" stroke-width="2.5" marker-end="url(#tx-ar)"/>
+  <text class="tx-mut" x="200" y="295">направление транскрипции</text>
+  <text class="tx-h" x="30" y="46">Растущая цепь РНК (оранжевая) отходит от полимеразы</text>
+  <text class="tx-mut" x="30" y="66">Двойная спираль расплетается только внутри полимеразы</text>
+</svg>

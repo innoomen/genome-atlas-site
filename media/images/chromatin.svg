@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" role="img" aria-labelledby="t d">
+  <title id="t">Уровни упаковки ДНК</title>
+  <desc id="d">Пять уровней упаковки слева направо: двойная спираль ДНК, нуклеосомы («нить бус»), хроматиновая фибрилла, петли хроматина и митотическая хромосома.</desc>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 14px; font-weight: 700; text-anchor: middle; }
+    .s { font-size: 12px; text-anchor: middle; fill: #5b6577; }
+    .n { font-size: 20px; font-weight: 700; text-anchor: middle; fill: #4b4f9e; }
+  </style>
+  <rect width="820" height="330" fill="#fff"/>
+
+  <!-- 1. ДНК -->
+  <text class="n" x="80" y="34">1</text>
+  <path d="M70 60 C90 80 70 100 90 120 C110 140 70 160 90 180 C110 200 70 220 90 240" fill="none" stroke="#4b4f9e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 60 C70 80 90 100 70 120 C50 140 90 160 70 180 C50 200 90 220 70 240" fill="none" stroke="#8b93c9" stroke-width="4" stroke-linecap="round"/>
+  <text class="h" x="80" y="270">Двойная спираль</text><text class="s" x="80" y="288">диаметр 2 нм</text>
+  <line x1="122" y1="150" x2="152" y2="150" stroke="#5b6577" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 2. Нуклеосомы -->
+  <text class="n" x="230" y="34">2</text>
+  <path d="M170 150 C190 110 210 190 230 150 C250 110 270 190 290 150" fill="none" stroke="#8b93c9" stroke-width="3"/>
+  <g fill="#e4572e" stroke="#a8341a" stroke-width="2">
+    <circle cx="190" cy="132" r="17"/><circle cx="230" cy="168" r="17"/><circle cx="270" cy="132" r="17"/>
+  </g>
+  <text class="h" x="230" y="270">Нуклеосомы</text><text class="s" x="230" y="288">«нить бус», ≈10 нм</text>
+  <line x1="302" y1="150" x2="332" y2="150" stroke="#5b6577" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 3. Фибрилла -->
+  <text class="n" x="390" y="34">3</text>
+  <g fill="#e4572e" stroke="#a8341a" stroke-width="1.5">
+    <circle cx="372" cy="75" r="13"/><circle cx="408" cy="80" r="13"/><circle cx="376" cy="105" r="13"/><circle cx="412" cy="112" r="13"/>
+    <circle cx="374" cy="135" r="13"/><circle cx="410" cy="143" r="13"/><circle cx="376" cy="166" r="13"/><circle cx="412" cy="174" r="13"/>
+    <circle cx="374" cy="197" r="13"/><circle cx="410" cy="205" r="13"/><circle cx="380" cy="228" r="13"/>
+  </g>
+  <text class="h" x="390" y="270">Хроматиновая фибрилла</text><text class="s" x="390" y="288">≈30 нм (in vivo — нерегулярная)</text>
+  <line x1="446" y1="150" x2="476" y2="150" stroke="#5b6577" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 4. Петли -->
+  <text class="n" x="555" y="34">4</text>
+  <g fill="none" stroke="#e4572e" stroke-width="5" stroke-linecap="round">
+    <path d="M555 150 C520 90 590 60 555 150"/>
+    <path d="M555 150 C600 100 640 140 555 150"/>
+    <path d="M555 150 C610 190 600 240 555 150"/>
+    <path d="M555 150 C540 220 490 210 555 150"/>
+    <path d="M555 150 C500 170 480 120 555 150"/>
+  </g>
+  <circle cx="555" cy="150" r="14" fill="#4b4f9e"/>
+  <text class="h" x="555" y="270">Петли и домены</text><text class="s" x="555" y="288">когезин, конденсин, CTCF</text>
+  <line x1="628" y1="150" x2="658" y2="150" stroke="#5b6577" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 5. Хромосома -->
+  <text class="n" x="735" y="34">5</text>
+  <g fill="#e4572e" stroke="#a8341a" stroke-width="2">
+    <rect x="705" y="58" width="24" height="90" rx="12" transform="rotate(-10 717 103)"/>
+    <rect x="741" y="58" width="24" height="90" rx="12" transform="rotate(10 753 103)"/>
+    <rect x="705" y="152" width="24" height="90" rx="12" transform="rotate(10 717 197)"/>
+    <rect x="741" y="152" width="24" height="90" rx="12" transform="rotate(-10 753 197)"/>
+  </g>
+  <circle cx="735" cy="150" r="9" fill="#4b4f9e"/>
+  <text class="h" x="735" y="270">Хромосома</text><text class="s" x="735" y="288">митоз, центромера в центре</text>
+  <text class="s" x="410" y="318">Схема без соблюдения масштаба.</text>
+</svg>

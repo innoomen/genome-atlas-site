@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t d">
+  <title id="t">Типы мутаций на примере короткой последовательности</title>
+  <desc id="d">Нормальная последовательность ATG GCT AAA GGT кодирует Met-Ala-Lys-Gly. Замена A на G даёт Met-Ala-Arg-Gly. Вставка T приводит к сдвигу рамки и стоп-кодону TAA. Потеря C сдвигает рамку и меняет последующие аминокислоты.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 15px; font-weight: 700; }
+    .s { font-size: 13px; }
+    .m { font-family: ui-monospace, Consolas, "Courier New", monospace; font-size: 19px; font-weight: 700; text-anchor: middle; letter-spacing: 2px; }
+    .a { font-size: 13px; text-anchor: middle; fill: #5b6577; }
+    .hl { fill: #d12c1f; }
+    .box { fill: #eef1f5; stroke: #c9d0dc; stroke-width: 1.5; }
+    .bad { fill: #fbe5e3; stroke: #d12c1f; }
+  </style>
+  <rect width="780" height="420" fill="#fff"/>
+
+  <!-- Норма -->
+  <text class="h" x="20" y="44">Норма</text>
+  <g>
+    <rect class="box" x="190" y="24" width="70" height="30" rx="6"/><text class="m" x="225" y="46">ATG</text><text class="a" x="225" y="74">Met</text>
+    <rect class="box" x="270" y="24" width="70" height="30" rx="6"/><text class="m" x="305" y="46">GCT</text><text class="a" x="305" y="74">Ala</text>
+    <rect class="box" x="350" y="24" width="70" height="30" rx="6"/><text class="m" x="385" y="46">AAA</text><text class="a" x="385" y="74">Lys</text>
+    <rect class="box" x="430" y="24" width="70" height="30" rx="6"/><text class="m" x="465" y="46">GGT</text><text class="a" x="465" y="74">Gly</text>
+  </g>
+
+  <!-- Замена -->
+  <text class="h" x="20" y="134">Замена (SNV)</text>
+  <text class="s" x="20" y="152" style="fill:#5b6577">миссенс</text>
+  <g>
+    <rect class="box" x="190" y="114" width="70" height="30" rx="6"/><text class="m" x="225" y="136">ATG</text><text class="a" x="225" y="164">Met</text>
+    <rect class="box" x="270" y="114" width="70" height="30" rx="6"/><text class="m" x="305" y="136">GCT</text><text class="a" x="305" y="164">Ala</text>
+    <rect class="box bad" x="350" y="114" width="70" height="30" rx="6"/><text class="m" x="385" y="136">A<tspan class="hl">G</tspan>A</text><text class="a" x="385" y="164" style="fill:#d12c1f;font-weight:700">Arg</text>
+    <rect class="box" x="430" y="114" width="70" height="30" rx="6"/><text class="m" x="465" y="136">GGT</text><text class="a" x="465" y="164">Gly</text>
+  </g>
+  <text class="s" x="530" y="134">A → G: Lys заменён на Arg,</text>
+  <text class="s" x="530" y="152">остальной белок не изменён</text>
+
+  <!-- Вставка -->
+  <text class="h" x="20" y="224">Вставка</text>
+  <text class="s" x="20" y="242" style="fill:#5b6577">сдвиг рамки</text>
+  <g>
+    <rect class="box" x="190" y="204" width="70" height="30" rx="6"/><text class="m" x="225" y="226">ATG</text><text class="a" x="225" y="254">Met</text>
+    <rect class="box" x="270" y="204" width="70" height="30" rx="6"/><text class="m" x="305" y="226">GCT</text><text class="a" x="305" y="254">Ala</text>
+    <rect class="box bad" x="350" y="204" width="70" height="30" rx="6"/><text class="m" x="385" y="226"><tspan class="hl">T</tspan>AA</text><text class="a" x="385" y="254" style="fill:#d12c1f;font-weight:700">СТОП</text>
+    <rect class="box" x="430" y="204" width="70" height="30" rx="6" style="opacity:.45"/><text class="m" x="465" y="226" style="opacity:.45">AGG</text><text class="a" x="465" y="254" style="opacity:.45">…</text>
+  </g>
+  <text class="s" x="530" y="224">вставлен T: вся последующая</text>
+  <text class="s" x="530" y="242">последовательность читается</text>
+  <text class="s" x="530" y="260">иначе, появился стоп-кодон</text>
+
+  <!-- Делеция -->
+  <text class="h" x="20" y="314">Делеция</text>
+  <text class="s" x="20" y="332" style="fill:#5b6577">сдвиг рамки</text>
+  <g>
+    <rect class="box" x="190" y="294" width="70" height="30" rx="6"/><text class="m" x="225" y="316">ATG</text><text class="a" x="225" y="344">Met</text>
+    <rect class="box bad" x="270" y="294" width="70" height="30" rx="6"/><text class="m" x="305" y="316">G<tspan class="hl">T</tspan>A</text><text class="a" x="305" y="344" style="fill:#d12c1f;font-weight:700">Val</text>
+    <rect class="box bad" x="350" y="294" width="70" height="30" rx="6"/><text class="m" x="385" y="316">AAG</text><text class="a" x="385" y="344" style="fill:#d12c1f;font-weight:700">Lys*</text>
+    <rect class="box" x="430" y="294" width="70" height="30" rx="6" style="opacity:.45"/><text class="m" x="465" y="316" style="opacity:.45">GT…</text><text class="a" x="465" y="344" style="opacity:.45">…</text>
+  </g>
+  <text class="s" x="530" y="314">потеряна C: все последующие</text>
+  <text class="s" x="530" y="332">кодоны сдвинуты</text>
+
+  <text class="s" x="20" y="398" style="fill:#5b6577">Красным выделены изменённые нуклеотиды и аминокислоты. * — совпадение с исходной аминокислотой случайно (вырожденность кода).</text>
+</svg>
