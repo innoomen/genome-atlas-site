@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+  <title id="t">Цифровая ПЦР: абсолютный счёт молекул по каплям</title>
+  <desc id="d">Образец разбивают на десятки тысяч отдельных капель или лунок так, что в каждой оказывается ноль или одна-несколько молекул мишени. После ПЦР в каждой капле независимо определяют, есть сигнал (положительная) или нет (отрицательная). По доле положительных капель и статистике Пуассона рассчитывают абсолютную концентрацию мишени без калибровочной кривой. Справа — сравнение с количественной ПЦР в реальном времени по чувствительности обнаружения редких мутантных копий на фоне избытка нормальных.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Цифровая ПЦР: не измеряем яркость — считаем капли</text>
+
+  <ellipse cx="90" cy="100" rx="34" ry="34" fill="#e7f1fb" stroke="#3b6fd4" stroke-width="1.6"/>
+  <circle cx="80" cy="94" r="4" fill="#c0392b"/><circle cx="100" cy="104" r="4" fill="#c0392b"/>
+  <text class="s" x="90" y="150" text-anchor="middle" style="font-size:11px">образец с ДНК</text>
+  <path d="M126 100 H166" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="146" y="90" text-anchor="middle" style="font-size:10.5px">разбивка</text>
+
+  <!-- капли -->
+  <g id="drops">
+  </g>
+  <text class="b" x="200" y="70">Тысячи капель — 0 или 1–2 молекулы в каждой</text>
+  <g>
+    <!-- ряд капель -->
+    <!-- generate manually 10x3 grid -->
+  </g>
+  <g font-size="0">
+  </g>
+  <!-- вручную сетка капель -->
+  <g>
+    <!-- строка 1 -->
+    <circle cx="200" cy="110" r="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/><circle cx="200" cy="110" r="4" fill="#3fa34d"/>
+    <circle cx="234" cy="110" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="268" cy="110" r="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/><circle cx="268" cy="110" r="4" fill="#3fa34d"/>
+    <circle cx="302" cy="110" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="336" cy="110" r="16" fill="#fdf1ef" stroke="#c0392b" stroke-width="1.6"/><circle cx="336" cy="110" r="4" fill="#c0392b"/>
+    <circle cx="370" cy="110" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="404" cy="110" r="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/><circle cx="404" cy="110" r="4" fill="#3fa34d"/>
+    <circle cx="438" cy="110" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <!-- строка 2 -->
+    <circle cx="217" cy="144" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="251" cy="144" r="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/><circle cx="251" cy="144" r="4" fill="#3fa34d"/>
+    <circle cx="285" cy="144" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="319" cy="144" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="353" cy="144" r="16" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/><circle cx="353" cy="144" r="4" fill="#3fa34d"/>
+    <circle cx="387" cy="144" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+    <circle cx="421" cy="144" r="16" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+  </g>
+  <text class="s" x="200" y="184" style="font-size:10.5px">зелёная — положительная (сигнал есть)</text>
+  <text class="s" x="200" y="200" style="font-size:10.5px">серая — отрицательная (сигнала нет)</text>
+  <text class="s" x="200" y="216" style="font-size:10.5px;fill:#c0392b">красная — редкая мутантная копия</text>
+
+  <path d="M470 130 H540" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="505" y="118" text-anchor="middle" style="font-size:10.5px">ПЦР в каждой</text>
+  <text class="s" x="505" y="150" text-anchor="middle" style="font-size:10.5px">капле отдельно</text>
+
+  <rect class="box" x="550" y="60" width="330" height="180" rx="10"/>
+  <text class="b" x="564" y="84">Статистика Пуассона</text>
+  <text class="s" x="564" y="106" style="font-size:11.5px">Доля положительных капель →</text>
+  <text class="s" x="564" y="122" style="font-size:11.5px">среднее число молекул на каплю →</text>
+  <text class="s" x="564" y="138" style="font-size:11.5px">абсолютная концентрация мишени.</text>
+  <text class="s" x="564" y="164" style="font-size:11.5px;fill:#2f7d3f">Калибровочная кривая не нужна —</text>
+  <text class="s" x="564" y="180" style="font-size:11.5px;fill:#2f7d3f">прямой подсчёт «да/нет».</text>
+  <text class="s" x="564" y="204" style="font-size:11px">Особенно ценно при очень низкой</text>
+  <text class="s" x="564" y="220" style="font-size:11px">доле мутантных копий (МОБ).</text>
+
+  <line x1="20" y1="264" x2="880" y2="264" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="292">Чувствительность: цифровая ПЦР находит «иголку в стоге сена»</text>
+  <rect class="box" x="20" y="308" width="420" height="200" rx="10"/>
+  <text class="b" x="34" y="330">Количественная ПЦР в реальном времени</text>
+  <text class="s" x="34" y="352">Измеряет среднюю яркость по всей пробирке —</text>
+  <text class="s" x="34" y="368">редкий сигнал (1 мутантная копия на 1000)</text>
+  <text class="s" x="34" y="384">тонет в фоне нормальных копий.</text>
+  <text class="s" x="34" y="406" style="font-size:11px;fill:#5b6577">Порог обнаружения обычно ~0,1–1 %</text>
+  <rect class="box" x="460" y="308" width="420" height="200" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="474" y="330" style="fill:#2f7d3f">Цифровая ПЦР</text>
+  <text class="s" x="474" y="352">Каждая капля с мутантной копией даёт</text>
+  <text class="s" x="474" y="368">отдельный ясный сигнал независимо от</text>
+  <text class="s" x="474" y="384">соседних «нормальных» капель.</text>
+  <text class="s" x="474" y="406" style="font-size:11px;fill:#2f7d3f">Порог обнаружения — до 0,01 % и ниже</text>
+
+  <rect class="box" x="20" y="522" width="860" height="26" rx="6" style="display:none"/>
+</svg>

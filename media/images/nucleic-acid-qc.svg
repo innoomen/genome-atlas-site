@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Как проверяют качество и количество ДНК и РНК</title>
+  <desc id="d">Три метода контроля. Спектрофотометрия измеряет поглощение света на разных длинах волн: соотношение A260/A280 около 1,8 для чистой ДНК и 2,0 для РНК, соотношение A260/A230 выше 1,8 говорит об отсутствии загрязнений. Флуориметрия (например, набор Qubit) использует краситель, светящийся только при связывании с двухцепочечной ДНК, и даёт более точную количественную оценку, не реагируя на загрязнения. Гель-электрophorez и капиллярный анализ показывают целостность: интактная высокомолекулярная ДНК даёт одну чёткую полосу вверху геля, деградированная — размытый шлейф; для РНК рассчитывают показатель целостности RIN по соотношению полос 28S и 18S рРНК.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Хватит ли материала и годится ли он для анализа</text>
+
+  <!-- спектрофотометрия -->
+  <rect class="box" x="20" y="46" width="270" height="230" rx="10"/>
+  <text class="b" x="34" y="68">Спектрофотометрия</text>
+  <polyline points="40,220 60,120 90,100 120,140 160,230" fill="none" stroke="#3b6fd4" stroke-width="2.5"/>
+  <line x1="40" y1="230" x2="270" y2="230" stroke="#8a94a8" stroke-width="1.5"/>
+  <text class="s" x="60" y="244" style="font-size:10px">230</text><text class="s" x="88" y="244" style="font-size:10px">260</text><text class="s" x="120" y="244" style="font-size:10px">280</text><text class="s" x="240" y="244" style="font-size:10px">нм</text>
+  <text class="s" x="34" y="96" style="font-size:11px">пик поглощения ДНК/РНК — 260 нм</text>
+  <text class="s" x="34" y="140" style="font-size:11.5px">A260/A280 ≈ 1,8 (ДНК) / 2,0 (РНК)</text>
+  <text class="s" x="34" y="158" style="font-size:11.5px">— чистота от белков</text>
+  <text class="s" x="34" y="178" style="font-size:11.5px">A260/A230 &gt; 1,8 — чистота от</text>
+  <text class="s" x="34" y="194" style="font-size:11.5px">солей, фенола, спирта</text>
+  <text class="s" x="34" y="218" style="font-size:10.5px;fill:#c0392b">Быстро, но неточно при примесях</text>
+  <text class="s" x="34" y="234" style="font-size:10.5px;fill:#c0392b">и низкой концентрации</text>
+
+  <!-- флуориметрия -->
+  <rect class="box" x="310" y="46" width="270" height="230" rx="10"/>
+  <text class="b" x="324" y="68">Флуориметрия (Qubit)</text>
+  <circle cx="360" cy="130" r="10" fill="#3fa34d"/><text class="s" x="378" y="134" style="font-size:11px">краситель + дцДНК → свечение</text>
+  <circle cx="360" cy="160" r="10" fill="#b7c0cf"/><text class="s" x="378" y="164" style="font-size:11px">краситель без дцДНК → нет сигнала</text>
+  <rect x="324" y="188" width="230" height="14" rx="4" fill="#e0e6ef"/><rect x="324" y="188" width="150" height="14" rx="4" fill="#3fa34d"/>
+  <text class="s" x="324" y="216" style="font-size:11px">Специфичен к двухцепочечной ДНК —</text>
+  <text class="s" x="324" y="232" style="font-size:11px">не реагирует на РНК, нуклеотиды,</text>
+  <text class="s" x="324" y="248" style="font-size:11px">белки и загрязнения.</text>
+  <text class="s" x="324" y="266" style="font-size:10.5px;fill:#2f7d3f">Точнее спектрофотометрии; нужен</text>
+
+  <!-- электрофорез -->
+  <rect class="box" x="600" y="46" width="280" height="230" rx="10"/>
+  <text class="b" x="614" y="68">Электрофорез / целостность</text>
+  <rect x="620" y="88" width="240" height="140" fill="#22262f" rx="4"/>
+  <rect x="640" y="98" width="16" height="10" fill="#e0e6ef"/>
+  <rect x="640" y="112" width="16" height="6" fill="#6fe08a"/>
+  <text class="s" x="660" y="120" style="fill:#dfe6f0;font-size:10px">интактная (одна полоса)</text>
+  <rect x="700" y="112" width="16" height="60" fill="#e08a6f" opacity=".8"/>
+  <text class="s" x="722" y="150" style="fill:#dfe6f0;font-size:10px">деградированная (шлейф)</text>
+  <text class="s" x="614" y="248" style="font-size:11px">Для РНК рассчитывают <tspan font-weight="700">RIN</tspan> (1–10)</text>
+  <text class="s" x="614" y="264" style="font-size:11px">по соотношению полос 28S/18S рРНК.</text>
+
+  <rect class="box" x="20" y="296" width="860" height="130" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="320">Почему это важно для гематологии</text>
+  <text class="s" x="34" y="342">Минимальные требования к концентрации и целостности материала различаются: для NGS-панели обычно нужно больше и</text>
+  <text class="s" x="34" y="360">качественнее ДНК, чем для одной точечной ПЦР; для РНК-анализа транскриптов слияний (например, BCR::ABL1) критична целостность РНК.</text>
+  <text class="s" x="34" y="378">Образцы ФФПЭ-ткани почти всегда дают низкий RIN и фрагментированную ДНК — лаборатория адаптирует протокол (короткие ампликоны, NGS с</text>
+  <text class="s" x="34" y="396">умением работать с деградированным материалом).</text>
+  <text class="s" x="34" y="414" style="font-size:11px">Контроль качества — обязательный шаг перед любым молекулярным тестом; его данные указывают в лабораторном заключении.</text>
+</svg>

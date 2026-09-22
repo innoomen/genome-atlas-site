@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="t d">
+  <title id="t">Как венетоклакс запускает апоптоз: шесть шагов</title>
+  <desc id="d">Пошаговая схема. 1: в опухолевой клетке, зависимой от BCL2, белок BCL2 удерживает BIM в своей борозде, BAX и BAK молчат, клетка выживает. 2: венетоклакс занимает эту борозду вместо BIM. 3: освобождённый BIM активирует BAX и BAK. 4: BAX и BAK образуют поры во внешней мембране митохондрии (МОМР), из митохондрии выходят цитохром c и SMAC. 5: цитохром c с APAF1 образует апоптосому, которая активирует каспазу-9, а та — каспазы-3 и 7. 6: клетка сжимается, ДНК фрагментируется, образуются апоптотические тельца, которые поглощают макрофаги без воспаления.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .cell { fill: #fdf6ee; stroke: #e0b98a; stroke-width: 2; }
+    .num { width: 26px; height: 26px; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+    <marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#fff"/></marker>
+  </defs>
+  <rect width="900" height="760" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Механизм венетоклакса: от связывания BCL2 до гибели клетки</text>
+
+  <!-- ============ ряд 1 ============ -->
+  <!-- Шаг 1 -->
+  <g>
+    <rect class="box" x="20" y="44" width="273" height="256" rx="12"/>
+    <circle cx="38" cy="66" r="13" fill="#3b6fd4"/><text class="w" x="38" y="70">1</text>
+    <text class="b" x="60" y="70">Клетка зависима от BCL2</text>
+    <ellipse class="cell" cx="156" cy="180" rx="120" ry="82"/>
+    <ellipse cx="130" cy="180" rx="52" ry="22" fill="#3b6fd4"/><text class="w" x="130" y="184">BCL2</text>
+    <ellipse cx="182" cy="164" rx="30" ry="13" fill="#e0a43a"/><text class="w" x="182" y="168" style="fill:#1c2330;font-size:10px">BIM</text>
+    <path d="M155 174 Q168 168 172 166" stroke="#8a94a8" stroke-width="1.6" fill="none" stroke-dasharray="2 3"/>
+    <text class="s" x="42" y="238">BCL2 держит BIM в BH3-борозде:</text>
+    <text class="s" x="42" y="254">BAX и BAK молчат, клетка выживает</text>
+    <text class="s" x="42" y="270">(при ХЛЛ уровень BCL2 очень высок).</text>
+  </g>
+  <path class="ar" d="M296 172 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 2 -->
+  <g>
+    <rect class="box" x="316" y="44" width="273" height="256" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+    <circle cx="334" cy="66" r="13" fill="#2f7d3f"/><text class="w" x="334" y="70">2</text>
+    <text class="b" x="356" y="70">Венетоклакс связывается</text>
+    <ellipse class="cell" cx="452" cy="180" rx="120" ry="82"/>
+    <ellipse cx="426" cy="180" rx="52" ry="22" fill="#3b6fd4"/><text class="w" x="426" y="184">BCL2</text>
+    <rect x="398" y="160" width="56" height="18" rx="9" fill="#c0392b"/><text class="w" x="426" y="173" style="font-size:9.5px">венетоклакс</text>
+    <ellipse cx="500" cy="150" rx="28" ry="12" fill="#e0a43a"/><text class="w" x="500" y="154" style="fill:#1c2330;font-size:9.5px">BIM</text>
+    <path d="M460 168 C475 158 486 152 492 150" class="ar" style="stroke-width:1.8" marker-end="url(#ar)"/>
+    <text class="s" x="338" y="238">Препарат — «BH3-миметик»: занимает</text>
+    <text class="s" x="338" y="254">ту же борозду BCL2, что и BIM, и</text>
+    <text class="s" x="338" y="270">вытесняет его наружу.</text>
+  </g>
+  <path class="ar" d="M592 172 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 3 -->
+  <g>
+    <rect class="box" x="612" y="44" width="268" height="256" rx="12"/>
+    <circle cx="630" cy="66" r="13" fill="#3b6fd4"/><text class="w" x="630" y="70">3</text>
+    <text class="b" x="652" y="70">BIM активирует BAX/BAK</text>
+    <ellipse class="cell" cx="746" cy="180" rx="120" ry="82"/>
+    <ellipse cx="700" cy="150" rx="26" ry="12" fill="#e0a43a"/><text class="w" x="700" y="154" style="fill:#1c2330;font-size:9.5px">BIM</text>
+    <path d="M700 162 V186" class="ar" marker-end="url(#ar)"/>
+    <ellipse cx="746" cy="200" rx="56" ry="20" fill="#3fa34d"/><text class="w" x="746" y="204">BAX / BAK</text>
+    <text class="s" x="632" y="238">Свободный BIM связывает BAX и</text>
+    <text class="s" x="632" y="254">BAK и запускает их олигомеризацию</text>
+    <text class="s" x="632" y="270">на мембране митохондрии.</text>
+  </g>
+
+  <path class="ar" d="M156 300 V330" marker-end="url(#ar)"/>
+
+  <!-- ============ ряд 2 ============ -->
+  <!-- Шаг 4 -->
+  <g>
+    <rect class="box" x="20" y="332" width="273" height="256" rx="12"/>
+    <circle cx="38" cy="354" r="13" fill="#3b6fd4"/><text class="w" x="38" y="358">4</text>
+    <text class="b" x="60" y="358">МОМР: пора в митохондрии</text>
+    <ellipse cx="156" cy="470" rx="110" ry="56" fill="#f4d6c0" stroke="#b4531a" stroke-width="2"/>
+    <ellipse cx="156" cy="470" rx="14" ry="30" fill="#fff" stroke="#b4531a" stroke-width="2"/>
+    <circle cx="120" cy="440" r="6" fill="#3fa34d"/><circle cx="192" cy="442" r="6" fill="#3fa34d"/>
+    <circle cx="220" cy="432" r="5" fill="#c0392b"/><circle cx="234" cy="450" r="5" fill="#c0392b"/><circle cx="222" cy="468" r="5" fill="#c0392b"/>
+    <text class="s" x="248" y="428" style="font-size:10.5px;fill:#c0392b">цитохром c</text>
+    <text class="s" x="42" y="546">BAX/BAK образуют поры во внешней</text>
+    <text class="s" x="42" y="562">мембране — точка «невозврата».</text>
+    <text class="s" x="42" y="578">Выходят цитохром c и SMAC.</text>
+  </g>
+  <path class="ar" d="M296 460 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 5 -->
+  <g>
+    <rect class="box" x="316" y="332" width="273" height="256" rx="12"/>
+    <circle cx="334" cy="354" r="13" fill="#3b6fd4"/><text class="w" x="334" y="358">5</text>
+    <text class="b" x="356" y="358">Апоптосома и каспазы</text>
+    <ellipse cx="452" cy="440" rx="76" ry="24" fill="#7b5ea7"/><text class="w" x="452" y="444" style="font-size:10px">APAF1 + цитохром c</text>
+    <path d="M452 464 V486" class="ar" marker-end="url(#ar)"/>
+    <ellipse cx="452" cy="504" rx="60" ry="18" fill="#e0a43a"/><text class="w" x="452" y="508" style="fill:#1c2330">каспаза-9</text>
+    <path d="M452 522 V540" class="ar" marker-end="url(#ar)"/>
+    <ellipse cx="452" cy="556" rx="66" ry="18" fill="#c0392b"/><text class="w" x="452" y="560">каспазы-3/7</text>
+    <text class="s" x="338" y="588" style="display:none"></text>
+  </g>
+  <path class="ar" d="M592 460 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 6 -->
+  <g>
+    <rect class="box" x="612" y="332" width="268" height="256" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/>
+    <circle cx="630" cy="354" r="13" fill="#c0392b"/><text class="w" x="630" y="358">6</text>
+    <text class="b" x="652" y="358">Клетка гибнет</text>
+    <ellipse cx="746" cy="462" rx="72" ry="50" fill="#f4b8ac" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="812" cy="430" r="16" fill="#f4b8ac" stroke="#c0392b" stroke-width="1.6"/>
+    <circle cx="806" cy="492" r="13" fill="#f4b8ac" stroke="#c0392b" stroke-width="1.6"/>
+    <circle cx="698" cy="500" r="11" fill="#f4b8ac" stroke="#c0392b" stroke-width="1.6"/>
+    <text class="s" x="632" y="536">Фрагментация ДНК, сморщивание,</text>
+    <text class="s" x="632" y="552">апоптотические тельца поглощают</text>
+    <text class="s" x="632" y="568">макрофаги — без воспаления.</text>
+  </g>
+
+  <!-- итог -->
+  <rect class="box" x="20" y="602" width="860" height="144" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="626">Итог</text>
+  <text class="s" x="34" y="648">Опухолевая клетка, зависимая от BCL2, гибнет за часы после начала терапии — поэтому дозу венетоклакса</text>
+  <text class="s" x="34" y="666">повышают ступенчато, чтобы избежать синдрома лизиса опухоли (подробности — в разделе «Клинический слой»).</text>
+  <text class="s" x="34" y="688">Устойчивость возникает, если BIM «переезжает» на MCL1 или BCL-XL, либо при мутациях BCL2 или потере BAX</text>
+  <text class="s" x="34" y="706">(см. иллюстрацию «BCL2 и венетоклакс» выше).</text>
+  <text class="s" x="34" y="730" style="font-size:11px">Схема упрощена: не показаны XIAP, SMAC и рецепторный (внешний) путь апоптоза — см. схему «Пути апоптоза».</text>
+</svg>

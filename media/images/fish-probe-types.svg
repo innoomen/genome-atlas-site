@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">FISH: как флуоресцентный зонд находит нужный участок ДНК</title>
+  <desc id="d">Принцип вверху: ДНК на предметном стекле денатурируют нагреванием, добавляют флуоресцентно меченный зонд с последовательностью, комплементарной искомому участку, зонд гибридизуется со своей мишенью, под флуоресцентным микроскопом виден цветной сигнал. Ниже — четыре типа зондов с ожидаемой картиной сигналов в норме и при аномалии: счётный (энумерационный) зонд для подсчёта копий хромосомы; зонд делеции, теряющий один из двух сигналов; зонд разрыва (break-apart), у которого две метки разного цвета в норме перекрываются, а при перестройке расходятся; зонд слияния (dual-fusion), у которого при транслокации появляются два двухцветных сигнала слияния вместо раздельных.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11px; fill: #5b6577; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .nuc { fill: #22262f; }
+  </style>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">FISH: находим конкретный участок ДНК под микроскопом</text>
+  <text class="s" x="20" y="48">ДНК денатурируют, добавляют меченый зонд, он гибридизуется со своей мишенью, сигнал виден в флуоресцентный микроскоп.</text>
+
+  <!-- 4 колонки -->
+  <!-- Счётный -->
+  <rect class="box" x="20" y="66" width="210" height="230" rx="10"/>
+  <text class="b" x="34" y="88">Счётный (enumeration)</text>
+  <circle class="nuc" cx="125" cy="150" r="46"/>
+  <circle cx="108" cy="140" r="7" fill="#3fa34d"/><circle cx="142" cy="160" r="7" fill="#3fa34d"/>
+  <text class="s" x="34" y="212">Норма: 2 сигнала (2 копии)</text>
+  <circle class="nuc" cx="125" cy="260" r="0" style="display:none"/>
+  <text class="s" x="34" y="236" style="font-weight:700">Аномалия:</text>
+  <circle class="nuc" cx="60" cy="264" r="30"/><circle cx="50" cy="258" r="6" fill="#3fa34d"/><circle cx="70" cy="270" r="6" fill="#3fa34d"/><circle cx="60" cy="248" r="6" fill="#3fa34d"/>
+  <text class="s" x="98" y="268">3 сигнала = трисомия</text>
+  <text class="s" x="34" y="300" style="font-size:10px">пример: трисомия 12 при ХЛЛ</text>
+
+  <!-- Делеции -->
+  <rect class="box" x="240" y="66" width="210" height="230" rx="10"/>
+  <text class="b" x="254" y="88">Делеции</text>
+  <circle class="nuc" cx="345" cy="150" r="46"/>
+  <circle cx="328" cy="140" r="7" fill="#c0392b"/><circle cx="362" cy="160" r="7" fill="#c0392b"/>
+  <text class="s" x="254" y="212">Норма: 2 сигнала</text>
+  <text class="s" x="254" y="236" style="font-weight:700">Аномалия:</text>
+  <circle class="nuc" cx="290" cy="264" r="30"/><circle cx="280" cy="258" r="6" fill="#c0392b"/>
+  <text class="s" x="328" y="268">1 сигнал = потеря участка</text>
+  <text class="s" x="254" y="300" style="font-size:10px">пример: del(17p)/TP53, del(13q14)</text>
+
+  <!-- Break-apart -->
+  <rect class="box" x="460" y="66" width="210" height="230" rx="10"/>
+  <text class="b" x="474" y="88">Разрыв (break-apart)</text>
+  <circle class="nuc" cx="565" cy="150" r="46"/>
+  <circle cx="558" cy="146" r="7" fill="#3fa34d"/><circle cx="566" cy="146" r="7" fill="#c0392b"/>
+  <text class="s" x="474" y="212">Норма: метки слиты (жёлтый)</text>
+  <text class="s" x="474" y="236" style="font-weight:700">Аномалия:</text>
+  <circle class="nuc" cx="510" cy="264" r="30"/><circle cx="498" cy="256" r="6" fill="#3fa34d"/><circle cx="522" cy="272" r="6" fill="#c0392b"/>
+  <text class="s" x="548" y="268">метки разошлись —</text>
+  <text class="s" x="548" y="282">перестройка (партнёр любой)</text>
+  <text class="s" x="474" y="300" style="font-size:10px">пример: KMT2A, MYC — партнёр не важен</text>
+
+  <!-- Dual-fusion -->
+  <rect class="box" x="680" y="66" width="200" height="230" rx="10"/>
+  <text class="b" x="694" y="88">Слияние (dual-fusion)</text>
+  <circle class="nuc" cx="780" cy="150" r="46"/>
+  <circle cx="764" cy="140" r="7" fill="#3fa34d"/><circle cx="796" cy="160" r="7" fill="#c0392b"/>
+  <text class="s" x="694" y="212">Норма: 1 зелёный + 1 красный</text>
+  <text class="s" x="694" y="236" style="font-weight:700">Аномалия:</text>
+  <circle class="nuc" cx="730" cy="264" r="30"/><circle cx="722" cy="258" r="7" fill="#e0a43a"/><circle cx="738" cy="270" r="7" fill="#e0a43a"/>
+  <text class="s" x="766" y="268">2 слитых (жёлтых) сигнала</text>
+  <text class="s" x="694" y="300" style="font-size:10px">пример: BCR::ABL1, PML::RARA</text>
+
+  <line x1="20" y1="320" x2="880" y2="320" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="348">Метафазная и интерфазная FISH</text>
+  <rect class="box" x="20" y="362" width="420" height="120" rx="10"/>
+  <text class="b" x="34" y="384">Метафазная FISH</text>
+  <text class="s" x="34" y="406">На делящихся клетках: видна структура</text>
+  <text class="s" x="34" y="422">хромосомы, можно точно сказать, где сидит</text>
+  <text class="s" x="34" y="438">сигнал. Нужны культивируемые клетки.</text>
+  <rect class="box" x="460" y="362" width="420" height="120" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="474" y="384" style="fill:#2f7d3f">Интерфазная FISH</text>
+  <text class="s" x="474" y="406">На неделящихся ядрах: быстрее (не нужно</text>
+  <text class="s" x="474" y="422">ждать деления), но не показывает структуру —</text>
+  <text class="s" x="474" y="438">только число и взаиморасположение сигналов.</text>
+
+  <rect class="box" x="20" y="498" width="860" height="120" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="522">Когда FISH выбирают вместо (или вместе с) кариотипа</text>
+  <text class="s" x="34" y="544">Быстрее кариотипа (результат за 1–3 дня), не требует деления клеток, видит перестройки за пределами разрешения G-бэндинга</text>
+  <text class="s" x="34" y="562">(например, криптические слияния). Но проверяет только заранее выбранную мишень — «слепа» ко всему остальному геному.</text>
+  <text class="s" x="34" y="584">В гематологии — стандарт быстрой диагностики: подозрение на ОПЛ (PML::RARA), ХМЛ (BCR::ABL1), del(17p) и del(13q) при ХЛЛ,</text>
+  <text class="s" x="34" y="602">t(4;14)/t(14;16) при миеломе, MYC/KMT2A при лимфомах и лейкозах.</text>
+</svg>

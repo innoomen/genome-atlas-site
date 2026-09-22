@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
+  <title id="t">Путь NGS: от образца до готового варианта</title>
+  <desc id="d">Шесть стадий. Подготовка библиотеки: ДНК фрагментируют, к концам пришивают адаптеры и индивидуальный индекс-баркод, амплифицируют ПЦР. Кластеризация: фрагменты закрепляются на проточной ячейке и локально амплифицируются в кластеры идентичных копий (мостиковая амплификация). Секвенирование синтезом: на каждом цикле встраивается один меченый нуклеотид, камера фиксирует цвет каждого кластера, затем метку снимают и переходят к следующему циклу — так параллельно читаются миллионы фрагментов. Биоинформатика: базовые вызовы собираются в файл FASTQ с качеством по шкале Phred, чтения выравниваются на референсный геном (файл BAM), различия с референсом собираются в файл VCF. Аннотация и интерпретация: каждый вариант сверяют с базами данных и классифицируют.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11px; fill: #5b6577; }
+    .w { font-size: 10px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .num { fill: #3b6fd4; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="640" fill="#ffffff"/>
+  <text class="h" x="20" y="28">От пробирки до строчки в отчёте: путь NGS</text>
+
+  <!-- 1 -->
+  <rect class="box" x="20" y="46" width="270" height="168" rx="10"/>
+  <circle class="num" cx="38" cy="66" r="12"/><text class="w" x="38" y="70">1</text><text class="b" x="56" y="70">Библиотека</text>
+  <line x1="40" y1="110" x2="260" y2="110" stroke="#2f3f7a" stroke-width="3"/>
+  <rect x="60" y="100" width="16" height="20" fill="#ee8a2b"/><rect x="220" y="100" width="16" height="20" fill="#ee8a2b"/>
+  <rect x="76" y="103" width="14" height="14" fill="#3fa34d"/><rect x="204" y="103" width="14" height="14" fill="#3fa34d"/>
+  <text class="s" x="40" y="140">Фрагментация ДНК, лигирование</text>
+  <text class="s" x="40" y="156">адаптеров и индекса-баркода,</text>
+  <text class="s" x="40" y="172">амплификация ПЦР.</text>
+  <text class="s" x="40" y="196" style="font-size:10px;fill:#b4531a">баркод = «имя» образца в смеси</text>
+
+  <!-- 2 -->
+  <rect class="box" x="315" y="46" width="270" height="168" rx="10"/>
+  <circle class="num" cx="333" cy="66" r="12"/><text class="w" x="333" y="70">2</text><text class="b" x="351" y="70">Кластеризация</text>
+  <rect x="335" y="96" width="250" height="60" fill="#e7f1fb" stroke="#3b6fd4" stroke-width="1.2"/>
+  <g fill="#3b6fd4"><circle cx="360" cy="112" r="6"/><circle cx="368" cy="118" r="6"/><circle cx="356" cy="122" r="6"/></g>
+  <g fill="#3fa34d"><circle cx="430" cy="112" r="6"/><circle cx="438" cy="118" r="6"/><circle cx="426" cy="122" r="6"/></g>
+  <g fill="#c0392b"><circle cx="500" cy="112" r="6"/><circle cx="508" cy="118" r="6"/><circle cx="496" cy="122" r="6"/></g>
+  <g fill="#e0a43a"><circle cx="560" cy="112" r="6"/><circle cx="555" cy="122" r="6"/></g>
+  <text class="s" x="335" y="176">Фрагменты закрепляются на</text>
+  <text class="s" x="335" y="192">проточной ячейке и локально</text>
+  <text class="s" x="335" y="208">размножаются в кластеры-копии.</text>
+
+  <!-- 3 -->
+  <rect class="box" x="610" y="46" width="270" height="168" rx="10"/>
+  <circle class="num" cx="628" cy="66" r="12"/><text class="w" x="628" y="70">3</text><text class="b" x="646" y="70">Секвенирование</text>
+  <rect x="630" y="100" width="230" height="16" rx="4" fill="#3b6fd4"/><rect x="630" y="120" width="230" height="16" rx="4" fill="#3fa34d"/><rect x="630" y="140" width="230" height="16" rx="4" fill="#c0392b"/>
+  <text class="s" x="630" y="174">На каждом цикле встраивается</text>
+  <text class="s" x="630" y="190">один меченый нуклеотид —</text>
+  <text class="s" x="630" y="206">камера считывает цвет кластера.</text>
+
+  <!-- 4 -->
+  <rect class="box" x="20" y="238" width="270" height="150" rx="10"/>
+  <circle class="num" cx="38" cy="258" r="12"/><text class="w" x="38" y="262">4</text><text class="b" x="56" y="262">FASTQ</text>
+  <text class="s" x="40" y="288">@read1</text><text class="s" x="40" y="304">ACGTTGCA…</text><text class="s" x="40" y="320">+</text><text class="s" x="40" y="336" style="font-size:10px">качество по шкале Phred (Q30)</text>
+  <text class="s" x="40" y="360" style="font-size:10.5px">Каждое основание получает</text>
+  <text class="s" x="40" y="374" style="font-size:10.5px">оценку достоверности.</text>
+
+  <!-- 5 -->
+  <rect class="box" x="315" y="238" width="270" height="150" rx="10"/>
+  <circle class="num" cx="333" cy="258" r="12"/><text class="w" x="333" y="262">5</text><text class="b" x="351" y="262">Выравнивание — BAM</text>
+  <line x1="335" y1="300" x2="580" y2="300" stroke="#2f3f7a" stroke-width="4"/>
+  <line x1="360" y1="312" x2="420" y2="312" stroke="#3b6fd4" stroke-width="4"/>
+  <line x1="440" y1="312" x2="500" y2="312" stroke="#3fa34d" stroke-width="4"/>
+  <text class="s" x="335" y="286" style="font-size:10.5px">референсный геном (GRCh38)</text>
+  <text class="s" x="335" y="336">Каждое чтение «прикладывают»</text>
+  <text class="s" x="335" y="352">к геному и находят отличия.</text>
+  <text class="s" x="335" y="368" style="font-size:10.5px">Глубина покрытия — сколько раз</text>
+
+  <!-- 6 -->
+  <rect class="box" x="610" y="238" width="270" height="150" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <circle class="num" cx="628" cy="258" r="12" style="fill:#2f7d3f"/><text class="w" x="628" y="262">6</text><text class="b" x="646" y="262" style="fill:#2f7d3f">VCF → отчёт</text>
+  <text class="s" x="630" y="288" style="font-size:10.5px">chr9  133 738 240  G  A</text>
+  <text class="s" x="630" y="312">Список отличий сверяют с базами</text>
+  <text class="s" x="630" y="328">(gnomAD, ClinVar, COSMIC) и</text>
+  <text class="s" x="630" y="344">классифицируют по значимости —</text>
+  <text class="s" x="630" y="360">подробнее в теме «NGS-панели».</text>
+
+  <path d="M290 130 H310" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <path d="M585 130 H605" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <path d="M745 214 V234" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <path d="M610 313 H595" stroke="#5b6577" stroke-width="0" fill="none"/>
+  <path d="M585 313 H605" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+  <path d="M290 313 H310" stroke="#5b6577" stroke-width="2.2" fill="none" marker-end="url(#ar)"/>
+
+  <rect class="box" x="20" y="410" width="860" height="130" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="432">Почему «параллельно» — это революция</text>
+  <text class="s" x="34" y="454" style="font-size:12px">Секвенатор одновременно читает сотни миллионов кластеров — за один прогон можно прочитать сразу десятки генов у десятков</text>
+  <text class="s" x="34" y="472" style="font-size:12px">пациентов (индексы-баркоды потом «разбирают» чтения обратно по образцам). Это и дешевле, и быстрее, чем секвенирование по Сэнгеру</text>
+  <text class="s" x="34" y="490" style="font-size:12px">ген за геном, но каждое отдельное чтение короче и немного менее точное — ошибки компенсируют высокой глубиной покрытия.</text>
+  <text class="s" x="34" y="512" style="font-size:11px">Платформы короткого чтения (Illumina) точнее на одно основание; платформы длинного чтения (Nanopore, PacBio) читают десятки</text>
+  <text class="s" x="34" y="528" style="font-size:11px">тысяч нуклеотидов подряд — удобно для структурных перестроек, фазирования аллелей и прямого обнаружения метилирования.</text>
+</svg>

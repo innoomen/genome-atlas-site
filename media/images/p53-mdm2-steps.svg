@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="t d">
+  <title id="t">Как клетка стабилизирует p53 при повреждении ДНК: шесть шагов</title>
+  <desc id="d">Пошаговая схема. 1: в здоровой клетке MDM2 постоянно метит p53 убиквитином, и он сразу разрушается в протеасоме — белка мало. 2: разрыв ДНК активирует ядерную киназу ATM (и ATR), которая включает CHK1 и CHK2. 3: ATM фосфорилирует и p53, и MDM2, из-за чего они перестают связываться — p53 перестаёт разрушаться и накапливается. 4: четыре молекулы p53 собираются в тетрамер и входят в ядро, которое на этой схеме заметно меньше всей клетки. 5: тетрамер p53 связывается с ДНК-мишенями и включает синтез мРНК генов p21, GADD45, BAX и PUMA. 6: в зависимости от тяжести повреждения клетка получает один из трёх исходов: паузу клеточного цикла, ремонт ДНК или апоптоз.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .cell { fill: #fdf6ee; stroke: #e0b98a; stroke-width: 2; }
+    .nuc { fill: #f3efff; stroke: #b6a4e0; stroke-width: 2; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  </defs>
+  <rect width="900" height="760" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Как клетка «включает» p53: от разрыва ДНК до ответа</text>
+
+  <!-- ============ ряд 1 ============ -->
+  <!-- Шаг 1 -->
+  <g>
+    <rect class="box" x="20" y="44" width="273" height="256" rx="12"/>
+    <circle cx="38" cy="66" r="13" fill="#3b6fd4"/><text class="w" x="38" y="70">1</text>
+    <text class="b" x="60" y="70">В покое p53 разрушается</text>
+    <ellipse class="cell" cx="156" cy="180" rx="120" ry="82"/>
+    <text class="s" x="46" y="112" style="font-size:10px">клетка</text>
+    <circle cx="130" cy="184" r="22" fill="#3fa34d"/><text class="w" x="130" y="188" style="font-size:10px">p53</text>
+    <ellipse cx="176" cy="160" rx="30" ry="14" fill="#c0392b"/><text class="w" x="176" y="164" style="font-size:9.5px">MDM2</text>
+    <path d="M152 172 L164 166" stroke="#c0392b" stroke-width="2" fill="none"/>
+    <circle cx="192" cy="196" r="6" fill="#e0a43a"/><circle cx="204" cy="204" r="6" fill="#e0a43a"/>
+    <text class="s" x="150" y="222" style="font-size:10px;fill:#b4531a">убиквитин</text>
+    <path d="M150 202 C165 214 180 214 192 208" class="ar" style="stroke-width:1.8" marker-end="url(#ar)"/>
+    <ellipse cx="236" cy="222" rx="34" ry="16" fill="#8a94a8"/><text class="w" x="236" y="226" style="font-size:9px">протеасома</text>
+    <text class="s" x="42" y="238">MDM2 постоянно метит p53</text>
+    <text class="s" x="42" y="254">убиквитином — тот сразу</text>
+    <text class="s" x="42" y="270">разрушается: живёт минуты.</text>
+  </g>
+  <path class="ar" d="M296 172 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 2 -->
+  <g>
+    <rect class="box" x="316" y="44" width="273" height="256" rx="12"/>
+    <circle cx="334" cy="66" r="13" fill="#3b6fd4"/><text class="w" x="334" y="70">2</text>
+    <text class="b" x="356" y="70">Разрыв ДНК — сигнал тревоги</text>
+    <ellipse class="cell" cx="452" cy="180" rx="120" ry="82"/>
+    <circle class="nuc" cx="500" cy="170" r="52"/>
+    <text class="s" x="500" y="128" text-anchor="middle" style="font-size:10px">ядро</text>
+    <line x1="466" y1="180" x2="534" y2="180" stroke="#2f3f7a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M494 172 l12 16 M506 172 l-12 16" stroke="#c0392b" stroke-width="3"/>
+    <ellipse cx="500" cy="204" rx="28" ry="13" fill="#e0a43a"/><text class="w" x="500" y="208" style="fill:#1c2330;font-size:9px">ATM/ATR</text>
+    <path d="M500 191 V196" stroke="#5b6577" stroke-width="1.6" fill="none"/>
+    <text class="s" x="338" y="238">Разрыв ДНК активирует ядерные</text>
+    <text class="s" x="338" y="254">киназы ATM/ATR → CHK1/CHK2 —</text>
+    <text class="s" x="338" y="270">«тревожная кнопка» клетки.</text>
+  </g>
+  <path class="ar" d="M592 172 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 3 -->
+  <g>
+    <rect class="box" x="612" y="44" width="268" height="256" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+    <circle cx="630" cy="66" r="13" fill="#2f7d3f"/><text class="w" x="630" y="70">3</text>
+    <text class="b" x="652" y="70">p53 стабилизируется</text>
+    <ellipse class="cell" cx="746" cy="180" rx="120" ry="82"/>
+    <circle cx="716" cy="184" r="24" fill="#3fa34d"/><text class="w" x="716" y="188" style="font-size:10px">p53</text>
+    <circle cx="700" cy="166" r="9" fill="#c0392b"/><text class="w" x="700" y="169" style="font-size:8px">P</text>
+    <ellipse cx="784" cy="160" rx="28" ry="13" fill="#8a94a8"/><text class="w" x="784" y="164" style="font-size:9px">MDM2</text>
+    <circle cx="800" cy="146" r="9" fill="#c0392b"/><text class="w" x="800" y="149" style="font-size:8px">P</text>
+    <path d="M740 172 L766 164" stroke="#8a94a8" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+    <text class="s" x="700" y="220" style="font-size:10px;fill:#c0392b">связь разорвана</text>
+    <text class="s" x="632" y="238">ATM фосфорилирует p53 и MDM2:</text>
+    <text class="s" x="632" y="254">они перестают связываться, и</text>
+    <text class="s" x="632" y="270">p53 больше не разрушается.</text>
+  </g>
+
+  <path class="ar" d="M156 300 V330" marker-end="url(#ar)"/>
+
+  <!-- ============ ряд 2 ============ -->
+  <!-- Шаг 4 -->
+  <g>
+    <rect class="box" x="20" y="332" width="273" height="256" rx="12"/>
+    <circle cx="38" cy="354" r="13" fill="#3b6fd4"/><text class="w" x="38" y="358">4</text>
+    <text class="b" x="60" y="358">Тетрамер входит в ядро</text>
+    <ellipse class="cell" cx="156" cy="468" rx="120" ry="82"/>
+    <circle class="nuc" cx="204" cy="458" r="52"/>
+    <text class="s" x="204" y="416" text-anchor="middle" style="font-size:10px">ядро</text>
+    <g>
+      <circle cx="104" cy="486" r="14" fill="#3fa34d"/><circle cx="128" cy="486" r="14" fill="#3fa34d"/>
+      <circle cx="104" cy="510" r="14" fill="#3fa34d"/><circle cx="128" cy="510" r="14" fill="#3fa34d"/>
+      <text class="w" x="116" y="502" style="font-size:9px">p53×4</text>
+    </g>
+    <path d="M142 496 C160 488 178 478 188 468" class="ar" marker-end="url(#ar)"/>
+    <text class="s" x="42" y="526">Четыре молекулы p53 собираются</text>
+    <text class="s" x="42" y="542">в тетрамер — это его рабочая</text>
+    <text class="s" x="42" y="558">форма — и входят в ядро.</text>
+  </g>
+  <path class="ar" d="M296 460 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 5 -->
+  <g>
+    <rect class="box" x="316" y="332" width="273" height="256" rx="12"/>
+    <circle cx="334" cy="354" r="13" fill="#3b6fd4"/><text class="w" x="334" y="358">5</text>
+    <text class="b" x="356" y="358">p53 включает гены</text>
+    <ellipse class="cell" cx="452" cy="468" rx="120" ry="82"/>
+    <circle class="nuc" cx="452" cy="468" r="66"/>
+    <text class="s" x="452" y="412" text-anchor="middle" style="font-size:10px">ядро</text>
+    <line x1="404" y1="474" x2="500" y2="474" stroke="#2f3f7a" stroke-width="4" stroke-linecap="round"/>
+    <rect x="432" y="462" width="30" height="14" rx="4" fill="#f0b429"/>
+    <ellipse cx="447" cy="450" rx="30" ry="12" fill="#3fa34d"/><text class="w" x="447" y="454" style="font-size:8.5px">p53×4</text>
+    <path d="M500 474 h26" stroke="#3fa34d" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+    <text class="s" x="520" y="470" style="font-size:9.5px">мРНК</text>
+    <text class="s" x="338" y="526">Тетрамер связывается с ДНК и</text>
+    <text class="s" x="338" y="542">включает <tspan font-style="italic">CDKN1A</tspan> (p21), <tspan font-style="italic">GADD45</tspan>,</text>
+    <text class="s" x="338" y="558"><tspan font-style="italic">BAX</tspan>, <tspan font-style="italic">PUMA</tspan> и другие гены-мишени.</text>
+  </g>
+  <path class="ar" d="M592 460 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 6 -->
+  <g>
+    <rect class="box" x="612" y="332" width="268" height="256" rx="12" style="fill:#fdf1ef;stroke:#e0a89f"/>
+    <circle cx="630" cy="354" r="13" fill="#c0392b"/><text class="w" x="630" y="358">6</text>
+    <text class="b" x="652" y="358">Один из трёх исходов</text>
+    <rect x="628" y="380" width="240" height="52" rx="10" fill="#e7f1fb" stroke="#3b6fd4" stroke-width="1.6"/>
+    <text class="b" x="642" y="401" style="fill:#3b6fd4;font-size:12px">Пауза</text><text class="s" x="642" y="418" style="font-size:10.5px">остановка цикла (p21) — время на ремонт</text>
+    <rect x="628" y="440" width="240" height="52" rx="10" fill="#eaf6ee" stroke="#3fa34d" stroke-width="1.6"/>
+    <text class="b" x="642" y="461" style="fill:#2f7d3f;font-size:12px">Ремонт</text><text class="s" x="642" y="478" style="font-size:10.5px">гены репарации ДНК (GADD45)</text>
+    <rect x="628" y="500" width="240" height="52" rx="10" fill="#f8d7d0" stroke="#c0392b" stroke-width="1.6"/>
+    <text class="b" x="642" y="521" style="fill:#c0392b;font-size:12px">Гибель</text><text class="s" x="642" y="538" style="font-size:10.5px">апоптоз (BAX, PUMA), если повреждений слишком много</text>
+    <text class="s" x="628" y="576" style="font-size:10.5px">Выбор зависит от силы и длительности сигнала.</text>
+  </g>
+
+  <!-- итог -->
+  <rect class="box" x="20" y="602" width="860" height="120" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="34" y="626">Итог</text>
+  <text class="s" x="34" y="648">Мутации в гене <tspan font-style="italic">TP53</tspan> ломают именно эту цепочку: клетка не может ни остановиться, ни исправить ДНК,</text>
+  <text class="s" x="34" y="666">ни погибнуть вовремя, и продолжает делиться с повреждённым геномом — так возникают опухоли.</text>
+  <text class="s" x="34" y="688">Ядро на этой схеме — только часть клетки, заметно меньше цитоплазмы: именно туда p53 входит, чтобы работать</text>
+  <text class="s" x="34" y="706">как транскрипционный фактор.</text>
+</svg>

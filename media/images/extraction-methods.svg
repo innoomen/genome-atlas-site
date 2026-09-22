@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+  <title id="t">Как выделяют ДНК и РНК: два метода</title>
+  <desc id="d">Слева классический метод фенол-хлороформной экстракции: лизис клеток, добавление фенол-хлороформа, центрифугирование разделяет смесь на три слоя — нижний органический с белками, межфазный с ДНК, верхний водный с РНК; целевую фазу переносят и осаждают спиртом. Справа современный метод на силикагелевой колонке: лизис в хаотропном буфере, связывание нуклеиновых кислот с силикагелевой мембраной, промывка примесей, элюция чистой ДНК или РНК буфером с низкой соленостью. Внизу — общая первая стадия лизиса и сравнение методов.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .ar { stroke: #5b6577; stroke-width: 2.2; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="620" fill="#ffffff"/>
+  <text class="h" x="20" y="28">От пробирки крови до чистой ДНК или РНК</text>
+
+  <!-- общий лизис -->
+  <rect class="box" x="330" y="44" width="240" height="70" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="b" x="450" y="68" text-anchor="middle">1. Лизис клеток</text>
+  <text class="s" x="450" y="86" text-anchor="middle" style="font-size:11px">детергент рвёт мембраны,</text>
+  <text class="s" x="450" y="100" text-anchor="middle" style="font-size:11px">протеиназа K разрушает белки</text>
+  <path class="ar" d="M400 114 L200 150" marker-end="url(#ar)"/>
+  <path class="ar" d="M500 114 L700 150" marker-end="url(#ar)"/>
+
+  <!-- левая колонка: фенол-хлороформ -->
+  <text class="b" x="20" y="144" style="fill:#b4531a">Фенол-хлороформ (классический)</text>
+  <rect x="20" y="156" width="260" height="130" rx="10" class="box"/>
+  <rect x="40" y="170" width="220" height="30" fill="#eaf6ee"/><text class="s" x="50" y="190" style="font-size:11px">водная фаза — РНК</text>
+  <rect x="40" y="200" width="220" height="20" fill="#f9e9cf"/><text class="s" x="50" y="215" style="font-size:10.5px">межфаза — ДНК</text>
+  <rect x="40" y="220" width="220" height="40" fill="#f6dfda"/><text class="s" x="50" y="244" style="font-size:11px">органическая фаза —</text><text class="s" x="50" y="258" style="font-size:11px">белки, липиды</text>
+  <text class="s" x="30" y="302" style="font-size:11px">Центрифугирование разделяет смесь</text>
+  <text class="s" x="30" y="318" style="font-size:11px">на три слоя; нужную фазу переносят</text>
+  <text class="s" x="30" y="334" style="font-size:11px">и осаждают спиртом.</text>
+  <text class="s" x="30" y="358" style="font-size:11px;fill:#c0392b">Эффективен, но токсичен (фенол)</text>
+  <text class="s" x="30" y="374" style="font-size:11px;fill:#c0392b">и плохо автоматизируется.</text>
+
+  <!-- правая колонка: силикагель -->
+  <text class="b" x="620" y="144" style="fill:#2f7d3f">Силикагелевая колонка (современный)</text>
+  <rect x="620" y="156" width="260" height="130" rx="10" class="box"/>
+  <ellipse cx="750" cy="180" rx="90" ry="16" fill="#e7f1fb" stroke="#3b6fd4" stroke-width="1.6"/><text class="s" x="750" y="184" text-anchor="middle" style="font-size:10.5px">хаотропный буфер (связывание)</text>
+  <rect x="710" y="204" width="80" height="16" rx="4" fill="#b7c0cf"/><text class="w" x="750" y="216" style="font-size:9px">мембрана SiO₂</text>
+  <path d="M700 236 Q750 250 800 236" stroke="#8a94a8" stroke-width="2" fill="none"/><text class="s" x="750" y="258" text-anchor="middle" style="font-size:10.5px">промывка (этанол)</text>
+  <path class="ar" d="M750 260 V276" marker-end="url(#ar)"/>
+  <text class="s" x="630" y="302" style="font-size:11px">Нуклеиновые кислоты обратимо</text>
+  <text class="s" x="630" y="318" style="font-size:11px">связываются с силикагелем при</text>
+  <text class="s" x="630" y="334" style="font-size:11px">высокой солёности, элюируются</text>
+  <text class="s" x="630" y="350" style="font-size:11px">буфером с низкой солёностью.</text>
+  <text class="s" x="630" y="374" style="font-size:11px;fill:#2f7d3f">Быстрее, безопаснее, легко</text>
+  <text class="s" x="630" y="390" style="font-size:11px;fill:#2f7d3f">автоматизируется (роботы).</text>
+
+  <rect class="box" x="20" y="410" width="860" height="120" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="432">Что важно для дальнейшей работы</text>
+  <text class="s" x="34" y="452">• Для РНК нужны РНКазы-ингибиторы и особая осторожность: РНК разрушается за минуты при комнатной температуре.</text>
+  <text class="s" x="34" y="470">• Магнитные силикагелевые частицы (аналог колонки) удобны для автоматизации в лабораториях с высоким потоком образцов.</text>
+  <text class="s" x="34" y="488">• Источник материала имеет значение: цельная кровь, костный мозг, ФФПЭ-ткань (формалин-фиксированная) требуют разных протоколов.</text>
+  <text class="s" x="34" y="506" style="font-size:11px">ФФПЭ-ткань даёт фрагментированную, химически повреждённую ДНК — это ограничивает чувствительность последующих методов.</text>
+
+  <text class="s" x="20" y="556" style="font-size:12px">Выход и качество материала определяют, какие методы (ПЦР, секвенирование) будут работать надёжно — раздел «Качество и количество».</text>
+</svg>

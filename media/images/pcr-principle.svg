@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Принцип ПЦР: три температурных шага и экспоненциальный рост копий</title>
+  <desc id="d">Вверху три шага одного цикла: денатурация при 94–98 градусах разделяет двойную спираль на две цепи; отжиг при 50–65 градусах позволяет коротким праймерам связаться с комплементарными участками по краям нужного фрагмента; элонгация при 68–72 градусах — термостабильная ДНК-полимераза удлиняет праймеры, синтезируя новую цепь. Внизу график: число копий фрагмента удваивается с каждым циклом — после 30 циклов из одной молекулы получается свыше миллиарда копий.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .dna { stroke: #2f3f7a; stroke-width: 4; fill: none; stroke-linecap: round; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">ПЦР: копировальный аппарат для одного участка ДНК</text>
+
+  <!-- шаг 1: денатурация -->
+  <rect class="box" x="20" y="46" width="270" height="196" rx="10"/>
+  <text class="b" x="34" y="68">1. Денатурация — 94–98 °C</text>
+  <line class="dna" x1="60" y1="120" x2="250" y2="120"/><line class="dna" x1="60" y1="136" x2="250" y2="136"/>
+  <path d="M60 150 H250" stroke="#e1e6ee" stroke-width="1" fill="none"/>
+  <line class="dna" x1="60" y1="176" x2="250" y2="176" style="stroke:#7fa6d9"/>
+  <line class="dna" x1="60" y1="196" x2="250" y2="196" style="stroke:#7fa6d9"/>
+  <text class="s" x="34" y="100" style="font-size:11px">двойная спираль</text>
+  <text class="s" x="34" y="214" style="font-size:11px">две одноцепочечные матрицы</text>
+
+  <!-- шаг 2: отжиг -->
+  <rect class="box" x="315" y="46" width="270" height="196" rx="10"/>
+  <text class="b" x="329" y="68">2. Отжиг праймеров — 50–65 °C</text>
+  <line class="dna" x1="335" y1="150" x2="560" y2="150" style="stroke:#7fa6d9"/>
+  <line x1="335" y1="150" x2="375" y2="150" stroke="#ee8a2b" stroke-width="5"/>
+  <line x1="520" y1="150" x2="560" y2="150" stroke="#3fa34d" stroke-width="5"/>
+  <text class="s" x="329" y="132" style="font-size:10.5px;fill:#b4531a">прямой праймер</text>
+  <text class="s" x="470" y="132" style="font-size:10.5px;fill:#2f7d3f">обратный праймер</text>
+  <text class="s" x="329" y="190" style="font-size:11px">Короткие (18–25 нт) синтетические</text>
+  <text class="s" x="329" y="206" style="font-size:11px">олигонуклеотиды находят свои</text>
+  <text class="s" x="329" y="222" style="font-size:11px">комплементарные участки.</text>
+
+  <!-- шаг 3: элонгация -->
+  <rect class="box" x="610" y="46" width="270" height="196" rx="10"/>
+  <text class="b" x="624" y="68">3. Элонгация — 68–72 °C</text>
+  <line class="dna" x1="630" y1="150" x2="855" y2="150" style="stroke:#7fa6d9"/>
+  <line x1="630" y1="150" x2="670" y2="150" stroke="#ee8a2b" stroke-width="5"/>
+  <line x1="670" y1="150" x2="780" y2="150" stroke="#c0392b" stroke-width="5" stroke-dasharray="1 0"/>
+  <ellipse cx="785" cy="150" rx="20" ry="14" fill="#7b5ea7"/><text class="w" x="785" y="154" style="font-size:9px">Taq</text>
+  <text class="s" x="624" y="190" style="font-size:11px">Термостабильная ДНК-полимераза</text>
+  <text class="s" x="624" y="206" style="font-size:11px">(Taq) удлиняет праймер, читая</text>
+  <text class="s" x="624" y="222" style="font-size:11px">матрицу 5'→3'.</text>
+
+  <path class="ar" d="M290 144 H310" marker-end="url(#ar)"/><path class="ar" d="M585 144 H605" marker-end="url(#ar)"/>
+  <path class="ar" d="M745 242 C745 270 155 270 155 66" marker-end="url(#ar)" fill="none" stroke="#5b6577" stroke-width="2" stroke-dasharray="4 4"/>
+  <text class="s" x="450" y="264" text-anchor="middle" style="font-size:11px">…и снова: 20–40 циклов подряд</text>
+
+  <!-- экспонента -->
+  <text class="h" x="20" y="316">Экспоненциальный рост: 2, 4, 8, 16… 2ⁿ копий</text>
+  <line x1="60" y1="560" x2="860" y2="560" stroke="#8a94a8" stroke-width="1.5"/>
+  <line x1="60" y1="340" x2="60" y2="560" stroke="#8a94a8" stroke-width="1.5"/>
+  <text class="s" x="20" y="345" style="font-size:10px">копии</text>
+  <path d="M60 558 C 200 556, 300 540, 380 500 S 500 380, 600 360 S 750 342, 860 340" fill="none" stroke="#3b6fd4" stroke-width="3"/>
+  <text class="s" x="70" y="576" style="font-size:10.5px">0</text><text class="s" x="320" y="576" style="font-size:10.5px">10 циклов</text><text class="s" x="560" y="576" style="font-size:10.5px">20 циклов</text><text class="s" x="800" y="576" style="font-size:10.5px">30 циклов</text>
+  <text class="s" x="700" y="360" style="font-size:11px;fill:#3b6fd4">из 1 молекулы → более 10⁹ копий</text>
+</svg>

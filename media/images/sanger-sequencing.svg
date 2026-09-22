@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Секвенирование по Сэнгеру: обрыв цепи и чтение по длине фрагментов</title>
+  <desc id="d">В пробирку добавляют матрицу, праймер, ДНК-полимеразу, обычные дезоксинуклеотиды (dNTP) и небольшую долю флуоресцентно меченных дидезоксинуклеотидов (ddNTP), у которых нет 3'-гидроксильной группы. Полимераза синтезирует цепь, и при случайном включении ddNTP синтез обрывается — так получается набор фрагментов всех возможных длин, каждый заканчивается меченым основанием своего цвета. Капиллярный электрофорез разделяет фрагменты по длине с точностью до одного нуклеотида, лазер считывает цвет каждого фрагмента по порядку, и получается хроматограмма — последовательность пиков четырёх цветов, которую читают как последовательность ДНК.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .dna { stroke: #2f3f7a; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+  </style>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Метод обрыва цепи: почему получаются фрагменты всех длин</text>
+
+  <text class="b" x="20" y="56">Реакционная смесь</text>
+  <line class="dna" x1="40" y1="80" x2="300" y2="80" style="stroke:#7fa6d9"/>
+  <line x1="40" y1="80" x2="70" y2="80" stroke="#ee8a2b" stroke-width="5"/><text class="s" x="40" y="70" style="font-size:10px">праймер</text>
+  <text class="s" x="320" y="76" style="font-size:11px">матрица + праймер + Taq/полимераза</text>
+  <text class="s" x="320" y="92" style="font-size:11px">+ обычные dNTP + немного ddNTP*A, *C, *G, *T</text>
+  <text class="s" x="320" y="108" style="font-size:11px;fill:#c0392b">*ddNTP лишён 3'-OH — обрывает синтез</text>
+
+  <!-- набор фрагментов -->
+  <text class="b" x="20" y="150">Синтез случайно обрывается на каждом ddNTP</text>
+  <g font-size="0">
+  </g>
+  <g>
+    <line x1="40" y1="176" x2="120" y2="176" stroke="#2f3f7a" stroke-width="4"/><circle cx="120" cy="176" r="7" fill="#3b6fd4"/>
+    <line x1="40" y1="196" x2="180" y2="196" stroke="#2f3f7a" stroke-width="4"/><circle cx="180" cy="196" r="7" fill="#3fa34d"/>
+    <line x1="40" y1="216" x2="230" y2="216" stroke="#2f3f7a" stroke-width="4"/><circle cx="230" cy="216" r="7" fill="#e0a43a"/>
+    <line x1="40" y1="236" x2="290" y2="236" stroke="#2f3f7a" stroke-width="4"/><circle cx="290" cy="236" r="7" fill="#c0392b"/>
+    <line x1="40" y1="256" x2="340" y2="256" stroke="#2f3f7a" stroke-width="4"/><circle cx="340" cy="256" r="7" fill="#3b6fd4"/>
+    <line x1="40" y1="276" x2="400" y2="276" stroke="#2f3f7a" stroke-width="4"/><circle cx="400" cy="276" r="7" fill="#3fa34d"/>
+  </g>
+  <text class="s" x="420" y="230" style="font-size:11px">Фрагменты разной длины, каждый</text>
+  <text class="s" x="420" y="246" style="font-size:11px">заканчивается меченым ddNTP:</text>
+  <circle cx="440" cy="264" r="6" fill="#3b6fd4"/><text class="s" x="452" y="268" style="font-size:10.5px">A</text>
+  <circle cx="470" cy="264" r="6" fill="#3fa34d"/><text class="s" x="482" y="268" style="font-size:10.5px">C</text>
+  <circle cx="500" cy="264" r="6" fill="#e0a43a"/><text class="s" x="512" y="268" style="font-size:10.5px">G</text>
+  <circle cx="530" cy="264" r="6" fill="#c0392b"/><text class="s" x="542" y="268" style="font-size:10.5px">T</text>
+
+  <line x1="20" y1="308" x2="880" y2="308" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="336">Капиллярный электрофорез и хроматограмма</text>
+  <rect class="box" x="20" y="352" width="300" height="150" rx="10"/>
+  <line x1="50" y1="380" x2="50" y2="480" stroke="#8a94a8" stroke-width="10"/>
+  <circle cx="50" cy="392" r="6" fill="#3b6fd4"/><circle cx="50" cy="410" r="6" fill="#3fa34d"/><circle cx="50" cy="428" r="6" fill="#e0a43a"/><circle cx="50" cy="446" r="6" fill="#c0392b"/><circle cx="50" cy="464" r="6" fill="#3b6fd4"/>
+  <text class="s" x="70" y="396" style="font-size:10.5px">короткие бегут быстрее</text>
+  <text class="s" x="70" y="470" style="font-size:10.5px">длинные — медленнее</text>
+  <text class="s" x="34" y="374" style="font-size:11px">капилляр с полимером</text>
+  <text class="s" x="34" y="494" style="font-size:10.5px">лазер считывает цвет на выходе, по порядку</text>
+
+  <rect class="box" x="340" y="352" width="540" height="150" rx="10"/>
+  <text class="b" x="354" y="374">Хроматограмма</text>
+  <g>
+    <path d="M360 460 L368 430 L376 460" stroke="#3b6fd4" stroke-width="2.4" fill="none"/><text class="s" x="368" y="474" text-anchor="middle" style="font-size:10px;fill:#3b6fd4">A</text>
+    <path d="M390 460 L398 425 L406 460" stroke="#3fa34d" stroke-width="2.4" fill="none"/><text class="s" x="398" y="474" text-anchor="middle" style="font-size:10px;fill:#3fa34d">C</text>
+    <path d="M420 460 L428 435 L436 460" stroke="#e0a43a" stroke-width="2.4" fill="none"/><text class="s" x="428" y="474" text-anchor="middle" style="font-size:10px;fill:#b4531a">G</text>
+    <path d="M450 460 L458 420 L466 460" stroke="#c0392b" stroke-width="2.4" fill="none"/><text class="s" x="458" y="474" text-anchor="middle" style="font-size:10px;fill:#c0392b">T</text>
+    <path d="M480 460 L488 432 L496 460" stroke="#3fa34d" stroke-width="2.4" fill="none"/><text class="s" x="488" y="474" text-anchor="middle" style="font-size:10px;fill:#3fa34d">C</text>
+    <path d="M510 460 L518 428 L526 460" stroke="#3b6fd4" stroke-width="2.4" fill="none"/><text class="s" x="518" y="474" text-anchor="middle" style="font-size:10px;fill:#3b6fd4">A</text>
+    <path d="M540 460 L548 424 L556 460" stroke="#c0392b" stroke-width="2.4" fill="none"/><text class="s" x="548" y="474" text-anchor="middle" style="font-size:10px;fill:#c0392b">T</text>
+    <path d="M570 460 L578 438 L586 460" stroke="#e0a43a" stroke-width="2.4" fill="none"/><text class="s" x="578" y="474" text-anchor="middle" style="font-size:10px;fill:#b4531a">G</text>
+  </g>
+  <text class="s" x="354" y="496" style="font-size:11px">Порядок пиков = последовательность ДНК: A C G T C A T G…</text>
+
+  <rect class="box" x="20" y="520" width="860" height="66" rx="10" style="fill:#fff8e8;stroke:#e0a43a"/>
+  <text class="s" x="34" y="544" style="font-size:12px">Читает до ~700–900 нт за реакцию, точность очень высокая, но по одному фрагменту за раз — «золотой стандарт» для подтверждения</text>
+  <text class="s" x="34" y="562" style="font-size:12px">одной конкретной мутации, но медленный и дорогой для тысяч генов сразу (для этого используют NGS).</text>
+</svg>

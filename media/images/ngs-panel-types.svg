@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+  <title id="t">Типы NGS-исследований: ширина против глубины</title>
+  <desc id="d">Схема компромисса. Таргетная панель генов узкая (десятки-сотни генов), но читает каждый участок очень глубоко (часто более тысячи раз), что позволяет находить редкие мутантные клетки с низкой аллельной долей — подходит для диагностики и мониторинга минимальной остаточной болезни. Экзом читает все кодирующие участки генома, но с меньшей глубиной. Полный геном читает вообще всё, включая некодирующие области, но с ещё меньшей глубиной при том же бюджете секвенирования. РНК-секвенирование и панели слияний читают транскрипты и находят химерные гены. Внизу график: чем шире охват, тем при фиксированной стоимости меньше глубина покрытия, и тем выше порог обнаружения редких вариантов.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Что секвенировать: чем шире охват, тем меньше глубина</text>
+
+  <rect class="box" x="20" y="46" width="205" height="220" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="68" style="fill:#2f7d3f">Таргетная панель</text>
+  <text class="s" x="34" y="90">Десятки–сотни генов,</text><text class="s" x="34" y="106">заранее выбранных</text>
+  <rect x="34" y="120" width="160" height="18" rx="4" fill="#3fa34d"/><text class="s" x="40" y="133" style="fill:#fff;font-size:10px">глубина ×1000 и выше</text>
+  <text class="s" x="34" y="160">Находит клоны с долей</text><text class="s" x="34" y="176">0,1–1 % и ниже</text>
+  <text class="s" x="34" y="204" style="font-weight:700">Для чего:</text><text class="s" x="34" y="220">диагностика, МОБ,</text><text class="s" x="34" y="236">повторные анализы</text>
+
+  <rect class="box" x="235" y="46" width="205" height="220" rx="10"/>
+  <text class="b" x="249" y="68">Экзом (WES)</text>
+  <text class="s" x="249" y="90">Все ~20 000 кодирующих</text><text class="s" x="249" y="106">генов (~1–2 % генома)</text>
+  <rect x="249" y="120" width="160" height="18" rx="4" fill="#e0a43a"/><text class="s" x="255" y="133" style="fill:#1c2330;font-size:10px">глубина ×100–200</text>
+  <text class="s" x="249" y="160">Порог обнаружения выше,</text><text class="s" x="249" y="176">редкие клоны легко теряются</text>
+  <text class="s" x="249" y="204" style="font-weight:700">Для чего:</text><text class="s" x="249" y="220">поиск герминальных</text><text class="s" x="249" y="236">и неожиданных вариантов</text>
+
+  <rect class="box" x="450" y="46" width="205" height="220" rx="10"/>
+  <text class="b" x="464" y="68">Полный геном (WGS)</text>
+  <text class="s" x="464" y="90">Весь геном, включая</text><text class="s" x="464" y="106">некодирующие области</text>
+  <rect x="464" y="120" width="160" height="18" rx="4" fill="#c0392b"/><text class="s" x="470" y="133" style="fill:#fff;font-size:10px">глубина ×30–60</text>
+  <text class="s" x="464" y="160">Видит структурные</text><text class="s" x="464" y="176">перестройки, но дорог</text>
+  <text class="s" x="464" y="204" style="font-weight:700">Для чего:</text><text class="s" x="464" y="220">исследования, редкие</text><text class="s" x="464" y="236">наследственные болезни</text>
+
+  <rect class="box" x="665" y="46" width="215" height="220" rx="10" style="fill:#e7f1fb;stroke:#3b6fd4"/>
+  <text class="b" x="679" y="68" style="fill:#3b6fd4">РНК / панель слияний</text>
+  <text class="s" x="679" y="90">Читает транскрипты (мРНК)</text><text class="s" x="679" y="106">вместо ДНК</text>
+  <text class="s" x="679" y="140">Находит химерные гены</text><text class="s" x="679" y="156">(слияния), уровень экспрессии</text>
+  <text class="s" x="679" y="204" style="font-weight:700">Для чего:</text><text class="s" x="679" y="220">BCR::ABL1-подобный ОЛЛ,</text><text class="s" x="679" y="236">неясные перестройки</text>
+
+  <line x1="20" y1="300" x2="880" y2="300" stroke="#e1e6ee" stroke-width="2"/>
+  <text class="h" x="20" y="328">Компромисс при фиксированном бюджете секвенирования</text>
+  <line x1="80" y1="540" x2="820" y2="540" stroke="#8a94a8" stroke-width="1.5"/>
+  <line x1="80" y1="360" x2="80" y2="540" stroke="#8a94a8" stroke-width="1.5"/>
+  <text class="s" x="20" y="368" style="font-size:10px">глубина</text>
+  <text class="s" x="380" y="566" style="font-size:11px">ширина охвата (панель → экзом → геном)</text>
+  <path d="M100 380 C 300 400, 450 470, 800 520" fill="none" stroke="#3b6fd4" stroke-width="3"/>
+  <text class="s" x="110" y="400" style="font-size:11px;fill:#2f7d3f">панель: узко и глубоко</text>
+  <text class="s" x="650" y="500" style="font-size:11px;fill:#c0392b">геном: широко, но мельче</text>
+</svg>
