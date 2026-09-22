@@ -41,10 +41,11 @@
     <circle cx="334" cy="66" r="13" fill="#2f7d3f"/><text class="w" x="334" y="70">2</text>
     <text class="b" x="356" y="70">Венетоклакс связывается</text>
     <ellipse class="cell" cx="452" cy="180" rx="120" ry="82"/>
-    <ellipse cx="426" cy="180" rx="52" ry="22" fill="#3b6fd4"/><text class="w" x="426" y="184">BCL2</text>
-    <rect x="398" y="160" width="56" height="18" rx="9" fill="#c0392b"/><text class="w" x="426" y="173" style="font-size:9.5px">венетоклакс</text>
+    <ellipse cx="426" cy="188" rx="52" ry="22" fill="#3b6fd4"/><text class="w" x="426" y="192">BCL2</text>
+    <rect x="398" y="128" width="56" height="18" rx="9" fill="#c0392b"/><text class="w" x="426" y="141" style="font-size:9.5px">венетоклакс</text>
+    <path d="M426 146 V166" class="ar" style="stroke-width:1.8" marker-end="url(#ar)"/>
     <ellipse cx="500" cy="150" rx="28" ry="12" fill="#e0a43a"/><text class="w" x="500" y="154" style="fill:#1c2330;font-size:9.5px">BIM</text>
-    <path d="M460 168 C475 158 486 152 492 150" class="ar" style="stroke-width:1.8" marker-end="url(#ar)"/>
+    <path d="M462 178 C475 168 486 158 492 152" class="ar" style="stroke-width:1.8" marker-end="url(#ar)"/>
     <text class="s" x="338" y="238">Препарат — «BH3-миметик»: занимает</text>
     <text class="s" x="338" y="254">ту же борозду BCL2, что и BIM, и</text>
     <text class="s" x="338" y="270">вытесняет его наружу.</text>

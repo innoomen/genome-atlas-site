@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="t d">
+  <title id="t">Как ПЦР удваивает ДНК цикл за циклом: шесть шагов</title>
+  <desc id="d">Пошаговая схема первых двух циклов ПЦР. Цикл 1: 1 — денатурация при 94–98 градусах разделяет двойную спираль на две цепи; 2 — отжиг при 50–65 градусах, праймеры связываются со своими участками на каждой цепи; 3 — элонгация при 68–72 градусах, Taq-полимераза достраивает цепи, получаются две копии двухцепочечного фрагмента. Цикл 2 повторяет те же три шага уже над двумя копиями: 4 — денатурация обеих копий; 5 — отжиг и элонгация дают четыре копии; 6 — после 20–30 таких циклов число копий растёт экспоненциально и превышает миллиард.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 11.5px; fill: #5b6577; }
+    .w { font-size: 10.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .dna { stroke: #2f3f7a; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .dna2 { stroke: #7fa6d9; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .num { fill: #3b6fd4; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="760" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Один фрагмент, два цикла: как рождаются копии</text>
+  <text class="s" x="20" y="46" style="font-size:12px">Реакцию повторяют 20–40 раз подряд — здесь показаны первые два цикла, дальше рисунок повторяется.</text>
+
+  <!-- Цикл 1 label -->
+  <text class="b" x="20" y="72" style="fill:#b4531a">Цикл 1</text>
+
+  <!-- Шаг 1 -->
+  <g>
+    <rect class="box" x="20" y="80" width="273" height="220" rx="12"/>
+    <circle class="num" cx="38" cy="100" r="12"/><text class="w" x="38" y="104">1</text><text class="b" x="56" y="104">Денатурация · 94–98 °C</text>
+    <line class="dna" x1="60" y1="170" x2="250" y2="170"/>
+    <text class="s" x="60" y="196">Двойная спираль «расплетается»</text>
+    <text class="s" x="60" y="212">на две одиночные цепи-матрицы.</text>
+    <text class="s" x="60" y="234" style="font-size:10.5px">исходный фрагмент ДНК</text>
+  </g>
+  <path class="ar" d="M296 190 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 2 -->
+  <g>
+    <rect class="box" x="316" y="80" width="273" height="220" rx="12"/>
+    <circle class="num" cx="334" cy="100" r="12"/><text class="w" x="334" y="104">2</text><text class="b" x="352" y="104">Отжиг · 50–65 °C</text>
+    <line class="dna" x1="336" y1="164" x2="566" y2="164" style="stroke:#7fa6d9"/>
+    <line x1="336" y1="164" x2="376" y2="164" stroke="#ee8a2b" stroke-width="6"/>
+    <line class="dna" x1="336" y1="196" x2="566" y2="196" style="stroke:#7fa6d9"/>
+    <line x1="566" y1="196" x2="526" y2="196" stroke="#3fa34d" stroke-width="6"/>
+    <text class="s" x="336" y="230">Короткие праймеры находят</text>
+    <text class="s" x="336" y="246">и связывают свои «адреса»</text>
+    <text class="s" x="336" y="262">на каждой из двух цепей.</text>
+  </g>
+  <path class="ar" d="M592 190 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 3 -->
+  <g>
+    <rect class="box" x="612" y="80" width="268" height="220" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+    <circle class="num" cx="630" cy="100" r="12" style="fill:#2f7d3f"/><text class="w" x="630" y="104">3</text><text class="b" x="648" y="104" style="fill:#2f7d3f">Элонгация · 68–72 °C</text>
+    <line class="dna" x1="632" y1="160" x2="862" y2="160" style="stroke:#7fa6d9"/>
+    <line x1="632" y1="160" x2="672" y2="160" stroke="#ee8a2b" stroke-width="6"/><line x1="672" y1="160" x2="800" y2="160" stroke="#c0392b" stroke-width="6"/>
+    <ellipse cx="806" cy="160" rx="18" ry="13" fill="#7b5ea7"/><text class="w" x="806" y="164" style="font-size:8.5px">Taq</text>
+    <line class="dna" x1="632" y1="192" x2="862" y2="192" style="stroke:#7fa6d9"/>
+    <line x1="862" y1="192" x2="822" y2="192" stroke="#3fa34d" stroke-width="6"/><line x1="822" y1="192" x2="694" y2="192" stroke="#c0392b" stroke-width="6"/>
+    <ellipse cx="688" cy="192" rx="18" ry="13" fill="#7b5ea7"/><text class="w" x="688" y="196" style="font-size:8.5px">Taq</text>
+    <text class="s" x="632" y="228">Taq-полимераза достраивает</text>
+    <text class="s" x="632" y="244">новые цепи от праймеров —</text>
+    <text class="s" x="632" y="260" style="font-weight:700;fill:#2f7d3f">получились 2 копии фрагмента.</text>
+  </g>
+
+  <path class="ar" d="M156 300 V330" marker-end="url(#ar)"/>
+  <text class="b" x="20" y="336" style="fill:#b4531a">Цикл 2 — те же три шага, уже над двумя копиями</text>
+
+  <!-- Шаг 4 -->
+  <g>
+    <rect class="box" x="20" y="352" width="273" height="230" rx="12"/>
+    <circle class="num" cx="38" cy="372" r="12"/><text class="w" x="38" y="376">4</text><text class="b" x="56" y="376">Денатурация обеих копий</text>
+    <line class="dna" x1="50" y1="430" x2="260" y2="430"/>
+    <line class="dna" x1="50" y1="460" x2="260" y2="460" style="stroke:#7fa6d9"/>
+    <text class="s" x="50" y="500">Обе копии из конца цикла 1</text>
+    <text class="s" x="50" y="516">расходятся на одиночные цепи —</text>
+    <text class="s" x="50" y="532">теперь матриц уже четыре.</text>
+  </g>
+  <path class="ar" d="M296 462 H316" marker-end="url(#ar)"/>
+
+  <!-- Шаг 5 -->
+  <g>
+    <rect class="box" x="316" y="352" width="273" height="230" rx="12"/>
+    <circle class="num" cx="334" cy="372" r="12"/><text class="w" x="334" y="376">5</text><text class="b" x="352" y="376">Отжиг + элонгация</text>
+    <line class="dna" x1="336" y1="420" x2="566" y2="420" style="stroke:#7fa6d9"/><line x1="336" y1="420" x2="376" y2="420" stroke="#ee8a2b" stroke-width="5"/><line x1="376" y1="420" x2="480" y2="420" stroke="#c0392b" stroke-width="5"/>
+    <line class="dna" x1="336" y1="444" x2="566" y2="444" style="stroke:#7fa6d9"/><line x1="336" y1="444" x2="376" y2="444" stroke="#ee8a2b" stroke-width="5"/><line x1="376" y1="444" x2="480" y2="444" stroke="#c0392b" stroke-width="5"/>
+    <line class="dna" x1="336" y1="468" x2="566" y2="468" style="stroke:#7fa6d9"/><line x1="336" y1="468" x2="376" y2="468" stroke="#ee8a2b" stroke-width="5"/><line x1="376" y1="468" x2="480" y2="468" stroke="#c0392b" stroke-width="5"/>
+    <line class="dna" x1="336" y1="492" x2="566" y2="492" style="stroke:#7fa6d9"/><line x1="336" y1="492" x2="376" y2="492" stroke="#ee8a2b" stroke-width="5"/><line x1="376" y1="492" x2="480" y2="492" stroke="#c0392b" stroke-width="5"/>
+    <text class="s" x="336" y="524">Праймеры садятся на всех</text>
+    <text class="s" x="336" y="540" style="font-weight:700">четырёх цепях — получаются</text>
+    <text class="s" x="336" y="556" style="font-weight:700">4 копии фрагмента.</text>
+  </g>
+  <path class="ar" d="M592 462 H612" marker-end="url(#ar)"/>
+
+  <!-- Шаг 6 -->
+  <g>
+    <rect class="box" x="612" y="352" width="268" height="230" rx="12" style="fill:#fff8e8;stroke:#e0a43a"/>
+    <circle class="num" cx="630" cy="372" r="12" style="fill:#b4531a"/><text class="w" x="630" y="376">6</text><text class="b" x="648" y="376" style="fill:#b4531a">…и снова, 20–40 раз</text>
+    <line x1="636" y1="560" x2="856" y2="560" stroke="#8a94a8" stroke-width="1.4"/>
+    <line x1="636" y1="420" x2="636" y2="560" stroke="#8a94a8" stroke-width="1.4"/>
+    <path d="M636 558 C 700 556, 740 530, 770 490 S 820 420, 856 418" fill="none" stroke="#3b6fd4" stroke-width="2.6"/>
+    <text class="s" x="636" y="410" style="font-size:10px">копий</text>
+    <text class="s" x="700" y="576" style="font-size:10px">циклы →</text>
+    <text class="s" x="632" y="600" style="font-weight:700;fill:#b4531a">После 30 циклов —</text>
+    <text class="s" x="632" y="616" style="font-weight:700;fill:#b4531a">более 10⁹ копий.</text>
+  </g>
+
+  <rect class="box" x="20" y="606" width="860" height="130" rx="10" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="34" y="630">Почему это работает так быстро</text>
+  <text class="s" x="34" y="652">Каждая новая цепь на следующем цикле сама становится матрицей — поэтому рост не линейный (+1 копия за цикл), а экспоненциальный</text>
+  <text class="s" x="34" y="670">(×2 за цикл): 1 → 2 → 4 → 8 → 16… В реальной пробирке одновременно идут миллиарды таких реакций на множестве исходных молекул.</text>
+  <text class="s" x="34" y="692">Термостабильная Taq-полимераza выдерживает многократный нагрев до 95–98 °C, поэтому один и тот же фермент работает во всех циклах —</text>
+  <text class="s" x="34" y="710">не нужно добавлять новую полимеразу после каждой денатурации.</text>
+  <text class="s" x="34" y="728" style="font-size:11px">Три температуры цикла задаёт программа термоциклера; типичное время одного цикла — 1–3 минуты.</text>
+</svg>

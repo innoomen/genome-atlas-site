@@ -27,7 +27,7 @@
   <path d="M290 83 H326" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
   <path d="M610 83 H574" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
   <path d="M750 42 C750 22 210 22 210 40" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#inh)"/>
-  <text class="s" x="480" y="20" text-anchor="middle" style="font-size:11.5px">сенсоры блокируют белки «против апоптоза»</text>
+  <text class="s" x="480" y="136" text-anchor="middle" style="font-size:11.5px">сенсоры блокируют белки «против апоптоза»</text>
 
   <line x1="20" y1="142" x2="880" y2="142" stroke="#e1e6ee" stroke-width="2"/>
 

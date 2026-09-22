@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="t d">
+  <title id="t">Принцип действия таргетного ингибитора киназы</title>
+  <desc id="d">Слева: в норме АТФ садится в рабочий карман мутантной, постоянно включённой киназы (например, FLT3, JAK2 или BTK) и фермент передаёт сигнал дальше по каскаду — клетка делится и не умирает. Справа: малая молекула — ингибитор — занимает тот же АТФ-карман, блокируя связывание АТФ; сигнал дальше не идёт.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker>
+  <marker id="inh" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M6 0 v10" stroke="#c0392b" stroke-width="2.5"/></marker></defs>
+  <rect width="900" height="480" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Мутантная киназа всегда включена — ингибитор блокирует её рабочий карман</text>
+
+  <!-- left: normal ATP -->
+  <rect class="box" x="20" y="56" width="410" height="380" rx="12"/>
+  <text class="b" x="36" y="82" style="fill:#c0392b">Без лечения: киназа включена постоянно</text>
+  <ellipse cx="225" cy="200" rx="150" ry="90" fill="#f6dfda" stroke="#d1432f" stroke-width="2.5"/>
+  <path d="M170 175 a55 55 0 0 1 110 0" fill="none" stroke="#c0392b" stroke-width="3" stroke-dasharray="4 4"/>
+  <text class="s" x="225" y="150" text-anchor="middle">АТФ-карман</text>
+  <circle cx="225" cy="195" r="24" fill="#e0a43a"/><text class="w" x="225" y="199">АТФ</text>
+  <path d="M255 200 H330" stroke="#5b6577" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="292" y="190" text-anchor="middle" style="font-size:10.5px">фосфорилирование</text>
+  <text class="b" x="225" y="312" text-anchor="middle" style="fill:#c0392b">мутантная киназа</text>
+  <text class="s" x="225" y="328" text-anchor="middle">(FLT3, JAK2, BTK и др.)</text>
+  <path d="M225 336 V368" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="b" x="225" y="396" text-anchor="middle" style="fill:#c0392b">сигнал на деление и выживание</text>
+  <text class="s" x="225" y="414" text-anchor="middle">клетка делится и не умирает</text>
+
+  <!-- right: inhibitor -->
+  <rect class="box" x="470" y="56" width="410" height="380" rx="12" style="fill:#eef4fb;stroke:#9db8dd"/>
+  <text class="b" x="486" y="82" style="fill:#3b6fd4">С ингибитором: карман занят</text>
+  <ellipse cx="675" cy="200" rx="150" ry="90" fill="#dbe4f2" stroke="#3b6fd4" stroke-width="2.5"/>
+  <rect x="640" y="176" width="70" height="40" rx="10" fill="#7b5ea7"/><text class="w" x="675" y="200">ингибитор</text>
+  <path d="M710 196 h30" stroke="#c0392b" stroke-width="4" marker-end="url(#inh)"/>
+  <text class="s" x="675" y="150" text-anchor="middle">АТФ не может связаться</text>
+  <text class="b" x="675" y="312" text-anchor="middle" style="fill:#3b6fd4">киназа заблокирована</text>
+  <text class="s" x="675" y="328" text-anchor="middle">малая молекула в таблетке</text>
+  <path d="M675 336 V368" stroke="#5b6577" stroke-width="2.5" fill="none" stroke-dasharray="4 4"/>
+  <path d="M660 352 l30 0 M660 358 l30 0" stroke="#c0392b" stroke-width="3"/>
+  <text class="b" x="675" y="396" text-anchor="middle" style="fill:#3b6fd4">сигнал прерван</text>
+  <text class="s" x="675" y="414" text-anchor="middle">рост опухолевых клеток подавлен</text>
+
+  <text class="s" x="450" y="460" text-anchor="middle" style="font-size:11.5px">Пример без киназы: венетоклакс не блокирует фермент, а действует как BH3-миметик на белок BCL2 (см. тему «Апоптоз»).</text>
+</svg>

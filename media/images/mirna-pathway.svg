@@ -62,7 +62,7 @@
   <line x1="710" y1="150" x2="780" y2="150" stroke="#ee8a2b" stroke-width="3.5"/>
   <g stroke="#3fa34d" stroke-width="2"><path d="M714 150 V176 M722 150 V176 M730 150 V176 M738 150 V176 M746 150 V176 M754 150 V176 M762 150 V176"/></g>
   <text class="s" x="710" y="140" style="font-size:11px;fill:#b4531a">seed (нт 2–8)</text>
-  <ellipse cx="740" cy="122" rx="30" ry="12" fill="#3fa34d"/><text class="w" x="740" y="126" style="font-size:10px">AGO2</text>
+  <ellipse cx="812" cy="163" rx="30" ry="13" fill="#3fa34d"/><text class="w" x="812" y="167" style="font-size:10px">AGO2</text>
 
   <line x1="20" y1="374" x2="880" y2="374" stroke="#e1e6ee" stroke-width="2"/>
   <text class="h" x="20" y="400">Итог зависит от степени комплементарности</text>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="t d">
+  <title id="t">Два пути доставки генной терапии: AAV in vivo и лентивирус ex vivo</title>
+  <desc id="d">Слева: AAV-вектор вводят напрямую пациенту, он находит клетки печени по тропности и доставляет трансген, который остаётся в клетке в виде отдельной кольцевой молекулы (эписомы) и производит рабочий белок, например фактор VIII. Справа: лентивирус используют вне тела — заражают стволовые клетки пациента в лаборатории, вектор встраивает трансген в геном клетки, и изменённые клетки возвращают пациенту.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 15px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+    .dna { stroke: #2f3f7a; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .ldr { stroke: #8a94a8; stroke-width: 1.4; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="540" fill="#ffffff"/>
+  <text class="h" x="20" y="26">Доставка генной терапии: in vivo (AAV) и ex vivo (лентивирус)</text>
+
+  <!-- LEFT: AAV in vivo -->
+  <rect class="box" x="20" y="48" width="420" height="470" rx="12"/>
+  <text class="b" x="36" y="74" style="fill:#3b6fd4">AAV, in vivo — доставка прямо в организм</text>
+
+  <circle cx="80" cy="168" r="22" fill="#dbe4f2" stroke="#3b6fd4" stroke-width="2.5"/>
+  <text class="w" x="80" y="172" style="fill:#3b6fd4;font-size:9.5px">AAV</text>
+  <path d="M104 168 H172" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="138" y="154" text-anchor="middle" style="font-size:10.5px">инфузия</text>
+
+  <!-- liver cell, starts clearly below heading and right of AAV icon -->
+  <ellipse cx="305" cy="200" rx="115" ry="92" fill="#f6e9d8" stroke="#c9a25a" stroke-width="2.5"/>
+  <text class="s" x="305" y="134" text-anchor="middle">клетка печени</text>
+  <circle cx="305" cy="205" r="42" fill="#eef0f6" stroke="#8a94a8" stroke-width="2"/>
+  <text class="s" x="305" y="192" text-anchor="middle" style="font-size:10px">ядро</text>
+  <circle cx="305" cy="216" r="15" fill="none" stroke="#3b6fd4" stroke-width="3" stroke-dasharray="3 3"/>
+  <path class="ldr" d="M320 216 H386"/>
+  <text class="s" x="392" y="220" style="font-size:10.5px">эписома</text>
+
+  <path d="M305 292 V326" stroke="#3fa34d" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+  <rect x="255" y="332" width="100" height="26" rx="6" fill="#3fa34d"/><text class="w" x="305" y="349">фактор VIII</text>
+  <text class="s" x="305" y="376" text-anchor="middle" style="font-size:10.5px">производится постоянно</text>
+
+  <line x1="36" y1="398" x2="424" y2="398" stroke="#e1e6ee" stroke-width="1.6"/>
+  <text class="s" x="36" y="420" style="font-size:11.5px">• трансген не встраивается в геном клетки —</text>
+  <text class="s" x="52" y="436" style="font-size:11.5px">остаётся отдельной кольцевой молекулой (эписомой)</text>
+  <text class="s" x="36" y="458" style="font-size:11.5px">• тропность серотипа определяет ткань-мишень</text>
+  <text class="s" x="52" y="474" style="font-size:11.5px">(печень, сетчатка, мышцы)</text>
+  <text class="s" x="36" y="496" style="font-size:11.5px">• обычно однократное введение; пример: гемофилия A и B</text>
+
+  <!-- RIGHT: lentivirus ex vivo -->
+  <rect class="box" x="460" y="48" width="420" height="470" rx="12" style="fill:#eef8f0;stroke:#9ed0a8"/>
+  <text class="b" x="476" y="74" style="fill:#2f7d3f">Лентивирус, ex vivo — доставка вне тела</text>
+
+  <circle cx="510" cy="168" r="16" fill="#fff" stroke="#8a94a8" stroke-width="2"/>
+  <path d="M520 158 l10 -10 M520 178 l14 4" stroke="#8a94a8" stroke-width="2"/>
+  <text class="s" x="510" y="200" text-anchor="middle" style="font-size:10.5px">забор клеток</text>
+  <path d="M536 168 H580" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+
+  <ellipse cx="700" cy="188" rx="120" ry="82" fill="#dcefdf" stroke="#3fa34d" stroke-width="2.5"/>
+  <text class="s" x="700" y="130" text-anchor="middle">стволовая клетка (лаборатория)</text>
+  <circle cx="700" cy="195" r="40" fill="#eef0f6" stroke="#8a94a8" stroke-width="2"/>
+  <line class="dna" x1="674" y1="195" x2="726" y2="195"/>
+  <rect x="692" y="187" width="18" height="16" rx="3" fill="#7b5ea7"/>
+  <text class="s" x="700" y="248" text-anchor="middle" style="font-size:10.5px">трансген встроен в геном</text>
+
+  <path d="M700 292 V326" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="700" y="346" text-anchor="middle" style="font-size:11px">возврат пациенту (инфузия)</text>
+
+  <line x1="476" y1="398" x2="864" y2="398" stroke="#e1e6ee" stroke-width="1.6"/>
+  <text class="s" x="476" y="420" style="font-size:11.5px">• вектор встраивается в геном клетки —</text>
+  <text class="s" x="492" y="436" style="font-size:11.5px">изменение передаётся всем клеткам-потомкам</text>
+  <text class="s" x="476" y="458" style="font-size:11.5px">• путь похож на производство CAR-T-клеток</text>
+  <text class="s" x="476" y="480" style="font-size:11.5px">• риск инсерционного мутагенеза редкий,</text>
+  <text class="s" x="492" y="496" style="font-size:11.5px">но требует долгого наблюдения; пример: талассемия</text>
+</svg>

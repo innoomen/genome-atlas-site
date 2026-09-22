@@ -26,7 +26,8 @@
   <path class="ar" d="M140 95 H196" marker-end="url(#ar)"/><path class="ar" d="M320 95 H376" marker-end="url(#ar)"/><path class="ar" d="M500 95 H556" marker-end="url(#ar)"/><path class="ar" d="M680 95 H756" marker-end="url(#ar)"/>
   <text class="b" x="168" y="80" text-anchor="middle" style="fill:#5e3f8a;font-size:11.5px">TET</text><text class="b" x="348" y="80" text-anchor="middle" style="fill:#5e3f8a;font-size:11.5px">TET</text><text class="b" x="528" y="80" text-anchor="middle" style="fill:#5e3f8a;font-size:11.5px">TET</text>
   <text class="b" x="718" y="70" text-anchor="middle" style="fill:#2f7d3f;font-size:11.5px">TDG + BER</text><text class="s" x="790" y="146" text-anchor="end" style="font-size:10.5px">вырезание и репарация</text>
-  <text class="s" x="20" y="158" style="font-size:12px">TET нужны Fe(II), α-кетоглутарат (α-KG), O₂ и витамин C. Второй путь — пассивное «разбавление» метки: 5mC/5hmC не копируются DNMT1 при делениях.</text>
+  <text class="s" x="20" y="158" style="font-size:12px">TET нужны Fe(II), α-кетоглутарат (α-KG), O₂ и витамин C.</text>
+  <text class="s" x="20" y="176" style="font-size:12px">Второй путь — пассивное «разбавление» метки: 5mC/5hmC не копируются DNMT1 при делениях.</text>
 
   <line x1="20" y1="180" x2="880" y2="180" stroke="#e1e6ee" stroke-width="2"/>
   <text class="h" x="20" y="208">Откуда берётся α-кетоглутарат — и что ломают мутации IDH</text>

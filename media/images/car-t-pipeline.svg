@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-labelledby="t d">
+  <title id="t">Путь производства и применения CAR-T-терапии</title>
+  <desc id="d">Шесть этапов: лейкаферез (забор T-клеток из крови), трансдукция вирусным вектором с геном CAR, экспансия клеток в биореакторе, лимфодеплеция пациента химиотерапией, инфузия CAR-T-клеток и, наконец, атака CAR-T-клеток на опухолевые клетки в организме.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 12.5px; font-weight: 700; }
+    .s { font-size: 11px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .num { font-size: 13px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="460" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Путь CAR-T: от афереза до атаки на опухоль</text>
+
+  <!-- 6 steps in a row, wrapped 3+3 -->
+  <!-- step 1 -->
+  <circle cx="90" cy="90" r="16" fill="#3b6fd4"/><text class="num" x="90" y="95">1</text>
+  <rect class="box" x="40" y="116" width="140" height="96" rx="10"/>
+  <circle cx="80" cy="150" r="10" fill="#d1432f"/><circle cx="100" cy="150" r="10" fill="#3b6fd4"/><circle cx="120" cy="150" r="10" fill="#3fa34d"/>
+  <text class="b" x="110" y="190" text-anchor="middle">Лейкаферез</text>
+  <text class="s" x="110" y="204" text-anchor="middle">забор T-клеток из крови</text>
+
+  <path d="M180 164 H236" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- step 2 -->
+  <circle cx="320" cy="90" r="16" fill="#3b6fd4"/><text class="num" x="320" y="95">2</text>
+  <rect class="box" x="270" y="116" width="140" height="96" rx="10"/>
+  <circle cx="340" cy="150" r="12" fill="#8a94a8"/>
+  <path d="M320 138 l16 8 -16 8 -16 -8 z" fill="#e0a43a"/>
+  <text class="b" x="340" y="190" text-anchor="middle">Трансдукция</text>
+  <text class="s" x="340" y="204" text-anchor="middle">вектор доставляет ген CAR</text>
+
+  <path d="M410 164 H466" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- step 3 -->
+  <circle cx="550" cy="90" r="16" fill="#3b6fd4"/><text class="num" x="550" y="95">3</text>
+  <rect class="box" x="500" y="116" width="140" height="96" rx="10"/>
+  <circle cx="530" cy="145" r="8" fill="#7b5ea7"/><circle cx="550" cy="145" r="8" fill="#7b5ea7"/><circle cx="570" cy="145" r="8" fill="#7b5ea7"/>
+  <circle cx="540" cy="162" r="8" fill="#7b5ea7"/><circle cx="560" cy="162" r="8" fill="#7b5ea7"/>
+  <text class="b" x="570" y="190" text-anchor="middle">Экспансия</text>
+  <text class="s" x="570" y="204" text-anchor="middle">размножение в биореакторе</text>
+
+  <path d="M640 164 H700 V270 H600" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- step 4 -->
+  <circle cx="580" cy="270" r="16" fill="#3b6fd4"/><text class="num" x="580" y="275">4</text>
+  <rect class="box" x="530" y="296" width="140" height="96" rx="10"/>
+  <path d="M580 320 v40 M562 340 h36" stroke="#c0392b" stroke-width="4" stroke-linecap="round"/>
+  <text class="b" x="600" y="370" text-anchor="middle">Лимфодеплеция</text>
+  <text class="s" x="600" y="384" text-anchor="middle">химиотерапия перед инфузией</text>
+
+  <path d="M530 344 H466" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- step 5 -->
+  <circle cx="410" cy="270" r="16" fill="#3b6fd4"/><text class="num" x="410" y="275">5</text>
+  <rect class="box" x="350" y="296" width="140" height="96" rx="10"/>
+  <path d="M420 320 v-4" stroke="#3b6fd4" stroke-width="6" stroke-linecap="round"/>
+  <path d="M420 320 C400 330 392 350 400 368" stroke="#3b6fd4" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="400" cy="368" r="7" fill="#3b6fd4"/>
+  <text class="b" x="420" y="370" text-anchor="middle">Инфузия</text>
+  <text class="s" x="420" y="384" text-anchor="middle">CAR-T-клетки вводят пациенту</text>
+
+  <path d="M350 344 H286" stroke="#5b6577" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+  <!-- step 6 -->
+  <circle cx="180" cy="270" r="16" fill="#2f7d3f"/><text class="num" x="180" y="275">6</text>
+  <rect x="90" y="296" width="180" height="96" rx="10" fill="#eef8f0" stroke="#9ed0a8" stroke-width="1.8"/>
+  <ellipse cx="150" cy="345" rx="24" ry="16" fill="#fbe1dc" stroke="#d1432f" stroke-width="1.6"/>
+  <path d="M150 329 L150 361 M134 345 L166 345" stroke="#c0392b" stroke-width="3"/>
+  <path d="M186 340 l16 -8" stroke="#3b6fd4" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="205" cy="330" r="7" fill="#3b6fd4"/>
+  <text class="b" x="180" y="370" text-anchor="middle" style="fill:#2f7d3f">Атака на опухоль</text>
+  <text class="s" x="180" y="384" text-anchor="middle">CAR-T находят и убивают мишень</text>
+
+  <text class="s" x="20" y="430" style="font-size:12px">Весь путь от афереза до инфузии обычно занимает 2–4 недели; дальше CAR-T-клетки размножаются в организме сами.</text>
+</svg>

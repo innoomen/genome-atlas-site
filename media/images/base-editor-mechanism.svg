@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="t d">
+  <title id="t">Механизм редактирования оснований (base editing)</title>
+  <desc id="d">Базовый редактор — слитый белок из никазы Cas9 (надрезает только одну цепь ДНК), дезаминазы и ингибитора урацил-гликозилазы. Направляющая РНК ведёт комплекс к целевому участку. Дезаминаза точечно превращает цитозин в урацил (считывается как тимин: C в T) или аденин в инозин (считывается как гуанин: A в G) на одноцепочечном участке ДНК, без двухцепочечного разрыва.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .dna { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .box { fill: #f5f7fb; stroke: #b7c0cf; stroke-width: 1.6; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Базовый редактор точечно меняет одну букву, не разрывая обе цепи ДНК</text>
+
+  <!-- target DNA -->
+  <line class="dna" x1="60" y1="110" x2="840" y2="110"/>
+  <line class="dna" x1="60" y1="130" x2="840" y2="130"/>
+  <path d="M300 118 C300 100 560 100 560 118" fill="none" stroke="#ee8a2b" stroke-width="4" stroke-dasharray="3 4"/>
+  <text class="s" x="430" y="90" text-anchor="middle">направляющая РНК спаривается с целевой цепью</text>
+  <path d="M300 130 v6 M320 110 v6" stroke="#8a94a8" stroke-width="1"/>
+
+  <!-- nicked strand marker -->
+  <path d="M700 110 v-6 M712 110 v-6" stroke="#3b6fd4" stroke-width="3"/>
+  <text class="s" x="706" y="94" text-anchor="middle" style="font-size:10.5px">надрез только одной цепи</text>
+
+  <!-- editor complex -->
+  <ellipse cx="430" cy="150" rx="140" ry="52" fill="#dbe4f2" stroke="#3b6fd4" stroke-width="2.5" opacity="0.95"/>
+  <text class="b" x="360" y="152" text-anchor="middle" style="fill:#3b6fd4">никаза Cas9</text>
+  <circle cx="500" cy="148" r="26" fill="#7b5ea7"/><text class="w" x="500" y="152">дезаминаза</text>
+
+  <line x1="20" y1="220" x2="880" y2="220" stroke="#e1e6ee" stroke-width="2"/>
+
+  <!-- CBE example -->
+  <text class="h" x="20" y="250">Пример: цитозиновый редактор (CBE)</text>
+  <rect class="box" x="20" y="266" width="400" height="150" rx="12"/>
+  <circle cx="90" cy="330" r="22" fill="#f6dfda" stroke="#d1432f" stroke-width="2"/><text class="b" x="90" y="335" text-anchor="middle" style="fill:#c0392b">C</text>
+  <path d="M120 330 H190" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="155" y="318" text-anchor="middle" style="font-size:10.5px">дезаминирование</text>
+  <circle cx="230" cy="330" r="22" fill="#f9e9cf" stroke="#e0a43a" stroke-width="2"/><text class="b" x="230" y="335" text-anchor="middle" style="fill:#8a6a2a">U</text>
+  <path d="M260 330 H330" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="295" y="318" text-anchor="middle" style="font-size:10.5px">репликация</text>
+  <circle cx="370" cy="330" r="22" fill="#dcefdf" stroke="#3fa34d" stroke-width="2"/><text class="b" x="370" y="335" text-anchor="middle" style="fill:#2f7d3f">T</text>
+  <text class="s" x="220" y="388" text-anchor="middle">C•G → T•A</text>
+
+  <!-- ABE example -->
+  <text class="h" x="480" y="250">Пример: адениновый редактор (ABE)</text>
+  <rect class="box" x="480" y="266" width="400" height="150" rx="12"/>
+  <circle cx="550" cy="330" r="22" fill="#dbe9fb" stroke="#3b6fd4" stroke-width="2"/><text class="b" x="550" y="335" text-anchor="middle" style="fill:#3b6fd4">A</text>
+  <path d="M580 330 H650" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="615" y="318" text-anchor="middle" style="font-size:10.5px">дезаминирование</text>
+  <circle cx="690" cy="330" r="22" fill="#eee6f5" stroke="#7b5ea7" stroke-width="2"/><text class="b" x="690" y="335" text-anchor="middle" style="fill:#5e3f8a">I</text>
+  <path d="M720 330 H790" stroke="#5b6577" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+  <text class="s" x="755" y="318" text-anchor="middle" style="font-size:10.5px">считывается как</text>
+  <circle cx="830" cy="330" r="22" fill="#dcefdf" stroke="#3fa34d" stroke-width="2"/><text class="b" x="830" y="335" text-anchor="middle" style="fill:#2f7d3f">G</text>
+  <text class="s" x="680" y="388" text-anchor="middle">A•T → G•C</text>
+
+  <text class="s" x="20" y="446" style="font-size:12px">Ингибитор урацил-гликозилазы (для CBE) блокирует репарацию, которая иначе вернула бы U обратно в C.</text>
+  <text class="s" x="20" y="464" style="font-size:12px">Двухцепочечного разрыва нет — результат предсказуемее, чем при обычном CRISPR-Cas9 (см. тему «CRISPR-Cas»).</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+  <title id="t">Устройство химерного антигенного рецептора (CAR)</title>
+  <desc id="d">CAR встроен в мембрану T-лимфоцита. Внеклеточная часть — scFv, распознающий опухолевый антиген (например, CD19), соединённый шарниром с трансмембранным доменом. Внутриклеточная часть — костимулирующий домен (CD28 или 4-1BB) и сигнальный домен CD3-дзета, запускающий активацию T-клетки при связывании с мишенью.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 13px; font-weight: 700; }
+    .s { font-size: 12px; fill: #5b6577; }
+    .w { font-size: 11.5px; font-weight: 700; fill: #fff; text-anchor: middle; }
+    .mem { fill: #f2e2c4; stroke: #c9a25a; stroke-width: 2; }
+    .ln { stroke: #8a94a8; stroke-width: 1.6; fill: none; }
+  </style>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b6577"/></marker></defs>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text class="h" x="20" y="28">Химерный антигенный рецептор (CAR) в мембране T-лимфоцита</text>
+
+  <!-- tumor cell -->
+  <ellipse cx="220" cy="120" rx="150" ry="60" fill="#fbe1dc" stroke="#d1432f" stroke-width="2"/>
+  <text class="b" x="220" y="116" text-anchor="middle" style="fill:#c0392b">Опухолевая клетка</text>
+  <text class="s" x="220" y="134" text-anchor="middle">например, CD19 на поверхности</text>
+  <rect x="196" y="150" width="48" height="20" rx="4" fill="#d1432f"/><text class="w" x="220" y="164">CD19</text>
+
+  <path class="ln" d="M220 170 V208" marker-end="url(#ar)"/>
+
+  <!-- scFv -->
+  <path d="M170 208 C170 190 270 190 270 208 L270 236 C270 254 170 254 170 236 Z" fill="#dbe4f2" stroke="#3b6fd4" stroke-width="2.5"/>
+  <text class="b" x="220" y="226" text-anchor="middle" style="fill:#3b6fd4">scFv</text>
+  <text class="s" x="220" y="270" text-anchor="middle">внеклеточный домен: узнаёт антиген</text>
+  <text class="s" x="220" y="286" text-anchor="middle">(вариабельные участки антитела)</text>
+
+  <!-- hinge -->
+  <path class="ln" d="M220 254 V304"/>
+  <text class="s" x="330" y="300">шарнир</text>
+
+  <!-- membrane -->
+  <rect class="mem" x="20" y="304" width="860" height="46" rx="6"/>
+  <text class="s" x="34" y="331" style="fill:#8a6a2a">мембрана T-лимфоцита</text>
+
+  <!-- transmembrane -->
+  <rect x="204" y="304" width="32" height="46" fill="#8a94a8"/>
+  <text class="s" x="330" y="335">трансмембранный домен</text>
+
+  <path class="ln" d="M220 350 V378"/>
+
+  <!-- costim -->
+  <rect x="150" y="378" width="140" height="34" rx="8" fill="#e0a43a"/>
+  <text class="w" x="220" y="399">CD28 или 4-1BB</text>
+  <text class="s" x="330" y="399">костимулирующий домен: усиливает и продлевает сигнал</text>
+
+  <path class="ln" d="M220 412 V440"/>
+
+  <!-- CD3zeta -->
+  <rect x="150" y="440" width="140" height="34" rx="8" fill="#7b5ea7"/>
+  <text class="w" x="220" y="461">CD3ζ</text>
+  <text class="s" x="330" y="461">сигнальный домен: запускает активацию T-клетки</text>
+
+  <path class="ln" d="M220 474 V500" marker-end="url(#ar)"/>
+  <text class="b" x="220" y="522" text-anchor="middle" style="fill:#2f7d3f">Активация: деление, выброс гранул, атака</text>
+
+  <!-- right side note -->
+  <rect x="560" y="60" width="320" height="220" rx="12" fill="#f5f7fb" stroke="#b7c0cf" stroke-width="1.6"/>
+  <text class="b" x="576" y="84">Ключевая идея</text>
+  <text class="s" x="576" y="108">scFv заменяет T-клеточный рецептор:</text>
+  <text class="s" x="576" y="124">узнавание идёт напрямую по антигену</text>
+  <text class="s" x="576" y="140">на поверхности клетки-мишени,</text>
+  <text class="s" x="576" y="156">без участия HLA и презентации.</text>
+  <text class="s" x="576" y="184">Смена scFv меняет мишень CAR —</text>
+  <text class="s" x="576" y="200">так конструируют CAR против CD19,</text>
+  <text class="s" x="576" y="216">BCMA, GPRC5D и других белков.</text>
+  <text class="s" x="576" y="244">Число костимулирующих доменов</text>
+  <text class="s" x="576" y="260">определяет «поколение» CAR (см. текст).</text>
+</svg>

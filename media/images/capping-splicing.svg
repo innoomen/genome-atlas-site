@@ -52,7 +52,7 @@
   <text class="b" x="192" y="272" style="fill:#c0397b">GU</text><text class="s" x="192" y="344" style="font-size:11.5px">5'-сайт</text>
   <circle cx="470" cy="291" r="10" fill="#c0397b"/><text class="w" x="470" y="295" style="font-size:11px">A</text><text class="s" x="470" y="344" text-anchor="middle" style="font-size:11.5px">точка ветвления</text>
   <rect x="510" y="284" width="66" height="14" rx="4" fill="#3fa34d"/><text class="s" x="543" y="270" text-anchor="middle" style="font-size:11.5px">Py-тракт (Y = C/U)</text>
-  <text class="b" x="586" y="272" style="fill:#c0397b">AG</text><text class="s" x="584" y="344" style="font-size:11.5px">3'-сайт</text>
+  <text class="b" x="606" y="272" style="fill:#c0397b">AG</text><text class="s" x="604" y="344" style="font-size:11.5px">3'-сайт</text>
   <!-- snRNP -->
   <circle cx="204" cy="248" r="15" fill="#f0b429"/><text class="b" x="204" y="253" text-anchor="middle" style="font-size:11px">U1</text>
   <circle cx="470" cy="248" r="15" fill="#3fa34d"/><text class="w" x="470" y="253" style="font-size:11px">U2</text>

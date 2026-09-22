@@ -24,7 +24,7 @@
   <line class="old" x1="90" y1="152" x2="410" y2="152"/>
   <line class="old" x1="90" y1="182" x2="300" y2="182"/>
   <g class="rung"><line x1="106" y1="152" x2="106" y2="182"/><line x1="124" y1="152" x2="124" y2="182"/><line x1="142" y1="152" x2="142" y2="182"/><line x1="160" y1="152" x2="160" y2="182"/><line x1="178" y1="152" x2="178" y2="182"/><line x1="196" y1="152" x2="196" y2="182"/><line x1="214" y1="152" x2="214" y2="182"/><line x1="232" y1="152" x2="232" y2="182"/><line x1="250" y1="152" x2="250" y2="182"/><line x1="268" y1="152" x2="268" y2="182"/><line x1="286" y1="152" x2="286" y2="182"/></g>
-  <text class="b" x="98" y="142" style="fill:#7b3f9e">5′</text><text class="b" x="402" y="142" style="fill:#7b3f9e">3′</text>
+  <text class="b" x="98" y="148" style="fill:#7b3f9e">5′</text><text class="b" x="402" y="148" style="fill:#7b3f9e">3′</text>
   <text class="b" x="98" y="204" style="fill:#7b3f9e">3′</text><text class="b" x="290" y="204" style="fill:#7b3f9e">5′</text>
   <text class="s" x="98" y="128">G-цепь: …TTAGGG TTAGGG TTAGGG…</text>
   <text class="s" x="98" y="222">C-цепь: …AATCCC AATCCC…</text>

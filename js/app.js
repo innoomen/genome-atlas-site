@@ -11,7 +11,6 @@
     get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } }
   };
-  let level = store.get('ws.level', 'basic') === 'advanced' ? 'advanced' : 'basic';
   let clinical = store.get('ws.clinical', '0') === '1';
 
   /* ---------- подписи интерфейса ---------- */
@@ -122,16 +121,12 @@
       '<header class="page-head"><h1>' + esc(t.title) + '</h1>' + (t.title_en ? '<p class="en">' + esc(t.title_en) + '</p>' : '') +
       '<p class="lead">' + esc(t.summary) + '</p></header>' +
 
-      '<div class="topic" id="topic" data-level="' + level + '" data-clinical="' + (clinical ? '1' : '0') + '">' +
-      '<div class="layerbar" role="group" aria-label="Уровень изложения"><span class="layerbar-label">Слой:</span>' +
-      '<div class="seg" role="radiogroup" aria-label="Слой глубины">' +
-      '<button type="button" role="radio" data-level="basic" aria-checked="' + (level === 'basic') + '">Базовый</button>' +
-      '<button type="button" role="radio" data-level="advanced" aria-checked="' + (level === 'advanced') + '">Продвинутый</button></div>' +
+      '<div class="topic" id="topic" data-clinical="' + (clinical ? '1' : '0') + '">' +
+      '<div class="layerbar" role="group" aria-label="Клинический слой">' +
       '<label class="switch"><input type="checkbox" id="clin-toggle"' + (clinical ? ' checked' : '') + '><span>Клинический слой</span></label></div>' +
 
       '<article class="article prose">' +
-      '<section class="layer layer-basic"><div class="md" data-md>' + M.render(s.basic || '') + '</div></section>' +
-      '<section class="layer layer-advanced"><h2 class="layer-title"><span class="tag tag-adv">Продвинутый слой</span></h2><div class="md" data-md>' + M.render(s.advanced || '') + '</div></section>' +
+      '<section class="layer"><div class="md" data-md>' + M.render(((s.basic || '') + '\n\n' + (s.advanced || '')).trim()) + '</div></section>' +
       '</article>' +
 
       '<section class="sec" aria-labelledby="h-fig"><h2 id="h-fig">Иллюстрации</h2>' +
@@ -154,7 +149,7 @@
 
       '<section class="sec clinical" aria-labelledby="h-clin"><h2 id="h-clin"><span class="tag tag-clin">Клинический слой</span> Как это выглядит в гематологии</h2>' +
       '<div class="clin-off"><p class="muted">Клинический слой скрыт.</p><button type="button" class="btn btn-small" id="clin-show">Показать</button></div>' +
-      '<div class="clin-on prose"><div class="md" data-md>' + M.render(s.clinical || '') + '</div></div></section>' +
+      '<div class="clin-on prose"><div class="md" data-md data-clinical-only>' + M.render(s.clinical || '') + '</div></div></section>' +
 
       '<section class="sec quiz" id="quiz" aria-labelledby="h-quiz"><h2 id="h-quiz">' + esc(L().quizTitle) + '</h2><div id="quiz-box"></div></section>' +
 
@@ -176,21 +171,13 @@
       const seen = new Set();
       mds.forEach((el, k) => {
         el.innerHTML = originals[k];
-        const layer = el.closest('.layer');
-        const visible = layer ? (layer.classList.contains('layer-advanced') ? topicEl.dataset.level === 'advanced' : true) : topicEl.dataset.clinical === '1';
+        const visible = el.hasAttribute('data-clinical-only') ? topicEl.dataset.clinical === '1' : true;
         if (visible) WS.autolink.apply(el, seen, skip);
       });
     }
     relink();
 
     topicEl.addEventListener('click', e => {
-      const lb = e.target.closest('[data-level]');
-      if (lb && lb.closest('.seg')) {
-        level = lb.dataset.level; store.set('ws.level', level);
-        topicEl.dataset.level = level;
-        $$('.seg button', topicEl).forEach(x => x.setAttribute('aria-checked', x.dataset.level === level));
-        relink();
-      }
       if (e.target.id === 'clin-show') setClinical(true);
     });
     function setClinical(v) {
@@ -347,8 +334,8 @@
     main.innerHTML = crumbs([['#/', 'Главная'], [null, 'О проекте']]) +
       '<header class="page-head"><h1>О проекте</h1></header><div class="prose">' +
       '<p><strong>Атлас генома</strong> — открытый бесплатный справочник по молекулярной генетике для тех, кто хочет повторить, обновить или узнать что-то новое: школьников, студентов, ординаторов и врачей-гематологов.</p>' +
-      '<h2>Как читать</h2><ul><li><strong>Базовый слой</strong> — суть простыми словами и аналогии.</li><li><strong>Продвинутый слой</strong> — механизмы, ключевые молекулы, термины.</li><li><strong>Клинический слой</strong> — «Как это выглядит в гематологии»: мутация → болезнь → лабораторный тест → терапия. Доступен и на базовом уровне.</li></ul>' +
-      '<p>Выбор слоя запоминается в вашем браузере. Кнопка в шапке переключает светлую и тёмную тему оформления.</p>' +
+      '<h2>Как читать</h2><ul><li><strong>Материал темы</strong> — суть, аналогии и механизмы вместе, одним текстом.</li><li><strong>Клинический слой</strong> — «Как это выглядит в гематологии»: мутация → болезнь → лабораторный тест → терапия. Показывается и скрывается отдельной кнопкой.</li></ul>' +
+      '<p>Состояние клинического слоя запоминается в вашем браузере. Кнопка в шапке переключает светлую и тёмную тему оформления.</p>' +
       '<h2>Важно</h2><p>Это образовательный ресурс, а не клинические рекомендации. Он не заменяет консультацию врача. Тексты прототипа — черновики и проходят научную вычитку; клинические данные проверяйте по первоисточникам.</p>' +
       '<h2>Приватность</h2><p>Сайт не собирает персональные данные. Слой, вид оформления и результаты тестов хранятся только в вашем браузере.</p>' +
       '<p class="muted">Версия прототипа 0.1. Контент собран: ' + esc(D.built || '—') + '.</p></div>';
