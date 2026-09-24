@@ -42,6 +42,15 @@ body.is-home::before {
 :root[data-mode="dark"] body.is-home::before { opacity: .32; }
 @media (max-width: 72rem) { body.is-home::before { display: none; } }
 @media (prefers-reduced-motion: reduce), (prefers-contrast: more) { body.is-home::before { display: none; } }
+
+/* курсор-мышонок на главной странице */
+body.is-home { cursor: url('../media/images/brand/cursor-default.png') 2 2, auto; }
+body.is-home a, body.is-home button, body.is-home .card, body.is-home .btn, body.is-home [role="button"] {
+  cursor: url('../media/images/brand/cursor-pointer.png') 29 2, pointer;
+}
+body.is-home input[type="search"], body.is-home input[type="text"] {
+  cursor: url('../media/images/brand/cursor-text.png') 8 32, text;
+}
 h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; margin: 1.6em 0 .5em; font-weight: 700; }
 h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .2em; font-weight: 800; letter-spacing: -.01em; }
 h2 { font-size: 1.45rem; }
