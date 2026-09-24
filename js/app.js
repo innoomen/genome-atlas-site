@@ -73,10 +73,13 @@
       '<a class="card block-card" href="#/bestiary"><span class="block-num">' + (nb + 2) + '</span><h3>Бестиарий белков</h3><p class="en">Protein bestiary</p><p>Карточки белков и ферментов: среда обитания, способности, уязвимости и роль в гематологии.</p><p class="card-meta"><span class="badge badge-ready">' + D.proteins.length + ' ' + plural(D.proteins.length, ['карточка', 'карточки', 'карточек']) + '</span></p></a>';
 
     main.innerHTML =
-      '<section class="hero"><h1>Атлас генома</h1>' +
-      '<p class="lead">Открытый справочник по молекулярной генетике: от структуры ДНК до клиники в гематологии. Для школьников, студентов, ординаторов и врачей.</p>' +
-      '<form class="hero-search" id="hero-search"><label class="sr-only" for="hq">Поиск</label><input id="hq" type="search" placeholder="Например: репликация, нуклеосома, polymerase"><button class="btn btn-primary">Найти</button></form></section>' +
-      '<section aria-labelledby="blocks-h"><h2 id="blocks-h">' + L().blocks + '</h2><div class="grid">' + cards + extra + '</div></section>';
+      '<section class="hero"><div class="hero-shell"><div class="hero-text">' +
+      '<p class="hero-kicker">Молекулярная генетика · открытый справочник</p>' +
+      '<h1>Атлас <em>генома</em></h1>' +
+      '<p class="lead">От структуры ДНК до клиники в гематологии. Для школьников, студентов, ординаторов и врачей.</p>' +
+      '<form class="hero-search" id="hero-search"><label class="sr-only" for="hq">Поиск</label><input id="hq" type="search" placeholder="Например: репликация, нуклеосома, polymerase"><button class="btn btn-primary">Найти</button></form>' +
+      '</div><div class="hero-art"><img src="media/images/brand/mascot-hero.webp" alt="Пиксель-арт: мышонок-учёный с пипеткой на фоне двойной спирали ДНК, формул азотистых оснований и хроматограммы секвенирования" loading="eager"></div></div></section>' +
+      '<section aria-labelledby="blocks-h"><div class="section-divider"><h2 id="blocks-h">' + L().blocks + '</h2></div><div class="grid">' + cards + extra + '</div></section>';
     $('#hero-search').addEventListener('submit', e => { e.preventDefault(); goSearch($('#hq').value); });
   }
 
@@ -99,6 +102,34 @@
       '<header class="page-head"><p class="eyebrow">' + esc(blockLabel(b)) + '</p><h1>' + esc(b.title) + '</h1>' +
       (b.title_en ? '<p class="en">' + esc(b.title_en) + '</p>' : '') + '<p class="lead">' + esc(b.summary) + '</p></header>' +
       (b.intro ? '<div class="prose">' + M.render(b.intro) + '</div>' : '') + body;
+  }
+
+  /* ---------- виртуальная лаборатория ---------- */
+  const LAB_PLANNED = ['Постановка ПЦР и анализ данных', 'Подготовка библиотеки и секвенирование на нанопоре'];
+  function viewLabHub() {
+    setTitle('Виртуальная лаборатория');
+    const levels = D.labLevels;
+    const cards = levels.map((l, i) =>
+      '<a class="card block-card" href="#/lab/' + l.id + '"><span class="block-num">' + (i + 1) + '</span><h3>' + esc(l.title) + '</h3>' +
+      (l.title_en ? '<p class="en">' + esc(l.title_en) + '</p>' : '') + '<p class="card-meta"><span class="badge badge-ready">' + l.steps.length + ' ' + plural(l.steps.length, ['шаг', 'шага', 'шагов']) + '</span></p></a>'
+    ).join('');
+    const soonCards = LAB_PLANNED.map((title, i) =>
+      '<div class="card block-card is-soon"><span class="block-num">' + (levels.length + i + 1) + '</span><h3>' + esc(title) + '</h3><p class="card-meta"><span class="badge">Скоро</span></p></div>'
+    ).join('');
+    main.innerHTML = crumbs([['#/', 'Главная'], [null, 'Виртуальная лаборатория']]) +
+      '<header class="page-head"><p class="eyebrow">Практика</p><h1>Виртуальная лаборатория</h1>' +
+      '<p class="lead">Пиксельные point-and-click уровни от первого лица: пройдите протокол лабораторного метода шаг за шагом вместе с мышонком-ассистентом.</p></header>' +
+      '<div class="grid">' + cards + soonCards + '</div>';
+  }
+  function viewLabLevel(id) {
+    const l = D.labById[id];
+    if (!l) return view404();
+    setTitle(l.title);
+    main.innerHTML = crumbs([['#/', 'Главная'], ['#/lab', 'Виртуальная лаборатория'], [null, l.title]]) +
+      '<header class="page-head"><p class="eyebrow">Виртуальная лаборатория</p><h1>' + esc(l.title) + '</h1>' +
+      (l.title_en ? '<p class="en">' + esc(l.title_en) + '</p>' : '') + '</header>' +
+      '<div id="lab-box"></div>';
+    WS.lab.mount($('#lab-box'), l);
   }
 
   /* ---------- тема ---------- */
@@ -129,8 +160,7 @@
       '<section class="layer"><div class="md" data-md>' + M.render(((s.basic || '') + '\n\n' + (s.advanced || '')).trim()) + '</div></section>' +
       '</article>' +
 
-      '<section class="sec" aria-labelledby="h-fig"><h2 id="h-fig">Иллюстрации</h2>' +
-      (s.figures ? '<div class="figures">' + M.render(s.figures) + '</div>' : empty('Иллюстрации к теме пока не добавлены.')) + '</section>' +
+      (s.figures ? '<section class="sec" aria-labelledby="h-fig"><h2 id="h-fig">Иллюстрации</h2><div class="figures">' + M.render(s.figures) + '</div></section>' : '') +
 
       // animation: none в шапке подтемы — раздела «Анимация» на странице нет совсем
       (noAnim ? '' : '<section class="sec" aria-labelledby="h-anim"><h2 id="h-anim">' + (anims.length > 1 ? 'Анимации' : 'Анимация') + '</h2>' +
@@ -359,11 +389,13 @@
     const params = new URLSearchParams(qi >= 0 ? raw.slice(qi + 1) : '');
     const [a, b] = path;
     closeSuggest();
+    document.body.classList.toggle('is-home', !a);
     if (!a) viewHome();
     else if (a === 'block') viewBlock(b);
     else if (a === 'topic') viewTopic(b);
     else if (a === 'glossary') b ? viewTerm(b) : viewGlossary();
     else if (a === 'bestiary') b ? viewProtein(b) : viewBestiary();
+    else if (a === 'lab') b ? viewLabLevel(b) : viewLabHub();
     else if (a === 'search') viewSearch(params.get('q') || '');
     else if (a === 'about') viewAbout();
     else view404();

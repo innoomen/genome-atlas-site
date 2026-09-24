@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <style>
+    text { font-family: ui-monospace, Consolas, "Courier New", monospace; font-weight: 700; fill: #fff; text-anchor: middle; dominant-baseline: central; }
+  </style>
+  <g>
+    <g transform="translate(30,40) rotate(-8)"><rect x="-14" y="-14" width="28" height="28" rx="5" fill="#e8536f"/><text x="0" y="1" font-size="16">A</text></g>
+    <g transform="translate(140,20) rotate(6)"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#2f7de0"/><text x="0" y="1" font-size="15">T</text></g>
+    <g transform="translate(250,55) rotate(-4)"><rect x="-14" y="-14" width="28" height="28" rx="5" fill="#1fb488"/><text x="0" y="1" font-size="16">G</text></g>
+    <g transform="translate(330,140) rotate(9)"><rect x="-12" y="-12" width="24" height="24" rx="5" fill="#8b6cf0"/><text x="0" y="1" font-size="14">C</text></g>
+    <g transform="translate(60,150) rotate(5)"><rect x="-12" y="-12" width="24" height="24" rx="5" fill="#8b6cf0"/><text x="0" y="1" font-size="14">C</text></g>
+    <g transform="translate(190,120) rotate(-7)"><rect x="-14" y="-14" width="28" height="28" rx="5" fill="#e8536f"/><text x="0" y="1" font-size="16">A</text></g>
+    <g transform="translate(20,250) rotate(4)"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#1fb488"/><text x="0" y="1" font-size="15">G</text></g>
+    <g transform="translate(120,230) rotate(-6)"><rect x="-12" y="-12" width="24" height="24" rx="5" fill="#2f7de0"/><text x="0" y="1" font-size="14">T</text></g>
+    <g transform="translate(270,220) rotate(8)"><rect x="-14" y="-14" width="28" height="28" rx="5" fill="#2f7de0"/><text x="0" y="1" font-size="16">T</text></g>
+    <g transform="translate(330,300) rotate(-5)"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#e8536f"/><text x="0" y="1" font-size="15">A</text></g>
+    <g transform="translate(70,330) rotate(7)"><rect x="-12" y="-12" width="24" height="24" rx="5" fill="#8b6cf0"/><text x="0" y="1" font-size="14">C</text></g>
+    <g transform="translate(200,320) rotate(-9)"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#1fb488"/><text x="0" y="1" font-size="15">G</text></g>
+  </g>
+</svg>

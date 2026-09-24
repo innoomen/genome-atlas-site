@@ -14,6 +14,7 @@
   const terms = [];
   const proteins = [];
   const quizzes = {};
+  const labLevels = [];
   const animations = {};
   const animationTitles = {};
 
@@ -57,6 +58,8 @@
       });
     } else if ((m = path.match(/^quizzes\/([^/]+)\.md$/))) {
       quizzes[m[1]] = WS.quiz ? WS.quiz.parse(text, m[1]) : [];
+    } else if ((m = path.match(/^lab\/([^/]+)\.md$/))) {
+      if (WS.lab) labLevels.push(WS.lab.parse(text, m[1]));
     } else if ((m = path.match(/^media\/animations\/([^/]+)\.svg$/))) {
       animations[m[1]] = text;
       const tm = text.match(/<title[^>]*>([^<]*)<\/title>/);
@@ -77,15 +80,17 @@
   topics.forEach(t => { const b = blockById[t.blockId]; if (b) b.topics.push(t); });
   terms.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
   proteins.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
+  labLevels.sort((a, b) => a.order - b.order);
 
-  const topicById = {}, termById = {}, proteinById = {};
+  const topicById = {}, termById = {}, proteinById = {}, labById = {};
   topics.forEach(t => { topicById[t.id] = t; });
   terms.forEach(t => { termById[t.id] = t; });
   proteins.forEach(p => { proteinById[p.id] = p; });
+  labLevels.forEach(l => { labById[l.id] = l; });
 
   WS.data = {
-    built: bundle.built, blocks, topics, terms, proteins, quizzes, animations, animationTitles,
-    blockById, topicById, termById, proteinById,
+    built: bundle.built, blocks, topics, terms, proteins, quizzes, labLevels, animations, animationTitles,
+    blockById, topicById, termById, proteinById, labById,
     hasContent: topics.length > 0
   };
 })(window.WS = window.WS || {});
