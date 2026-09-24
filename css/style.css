@@ -1,4 +1,14 @@
 /* Атлас генома — оформление (научный вид; светлая и тёмная темы). */
+@font-face {
+  font-family: 'Manrope'; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url('../media/fonts/manrope/manrope-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2122;
+}
+@font-face {
+  font-family: 'Manrope'; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url('../media/fonts/manrope/manrope-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 :root {
   --bg: #f7f8fa; --surface: #ffffff; --surface-2: #eef1f5; --text: #1c2330; --muted: #5b6577;
   --border: #d9dee7; --accent: #0f6b74; --accent-ink: #ffffff; --accent-soft: #dff1f2;
@@ -6,7 +16,7 @@
   --adv: #5a4bb2; --adv-soft: #ece9fa; --clin: #a4351c; --clin-soft: #fbe9e3;
   --shadow: 0 1px 2px rgba(20, 30, 50, .06), 0 4px 14px rgba(20, 30, 50, .05);
   --radius: 12px;
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font: 'Manrope', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-head: var(--font);
   --measure: 46rem;
 }
@@ -32,8 +42,8 @@ body.is-home::before {
 :root[data-mode="dark"] body.is-home::before { opacity: .32; }
 @media (max-width: 72rem) { body.is-home::before { display: none; } }
 @media (prefers-reduced-motion: reduce), (prefers-contrast: more) { body.is-home::before { display: none; } }
-h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; margin: 1.6em 0 .5em; }
-h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .2em; }
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; margin: 1.6em 0 .5em; font-weight: 700; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .2em; font-weight: 800; letter-spacing: -.01em; }
 h2 { font-size: 1.45rem; }
 h3 { font-size: 1.15rem; }
 a { color: var(--link); }
@@ -53,7 +63,7 @@ main { padding-block: 1.5rem 3rem; outline: none; min-height: 60vh; }
 .site-header { position: sticky; top: 0; z-index: 30; background: var(--surface); border-bottom: 1px solid var(--border); box-shadow: var(--shadow); }
 .header-in { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; padding-block: .6rem; }
 .brand { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none; color: var(--text); font: 700 1.2rem var(--font-head); }
-.brand-mark { font-size: 1.5rem; }
+.brand-mark { height: 1.9rem; width: auto; display: block; }
 .search { position: relative; flex: 1 1 14rem; min-width: 0; }
 .search input, .hero-search input { width: 100%; padding: .55rem .8rem; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; }
 .nav { display: flex; align-items: center; flex-wrap: wrap; gap: .3rem .9rem; font-size: .95rem; }
@@ -88,7 +98,7 @@ main { padding-block: 1.5rem 3rem; outline: none; min-height: 60vh; }
 }
 .hero-shell { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 23rem; align-items: center; gap: 1.5rem; }
 .hero-kicker { margin: 0 0 .8rem; font: 700 .78rem var(--font); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
-.hero h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); font-weight: 700; letter-spacing: -.01em; margin: 0 0 .8rem; color: var(--text); }
+.hero h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); font-weight: 800; letter-spacing: -.01em; margin: 0 0 .8rem; color: var(--text); }
 .hero h1 em { font-style: normal; background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero .lead { margin-top: 0; color: var(--muted); max-width: 30rem; }
 .hero-art { justify-self: end; align-self: stretch; min-width: 0; position: relative; }
