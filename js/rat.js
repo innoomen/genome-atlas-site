@@ -22,17 +22,38 @@
     'CAR-T-клетки — это «живое лекарство»: собственные T-клетки пациента, переученные находить опухоль напрямую, без участия HLA.',
     'CRISPR-Cas9 — на самом деле бактериальная иммунная система: так бактерии запоминают вирусы, которые на них нападали.',
     'Base editing может точечно заменить одну букву ДНК на другую, вообще не разрезая обе цепи.',
-    'Мышата рождаются слепыми и без шёрстки, зато их геном почти на 85% совпадает с человеческим — поэтому они частые герои лабораторных исследований.'
+    'Мышата рождаются слепыми и без шёрстки, зато их геном почти на 85% совпадает с человеческим — поэтому они частые герои лабораторных исследований.',
+    'Репликация ДНК идёт сразу в обе стороны от точки начала двумя вилками — так геном копируется вдвое быстрее.',
+    'На отстающей цепи ДНК синтезируется короткими кусочками — фрагментами Оказаки, которые потом сшивает ДНК-лигаза.',
+    'Теломераза достраивает концы хромосом — без неё клетка теряла бы кусочек ДНК при каждом делении.',
+    'У РНК-полимеразы нет «корректора» ошибок, как у ДНК-полимеразы, — но это не страшно: мРНК живёт недолго.',
+    'Один и тот же ген может дать разные белки благодаря альтернативному сплайсингу — интроны вырезаются по-разному.',
+    'Энхансер может «включать» ген, находясь за десятки тысяч пар оснований от него, — ДНК просто образует петлю.',
+    'В норме NF-κB сидит в цитоплазме «под замком» у белка IκB — сигнал снимает замок, и он бежит в ядро.',
+    'p53 называют «стражем генома»: при повреждении ДНК он может остановить деление клетки или запустить её гибель.',
+    'Белок p53 в норме живёт всего несколько минут — MDM2 постоянно его разрушает, пока не появится сигнал тревоги.',
+    'RAS — это молекулярный переключатель: включён с GTP, выключен с GDP, и «залипает» включённым при мутациях вроде G12D.',
+    'Кариотип показывает крупные поломки хромосом, а точечные мутации внутри генов видит только секвенирование.',
+    'FISH-зонд светится там, где находит свою последовательность ДНК, — так на одном стекле видно конкретную перестройку.',
+    'Таргетные ингибиторы часто просто затыкают «карман» киназы, куда в норме садится АТФ, — и фермент перестаёт работать.',
+    'Венетоклакс — не яд для клетки, а «освободитель»: он снимает блок с её собственной программы гибели.',
+    'Биспецифическое антитело одной «рукой» держит опухолевую клетку, а другой — T-лимфоцит, сближая их для атаки.',
+    'CAR-T-клеткам не нужен HLA, чтобы узнать опухоль, — они просто «видят» нужный белок прямо на её поверхности.',
+    'Генная терапия гемофилии часто использует вирус AAV: он доставляет ген в печень и остаётся там, не встраиваясь в ДНК.',
+    'Base editing умеет превратить C в T или A в G прямо в ДНК, вообще не разрезая обе цепи спирали.',
+    'Первый геном человека расшифровывали больше 10 лет и потратили около 3 млрд долларов — сегодня это можно сделать за один день.',
+    'Слово «мутация» звучит страшно, но большинство из них безобидны: клетка либо чинит их, либо просто не замечает.'
   ];
 
   const KEY_COUNT = 'ws.rat.facts';
-  const KEY_PENDING = 'ws.rat.pendingStudy';
+  const KEY_COOLDOWN = 'ws.rat.cooldownUntil';
+  const COOLDOWN_MS = 60000;
   const PORTRAIT = 'media/images/brand/rat-simple.svg';
 
   function loadCount() { try { return +localStorage.getItem(KEY_COUNT) || 0; } catch (e) { return 0; } }
   function saveCount(n) { try { localStorage.setItem(KEY_COUNT, n); } catch (e) { /* ignore */ } }
-  function loadPending() { try { return localStorage.getItem(KEY_PENDING) === '1'; } catch (e) { return false; } }
-  function savePending(v) { try { if (v) localStorage.setItem(KEY_PENDING, '1'); else localStorage.removeItem(KEY_PENDING); } catch (e) { /* ignore */ } }
+  function loadCooldownUntil() { try { return +localStorage.getItem(KEY_COOLDOWN) || 0; } catch (e) { return 0; } }
+  function saveCooldownUntil(ts) { try { localStorage.setItem(KEY_COOLDOWN, ts); } catch (e) { /* ignore */ } }
 
   const BURROW_SVG = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><ellipse cx="24" cy="36" rx="20" ry="8" fill="#6b4a2f"/><ellipse cx="24" cy="34" rx="13" ry="7" fill="#1c130c"/><path d="M6 36 Q24 20 42 36" stroke="#8a6238" stroke-width="4" fill="none" stroke-linecap="round"/></svg>';
 
@@ -94,6 +115,8 @@
     function celebrate() {
       runner.classList.add('is-paused');
       showBubble('Ура, ты уже узнал(а) 5 фактов! Так держать! <span class="rat-heart">💕</span>');
+      const until = Date.now() + COOLDOWN_MS;
+      saveCooldownUntil(until);
       setTimeout(() => { hideToBurrow(); runner.classList.remove('is-paused'); }, 2600);
     }
 
@@ -102,7 +125,6 @@
       saveCount(st.factsRead);
       runner.classList.add('is-paused');
       if (st.factsRead === 5) {
-        savePending(true);
         celebrate();
         return;
       }
@@ -110,11 +132,9 @@
     }
 
     function onBurrowClick() {
-      if (loadPending()) {
-        savePending(false);
-        comeOutOfBurrow();
-        runner.classList.add('is-paused');
-        showBubble('Пять фактов — это только начало. Иди учиться, а я побегу дальше по сайту!', () => runner.classList.remove('is-paused'));
+      if (Date.now() < loadCooldownUntil()) {
+        showBubble('Иди учись! 📚', null);
+        setTimeout(closeDialogue, 1800);
         return;
       }
       comeOutOfBurrow();
@@ -123,6 +143,8 @@
     runnerBtn.addEventListener('click', onRatClick);
     dismiss.addEventListener('click', e => { e.stopPropagation(); hideToBurrow(); });
     burrow.addEventListener('click', onBurrowClick);
+
+    if (Date.now() < loadCooldownUntil()) hideToBurrow();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
