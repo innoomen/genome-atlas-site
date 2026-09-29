@@ -1,33 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
   <title id="t">Схема репликационной вилки (без подписей)</title>
-  <desc id="d">Две цепи ДНК расходятся из точки вилки. У самой вилки — синий кружок. Правее, на ещё не разделённой двойной цепи, — кольцо цвета маджента. На верхнем расходящемся плече — серый кружок. На нижнем расходящемся плече — фиолетовый кружок.</desc>
+  <desc id="d">Двойная цепь ДНК справа ещё не расплетена; в точке, где она расходится, — синий треугольник. Правее на нерасплетённой цепи — кольцо цвета маджента. Расплетённая ДНК расходится двумя плечами влево: на одном плече короткий фиолетовый отрезок (праймер) заканчивается фиолетовым ромбом; на другом плече фиолетовый отрезок переходит в длинный оранжевый, вдоль которого расположен серый квадрат со скруглёнными углами.</desc>
   <style>
     .old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
     .new { stroke: #ee8a2b; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .primer { stroke: #7b5ea7; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .rung { stroke: #c3cad8; stroke-width: 2; }
     .hel { fill: #2e86ab; stroke: #fff; stroke-width: 2; }
     .pol { fill: #6c7a96; stroke: #fff; stroke-width: 2; }
     .pola { fill: #7b5ea7; stroke: #fff; stroke-width: 2; }
-    .topo { fill: none; stroke: #c0397b; stroke-width: 5; }
+    .topo { fill: none; stroke: #c0397b; stroke-width: 9; }
   </style>
-  <rect width="800" height="400" fill="#ffffff"/>
+  <rect width="800" height="420" fill="#ffffff"/>
 
-  <!-- нерасплетённая двойная цепь справа -->
-  <line class="old" x1="620" y1="203" x2="760" y2="203"/>
-  <line class="old" x1="620" y1="217" x2="760" y2="217"/>
+  <!-- нерасплетённая двойная цепь справа от вилки -->
+  <line class="old" x1="500" y1="200" x2="700" y2="200"/>
+  <line class="old" x1="500" y1="220" x2="700" y2="220"/>
+  <g class="rung">
+    <line x1="520" y1="200" x2="520" y2="220"/><line x1="540" y1="200" x2="540" y2="220"/>
+    <line x1="560" y1="200" x2="560" y2="220"/><line x1="580" y1="200" x2="580" y2="220"/>
+    <line x1="660" y1="200" x2="660" y2="220"/><line x1="680" y1="200" x2="680" y2="220"/>
+  </g>
 
-  <!-- топоизомераза на нерасплетённой ДНК впереди вилки -->
-  <circle class="topo" cx="650" cy="210" r="20"/>
+  <!-- топоизомераза: кольцо на нерасплетённом участке впереди вилки -->
+  <circle class="topo" cx="620" cy="210" r="22"/>
 
-  <!-- геликаза в точке вилки -->
-  <circle class="hel" cx="550" cy="210" r="22"/>
+  <!-- плечо, идущее вниз-влево (ДНК-полимераза: квадрат) -->
+  <g transform="translate(500 210) rotate(-25)">
+    <line class="old" x1="0" y1="0" x2="-320" y2="0"/>
+    <line class="new" x1="-90" y1="24" x2="-300" y2="24"/>
+    <line class="primer" x1="-292" y1="24" x2="-320" y2="24"/>
+    <rect class="pol" x="-112" y="2" width="44" height="44" rx="11" transform="rotate(-25 -90 24)"/>
+  </g>
 
-  <!-- верхнее плечо (ведущая цепь) -->
-  <line class="old" x1="550" y1="200" x2="150" y2="110"/>
-  <line class="new" x1="520" y1="190" x2="150" y2="126"/>
-  <circle class="pol" cx="350" cy="150" r="16"/>
+  <!-- плечо, идущее вверх-влево (праймаза: ромб, строит короткий праймер) -->
+  <g transform="translate(500 210) rotate(25)">
+    <line class="old" x1="0" y1="0" x2="-320" y2="0"/>
+    <line class="primer" x1="-140" y1="-14" x2="-168" y2="-14"/>
+    <rect class="pola" x="-158" y="-32" width="36" height="36" rx="6" transform="rotate(45 -140 -14)"/>
+  </g>
 
-  <!-- нижнее плечо (отстающая цепь) -->
-  <line class="old" x1="550" y1="220" x2="150" y2="300"/>
-  <line class="new" x1="470" y1="255" x2="150" y2="286"/>
-  <circle class="pola" cx="350" cy="280" r="14"/>
+  <!-- геликаза: треугольник в точке вилки -->
+  <polygon class="hel" points="474,182 474,238 528,210"/>
 </svg>
