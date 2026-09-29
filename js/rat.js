@@ -48,14 +48,15 @@
   const KEY_COUNT = 'ws.rat.facts';
   const KEY_COOLDOWN = 'ws.rat.cooldownUntil';
   const COOLDOWN_MS = 60000;
-  const PORTRAIT = 'media/images/brand/rat-simple.svg';
+  const PORTRAIT = 'media/images/brand/rat-detailed.png';
+  const PORTRAIT_SIT = 'media/images/brand/rat-portrait.png';
 
   function loadCount() { try { return +localStorage.getItem(KEY_COUNT) || 0; } catch (e) { return 0; } }
   function saveCount(n) { try { localStorage.setItem(KEY_COUNT, n); } catch (e) { /* ignore */ } }
   function loadCooldownUntil() { try { return +localStorage.getItem(KEY_COOLDOWN) || 0; } catch (e) { return 0; } }
   function saveCooldownUntil(ts) { try { localStorage.setItem(KEY_COOLDOWN, ts); } catch (e) { /* ignore */ } }
 
-  const BURROW_SVG = '<svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><ellipse cx="24" cy="36" rx="20" ry="8" fill="#6b4a2f"/><ellipse cx="24" cy="34" rx="13" ry="7" fill="#1c130c"/><path d="M6 36 Q24 20 42 36" stroke="#8a6238" stroke-width="4" fill="none" stroke-linecap="round"/></svg>';
+  const BURROW_SVG = '<img src="media/images/brand/flask.webp" alt="" draggable="false">';
 
   function mount() {
     let root = document.getElementById('rat-widget');
@@ -66,7 +67,7 @@
     root.innerHTML =
       '<div class="rat-runner" id="rat-runner">' +
       '<button type="button" class="rat-runner-btn" aria-label="Крыска-помощница: нажмите, чтобы узнать факт"><img src="' + PORTRAIT + '" alt="" draggable="false"></button>' +
-      '<button type="button" class="rat-dismiss" id="rat-dismiss" aria-label="Убрать крыску в норку">×</button>' +
+      '<button type="button" class="rat-dismiss" id="rat-dismiss" aria-label="Убрать крыску в колбу">×</button>' +
       '</div>' +
       '<button type="button" class="rat-burrow" id="rat-burrow" aria-label="Позвать крыску обратно">' + BURROW_SVG + '</button>';
 
@@ -84,7 +85,7 @@
       const wrap = document.createElement('div');
       wrap.className = 'rat-bubble';
       wrap.innerHTML =
-        '<div class="lab-dialogue" style="cursor:default"><img class="lab-portrait" src="' + PORTRAIT + '" alt="Крыска">' +
+        '<div class="lab-dialogue" style="cursor:default"><img class="lab-portrait" src="' + PORTRAIT_SIT + '" alt="Крыска" onerror="this.src=\'' + PORTRAIT + '\'">' +
         '<div class="lab-dlg-text"><p style="margin:0">' + html + '</p></div>' +
         '<button type="button" class="rat-close" aria-label="Закрыть">×</button></div>';
       root.appendChild(wrap);
