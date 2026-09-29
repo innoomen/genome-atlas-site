@@ -124,7 +124,7 @@
       st.factsRead++;
       saveCount(st.factsRead);
       runner.classList.add('is-paused');
-      if (st.factsRead === 5) {
+      if (st.factsRead % 5 === 0) {
         celebrate();
         return;
       }
