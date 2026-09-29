@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d">
+  <title id="t">Схема репликационной вилки (без подписей)</title>
+  <desc id="d">Две цепи ДНК расходятся из точки вилки. У самой вилки — синий кружок. Правее, на ещё не разделённой двойной цепи, — кольцо цвета маджента. На верхнем расходящемся плече — серый кружок. На нижнем расходящемся плече — фиолетовый кружок.</desc>
+  <style>
+    .old { stroke: #2f3f7a; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .new { stroke: #ee8a2b; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .hel { fill: #2e86ab; stroke: #fff; stroke-width: 2; }
+    .pol { fill: #6c7a96; stroke: #fff; stroke-width: 2; }
+    .pola { fill: #7b5ea7; stroke: #fff; stroke-width: 2; }
+    .topo { fill: none; stroke: #c0397b; stroke-width: 5; }
+  </style>
+  <rect width="800" height="400" fill="#ffffff"/>
+
+  <!-- нерасплетённая двойная цепь справа -->
+  <line class="old" x1="620" y1="203" x2="760" y2="203"/>
+  <line class="old" x1="620" y1="217" x2="760" y2="217"/>
+
+  <!-- топоизомераза на нерасплетённой ДНК впереди вилки -->
+  <circle class="topo" cx="650" cy="210" r="20"/>
+
+  <!-- геликаза в точке вилки -->
+  <circle class="hel" cx="550" cy="210" r="22"/>
+
+  <!-- верхнее плечо (ведущая цепь) -->
+  <line class="old" x1="550" y1="200" x2="150" y2="110"/>
+  <line class="new" x1="520" y1="190" x2="150" y2="126"/>
+  <circle class="pol" cx="350" cy="150" r="16"/>
+
+  <!-- нижнее плечо (отстающая цепь) -->
+  <line class="old" x1="550" y1="220" x2="150" y2="300"/>
+  <line class="new" x1="470" y1="255" x2="150" y2="286"/>
+  <circle class="pola" cx="350" cy="280" r="14"/>
+</svg>

@@ -224,6 +224,28 @@ a.term-prot:hover { background: var(--clin-soft); }
 .quiz-score { font: 700 3rem var(--font-head); margin: 0; }
 .quiz-score span { font-size: 1.1rem; color: var(--muted); font-weight: 400; }
 
+/* тест: текстовый ответ */
+.quiz-text-form { display: flex; gap: .6rem; flex-wrap: wrap; }
+.quiz-text-input { flex: 1; min-width: 12rem; font: inherit; padding: .65rem 1rem; border-radius: 10px; border: 2px solid var(--border); background: var(--bg); color: var(--text); }
+.quiz-text-input:focus-visible { border-color: var(--accent); outline: none; }
+.quiz-text-input.correct { border-color: var(--ok); background: var(--ok-soft); }
+.quiz-text-input.wrong { border-color: var(--bad); background: var(--bad-soft); }
+
+/* тест: порядок */
+.quiz-order-picked { list-style: decimal; padding-left: 1.4rem; margin: 0 0 .6rem; min-height: 2.4rem; }
+.quiz-order-picked li { margin: .3rem 0; }
+.quiz-order-empty { list-style: none; margin-left: -1.4rem; color: var(--muted); }
+.quiz-order-item { font: inherit; text-align: left; padding: .4rem .7rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); cursor: pointer; }
+.quiz-order-item:hover { border-color: var(--bad); }
+.quiz-order-pool { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .8rem; }
+.quiz-order-pool .opt { padding: .5rem .9rem; }
+.quiz-order-picked--final li { list-style: decimal; }
+
+/* тест: разметка схемы */
+.quiz-label-target { font-weight: 600; margin: .2rem 0 .6rem; }
+.lab-hotspot.correct { border-color: var(--ok); background: var(--ok-soft); }
+.lab-hotspot.wrong { border-color: var(--bad); background: var(--bad-soft); }
+
 /* глоссарий, бестиарий, поиск */
 .toolbar { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; margin: 1rem 0; font-size: .95rem; }
 .toolbar select { font: inherit; padding: .3rem .5rem; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
