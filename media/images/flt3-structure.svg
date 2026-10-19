@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-labelledby="t d">
+  <title id="t">Белок FLT3: строение, места мутаций и ингибиторы</title>
+  <desc id="d">Линейная схема рецептора FLT3 от наружной части к хвосту: пять Ig-подобных доменов, трансмембранный участок, околомембранный домен (здесь возникает ITD, около 25 % ОМЛ), киназный домен из двух частей со вставкой и петлёй активации (здесь мутации TKD, D835 и I836, около 7–10 % ОМЛ), C-концевой хвост. Ниже: нормальный рецептор после связывания лиганда включает RAS–MAPK и PI3K–AKT и слабо STAT5, а FLT3-ITD работает без лиганда и особенно сильно включает STAT5. Внизу: ингибиторы типа I (мидостаурин, гилтеритиниб) действуют при ITD и TKD, ингибиторы типа II (квизартиниб, сорафениб) — только при ITD.</desc>
+  <style>
+    text { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; fill: #1c2330; }
+    .h { font-size: 16px; font-weight: 700; }
+    .s { font-size: 12.5px; fill: #5b6577; }
+    .b { font-size: 13px; font-weight: 700; }
+    .t { font-size: 12.5px; }
+    .w { fill: #fff; font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .ig { fill: #cfe3f1; stroke: #2e86ab; stroke-width: 2; }
+    .tm { fill: #8a94a8; stroke: #fff; stroke-width: 1.5; }
+    .jm { fill: #f0b429; stroke: #fff; stroke-width: 1.5; }
+    .kin { fill: #6c7a96; stroke: #fff; stroke-width: 1.5; }
+    .kid { fill: #c3cad8; stroke: #fff; stroke-width: 1.5; }
+    .loop { fill: #c0397b; stroke: #fff; stroke-width: 1.5; }
+    .tail { fill: #e1e6ee; stroke: #c3cad8; stroke-width: 1.5; }
+    .ldr { stroke: #8a94a8; stroke-width: 1.4; fill: none; }
+    .box { fill: #f4f6fa; stroke: #c3cad8; stroke-width: 1.6; }
+    .on { fill: #fff3dc; stroke: #ee8a2b; stroke-width: 3; }
+    .weak { fill: #f4f6fa; stroke: #c3cad8; stroke-width: 1.6; stroke-dasharray: 5 4; }
+    .t1 { fill: #e3f4ea; stroke: #1d7a46; stroke-width: 2; }
+    .t2 { fill: #fbe9e4; stroke: #c7501f; stroke-width: 2; }
+    .ar { stroke: #5b6577; stroke-width: 2; fill: none; }
+  </style>
+  <rect width="900" height="460" fill="#ffffff"/>
+
+  <!-- ===== Панель 1: домены ===== -->
+  <text class="h" x="30" y="26">Белок FLT3 (993 аминокислоты): от наружной части к хвосту</text>
+  <text class="s" x="172" y="62" text-anchor="middle">снаружи клетки</text>
+  <text class="s" x="333" y="62" text-anchor="middle">мембрана</text>
+  <text class="s" x="607" y="62" text-anchor="middle">внутри клетки</text>
+
+  <rect class="ig" x="30" y="78" width="52" height="50" rx="9"/><text class="s" x="56" y="108" text-anchor="middle">Ig</text>
+  <rect class="ig" x="88" y="78" width="52" height="50" rx="9"/><text class="s" x="114" y="108" text-anchor="middle">Ig</text>
+  <rect class="ig" x="146" y="78" width="52" height="50" rx="9"/><text class="s" x="172" y="108" text-anchor="middle">Ig</text>
+  <rect class="ig" x="204" y="78" width="52" height="50" rx="9"/><text class="s" x="230" y="108" text-anchor="middle">Ig</text>
+  <rect class="ig" x="262" y="78" width="52" height="50" rx="9"/><text class="s" x="288" y="108" text-anchor="middle">Ig</text>
+  <rect class="tm" x="322" y="78" width="22" height="50" rx="4"/>
+  <rect class="jm" x="352" y="78" width="64" height="50" rx="6"/><text class="w" x="384" y="108" style="fill:#1c2330">JM</text>
+  <rect class="kin" x="424" y="78" width="140" height="50" rx="6"/><text class="w" x="494" y="108">TK1</text>
+  <rect class="kid" x="564" y="78" width="50" height="50" rx="6"/><text class="s" x="589" y="108" text-anchor="middle" style="font-size:11px">KID</text>
+  <rect class="kin" x="614" y="78" width="150" height="50" rx="6"/><text class="w" x="648" y="108">TK2</text>
+  <rect class="loop" x="690" y="82" width="36" height="42" rx="5"/><text class="w" x="708" y="107" style="font-size:11px">петля</text>
+  <rect class="tail" x="772" y="78" width="90" height="50" rx="9"/><text class="s" x="817" y="108" text-anchor="middle">хвост</text>
+
+  <path class="ldr" d="M384 128 V158"/>
+  <text class="b" x="384" y="176" text-anchor="middle" style="fill:#b47a00">ITD</text>
+  <text class="s" x="384" y="194" text-anchor="middle">дупликация в JM (экзоны 14–15)</text>
+  <text class="s" x="384" y="213" text-anchor="middle">≈ 25 % ОМЛ</text>
+
+  <path class="ldr" d="M708 128 V158"/>
+  <text class="b" x="708" y="176" text-anchor="middle" style="fill:#c0397b">TKD: D835, I836</text>
+  <text class="s" x="708" y="194" text-anchor="middle">замена в петле активации (экзон 20)</text>
+  <text class="s" x="708" y="213" text-anchor="middle">≈ 7–10 % ОМЛ</text>
+
+  <!-- ===== Панель 2: сигналы ===== -->
+  <text class="h" x="30" y="254">Что включает рецептор</text>
+
+  <text class="b" x="30" y="288">Норма</text>
+  <text class="s" x="30" y="307">нужен лиганд FLT3L</text>
+  <rect class="box" x="235" y="270" width="190" height="40" rx="8"/><text class="t" x="330" y="295" text-anchor="middle">RAS–MAPK</text>
+  <rect class="box" x="445" y="270" width="190" height="40" rx="8"/><text class="t" x="540" y="295" text-anchor="middle">PI3K–AKT</text>
+  <rect class="weak" x="655" y="270" width="215" height="40" rx="8"/><text class="t" x="762" y="295" text-anchor="middle">STAT5 — слабо</text>
+
+  <text class="b" x="30" y="348" style="fill:#c7501f">FLT3-ITD</text>
+  <text class="s" x="30" y="367">лиганд не нужен</text>
+  <rect class="box" x="235" y="330" width="190" height="40" rx="8"/><text class="t" x="330" y="355" text-anchor="middle">RAS–MAPK</text>
+  <rect class="box" x="445" y="330" width="190" height="40" rx="8"/><text class="t" x="540" y="355" text-anchor="middle">PI3K–AKT</text>
+  <rect class="on" x="655" y="330" width="215" height="40" rx="8"/><text class="b" x="762" y="355" text-anchor="middle">STAT5 — сильно</text>
+
+  <!-- ===== Панель 3: ингибиторы ===== -->
+  <rect class="t1" x="30" y="396" width="410" height="48" rx="10"/>
+  <text class="b" x="235" y="416" text-anchor="middle" style="fill:#1d7a46">Тип I — «открытая» киназа</text>
+  <text class="t" x="235" y="434" text-anchor="middle">мидостаурин, гилтеритиниб: ITD и TKD</text>
+  <rect class="t2" x="460" y="396" width="410" height="48" rx="10"/>
+  <text class="b" x="665" y="416" text-anchor="middle" style="fill:#c7501f">Тип II — «закрытая» киназа</text>
+  <text class="t" x="665" y="434" text-anchor="middle">квизартиниб, сорафениб: только ITD</text>
+</svg>
